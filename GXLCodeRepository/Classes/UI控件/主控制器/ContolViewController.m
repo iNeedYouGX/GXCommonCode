@@ -69,15 +69,14 @@
     if ([NSStringFromClass(currentClass) isEqualToString:@"GXSquareController"]) {
         UITableViewController *vc = [[currentClass alloc] initWithStyle:UITableViewStyleGrouped];
         vc.title =  self.dataArr[indexPath.row][@"title"];
-        [self setHidesBottomBarWhenPushed:YES]; // 将tabbar隐藏
+        [vc setHidesBottomBarWhenPushed:YES];
         [self.navigationController pushViewController:vc animated:YES];
     } else {
         UIViewController *vc = [[currentClass alloc] init];
         vc.title =  self.dataArr[indexPath.row][@"title"];
-        [self setHidesBottomBarWhenPushed:YES];// 将tabbar隐藏
+        [vc setHidesBottomBarWhenPushed:YES];
         [self.navigationController pushViewController:vc animated:YES];
     }
-    [self setHidesBottomBarWhenPushed:NO]; // 将tabbar显示
     // 这个方法, 判断具体的选中的行
     NSIndexPath *index = [tableView indexPathForSelectedRow];
     NSLog(@"标题: %@ --- 控制器: %@", self.dataArr[index.row][@"title"], self.dataArr[index.row][@"control"]);

@@ -70,7 +70,7 @@ static UIWindow *window_;
 }
 
 
-//
+// 方法递归
 - (void)searchScrollerViewInView:(UIView *)superView
 {
     for (UIScrollView *scroller in superView.subviews) {

@@ -26,7 +26,7 @@
     NSString *path = [[NSBundle mainBundle] pathForResource:@"PostImage.bundle" ofType:nil];
     NSBundle *bundle = [NSBundle bundleWithPath:path];
     
-    // 加载图片y带有bundle的方法
+    // 加载图片带有bundle的方法
     UIImage *addImage = [UIImage imageNamed:@"mine-my-post.png" inBundle:bundle compatibleWithTraitCollection:nil];
     
     // 设置图片

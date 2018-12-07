@@ -9,6 +9,7 @@
 #import "GXTabarController.h"
 #import "ContolViewController.h"
 #import "OCExampleController.h"
+#import "GXNavigationController.h"
 
 @interface GXTabarController ()
 
@@ -54,7 +55,7 @@
     vc.tabBarItem.selectedImage = [[UIImage imageNamed:selectedImage] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
 
     // 添加为子控制器
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+    GXNavigationController *nav = [[GXNavigationController alloc] initWithRootViewController:vc];
     [self addChildViewController:nav];
 }
 

@@ -48,7 +48,6 @@
     }
 }
 
-
 // 技术点: 这个方法可以设置背景图, 哈哈, 挺有意思
 - (void)drawRect:(CGRect)rect
 {

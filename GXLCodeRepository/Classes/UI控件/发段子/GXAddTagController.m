@@ -133,7 +133,7 @@
     // 调整textField位置
     //       CGSize textSize = [textField.text boundingRectWithSize:CGSizeMake(1000, 20) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : textField.font} context:nil].size;
     
-    // 知识点: 如果只计算一行, 用下面的这个最简单
+    // 知识点: 如果计算一行, 这个最简单
     CGSize textSize = [self.textField.text sizeWithAttributes:@{NSFontAttributeName : self.textField.font}];
     
     if (textSize.width > SCR_WIDTH - (CGRectGetMaxX(self.recordTagButton.frame) + 10)) {
