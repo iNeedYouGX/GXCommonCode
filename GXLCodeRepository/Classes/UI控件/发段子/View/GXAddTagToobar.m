@@ -45,10 +45,16 @@
 {
     NSLog(@"%@", sender);
     GXAddTagController *vc = [[GXAddTagController alloc] init];
-    UIViewController *superVc = (UIViewController *)[self superview].nextResponder;
-    superVc.hidesBottomBarWhenPushed = YES;
-    [superVc.navigationController pushViewController:vc animated:YES];
+//    UIViewController *superVc = (UIViewController *)[self superview].nextResponder;
+//    superVc.hidesBottomBarWhenPushed = YES;
+//    [superVc.navigationController pushViewController:vc animated:YES];
     
+    // 找到跟控制器, 是TabBar
+    UITabBarController *tabbar = (UITabBarController *)[UIApplication sharedApplication].keyWindow.rootViewController;
+    // 找到tabBar的当前选中的, 是Navigation
+    UINavigationController *nav = (UINavigationController *)tabbar.selectedViewController;
+//    UIViewController *v = (UIViewController *)nav.topViewController;
+    [nav pushViewController:vc animated:YES];
     /**
      * 知识点:如果是modal出来的控制器,A 模态 B, A的presentedViewController属性就是B
                                            B的presentingViewController属性就是A

@@ -22,6 +22,7 @@
         
         self.textLabel.textColor = [UIColor darkGrayColor];
         self.textLabel.font = [UIFont systemFontOfSize:16];
+        self.imageView.backgroundColor = [UIColor redColor];
     }
     return self;
 }
@@ -31,12 +32,12 @@
 {
     [super layoutSubviews];
     CGRect imageRect = self.imageView.frame;
-    imageRect.origin.x = 10;
+    imageRect.origin.x = 0;
     self.imageView.frame = imageRect;
     
     if (self.imageView.image != nil) {
         CGRect labelRect = self.textLabel.frame;
-        labelRect.origin.x = CGRectGetMaxX(self.imageView.frame);
+        labelRect.origin.x = CGRectGetMaxX(self.imageView.frame) + 10;
         self.textLabel.frame = labelRect;
     }
 }

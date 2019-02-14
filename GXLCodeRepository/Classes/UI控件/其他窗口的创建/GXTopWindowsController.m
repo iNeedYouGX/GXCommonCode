@@ -23,7 +23,6 @@ static UIWindow *window_;
         self.scrollerView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, SCR_WIDTH, SCR_HEIGHT - 44)];
         self.scrollerView.backgroundColor = [UIColor greenColor];
         self.scrollerView.pagingEnabled = YES;
-        
     }
     return _scrollerView;
 }
@@ -69,12 +68,10 @@ static UIWindow *window_;
     [self searchScrollerViewInView:window];
 }
 
-
 // 方法递归
 - (void)searchScrollerViewInView:(UIView *)superView
 {
     for (UIScrollView *scroller in superView.subviews) {
-        
         // scroller.frame 转换到-> [UIApplication sharedApplication].keyWindow 的坐标系, scroller.frame的父视图也得传过来
         //        CGRect newFrame = [scroller.superview convertRect:scroller.frame toView:[UIApplication sharedApplication].keyWindow]; 等同于nil
         
@@ -105,7 +102,6 @@ static UIWindow *window_;
     tableView.dataSource = self;
     [self.scrollerView addSubview:tableView];
 }
-
 
 #pragma mark - <UITableViewDataSource>
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section

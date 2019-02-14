@@ -8,7 +8,23 @@
 
 #import "GXPlaceholderTextView.h"
 
+@interface GXPlaceholderTextView ()
+/** 提示文字 */
+@property (nonatomic, strong) UILabel *placeLabel;
+@end
+
 @implementation GXPlaceholderTextView
+- (UILabel *)placeLabel
+{
+    if (_placeLabel == nil) {
+        _placeLabel = [[UILabel alloc] init];
+        _placeLabel.numberOfLines = 0;
+        _placeLabel.x = 4;
+        _placeLabel.y = 7;
+        [self addSubview:_placeLabel];
+    }
+    return _placeLabel;
+}
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
@@ -25,7 +41,7 @@
         self.placeHolderColor = [UIColor lightGrayColor];
         /**
          * 在内部监听文字的输入
-         * 第一种方式: self.delegate = self, 这种方式不好, 如果外面将代理方法给变, 内部这个代理就不好使了(所以这种方式不好)
+         * 第一种方式: self.delegate = self, 不推荐, 如果外面设置代理, 内部代理不起作用
          * 第二种方式: 用系统内部的通知
          */
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textViewChange:) name:UITextViewTextDidChangeNotification object:nil];
@@ -40,38 +56,36 @@
 
 - (void)textViewChange:(NSNotification *)center
 {
-//    [NSNotificationCenter defaultCenter] postNotificationName:<#(nonnull NSNotificationName)#> object:<#(nullable id)#> userInfo:<#(nullable NSDictionary *)#>;
-    /**
-     * NSNottification中有几个属性
-     * 1. name : 这个是监听的通知的名字 "UITextViewTextDidChangeNotification"
-     * 2. object : 这个就是这个监听着self
-     * 3. userInfo : 发送通知时候, 带的userInfo参数
-     */
-    NSLog(@"%@", center.userInfo);
-    
-    // 重新绘制站位文字
-    [self setNeedsDisplay];
-    
+    self.placeLabel.hidden = self.hasText;
 }
 
-/**
- * 绘制站位文字
- */
-- (void)drawRect:(CGRect)rect {
-//     如果textView有文字,直接返回
-//    if (self.text.length || self.attributedText.length) return;
-    if (self.hasText) return;
-    
-    rect.origin.y = 7;
-    rect.origin.x = 4;
-    rect.size.width -= 2 * rect.origin.x;
-    
-    NSMutableDictionary *attribut = [NSMutableDictionary dictionary];
-    attribut[NSFontAttributeName] = self.font;
-    attribut[NSForegroundColorAttributeName] = self.placeHolderColor;
-    
-    [self.placeHolder drawInRect:rect withAttributes:attribut];
- 
+- (void)setPlaceHolderColor:(UIColor *)placeHolderColor
+{
+    _placeHolderColor = placeHolderColor;
+    self.placeLabel.textColor = placeHolderColor;
+}
+
+- (void)setPlaceHolder:(NSString *)placeHolder
+{
+    _placeHolder = placeHolder;
+    self.placeLabel.text = placeHolder;
+    [self setNeedsLayout];
+    [self layoutIfNeeded];
+}
+
+- (void)setFont:(UIFont *)font
+{
+    [super setFont:font];
+    self.placeLabel.font = font;
+    [self setNeedsLayout];
+    [self layoutIfNeeded];
+}
+
+- (void)layoutSubviews
+{
+    [super layoutSubviews];
+    self.placeLabel.width = SCR_WIDTH - 2 * _placeLabel.x;
+    [self.placeLabel sizeToFit];
 }
 
 /**

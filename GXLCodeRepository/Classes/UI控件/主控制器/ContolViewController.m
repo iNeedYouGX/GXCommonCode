@@ -37,6 +37,9 @@
                        },
                      @{@"title" : @"发段子",
                        @"control" : @"GXPostWordController"
+                       },
+                     @{@"title" : @"布局",
+                       @"control" : @"GXFlowLayoutController"
                        }];
     }
     return _dataArr;

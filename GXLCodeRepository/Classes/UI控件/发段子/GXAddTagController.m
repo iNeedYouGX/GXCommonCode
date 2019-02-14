@@ -8,8 +8,9 @@
 
 #import "GXAddTagController.h"
 #import "GXTagTextField.h"
+#import "SVProgressHUD.h"
 
-@interface GXAddTagController ()
+@interface GXAddTagController () <UITextFieldDelegate>
 /**内容视图 */
 @property (nonatomic, strong) UIView *contentView;
 /** 文字框 */
@@ -38,7 +39,8 @@
         _addButton = [UIButton buttonWithType:UIButtonTypeCustom];
         _addButton.width = self.contentView.width;
         _addButton.height = 30;
-        _addButton.backgroundColor = [UIColor greenColor];
+        [_addButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        _addButton.backgroundColor = [UIColor blueColor];
         [_addButton addTarget:self action:@selector(addButtonClicked) forControlEvents:UIControlEventTouchUpInside];
         [self.contentView addSubview:_addButton];
         _addButton.hidden = YES;
@@ -60,6 +62,10 @@
 
 - (void)addButtonClicked
 {
+    if (self.tagArray.count == 5) {
+        [SVProgressHUD showErrorWithStatus:@"hahah"];
+        return;
+    }
     UIButton *tagButton = [UIButton buttonWithType:UIButtonTypeCustom];
     tagButton.backgroundColor = [UIColor blueColor];
     [tagButton setTitle:self.textField.text forState:UIControlStateNormal];
@@ -97,6 +103,7 @@
 - (void)textFieldDidChange:(UITextField *)textField
 {
     // 更新textField的frame
+    NSLog(@"%s--- %@", __func__, textField.text);
     [self textFieldLayout];
     
     if (textField.hasText) {// 有文字创建button
@@ -106,8 +113,8 @@
     } else { // 没有文字隐藏button
         [self.addButton setHidden:YES];
     }
-}
 
+}
 
 #pragma mark - 布局重组
 - (void)tagButtonLayout
@@ -119,7 +126,7 @@
             tagButton.x = CGRectGetMaxX(recordBtn.frame) + 10;
             tagButton.y = recordBtn.y;
         } else {
-            tagButton.x = 10;
+            tagButton.x = 0;
             tagButton.y = CGRectGetMaxY(recordBtn.frame) + 10;
         }
         recordBtn = tagButton;
@@ -144,8 +151,6 @@
         self.textField.y = self.recordTagButton.y;
     }
 }
-
-
 
 #pragma mark - 初始化
 - (void)viewDidLoad {
@@ -197,12 +202,11 @@
     self.navigationController.navigationBar.translucent = NO;
 }
 
-
-
-
 - (void)done:(UIButton *)sender
 {
-    
+    // 知识点: valueForKeyPath, 可以将数组中的所有keyPath的值取出来
+    NSArray *tagTitle = [self.tagArray valueForKeyPath:@"currentTitle"];
+    NSLog(@"%@", tagTitle);
 }
 
 @end

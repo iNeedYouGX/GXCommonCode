@@ -19,8 +19,6 @@
     // Do any additional setup after loading the view.
 }
 
-
-
 /**
  * 将这些实现放到控制器中, 才能读取
  */

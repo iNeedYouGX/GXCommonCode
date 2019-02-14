@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		381881636C015606B6444F98 /* libPods-GXLCodeRepository.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C8D510534E78F9435F53B1F /* libPods-GXLCodeRepository.a */; };
 		972D9EEA218B0D790013B420 /* GXAddTagController.m in Sources */ = {isa = PBXBuildFile; fileRef = 972D9EE9218B0D790013B420 /* GXAddTagController.m */; };
 		97362C082179A30D0092A6D1 /* AlertViewTEST.m in Sources */ = {isa = PBXBuildFile; fileRef = 97362C072179A30D0092A6D1 /* AlertViewTEST.m */; };
+		975AC84C21DC760800316C93 /* GXGridLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 975AC84B21DC760800316C93 /* GXGridLayout.m */; };
+		9774AD7421CB985600DD0827 /* GXFlowLayoutController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9774AD7321CB985600DD0827 /* GXFlowLayoutController.m */; };
 		977C3391218D4ED000FAA144 /* GXTagTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 977C3390218D4ED000FAA144 /* GXTagTextField.m */; };
 		97A05E77218A9B25006A2CF8 /* GXAddTagToobar.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A05E76218A9B25006A2CF8 /* GXAddTagToobar.m */; };
 		97A05E79218A9B31006A2CF8 /* GXAddTagToobar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97A05E78218A9B31006A2CF8 /* GXAddTagToobar.xib */; };
@@ -21,6 +24,10 @@
 		97A05FF2216F013E00F49C01 /* ContolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A05FF1216F013E00F49C01 /* ContolViewController.m */; };
 		97A05FF9216F236000F49C01 /* GXTabarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A05FF7216F236000F49C01 /* GXTabarController.m */; };
 		97A05FFE216F2A9800F49C01 /* OCExampleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A05FFD216F2A9800F49C01 /* OCExampleController.m */; };
+		97A0D00721C0B99100CBF9A1 /* GXTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A0D00621C0B99100CBF9A1 /* GXTestViewController.m */; };
+		97A3414721D1CAAB006DF0D2 /* GXLineLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A3414621D1CAAB006DF0D2 /* GXLineLayout.m */; };
+		97A3415021D4DB36006DF0D2 /* GXPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A3414E21D4DB36006DF0D2 /* GXPhotoCell.m */; };
+		97A3415121D4DB36006DF0D2 /* GXPhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97A3414F21D4DB36006DF0D2 /* GXPhotoCell.xib */; };
 		97C20BE3217D92AE00C78AAD /* MenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97C20BE2217D92AE00C78AAD /* MenuController.m */; };
 		97C20BE7217D930100C78AAD /* MenuController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97C20BE6217D930100C78AAD /* MenuController.xib */; };
 		97C20BEB217D93AD00C78AAD /* GXMenuLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 97C20BEA217D93AD00C78AAD /* GXMenuLabel.m */; };
@@ -40,10 +47,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A071959F44494B971508652 /* Pods-GXLCodeRepository.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GXLCodeRepository.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GXLCodeRepository/Pods-GXLCodeRepository.debug.xcconfig"; sourceTree = "<group>"; };
+		3F5DD05C2D861CBD99A0182A /* Pods-GXLCodeRepository.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GXLCodeRepository.release.xcconfig"; path = "Pods/Target Support Files/Pods-GXLCodeRepository/Pods-GXLCodeRepository.release.xcconfig"; sourceTree = "<group>"; };
 		972D9EE8218B0D790013B420 /* GXAddTagController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXAddTagController.h; sourceTree = "<group>"; };
 		972D9EE9218B0D790013B420 /* GXAddTagController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXAddTagController.m; sourceTree = "<group>"; };
 		97362C062179A30D0092A6D1 /* AlertViewTEST.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlertViewTEST.h; sourceTree = "<group>"; };
 		97362C072179A30D0092A6D1 /* AlertViewTEST.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlertViewTEST.m; sourceTree = "<group>"; };
+		975AC84A21DC760800316C93 /* GXGridLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXGridLayout.h; sourceTree = "<group>"; };
+		975AC84B21DC760800316C93 /* GXGridLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXGridLayout.m; sourceTree = "<group>"; };
+		9774AD7221CB985600DD0827 /* GXFlowLayoutController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXFlowLayoutController.h; sourceTree = "<group>"; };
+		9774AD7321CB985600DD0827 /* GXFlowLayoutController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXFlowLayoutController.m; sourceTree = "<group>"; };
 		977C338F218D4ED000FAA144 /* GXTagTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXTagTextField.h; sourceTree = "<group>"; };
 		977C3390218D4ED000FAA144 /* GXTagTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXTagTextField.m; sourceTree = "<group>"; };
 		97A05E75218A9B25006A2CF8 /* GXAddTagToobar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXAddTagToobar.h; sourceTree = "<group>"; };
@@ -64,6 +77,13 @@
 		97A05FF8216F236000F49C01 /* GXTabarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXTabarController.h; sourceTree = "<group>"; };
 		97A05FFC216F2A9800F49C01 /* OCExampleController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCExampleController.h; sourceTree = "<group>"; };
 		97A05FFD216F2A9800F49C01 /* OCExampleController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCExampleController.m; sourceTree = "<group>"; };
+		97A0D00521C0B99100CBF9A1 /* GXTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXTestViewController.h; sourceTree = "<group>"; };
+		97A0D00621C0B99100CBF9A1 /* GXTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXTestViewController.m; sourceTree = "<group>"; };
+		97A3414521D1CAAB006DF0D2 /* GXLineLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXLineLayout.h; sourceTree = "<group>"; };
+		97A3414621D1CAAB006DF0D2 /* GXLineLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXLineLayout.m; sourceTree = "<group>"; };
+		97A3414D21D4DB36006DF0D2 /* GXPhotoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXPhotoCell.h; sourceTree = "<group>"; };
+		97A3414E21D4DB36006DF0D2 /* GXPhotoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXPhotoCell.m; sourceTree = "<group>"; };
+		97A3414F21D4DB36006DF0D2 /* GXPhotoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GXPhotoCell.xib; sourceTree = "<group>"; };
 		97C20BE1217D92AE00C78AAD /* MenuController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuController.h; sourceTree = "<group>"; };
 		97C20BE2217D92AE00C78AAD /* MenuController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuController.m; sourceTree = "<group>"; };
 		97C20BE6217D930100C78AAD /* MenuController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuController.xib; sourceTree = "<group>"; };
@@ -93,6 +113,7 @@
 		97FC0510218807A500B526F8 /* GXPostWordController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXPostWordController.m; sourceTree = "<group>"; };
 		97FC051421884FBC00B526F8 /* GXPlaceholderTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXPlaceholderTextView.h; sourceTree = "<group>"; };
 		97FC051521884FBC00B526F8 /* GXPlaceholderTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXPlaceholderTextView.m; sourceTree = "<group>"; };
+		9C8D510534E78F9435F53B1F /* libPods-GXLCodeRepository.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GXLCodeRepository.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,17 +121,47 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				381881636C015606B6444F98 /* libPods-GXLCodeRepository.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E5EA9C19A15B34E9C2632FC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0A071959F44494B971508652 /* Pods-GXLCodeRepository.debug.xcconfig */,
+				3F5DD05C2D861CBD99A0182A /* Pods-GXLCodeRepository.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		975AC84821DC71C700316C93 /* 流水布局基础上的变化 */ = {
+			isa = PBXGroup;
+			children = (
+				97A3414521D1CAAB006DF0D2 /* GXLineLayout.h */,
+				97A3414621D1CAAB006DF0D2 /* GXLineLayout.m */,
+			);
+			path = "流水布局基础上的变化";
+			sourceTree = "<group>";
+		};
+		975AC84921DC75B600316C93 /* 自己算的格子布局 */ = {
+			isa = PBXGroup;
+			children = (
+				975AC84A21DC760800316C93 /* GXGridLayout.h */,
+				975AC84B21DC760800316C93 /* GXGridLayout.m */,
+			);
+			path = "自己算的格子布局";
+			sourceTree = "<group>";
+		};
 		97A05FCE216F004300F49C01 = {
 			isa = PBXGroup;
 			children = (
 				97A05FD9216F004300F49C01 /* GXLCodeRepository */,
 				97A05FD8216F004300F49C01 /* Products */,
+				1E5EA9C19A15B34E9C2632FC /* Pods */,
+				A2DCE2F4E525FD6D3FE5FAB7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -170,6 +221,7 @@
 				97C20BF1217DF23000C78AAD /* 图片的圆角 */,
 				97EA166921806ABF00C20CD9 /* 其他窗口的创建 */,
 				97FC050E2188074800B526F8 /* 发段子 */,
+				97A86BCA21C792EF0084C219 /* 布局 */,
 			);
 			path = "UI控件";
 			sourceTree = "<group>";
@@ -182,6 +234,20 @@
 				97A05FFD216F2A9800F49C01 /* OCExampleController.m */,
 			);
 			path = "OC语法";
+			sourceTree = "<group>";
+		};
+		97A86BCA21C792EF0084C219 /* 布局 */ = {
+			isa = PBXGroup;
+			children = (
+				9774AD7221CB985600DD0827 /* GXFlowLayoutController.h */,
+				9774AD7321CB985600DD0827 /* GXFlowLayoutController.m */,
+				97A3414D21D4DB36006DF0D2 /* GXPhotoCell.h */,
+				97A3414E21D4DB36006DF0D2 /* GXPhotoCell.m */,
+				97A3414F21D4DB36006DF0D2 /* GXPhotoCell.xib */,
+				975AC84921DC75B600316C93 /* 自己算的格子布局 */,
+				975AC84821DC71C700316C93 /* 流水布局基础上的变化 */,
+			);
+			path = "布局";
 			sourceTree = "<group>";
 		};
 		97C20BE8217D936800C78AAD /* menuController使用 */ = {
@@ -254,6 +320,8 @@
 				97FC0510218807A500B526F8 /* GXPostWordController.m */,
 				972D9EE8218B0D790013B420 /* GXAddTagController.h */,
 				972D9EE9218B0D790013B420 /* GXAddTagController.m */,
+				97A0D00521C0B99100CBF9A1 /* GXTestViewController.h */,
+				97A0D00621C0B99100CBF9A1 /* GXTestViewController.m */,
 				97FC05172188516200B526F8 /* View */,
 			);
 			path = "发段子";
@@ -285,6 +353,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		A2DCE2F4E525FD6D3FE5FAB7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C8D510534E78F9435F53B1F /* libPods-GXLCodeRepository.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -292,9 +368,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 97A05FED216F004600F49C01 /* Build configuration list for PBXNativeTarget "GXLCodeRepository" */;
 			buildPhases = (
+				93A3E5B0D1F7038CD792622F /* [CP] Check Pods Manifest.lock */,
 				97A05FD3216F004300F49C01 /* Sources */,
 				97A05FD4216F004300F49C01 /* Frameworks */,
 				97A05FD5216F004300F49C01 /* Resources */,
+				C5CF44645969D279D9D658F6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -344,6 +422,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				97C20BE7217D930100C78AAD /* MenuController.xib in Resources */,
+				97A3415121D4DB36006DF0D2 /* GXPhotoCell.xib in Resources */,
 				97A05FE7216F004600F49C01 /* LaunchScreen.storyboard in Resources */,
 				97A05FE4216F004600F49C01 /* Assets.xcassets in Resources */,
 				97A05E7E218AFFAB006A2CF8 /* PostImage.bundle in Resources */,
@@ -357,6 +436,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		93A3E5B0D1F7038CD792622F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GXLCodeRepository-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5CF44645969D279D9D658F6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GXLCodeRepository/Pods-GXLCodeRepository-resources.sh",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GXLCodeRepository/Pods-GXLCodeRepository-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		97A05FD3216F004300F49C01 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -366,8 +484,10 @@
 				97A05FEA216F004600F49C01 /* main.m in Sources */,
 				97EA16762181CB5200C20CD9 /* GXSquareCell.m in Sources */,
 				97F1C7DB21930098009F7871 /* GXNavigationController.m in Sources */,
+				97A3415021D4DB36006DF0D2 /* GXPhotoCell.m in Sources */,
 				977C3391218D4ED000FAA144 /* GXTagTextField.m in Sources */,
 				97FC051621884FBC00B526F8 /* GXPlaceholderTextView.m in Sources */,
+				97A3414721D1CAAB006DF0D2 /* GXLineLayout.m in Sources */,
 				972D9EEA218B0D790013B420 /* GXAddTagController.m in Sources */,
 				97EA166D21806AF000C20CD9 /* GXTopWindowsController.m in Sources */,
 				97C20BEF217DF22000C78AAD /* GXCircleImageController.m in Sources */,
@@ -375,11 +495,14 @@
 				97FC0511218807A500B526F8 /* GXPostWordController.m in Sources */,
 				97A05FF2216F013E00F49C01 /* ContolViewController.m in Sources */,
 				97C20BEB217D93AD00C78AAD /* GXMenuLabel.m in Sources */,
+				9774AD7421CB985600DD0827 /* GXFlowLayoutController.m in Sources */,
 				97A05E77218A9B25006A2CF8 /* GXAddTagToobar.m in Sources */,
 				97A05FFE216F2A9800F49C01 /* OCExampleController.m in Sources */,
+				97A0D00721C0B99100CBF9A1 /* GXTestViewController.m in Sources */,
 				97EA167D2181E76000C20CD9 /* UIView+GXExtension.m in Sources */,
 				97A05FDC216F004300F49C01 /* AppDelegate.m in Sources */,
 				97EA167A2181E5A100C20CD9 /* GXFooterView.m in Sources */,
+				975AC84C21DC760800316C93 /* GXGridLayout.m in Sources */,
 				97EA1668218049B300C20CD9 /* GXConst.m in Sources */,
 				97362C082179A30D0092A6D1 /* AlertViewTEST.m in Sources */,
 				97EA16732181BDCA00C20CD9 /* GXSquareController.m in Sources */,
@@ -522,6 +645,7 @@
 		};
 		97A05FEE216F004600F49C01 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A071959F44494B971508652 /* Pods-GXLCodeRepository.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
@@ -534,19 +658,20 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.qualityshop.platformxxx;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qualityshop.platform;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = TESTPROVISION;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				PROVISIONING_PROFILE_SPECIFIER = qualityshop;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		97A05FEF216F004600F49C01 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F5DD05C2D861CBD99A0182A /* Pods-GXLCodeRepository.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = G583M5JELZ;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/GXLCodeRepository/Other/PrefixHeader.pch";
 				INFOPLIST_FILE = GXLCodeRepository/Other/Info.plist;
@@ -555,10 +680,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.qualityshop.platformxxx;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qualityshop.platform;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				PROVISIONING_PROFILE_SPECIFIER = qualityshop;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

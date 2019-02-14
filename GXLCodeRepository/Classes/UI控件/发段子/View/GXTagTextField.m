@@ -18,7 +18,6 @@
     !self.deleteBlock ? : self.deleteBlock();
     [super deleteBackward];
     NSLog(@"%@", self.text);
-    
 }
 
 @end

@@ -9,29 +9,38 @@
 #import "GXPostWordController.h"
 #import "GXPlaceholderTextView.h"
 #import "GXAddTagToobar.h"
+#import "GXTestViewController.h"
+#import "AppDelegate.h"
+
+typedef void (^block)(NSArray *);
 
 @interface GXPostWordController () <UITextViewDelegate>
 /** toolbar */
 @property (nonatomic, strong) GXAddTagToobar *toolbar;
+/** <#注释#> */
+@property (nonatomic, strong) GXPlaceholderTextView *textView;
+/** <#注释#> */
+@property (nonatomic, assign) BOOL fullscreen;
+/** <#注释#> */
+@property (nonatomic, copy) void (^TagBlock)(NSArray *tags);
 @end
-
 @implementation GXPostWordController
-#pragma mark - 设置导航栏的文字属性
+#pragma mark - 设置导航栏的文字属性e
 - (void)setupNavAttribut
 {
     // 设置导航标题文字大小. (UI_APPEARANCE_SELECTOR可统一设置)
     [self.navigationController.navigationBar setTitleTextAttributes:@{NSFontAttributeName : [UIFont boldSystemFontOfSize:24]}];
     
+    
+    /** 开始时候不能点击 */
+    self.navigationItem.rightBarButtonItem.enabled = NO;
     /** 右边的标题文字以及样式 */
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"发布" style:UIBarButtonItemStyleDone target:self action:@selector(post:)];
-    self.navigationItem.rightBarButtonItem.enabled = NO; // 开始时候不能点击
-    // 右边不能点颜色
     [self.navigationItem.rightBarButtonItem setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor lightGrayColor]} forState:UIControlStateDisabled];
-    // 右边文字颜色
     [self.navigationItem.rightBarButtonItem setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor blackColor]} forState:UIControlStateNormal];
-    [self.navigationItem.rightBarButtonItem setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor redColor]} forState:UIControlStateSelected];
-    //知识点:  要强制刷新一下, 不刷新设置的disable不会变颜色. (也可在viewDidAppear中设置, 但是不好看)
-    [self.navigationController.navigationBar layoutIfNeeded];
+    
+    //知识点:  如果是UI_APPEARANCE_SELECTOR统一设置, 要强制刷新一下, 不刷新有渲染问题
+//    [self.navigationController.navigationBar layoutIfNeeded];
     
      /** 左边的标题文字以及样式 */
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"取消" style:UIBarButtonItemStyleDone target:self action:@selector(cancle:)];
@@ -50,8 +59,10 @@
     // 设置textView
     [self setupTextView];
     
-    // 设置toolbar
+//     设置toolbar
     [self setupToolbar];
+    
+//    self.navigationController.interactivePopGestureRecognizer.delegate = nil;
 }
 
 - (void)setupToolbar
@@ -66,17 +77,17 @@
 #pragma mark - 设置输入框
 - (void)setupTextView
 {
-    GXPlaceholderTextView *textView = [[GXPlaceholderTextView alloc] initWithFrame:self.view.bounds];
-    textView.placeHolder = @"请输入文字";
-    textView.delegate = self;
-    [self.view addSubview:textView];
+    self.textView = [[GXPlaceholderTextView alloc] initWithFrame:self.view.bounds];
+    self.textView.placeHolder = @"把好玩的图片，好笑的段子或糗事发到这里，接受千万网友膜拜吧！发布违反国家法律内容的，我们将依法提交给有关部门处理。";
+    self.textView.placeHolderColor = [UIColor redColor];
+    self.textView.delegate = self;
+    [self.view addSubview:self.textView];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillChange:) name:UIKeyboardWillChangeFrameNotification object:nil];
 }
 
 - (void)keyboardWillChange:(NSNotification *)notification
 {
-    NSLog(@"%@", notification.userInfo);
     CGRect rect = [notification.userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue];
 //    self.toolbar.y = rect.origin.y - self.toolbar.height;
 //    NSLog(@"%@", NSStringFromCGRect(self.toolbar.frame));
@@ -111,6 +122,25 @@
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
 {
     [self.view endEditing:YES];
+}
+
+
+// 决定UIViewController可以支持哪些界面方向
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations
+{
+    return UIInterfaceOrientationMaskPortrait | UIInterfaceOrientationMaskLandscapeRight;
+}
+
+//是否自动旋转,返回YES可以自动旋转,返回NO禁止旋转
+- (BOOL)shouldAutorotate
+{
+    return YES;
+}
+
+//由模态推出的视图控制器 优先支持的屏幕方向
+- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation
+{
+    return UIInterfaceOrientationPortrait;
 }
 
 @end

@@ -52,7 +52,6 @@
     UIMenuItem *item3 = [[UIMenuItem alloc] initWithTitle:@"举报" action:@selector(report)];
     menu.menuItems = @[item1, item2, item3];
     
-    
     // menu控制的弹出的位置, 在哪个View上什么位置Rect
     [menu setTargetRect:self.bounds inView:self];
     
@@ -78,9 +77,6 @@
     }
 }
 
-
-
-
 /**
  * 注意点, 如果现实了下面的这些方法, 可以不用写上面的筛选了, 系统会根据具体实现的方法来判断, 应给显示什么
  */
@@ -104,8 +100,18 @@
 {
     UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
     self.text = pasteboard.string;
-
 }
 
 @end
+
+
+
+
+
+
+
+
+
+
+
 
