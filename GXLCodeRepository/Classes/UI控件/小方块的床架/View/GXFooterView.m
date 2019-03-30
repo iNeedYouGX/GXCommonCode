@@ -16,7 +16,7 @@
     if (self) {
         self.backgroundColor = [UIColor redColor];
         
-        [self createSquare:10];
+        [self createSquare:7];
     }
     return self;
 }

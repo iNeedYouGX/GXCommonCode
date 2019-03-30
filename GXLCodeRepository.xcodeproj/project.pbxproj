@@ -34,6 +34,13 @@
 		97C20BEF217DF22000C78AAD /* GXCircleImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97C20BED217DF22000C78AAD /* GXCircleImageController.m */; };
 		97C20BF0217DF22000C78AAD /* GXCircleImageController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97C20BEE217DF22000C78AAD /* GXCircleImageController.xib */; };
 		97C20BF3217DF28F00C78AAD /* image.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 97C20BF2217DF28F00C78AAD /* image.jpeg */; };
+		97DDF334224DBDCD00890F53 /* GXParentChildController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97DDF333224DBDCD00890F53 /* GXParentChildController.m */; };
+		97DDF336224DC50D00890F53 /* GXParentChildController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97DDF335224DC50D00890F53 /* GXParentChildController.xib */; };
+		97DDF33F224DC9A100890F53 /* XMGTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97DDF337224DC9A000890F53 /* XMGTwoViewController.m */; };
+		97DDF340224DC9A100890F53 /* XMGThreeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97DDF338224DC9A000890F53 /* XMGThreeViewController.xib */; };
+		97DDF341224DC9A100890F53 /* XMGOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97DDF33A224DC9A000890F53 /* XMGOneViewController.m */; };
+		97DDF342224DC9A100890F53 /* XMGTwoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97DDF33B224DC9A000890F53 /* XMGTwoViewController.xib */; };
+		97DDF343224DC9A100890F53 /* XMGThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97DDF33E224DC9A100890F53 /* XMGThreeViewController.m */; };
 		97EA1668218049B300C20CD9 /* GXConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 97EA1667218049B300C20CD9 /* GXConst.m */; };
 		97EA166D21806AF000C20CD9 /* GXTopWindowsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97EA166B21806AF000C20CD9 /* GXTopWindowsController.m */; };
 		97EA166E21806AF000C20CD9 /* GXTopWindowsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97EA166C21806AF000C20CD9 /* GXTopWindowsController.xib */; };
@@ -93,6 +100,17 @@
 		97C20BED217DF22000C78AAD /* GXCircleImageController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXCircleImageController.m; sourceTree = "<group>"; };
 		97C20BEE217DF22000C78AAD /* GXCircleImageController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GXCircleImageController.xib; sourceTree = "<group>"; };
 		97C20BF2217DF28F00C78AAD /* image.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image.jpeg; sourceTree = "<group>"; };
+		97DDF332224DBDCD00890F53 /* GXParentChildController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXParentChildController.h; sourceTree = "<group>"; };
+		97DDF333224DBDCD00890F53 /* GXParentChildController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXParentChildController.m; sourceTree = "<group>"; };
+		97DDF335224DC50D00890F53 /* GXParentChildController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GXParentChildController.xib; sourceTree = "<group>"; };
+		97DDF337224DC9A000890F53 /* XMGTwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGTwoViewController.m; sourceTree = "<group>"; };
+		97DDF338224DC9A000890F53 /* XMGThreeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XMGThreeViewController.xib; sourceTree = "<group>"; };
+		97DDF339224DC9A000890F53 /* XMGOneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGOneViewController.h; sourceTree = "<group>"; };
+		97DDF33A224DC9A000890F53 /* XMGOneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGOneViewController.m; sourceTree = "<group>"; };
+		97DDF33B224DC9A000890F53 /* XMGTwoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XMGTwoViewController.xib; sourceTree = "<group>"; };
+		97DDF33C224DC9A100890F53 /* XMGTwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGTwoViewController.h; sourceTree = "<group>"; };
+		97DDF33D224DC9A100890F53 /* XMGThreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGThreeViewController.h; sourceTree = "<group>"; };
+		97DDF33E224DC9A100890F53 /* XMGThreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGThreeViewController.m; sourceTree = "<group>"; };
 		97EA1666218049B300C20CD9 /* GXConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXConst.h; sourceTree = "<group>"; };
 		97EA1667218049B300C20CD9 /* GXConst.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXConst.m; sourceTree = "<group>"; };
 		97EA166A21806AF000C20CD9 /* GXTopWindowsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXTopWindowsController.h; sourceTree = "<group>"; };
@@ -215,6 +233,7 @@
 		97A05FFF216F427700F49C01 /* UI控件 */ = {
 			isa = PBXGroup;
 			children = (
+				97DDF330224CAF0000890F53 /* 父子控制器 */,
 				97FC051321884F4F00B526F8 /* 主控制器 */,
 				97EA16702181BDB600C20CD9 /* 小方块的床架 */,
 				97C20BE8217D936800C78AAD /* menuController使用 */,
@@ -271,6 +290,32 @@
 				97C20BEE217DF22000C78AAD /* GXCircleImageController.xib */,
 			);
 			path = "图片的圆角";
+			sourceTree = "<group>";
+		};
+		97DDF330224CAF0000890F53 /* 父子控制器 */ = {
+			isa = PBXGroup;
+			children = (
+				97DDF332224DBDCD00890F53 /* GXParentChildController.h */,
+				97DDF333224DBDCD00890F53 /* GXParentChildController.m */,
+				97DDF335224DC50D00890F53 /* GXParentChildController.xib */,
+				97DDF344224DCB3100890F53 /* 子控制 */,
+			);
+			path = "父子控制器";
+			sourceTree = "<group>";
+		};
+		97DDF344224DCB3100890F53 /* 子控制 */ = {
+			isa = PBXGroup;
+			children = (
+				97DDF339224DC9A000890F53 /* XMGOneViewController.h */,
+				97DDF33A224DC9A000890F53 /* XMGOneViewController.m */,
+				97DDF33D224DC9A100890F53 /* XMGThreeViewController.h */,
+				97DDF33E224DC9A100890F53 /* XMGThreeViewController.m */,
+				97DDF338224DC9A000890F53 /* XMGThreeViewController.xib */,
+				97DDF33C224DC9A100890F53 /* XMGTwoViewController.h */,
+				97DDF337224DC9A000890F53 /* XMGTwoViewController.m */,
+				97DDF33B224DC9A000890F53 /* XMGTwoViewController.xib */,
+			);
+			path = "子控制";
 			sourceTree = "<group>";
 		};
 		97EA16652180493D00C20CD9 /* 常量的整理 */ = {
@@ -421,6 +466,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97DDF336224DC50D00890F53 /* GXParentChildController.xib in Resources */,
+				97DDF342224DC9A100890F53 /* XMGTwoViewController.xib in Resources */,
 				97C20BE7217D930100C78AAD /* MenuController.xib in Resources */,
 				97A3415121D4DB36006DF0D2 /* GXPhotoCell.xib in Resources */,
 				97A05FE7216F004600F49C01 /* LaunchScreen.storyboard in Resources */,
@@ -430,6 +477,7 @@
 				97C20BF3217DF28F00C78AAD /* image.jpeg in Resources */,
 				97EA166E21806AF000C20CD9 /* GXTopWindowsController.xib in Resources */,
 				97A05E79218A9B31006A2CF8 /* GXAddTagToobar.xib in Resources */,
+				97DDF340224DC9A100890F53 /* XMGThreeViewController.xib in Resources */,
 				97C20BF0217DF22000C78AAD /* GXCircleImageController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -498,13 +546,17 @@
 				9774AD7421CB985600DD0827 /* GXFlowLayoutController.m in Sources */,
 				97A05E77218A9B25006A2CF8 /* GXAddTagToobar.m in Sources */,
 				97A05FFE216F2A9800F49C01 /* OCExampleController.m in Sources */,
+				97DDF343224DC9A100890F53 /* XMGThreeViewController.m in Sources */,
 				97A0D00721C0B99100CBF9A1 /* GXTestViewController.m in Sources */,
 				97EA167D2181E76000C20CD9 /* UIView+GXExtension.m in Sources */,
+				97DDF341224DC9A100890F53 /* XMGOneViewController.m in Sources */,
 				97A05FDC216F004300F49C01 /* AppDelegate.m in Sources */,
 				97EA167A2181E5A100C20CD9 /* GXFooterView.m in Sources */,
 				975AC84C21DC760800316C93 /* GXGridLayout.m in Sources */,
 				97EA1668218049B300C20CD9 /* GXConst.m in Sources */,
+				97DDF334224DBDCD00890F53 /* GXParentChildController.m in Sources */,
 				97362C082179A30D0092A6D1 /* AlertViewTEST.m in Sources */,
+				97DDF33F224DC9A100890F53 /* XMGTwoViewController.m in Sources */,
 				97EA16732181BDCA00C20CD9 /* GXSquareController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

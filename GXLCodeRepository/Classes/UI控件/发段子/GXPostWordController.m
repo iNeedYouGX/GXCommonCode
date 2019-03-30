@@ -103,7 +103,36 @@ typedef void (^block)(NSArray *);
 #pragma mark - 发段子
 - (void)post:(UIBarButtonItem *)item
 {
+//    GXTestViewController *vc = [[GXTestViewController alloc] init];
+//    [self presentViewController:vc animated:YES completion:nil];
+    AppDelegate * appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+    if (appDelegate.allowRotation) {
+        appDelegate.allowRotation =  NO;//设置竖屏
+        [self setupOrientation:NO];
+    } else {
+        appDelegate.allowRotation = YES;//设置横屏
+        [self setupOrientation:YES];
+    }
     
+   
+    
+    
+}
+
+- (void)setupOrientation:(BOOL)isPortrait{
+    if (isPortrait) {
+        NSNumber *resetOrientationTarget = [NSNumber numberWithInt:UIInterfaceOrientationUnknown];
+        [[UIDevice currentDevice] setValue:resetOrientationTarget forKey:@"orientation"];
+        
+        NSNumber *orientationTarget = [NSNumber numberWithInt:UIInterfaceOrientationLandscapeRight];
+        [[UIDevice currentDevice] setValue:orientationTarget forKey:@"orientation"];
+    }else{
+        NSNumber *resetOrientationTarget = [NSNumber numberWithInt:UIInterfaceOrientationUnknown];
+        [[UIDevice currentDevice] setValue:resetOrientationTarget forKey:@"orientation"];
+        
+        NSNumber *orientationTarget = [NSNumber numberWithInt:UIInterfaceOrientationPortrait];
+        [[UIDevice currentDevice] setValue:orientationTarget forKey:@"orientation"];
+    }
 }
 
 #pragma mark - 取消
@@ -140,7 +169,7 @@ typedef void (^block)(NSArray *);
 //由模态推出的视图控制器 优先支持的屏幕方向
 - (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation
 {
-    return UIInterfaceOrientationPortrait;
+    return UIInterfaceOrientationLandscapeLeft;
 }
 
 @end

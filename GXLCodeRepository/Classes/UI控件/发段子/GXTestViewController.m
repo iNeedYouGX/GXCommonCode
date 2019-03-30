@@ -22,14 +22,10 @@
     self.view.backgroundColor = [UIColor whiteColor];
     [self setupView];
     
-//
     //以监听UIApplicationDidChangeStatusBarOrientationNotification通知为例
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(handleStatusBarOrientationChange:) name:UIApplicationDidChangeStatusBarOrientationNotification object:nil];
-    
-    
- 
-    
 }
+
 //界面方向改变的处理
 - (void)handleStatusBarOrientationChange: (NSNotification *)notification{
     UIInterfaceOrientation interfaceOrientation = [[UIApplication sharedApplication] statusBarOrientation];
@@ -55,8 +51,6 @@
     }
 }
 
-
-
 - (void)setupView
 {
     self.v1 = [[UIView alloc] init];
@@ -75,8 +69,6 @@
     NSLog(@"%f", self.view.frame.size.width);
     CGFloat width = self.view.size.width;
     CGFloat height = self.view.size.height / 3.0;
-
-    
     
     UIInterfaceOrientation interfaceOrientation = [[UIApplication sharedApplication] statusBarOrientation];
     if (interfaceOrientation == UIInterfaceOrientationLandscapeLeft) {
@@ -88,22 +80,19 @@
         self.v2.frame = CGRectMake(0, CGRectGetMaxY(self.v1.frame), width, height);
         self.v3.frame = CGRectMake(0, CGRectGetMaxY(self.v2.frame), width, height);
     }
-    
 }
-
 
 //最后在dealloc中移除通知 和结束设备旋转的通知
-- (void)dealloc{
+- (void)dealloc {
     //...
-    [[NSNotificationCenter defaultCenter]removeObserver:self];
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
     [[UIDevice currentDevice] endGeneratingDeviceOrientationNotifications];
 }
-
 
 // 决定UIViewController可以支持哪些界面方向
 - (UIInterfaceOrientationMask)supportedInterfaceOrientations
 {
-    return UIInterfaceOrientationMaskLandscapeLeft | UIInterfaceOrientationMaskPortrait;
+    return UIInterfaceOrientationMaskAll;
 }
 
 //是否自动旋转,返回YES可以自动旋转,返回NO禁止旋转
@@ -117,7 +106,6 @@
 {
     return UIInterfaceOrientationPortrait;
 }
-
 
 
 @end

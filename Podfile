@@ -7,5 +7,6 @@ target 'GXLCodeRepository' do
 
   # Pods for GXLCodeRepository
   pod 'SVProgressHUD'
+  pod 'SDWebImage'
 
 end

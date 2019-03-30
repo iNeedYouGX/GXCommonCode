@@ -15,10 +15,11 @@
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
         self.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
         
-        UIImageView *bgView = [[UIImageView alloc] init];
-        bgView.image = [UIImage imageNamed:@"mainCellBackground"];
+        
+//        UIImageView *bgView = [[UIImageView alloc] init];
+//        bgView.image = [UIImage imageNamed:@"mainCellBackground"];
         // 技术点: backgroundView在contentView的下面
-        self.backgroundView = bgView;
+//        self.backgroundView = bgView;
         
         self.textLabel.textColor = [UIColor darkGrayColor];
         self.textLabel.font = [UIFont systemFontOfSize:16];

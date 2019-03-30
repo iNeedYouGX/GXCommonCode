@@ -41,8 +41,8 @@
     [self setupChildVc:[[ContolViewController alloc] init] title:@"UI控件展示" image:@"tabBar_essence_icon" selectedImage:@"tabBar_essence_click_icon"];
 
     [self setupChildVc:[[OCExampleController alloc] init] title:@"OC逻辑" image:@"tabBar_new_icon" selectedImage:@"tabBar_new_click_icon"];
+    
 }
-
 
 - (void)setupChildVc:(UIViewController *)vc title:(NSString *)title image:(NSString *)image selectedImage:(NSString *)selectedImage
 {
@@ -57,16 +57,15 @@
     [self addChildViewController:nav];
 }
 
-
-
-
 #pragma mark - 控制屏幕旋转方法
 - (BOOL)shouldAutorotate{
     return [self.selectedViewController shouldAutorotate];
 }
+
 - (UIInterfaceOrientationMask)supportedInterfaceOrientations{
     return [self.selectedViewController supportedInterfaceOrientations];
 }
+
 - (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation{
     return [self.selectedViewController preferredInterfaceOrientationForPresentation];
 }

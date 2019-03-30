@@ -40,7 +40,11 @@
                        },
                      @{@"title" : @"布局",
                        @"control" : @"GXFlowLayoutController"
-                       }];
+                       },
+                     @{@"title" : @"父子控制器",
+                       @"control" : @"GXParentChildController"
+                       },
+                     ];
     }
     return _dataArr;
 }
