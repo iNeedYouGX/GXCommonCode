@@ -42,6 +42,6 @@
     self.showingVc = self.allVces[index];
     self.showingVc.view.frame = CGRectMake(0, 64 + 44, self.view.frame.size.width, self.view.frame.size.height - 64 - 44);
     [self.view addSubview:self.showingVc.view];
-}
+} 
 
 @end
