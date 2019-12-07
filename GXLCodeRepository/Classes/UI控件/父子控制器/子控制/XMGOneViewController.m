@@ -17,7 +17,6 @@
 NSString *ID = @"one";
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:ID];
 }
 
@@ -36,5 +35,10 @@ NSString *ID = @"one";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
     cell.textLabel.text = [NSString stringWithFormat:@"oneoneone - %zd", indexPath.row];
     return cell;
+}
+
+- (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
+{
+    NSLog(@"%s", __func__);
 }
 @end

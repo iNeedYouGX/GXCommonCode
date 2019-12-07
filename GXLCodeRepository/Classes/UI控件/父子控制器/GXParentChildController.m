@@ -15,33 +15,48 @@
 /** 正在显示的控制器 */
 @property (nonatomic, weak) UIViewController *showingVc;
 
-/** 存放所有控制器的数组 */
-@property (nonatomic, strong) NSArray *allVces;
 @end
 
 @implementation GXParentChildController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    self.allVces = @[
-                     [[XMGOneViewController alloc] init],
-                     [[XMGTwoViewController alloc] init],
-                     [[XMGThreeViewController alloc] init]
-                     ];
+
+    [self addChildViewController:[[XMGOneViewController alloc] init]];
+    [self addChildViewController:[[XMGTwoViewController alloc] init]];
+    [self addChildViewController:[[XMGThreeViewController alloc] init]];
 }
 
 - (IBAction)buttonClick:(UIButton *)button {
-    // 移除其他控制器的view
-    [self.showingVc.view removeFromSuperview];
-    
     // 获得控制器的位置（索引）
     NSUInteger index = [button.superview.subviews indexOfObject:button];
-    
+    // 上一个索引
+    NSInteger lastIndex = [self.childViewControllers indexOfObject:self.showingVc];
+    if (index == lastIndex) return;
+
+    // 移除其他控制器的view
+    [self.showingVc.view removeFromSuperview];
+
     // 添加控制器的view
-    self.showingVc = self.allVces[index];
+    self.showingVc = self.childViewControllers[index];
     self.showingVc.view.frame = CGRectMake(0, 64 + 44, self.view.frame.size.width, self.view.frame.size.height - 64 - 44);
     [self.view addSubview:self.showingVc.view];
-} 
+
+    // 添加动画
+    CATransition *animation = [CATransition animation];
+    animation.type = @"cube";
+    if (index < lastIndex) {
+        animation.subtype = kCATransitionFromRight;
+    } else {
+        animation.subtype = kCATransitionFromLeft;
+    }
+    //    animation.duration = 1.0;
+    [self.view.layer addAnimation:animation forKey:nil];
+}
+
+- (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
+{
+    NSLog(@"%s", __func__);
+}
 
 @end

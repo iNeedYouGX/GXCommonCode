@@ -44,6 +44,11 @@
                      @{@"title" : @"父子控制器",
                        @"control" : @"GXParentChildController"
                        },
+                     @{@"title" : @"网易新闻首页",
+                       @"control" : @"GXHomeViewController"
+                       },
+                     @{@"title" : @"RAC的使用",
+                       @"control" : @"GXRACTestController"}
                      ];
     }
     return _dataArr;

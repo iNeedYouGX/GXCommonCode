@@ -8,11 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		381881636C015606B6444F98 /* libPods-GXLCodeRepository.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C8D510534E78F9435F53B1F /* libPods-GXLCodeRepository.a */; };
+		970E617C22B8B9D400E68BE3 /* GXRACTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 970E617B22B8B9D400E68BE3 /* GXRACTestController.m */; };
 		972D9EEA218B0D790013B420 /* GXAddTagController.m in Sources */ = {isa = PBXBuildFile; fileRef = 972D9EE9218B0D790013B420 /* GXAddTagController.m */; };
 		97362C082179A30D0092A6D1 /* AlertViewTEST.m in Sources */ = {isa = PBXBuildFile; fileRef = 97362C072179A30D0092A6D1 /* AlertViewTEST.m */; };
+		973D057B22A7A93000186571 /* XMGSocialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 973D057A22A7A93000186571 /* XMGSocialViewController.m */; };
+		9746574022BB59A2001AFCF0 /* RACPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 9746573F22BB59A2001AFCF0 /* RACPerson.m */; };
 		975AC84C21DC760800316C93 /* GXGridLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 975AC84B21DC760800316C93 /* GXGridLayout.m */; };
 		9774AD7421CB985600DD0827 /* GXFlowLayoutController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9774AD7321CB985600DD0827 /* GXFlowLayoutController.m */; };
 		977C3391218D4ED000FAA144 /* GXTagTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 977C3390218D4ED000FAA144 /* GXTagTextField.m */; };
+		979585292293E9E3005FC54D /* GXPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 979585282293E9E3005FC54D /* GXPerson.m */; };
 		97A05E77218A9B25006A2CF8 /* GXAddTagToobar.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A05E76218A9B25006A2CF8 /* GXAddTagToobar.m */; };
 		97A05E79218A9B31006A2CF8 /* GXAddTagToobar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97A05E78218A9B31006A2CF8 /* GXAddTagToobar.xib */; };
 		97A05E7E218AFFAB006A2CF8 /* PostImage.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 97A05E7D218AFFAB006A2CF8 /* PostImage.bundle */; };
@@ -34,6 +38,8 @@
 		97C20BEF217DF22000C78AAD /* GXCircleImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97C20BED217DF22000C78AAD /* GXCircleImageController.m */; };
 		97C20BF0217DF22000C78AAD /* GXCircleImageController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97C20BEE217DF22000C78AAD /* GXCircleImageController.xib */; };
 		97C20BF3217DF28F00C78AAD /* image.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 97C20BF2217DF28F00C78AAD /* image.jpeg */; };
+		97D0C62E2360582B00F3B994 /* CZGuideController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97D0C62C2360582B00F3B994 /* CZGuideController.m */; };
+		97D489D222A6A1D900FD4EC7 /* GXHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97D489D122A6A1D900FD4EC7 /* GXHomeViewController.m */; };
 		97DDF334224DBDCD00890F53 /* GXParentChildController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97DDF333224DBDCD00890F53 /* GXParentChildController.m */; };
 		97DDF336224DC50D00890F53 /* GXParentChildController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97DDF335224DC50D00890F53 /* GXParentChildController.xib */; };
 		97DDF33F224DC9A100890F53 /* XMGTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97DDF337224DC9A000890F53 /* XMGTwoViewController.m */; };
@@ -51,21 +57,30 @@
 		97F1C7DB21930098009F7871 /* GXNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97F1C7DA21930098009F7871 /* GXNavigationController.m */; };
 		97FC0511218807A500B526F8 /* GXPostWordController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97FC0510218807A500B526F8 /* GXPostWordController.m */; };
 		97FC051621884FBC00B526F8 /* GXPlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 97FC051521884FBC00B526F8 /* GXPlaceholderTextView.m */; };
+		97FEBF2E22D49DFF007BF592 /* download.plist in Resources */ = {isa = PBXBuildFile; fileRef = 97FEBF2D22D49DFF007BF592 /* download.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0A071959F44494B971508652 /* Pods-GXLCodeRepository.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GXLCodeRepository.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GXLCodeRepository/Pods-GXLCodeRepository.debug.xcconfig"; sourceTree = "<group>"; };
 		3F5DD05C2D861CBD99A0182A /* Pods-GXLCodeRepository.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GXLCodeRepository.release.xcconfig"; path = "Pods/Target Support Files/Pods-GXLCodeRepository/Pods-GXLCodeRepository.release.xcconfig"; sourceTree = "<group>"; };
+		970E617A22B8B9D400E68BE3 /* GXRACTestController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXRACTestController.h; sourceTree = "<group>"; };
+		970E617B22B8B9D400E68BE3 /* GXRACTestController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXRACTestController.m; sourceTree = "<group>"; };
 		972D9EE8218B0D790013B420 /* GXAddTagController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXAddTagController.h; sourceTree = "<group>"; };
 		972D9EE9218B0D790013B420 /* GXAddTagController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXAddTagController.m; sourceTree = "<group>"; };
 		97362C062179A30D0092A6D1 /* AlertViewTEST.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlertViewTEST.h; sourceTree = "<group>"; };
 		97362C072179A30D0092A6D1 /* AlertViewTEST.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlertViewTEST.m; sourceTree = "<group>"; };
+		973D057922A7A93000186571 /* XMGSocialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGSocialViewController.h; sourceTree = "<group>"; };
+		973D057A22A7A93000186571 /* XMGSocialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGSocialViewController.m; sourceTree = "<group>"; };
+		9746573E22BB59A2001AFCF0 /* RACPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RACPerson.h; sourceTree = "<group>"; };
+		9746573F22BB59A2001AFCF0 /* RACPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACPerson.m; sourceTree = "<group>"; };
 		975AC84A21DC760800316C93 /* GXGridLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXGridLayout.h; sourceTree = "<group>"; };
 		975AC84B21DC760800316C93 /* GXGridLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXGridLayout.m; sourceTree = "<group>"; };
 		9774AD7221CB985600DD0827 /* GXFlowLayoutController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXFlowLayoutController.h; sourceTree = "<group>"; };
 		9774AD7321CB985600DD0827 /* GXFlowLayoutController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXFlowLayoutController.m; sourceTree = "<group>"; };
 		977C338F218D4ED000FAA144 /* GXTagTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXTagTextField.h; sourceTree = "<group>"; };
 		977C3390218D4ED000FAA144 /* GXTagTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXTagTextField.m; sourceTree = "<group>"; };
+		979585272293E9E3005FC54D /* GXPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXPerson.h; sourceTree = "<group>"; };
+		979585282293E9E3005FC54D /* GXPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXPerson.m; sourceTree = "<group>"; };
 		97A05E75218A9B25006A2CF8 /* GXAddTagToobar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXAddTagToobar.h; sourceTree = "<group>"; };
 		97A05E76218A9B25006A2CF8 /* GXAddTagToobar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXAddTagToobar.m; sourceTree = "<group>"; };
 		97A05E78218A9B31006A2CF8 /* GXAddTagToobar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GXAddTagToobar.xib; sourceTree = "<group>"; };
@@ -100,6 +115,10 @@
 		97C20BED217DF22000C78AAD /* GXCircleImageController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXCircleImageController.m; sourceTree = "<group>"; };
 		97C20BEE217DF22000C78AAD /* GXCircleImageController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GXCircleImageController.xib; sourceTree = "<group>"; };
 		97C20BF2217DF28F00C78AAD /* image.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image.jpeg; sourceTree = "<group>"; };
+		97D0C62C2360582B00F3B994 /* CZGuideController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZGuideController.m; sourceTree = "<group>"; };
+		97D0C62D2360582B00F3B994 /* CZGuideController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZGuideController.h; sourceTree = "<group>"; };
+		97D489D022A6A1D900FD4EC7 /* GXHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXHomeViewController.h; sourceTree = "<group>"; };
+		97D489D122A6A1D900FD4EC7 /* GXHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXHomeViewController.m; sourceTree = "<group>"; };
 		97DDF332224DBDCD00890F53 /* GXParentChildController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXParentChildController.h; sourceTree = "<group>"; };
 		97DDF333224DBDCD00890F53 /* GXParentChildController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXParentChildController.m; sourceTree = "<group>"; };
 		97DDF335224DC50D00890F53 /* GXParentChildController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GXParentChildController.xib; sourceTree = "<group>"; };
@@ -131,6 +150,7 @@
 		97FC0510218807A500B526F8 /* GXPostWordController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXPostWordController.m; sourceTree = "<group>"; };
 		97FC051421884FBC00B526F8 /* GXPlaceholderTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXPlaceholderTextView.h; sourceTree = "<group>"; };
 		97FC051521884FBC00B526F8 /* GXPlaceholderTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXPlaceholderTextView.m; sourceTree = "<group>"; };
+		97FEBF2D22D49DFF007BF592 /* download.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = download.plist; sourceTree = "<group>"; };
 		9C8D510534E78F9435F53B1F /* libPods-GXLCodeRepository.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GXLCodeRepository.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -153,6 +173,17 @@
 				3F5DD05C2D861CBD99A0182A /* Pods-GXLCodeRepository.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		970E617922B8B70D00E68BE3 /* RAC的使用 */ = {
+			isa = PBXGroup;
+			children = (
+				970E617A22B8B9D400E68BE3 /* GXRACTestController.h */,
+				970E617B22B8B9D400E68BE3 /* GXRACTestController.m */,
+				9746573E22BB59A2001AFCF0 /* RACPerson.h */,
+				9746573F22BB59A2001AFCF0 /* RACPerson.m */,
+			);
+			path = "RAC的使用";
 			sourceTree = "<group>";
 		};
 		975AC84821DC71C700316C93 /* 流水布局基础上的变化 */ = {
@@ -224,6 +255,7 @@
 		97A05FFB216F29B600F49C01 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				97FEBF2D22D49DFF007BF592 /* download.plist */,
 				97A06000216F428500F49C01 /* OC语法 */,
 				97A05FFF216F427700F49C01 /* UI控件 */,
 			);
@@ -233,7 +265,9 @@
 		97A05FFF216F427700F49C01 /* UI控件 */ = {
 			isa = PBXGroup;
 			children = (
+				97D0C62B2360580800F3B994 /* 新人引导页 */,
 				97FC051321884F4F00B526F8 /* 主控制器 */,
+				970E617922B8B70D00E68BE3 /* RAC的使用 */,
 				97DDF330224CAF0000890F53 /* 父子控制器 */,
 				97EA16702181BDB600C20CD9 /* 小方块的床架 */,
 				97C20BE8217D936800C78AAD /* menuController使用 */,
@@ -241,6 +275,7 @@
 				97EA166921806ABF00C20CD9 /* 其他窗口的创建 */,
 				97FC050E2188074800B526F8 /* 发段子 */,
 				97A86BCA21C792EF0084C219 /* 布局 */,
+				97D489CF22A6A13F00FD4EC7 /* 网易新闻首页 */,
 			);
 			path = "UI控件";
 			sourceTree = "<group>";
@@ -288,8 +323,30 @@
 				97C20BEC217DF22000C78AAD /* GXCircleImageController.h */,
 				97C20BED217DF22000C78AAD /* GXCircleImageController.m */,
 				97C20BEE217DF22000C78AAD /* GXCircleImageController.xib */,
+				979585272293E9E3005FC54D /* GXPerson.h */,
+				979585282293E9E3005FC54D /* GXPerson.m */,
 			);
 			path = "图片的圆角";
+			sourceTree = "<group>";
+		};
+		97D0C62B2360580800F3B994 /* 新人引导页 */ = {
+			isa = PBXGroup;
+			children = (
+				97D0C62D2360582B00F3B994 /* CZGuideController.h */,
+				97D0C62C2360582B00F3B994 /* CZGuideController.m */,
+			);
+			path = "新人引导页";
+			sourceTree = "<group>";
+		};
+		97D489CF22A6A13F00FD4EC7 /* 网易新闻首页 */ = {
+			isa = PBXGroup;
+			children = (
+				973D057922A7A93000186571 /* XMGSocialViewController.h */,
+				973D057A22A7A93000186571 /* XMGSocialViewController.m */,
+				97D489D022A6A1D900FD4EC7 /* GXHomeViewController.h */,
+				97D489D122A6A1D900FD4EC7 /* GXHomeViewController.m */,
+			);
+			path = "网易新闻首页";
 			sourceTree = "<group>";
 		};
 		97DDF330224CAF0000890F53 /* 父子控制器 */ = {
@@ -472,6 +529,7 @@
 				97A3415121D4DB36006DF0D2 /* GXPhotoCell.xib in Resources */,
 				97A05FE7216F004600F49C01 /* LaunchScreen.storyboard in Resources */,
 				97A05FE4216F004600F49C01 /* Assets.xcassets in Resources */,
+				97FEBF2E22D49DFF007BF592 /* download.plist in Resources */,
 				97A05E7E218AFFAB006A2CF8 /* PostImage.bundle in Resources */,
 				97A05FE2216F004300F49C01 /* Main.storyboard in Resources */,
 				97C20BF3217DF28F00C78AAD /* image.jpeg in Resources */,
@@ -529,10 +587,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				97C20BE3217D92AE00C78AAD /* MenuController.m in Sources */,
+				9746574022BB59A2001AFCF0 /* RACPerson.m in Sources */,
 				97A05FEA216F004600F49C01 /* main.m in Sources */,
 				97EA16762181CB5200C20CD9 /* GXSquareCell.m in Sources */,
 				97F1C7DB21930098009F7871 /* GXNavigationController.m in Sources */,
 				97A3415021D4DB36006DF0D2 /* GXPhotoCell.m in Sources */,
+				970E617C22B8B9D400E68BE3 /* GXRACTestController.m in Sources */,
 				977C3391218D4ED000FAA144 /* GXTagTextField.m in Sources */,
 				97FC051621884FBC00B526F8 /* GXPlaceholderTextView.m in Sources */,
 				97A3414721D1CAAB006DF0D2 /* GXLineLayout.m in Sources */,
@@ -541,6 +601,7 @@
 				97C20BEF217DF22000C78AAD /* GXCircleImageController.m in Sources */,
 				97A05FF9216F236000F49C01 /* GXTabarController.m in Sources */,
 				97FC0511218807A500B526F8 /* GXPostWordController.m in Sources */,
+				979585292293E9E3005FC54D /* GXPerson.m in Sources */,
 				97A05FF2216F013E00F49C01 /* ContolViewController.m in Sources */,
 				97C20BEB217D93AD00C78AAD /* GXMenuLabel.m in Sources */,
 				9774AD7421CB985600DD0827 /* GXFlowLayoutController.m in Sources */,
@@ -550,13 +611,16 @@
 				97A0D00721C0B99100CBF9A1 /* GXTestViewController.m in Sources */,
 				97EA167D2181E76000C20CD9 /* UIView+GXExtension.m in Sources */,
 				97DDF341224DC9A100890F53 /* XMGOneViewController.m in Sources */,
+				97D0C62E2360582B00F3B994 /* CZGuideController.m in Sources */,
 				97A05FDC216F004300F49C01 /* AppDelegate.m in Sources */,
+				97D489D222A6A1D900FD4EC7 /* GXHomeViewController.m in Sources */,
 				97EA167A2181E5A100C20CD9 /* GXFooterView.m in Sources */,
 				975AC84C21DC760800316C93 /* GXGridLayout.m in Sources */,
 				97EA1668218049B300C20CD9 /* GXConst.m in Sources */,
 				97DDF334224DBDCD00890F53 /* GXParentChildController.m in Sources */,
 				97362C082179A30D0092A6D1 /* AlertViewTEST.m in Sources */,
 				97DDF33F224DC9A100890F53 /* XMGTwoViewController.m in Sources */,
+				973D057B22A7A93000186571 /* XMGSocialViewController.m in Sources */,
 				97EA16732181BDCA00C20CD9 /* GXSquareController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -710,9 +774,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.qualityshop.platform;
+				PRODUCT_BUNDLE_IDENTIFIER = com.testtest.platform;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = qualityshop;
+				PROVISIONING_PROFILE_SPECIFIER = GXTEXTProvisioning;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -732,9 +796,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.qualityshop.platform;
+				PRODUCT_BUNDLE_IDENTIFIER = com.testtest.platform;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = qualityshop;
+				PROVISIONING_PROFILE_SPECIFIER = GXTEXTProvisioning;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

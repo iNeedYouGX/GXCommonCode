@@ -37,16 +37,15 @@
 - (NSArray<UICollectionViewLayoutAttributes *> *)layoutAttributesForElementsInRect:(CGRect)rect
 {
     NSArray *arr = [super layoutAttributesForElementsInRect:rect];
-    // 计算collectView中心点的差值
+    // 计算collectView中心点o/[[['差值
     CGFloat centerX = self.collectionView.contentOffset.x + self.collectionView.size.width * 0.5;
     
     for (UICollectionViewLayoutAttributes *attr in arr) {
         CGFloat detal = ABS(attr.center.x - centerX);
         
         // 根据间距值来, 计算缩放比例
-        CGFloat scale = 1 - detal / self.collectionView.width;
-//        NSLog(@"%f", scale);
-
+        CGFloat scale = 1 - detal / self.collectionView.width * 0.4;
+        NSLog(@"%f", scale);
         attr.transform = CGAffineTransformMakeScale(scale, scale);
     }
     return arr;

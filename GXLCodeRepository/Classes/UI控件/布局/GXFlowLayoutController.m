@@ -24,7 +24,7 @@ static NSString *ID = @"PhotoCell";
      1.  创建布局, 默认排布像流水一样的布局
      */
     GXLineLayout *flowLayout = [[GXLineLayout alloc] init];
-    flowLayout.itemSize = CGSizeMake(200, 200); // 小格子的大小
+    flowLayout.itemSize = CGSizeMake(200, 300); // 小格子的大小
     flowLayout.scrollDirection = UICollectionViewScrollDirectionHorizontal; // 滚动的方向
     
     /**

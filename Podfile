@@ -8,5 +8,6 @@ target 'GXLCodeRepository' do
   # Pods for GXLCodeRepository
   pod 'SVProgressHUD'
   pod 'SDWebImage'
+  pod 'Masonry'
 
 end

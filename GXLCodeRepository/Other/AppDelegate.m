@@ -29,7 +29,7 @@
     if (_allowRotation == YES) {
         return UIInterfaceOrientationMaskLandscapeRight;
     }else{
-        return (UIInterfaceOrientationMaskPortrait);
+        return (UIInterfaceOrientationMaskAll);
     }
 }
 
