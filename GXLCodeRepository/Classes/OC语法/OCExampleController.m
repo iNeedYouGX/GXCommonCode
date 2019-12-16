@@ -15,6 +15,7 @@
 
 @implementation OCExampleController
 
+// 初始化
 - (NSMutableArray *)viewsArr
 {
     if (_viewsArr == nil) {
