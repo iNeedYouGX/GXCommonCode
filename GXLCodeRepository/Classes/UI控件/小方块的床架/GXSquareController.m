@@ -21,23 +21,23 @@ static NSString *SquareID = @"SquareID";
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor grayColor];
-    
-    
+
     // 注册tabeleView
     [self.tableView registerClass:[GXSquareCell class] forCellReuseIdentifier:SquareID];
+    // 注册tableViewHeaderView
+    [self.tableView registerClass:[UITableViewHeaderFooterView class] forHeaderFooterViewReuseIdentifier:@"sectionHeaderView"];
+    [self.tableView registerClass:[UITableViewHeaderFooterView class] forHeaderFooterViewReuseIdentifier:@"sectionFooterView"];
     // cell下面的横线
 //    self.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
 
     // 调整footer和header
-    self.tableView.sectionHeaderHeight = 20;
-    self.tableView.sectionFooterHeight = 10;
-    
-    
+    self.tableView.sectionHeaderHeight = 35;
+    self.tableView.sectionFooterHeight = 35;
+
     // 设置footerView
     self.tableView.tableFooterView = [[GXFooterView alloc] init];
     self.tableView.tableHeaderView = [[GXFooterView alloc] init];
-    
-    
+
     // 调整inset
 //    self.tableView.contentInset = UIEdgeInsetsMake(-25, 0, 0, 0);
 }
@@ -50,35 +50,60 @@ static NSString *SquareID = @"SquareID";
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 1;
+    return 4;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     GXSquareCell *cell = [tableView dequeueReusableCellWithIdentifier:SquareID];
     if (indexPath.section == 0) {
-        cell.textLabel.text = @"登录/注册";
+        cell.textLabel.text = [NSString stringWithFormat:@"我是第%ld个section的第%ld个cell", indexPath.section, indexPath.row];
         cell.imageView.image = [UIImage imageNamed:@"tabBar_me_click_icon"];
-        //        cell.contentView.backgroundColor = [UIColor redColor];
     } else if (indexPath.section == 1) {
-        cell.textLabel.text = @"离线下载";
-        //        cell.contentView.backgroundColor = [UIColor greenColor];
+        cell.textLabel.text = [NSString stringWithFormat:@"我是第%ld个section的第%ld个cell", indexPath.section, indexPath.row];;
     }
     return cell;
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
-    UIView *sectionHeaderView = [[UIView alloc] init];
-    sectionHeaderView.backgroundColor = [UIColor purpleColor];
+    UITableViewHeaderFooterView *sectionHeaderView = [tableView dequeueReusableHeaderFooterViewWithIdentifier:@"sectionHeaderView"];
+    sectionHeaderView.contentView.backgroundColor = [UIColor purpleColor];
+    sectionHeaderView.height = tableView.sectionFooterHeight;
+    
+    UILabel *label = [sectionHeaderView viewWithTag:100];
+    if (label == nil) {
+        label = [[UILabel alloc] init];
+        label.tag = 100;
+        label.font = [UIFont systemFontOfSize:14 weight:2.0];
+        [sectionHeaderView addSubview:label];
+    }
+    label.text = [NSString stringWithFormat:@"我是第%ld个section的HeaderInSection", section];
+    [label sizeToFit];
+    label.centerY = tableView.sectionHeaderHeight / 2.0;
+
     return sectionHeaderView;
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
 {
-    UIView *sectionFooterView = [[UIView alloc] init];
-    sectionFooterView.backgroundColor = [UIColor orangeColor];
+    UITableViewHeaderFooterView *sectionFooterView = [tableView dequeueReusableHeaderFooterViewWithIdentifier:@"sectionFooterView"];
+    sectionFooterView.contentView.backgroundColor = [UIColor orangeColor];
+    sectionFooterView.height = tableView.sectionFooterHeight;
+
+    UILabel *label = [sectionFooterView viewWithTag:100];
+    if (label == nil) {
+        label = [[UILabel alloc] init];
+        label.tag = 100;
+        label.font = [UIFont systemFontOfSize:14 weight:2.0];
+        [sectionFooterView addSubview:label];
+    }
+    label.text = [NSString stringWithFormat:@"我是第%ld个section的FooterInSection", section];
+    [label sizeToFit];
+    label.centerY = tableView.sectionHeaderHeight / 2.0;
+
     return sectionFooterView;
 }
+
 
 @end

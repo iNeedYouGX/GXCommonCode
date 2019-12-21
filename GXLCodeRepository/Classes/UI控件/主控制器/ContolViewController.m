@@ -20,19 +20,19 @@
 - (NSArray *)dataArr
 {
     if (_dataArr == nil) {
-        _dataArr = @[@{@"title" : @"alert弹框",
+        _dataArr = @[@{@"title" : @"弹框的创建",
                        @"control" : @"AlertViewTEST"
                        },
-                     @{@"title" : @"menuController的使用",
+                     @{@"title" : @"menuController的创建",
                        @"control" : @"MenuController"
                        },
-                     @{@"title" : @"图片的圆角",
+                     @{@"title" : @"切圆角的方法",
                        @"control" : @"GXCircleImageController"
                        },
-                     @{@"title" : @"其他窗口的创建",
+                     @{@"title" : @"UIWindow的创建",
                        @"control" : @"GXTopWindowsController"
                        },
-                     @{@"title" : @"小方块的创建",
+                     @{@"title" : @"UITableView的创建",
                        @"control" : @"GXSquareController"
                        },
                      @{@"title" : @"发段子",
@@ -48,7 +48,11 @@
                        @"control" : @"GXHomeViewController"
                        },
                      @{@"title" : @"RAC的使用",
-                       @"control" : @"GXRACTestController"}
+                       @"control" : @"GXRACTestController"
+                        },
+                     @{@"title" : @"轮播图使用",
+                       @"control" : @"GXScrollImageView"
+                        }
                      ];
     }
     return _dataArr;
@@ -71,6 +75,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"ID"];
+    cell.textLabel.font = [UIFont boldSystemFontOfSize:16];
     cell.textLabel.text = [self.dataArr[indexPath.row] objectForKey:@"title"];
     return cell;
 }
