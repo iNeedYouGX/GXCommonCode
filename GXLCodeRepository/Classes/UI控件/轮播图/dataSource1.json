@@ -1,0 +1,62 @@
+[
+    {
+        "goodsType": 1,
+        "img": "https://img.alicdn.com/bao/uploaded/i4/740529586/O1CN01a5CMcS2KgRGIruwRN_!!0-item_pic.jpg",
+        "actualPrice": "59",
+        "couponPrice": 50,
+        "otherGoodsId": "12476497339",
+        "otherName": "飞科剃须刀电动智能刮胡刀男士充电式正品全身水洗正品刮胡子刀头",
+        "otherPrice": "109",
+        "shopName": "豪翔电器专营店",
+        "volume": 1566,
+        "commissionRate": 30,
+        "fee": "8.85",
+        "buyPrice": "50.15",
+        "buyRate": "4.7"
+    },
+    {
+        "goodsType": 1,
+        "img": "https://img.alicdn.com/bao/uploaded/i2/711139120/O1CN01kSXM022HF0e7qLcHC_!!711139120.jpg",
+        "actualPrice": "18",
+        "couponPrice": 40,
+        "otherGoodsId": "594378959662",
+        "otherName": "毛衣服修剪器剃毛机打去除毛器剃吸除刮毛球充电动式打球起求。",
+        "otherPrice": "58",
+        "shopName": "紫沂家居生活馆",
+        "volume": 189,
+        "commissionRate": 21.1,
+        "fee": "1.9",
+        "buyPrice": "16.11",
+        "buyRate": "2.8"
+    },
+    {
+        "goodsType": 1,
+        "img": "https://img.alicdn.com/bao/uploaded/i1/3002204399/O1CN01bzxiV91iMms6FGbXk_!!3002204399-0-pixelsss.jpg",
+        "actualPrice": "178",
+        "couponPrice": 0,
+        "otherGoodsId": "566827913248",
+        "otherName": "小米米家电动剃须刀男三头刀头防水充电便携式迷你S500刮胡刀正品",
+        "otherPrice": "178",
+        "shopName": "小米征诚创新专卖店",
+        "volume": 103,
+        "commissionRate": 1.9,
+        "fee": "1.7",
+        "buyPrice": "176.31",
+        "buyRate": "10.0"
+    },
+    {
+        "goodsType": 1,
+        "img": "https://img.alicdn.com/bao/uploaded/i2/1645598135/O1CN01PgLOSR29xsZX9mYmB_!!0-item_pic.jpg",
+        "actualPrice": "428",
+        "couponPrice": 0,
+        "otherGoodsId": "568651473452",
+        "otherName": "科德士980电推子理发器电推剪充电式电动剃头刀剪头发廊专业专用",
+        "otherPrice": "428",
+        "shopName": "codos科德士旗舰店",
+        "volume": 60,
+        "commissionRate": 2,
+        "fee": "4.28",
+        "buyPrice": "423.72",
+        "buyRate": "9.9"
+    }
+]

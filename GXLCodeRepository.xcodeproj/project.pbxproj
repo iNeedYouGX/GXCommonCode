@@ -24,6 +24,8 @@
 		97664EFA23AE1ABE00DB8383 /* PlanADCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 97664EF723AE1ABE00DB8383 /* PlanADCollectionViewCell.m */; };
 		97664EFD23AE1B0100DB8383 /* CZScollerImageTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 97664EFB23AE1B0100DB8383 /* CZScollerImageTool.m */; };
 		97664F0023AE1B7800DB8383 /* GXScrollImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 97664EFF23AE1B7800DB8383 /* GXScrollImageView.m */; };
+		9766AE6B23B0CBFF00789958 /* dataSource.json in Resources */ = {isa = PBXBuildFile; fileRef = 9766AE6A23B0CBFF00789958 /* dataSource.json */; };
+		9766AE6D23B0DB0700789958 /* dataSource1.json in Resources */ = {isa = PBXBuildFile; fileRef = 9766AE6C23B0DB0700789958 /* dataSource1.json */; };
 		9774AD7421CB985600DD0827 /* GXFlowLayoutController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9774AD7321CB985600DD0827 /* GXFlowLayoutController.m */; };
 		977C3391218D4ED000FAA144 /* GXTagTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 977C3390218D4ED000FAA144 /* GXTagTextField.m */; };
 		979585292293E9E3005FC54D /* GXPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 979585282293E9E3005FC54D /* GXPerson.m */; };
@@ -103,6 +105,8 @@
 		97664EFC23AE1B0100DB8383 /* CZScollerImageTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZScollerImageTool.h; sourceTree = "<group>"; };
 		97664EFE23AE1B7800DB8383 /* GXScrollImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXScrollImageView.h; sourceTree = "<group>"; };
 		97664EFF23AE1B7800DB8383 /* GXScrollImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXScrollImageView.m; sourceTree = "<group>"; };
+		9766AE6A23B0CBFF00789958 /* dataSource.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = dataSource.json; sourceTree = "<group>"; };
+		9766AE6C23B0DB0700789958 /* dataSource1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = dataSource1.json; sourceTree = "<group>"; };
 		9774AD7221CB985600DD0827 /* GXFlowLayoutController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXFlowLayoutController.h; sourceTree = "<group>"; };
 		9774AD7321CB985600DD0827 /* GXFlowLayoutController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXFlowLayoutController.m; sourceTree = "<group>"; };
 		977C338F218D4ED000FAA144 /* GXTagTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXTagTextField.h; sourceTree = "<group>"; };
@@ -244,12 +248,17 @@
 		97664EE223AE19E000DB8383 /* 轮播图 */ = {
 			isa = PBXGroup;
 			children = (
-				97664EFC23AE1B0100DB8383 /* CZScollerImageTool.h */,
-				97664EFB23AE1B0100DB8383 /* CZScollerImageTool.m */,
-				97664EF123AE1ABE00DB8383 /* PlanADScrollView */,
-				97664EE323AE1A1700DB8383 /* 滚动视图 */,
+				9766AE6C23B0DB0700789958 /* dataSource1.json */,
+				9766AE6A23B0CBFF00789958 /* dataSource.json */,
 				97664EFE23AE1B7800DB8383 /* GXScrollImageView.h */,
 				97664EFF23AE1B7800DB8383 /* GXScrollImageView.m */,
+				97664EE423AE1A1700DB8383 /* CZScrollADCell1.h */,
+				97664EE823AE1A1700DB8383 /* CZScrollADCell1.m */,
+				97664EE723AE1A1700DB8383 /* CZScrollADCell1.xib */,
+				97664EEA23AE1A1700DB8383 /* CZScrollADCell.h */,
+				97664EE623AE1A1700DB8383 /* CZScrollADCell.m */,
+				97664EE923AE1A1700DB8383 /* CZScrollADCell.xib */,
+				9766AE6923B0B0A900789958 /* Lib */,
 			);
 			path = "轮播图";
 			sourceTree = "<group>";
@@ -259,12 +268,6 @@
 			children = (
 				97664EE523AE1A1700DB8383 /* CZScrollAD.h */,
 				97664EEB23AE1A1700DB8383 /* CZScrollAD.m */,
-				97664EE423AE1A1700DB8383 /* CZScrollADCell1.h */,
-				97664EE623AE1A1700DB8383 /* CZScrollADCell.m */,
-				97664EE723AE1A1700DB8383 /* CZScrollADCell1.xib */,
-				97664EE823AE1A1700DB8383 /* CZScrollADCell1.m */,
-				97664EE923AE1A1700DB8383 /* CZScrollADCell.xib */,
-				97664EEA23AE1A1700DB8383 /* CZScrollADCell.h */,
 			);
 			path = "滚动视图";
 			sourceTree = "<group>";
@@ -274,12 +277,23 @@
 			children = (
 				97664EF323AE1ABE00DB8383 /* PlanADCollectionViewCell.h */,
 				97664EF723AE1ABE00DB8383 /* PlanADCollectionViewCell.m */,
-				97664EF423AE1ABE00DB8383 /* PlanPageControl.m */,
 				97664EF523AE1ABE00DB8383 /* PlanADScrollView.m */,
 				97664EF223AE1ABE00DB8383 /* PlanADScrollView.h */,
+				97664EF423AE1ABE00DB8383 /* PlanPageControl.m */,
 				97664EF623AE1ABE00DB8383 /* PlanPageControl.h */,
 			);
 			path = PlanADScrollView;
+			sourceTree = "<group>";
+		};
+		9766AE6923B0B0A900789958 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				97664EFC23AE1B0100DB8383 /* CZScollerImageTool.h */,
+				97664EFB23AE1B0100DB8383 /* CZScollerImageTool.m */,
+				97664EF123AE1ABE00DB8383 /* PlanADScrollView */,
+				97664EE323AE1A1700DB8383 /* 滚动视图 */,
+			);
+			path = Lib;
 			sourceTree = "<group>";
 		};
 		97A05FCE216F004300F49C01 = {
@@ -601,6 +615,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9766AE6D23B0DB0700789958 /* dataSource1.json in Resources */,
+				9766AE6B23B0CBFF00789958 /* dataSource.json in Resources */,
 				97DDF336224DC50D00890F53 /* GXParentChildController.xib in Resources */,
 				97DDF342224DC9A100890F53 /* XMGTwoViewController.xib in Resources */,
 				97C20BE7217D930100C78AAD /* MenuController.xib in Resources */,
