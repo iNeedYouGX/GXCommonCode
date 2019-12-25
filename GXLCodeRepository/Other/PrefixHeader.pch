@@ -11,7 +11,15 @@
 
 #import "UIView+GXExtension.h"
 
+/**
+ 工具
+ */
+#define CZGetX(name) CGRectGetMaxX(name.frame)
+#define CZGetY(name) CGRectGetMaxY(name.frame)
+#define WS(weakself) __weak typeof(&*self) weakself = self;
 #define SCR_WIDTH [UIScreen mainScreen].bounds.size.width
 #define SCR_HEIGHT [UIScreen mainScreen].bounds.size.height
+
+
 
 #endif /* PrefixHeader_pch */

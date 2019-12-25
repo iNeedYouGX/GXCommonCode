@@ -19,7 +19,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface CZScrollAD : UIView
 
 @property (nonatomic, weak) id <CZScrollADDelegate> delegate;
-- (instancetype)initWithFrame:(CGRect)frame itemCount:(NSInteger)count scrollerConfig:(void (^)(CZScrollAD *maker))configBlock registerCell:(void (^)(UICollectionView *collectionView))registerCellBlock scrollADCell:(UICollectionViewCell * (^)(UICollectionView *collectionView, NSIndexPath *indexPath))scrollADBlock;
+/** 通过注册CollectionCell方式无线滚动 */
+- (instancetype)initWithFrame:(CGRect)frame dataSourceList:(NSArray *)dataSourceList scrollerConfig:(void (^)(CZScrollAD *maker))configBlock registerCell:(void (^)(UICollectionView *))registerCellBlock scrollADCell:(UICollectionViewCell * (^)(UICollectionView *collectionView, NSIndexPath *indexPath))scrollADBlock;
 
 /** 设置轮播图的时间间隔 */
 @property (nonatomic, assign) NSTimeInterval timeInterval;
@@ -29,3 +30,4 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 NS_ASSUME_NONNULL_END
+

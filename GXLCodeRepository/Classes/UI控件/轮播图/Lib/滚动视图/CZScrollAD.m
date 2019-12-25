@@ -7,20 +7,26 @@
 //
 
 #import "CZScrollAD.h"
-#import "CZScrollADCell.h"
-#import "CZScrollADCell1.h"
+#import "CZScrollADImageCell.h" // 单独图片
+#import "CZScrollADPageControl.h" // 小原点
 
 @interface CZScrollAD () <UICollectionViewDelegate, UICollectionViewDataSource>
 @property (nonatomic, strong) UICollectionView *collectionView;
 /** <#注释#> */
 @property (nonatomic, strong) NSTimer *timer;
 /** <#注释#> */
-@property (nonatomic, strong) UICollectionViewCell * (^scrollADBlock)(UICollectionView *, NSIndexPath *);
+@property (nonatomic, strong) UICollectionViewCell * (^scrollADCellBlock)(UICollectionView *, NSIndexPath *);
 /** <#注释#> */
 @property (nonatomic, strong) Class cellClass;
 
 /** <#注释#> */
-@property (nonatomic, assign) NSInteger itemCount;
+@property (nonatomic, strong) NSArray *dataSourceList;
+
+/** <#注释#> */
+@property (nonatomic, strong) CZScrollADPageControl *pageContrl;
+
+/** 当前页码 */
+@property (nonatomic, assign) NSInteger currentPage;
 
 @end
 
@@ -29,7 +35,7 @@
 - (instancetype)initWithCoder:(NSCoder *)coder
 {
     if (self = [super initWithCoder:coder]) {
-        [self creatrUI];
+        [self createUI];
     }
     return self;
 }
@@ -39,29 +45,61 @@
     [super awakeFromNib];
 }
 
-
 #pragma mark - 正常便利构造创建
-- (instancetype)initWithFrame:(CGRect)frame itemCount:(NSInteger)count scrollerConfig:(void (^)(CZScrollAD *maker))configBlock registerCell:(void (^)(UICollectionView *))registerCellBlock scrollADCell:(UICollectionViewCell * (^)(UICollectionView *collectionView, NSIndexPath *indexPath))scrollADBlock
+- (instancetype)initWithFrame:(CGRect)frame dataSourceList:(NSArray *)dataSourceList scrollerConfig:(void (^)(CZScrollAD *maker))configBlock registerCell:(void (^)(UICollectionView *))registerCellBlock scrollADCell:(UICollectionViewCell * (^)(UICollectionView *collectionView, NSIndexPath *indexPath))scrollADCellBlock
 {
     self = [super initWithFrame:frame];
     if (self) {
-        configBlock(self);
-        self.itemCount = count;
-        self.scrollADBlock = scrollADBlock;
-        registerCellBlock(self.collectionView);
-        [self creatrUI];
+        // 记录数据
+        self.dataSourceList = dataSourceList;
+        // 初始化属性
+        [self setupProperty];
+        // 外面设置属性
+        !configBlock ? : configBlock(self);
+        // 注册cell
+        !registerCellBlock ? : registerCellBlock(self.collectionView);
+        self.scrollADCellBlock = scrollADCellBlock;
+        [self createUI];
     }
     return self;
 }
 
 
+#pragma mark - 创建UI
 
+- (CZScrollADPageControl *)pageContrl
+{
+    if (_pageContrl == nil) {
+        CGRect frame = CGRectMake(0, self.height - 20, self.width, 20);
+        _pageContrl = [[CZScrollADPageControl alloc] initWithFrame:frame];
+        _pageContrl.backgroundColor = [UIColor redColor];
+        _pageContrl.numberOfPages = self.dataSourceList.count;
+        // 选中的颜色
+        _pageContrl.currentPageIndicatorTintColor = [UIColor blackColor];
+        // 未选中颜色
+        _pageContrl.pageIndicatorTintColor = [UIColor whiteColor];
+    }
+    return _pageContrl;
+}
 
-- (void)creatrUI
+- (NSTimer *)timer
+{
+    if (_timer == nil ) {
+        _timer = [NSTimer scheduledTimerWithTimeInterval:_timeInterval target:self selector:@selector(nextPage) userInfo:nil repeats:YES];
+        [[NSRunLoop mainRunLoop] addTimer:_timer forMode:NSRunLoopCommonModes];
+    }
+    return _timer;
+}
+
+// 创建UI
+- (void)createUI
 {
     [self addSubview:self.collectionView];
 //    [self.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:0 inSection:100 / 2] atScrollPosition:UICollectionViewScrollPositionTop animated:YES];
-    [self.timer fire];
+    if (!self.scrollADCellBlock) {
+        [self addSubview:self.pageContrl];
+    }
+    self.timer;
 }
 
 -(UICollectionView *)collectionView{
@@ -75,71 +113,109 @@
         flowLayout.scrollDirection = self.scrollDirection;
 
         _collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height) collectionViewLayout:flowLayout];
-        _collectionView.scrollEnabled = NO;
+        _collectionView.backgroundColor = [UIColor whiteColor];
+        // 手否可以手滑
+        _collectionView.scrollEnabled = YES;
         _collectionView.dataSource = self;
         _collectionView.delegate = self;
         _collectionView.showsHorizontalScrollIndicator = NO;
         _collectionView.showsVerticalScrollIndicator = NO;
         _collectionView.pagingEnabled = YES;
+
+        // 默认是存图片轮播
+        if (!self.scrollADCellBlock) {
+            [_collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([CZScrollADImageCell class]) bundle:nil] forCellWithReuseIdentifier:@"CZScrollADImageCell"];
+        }
+        
     }
     return  _collectionView;
 }
 
+#pragma mark - 代理
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {
     return 100;
 }
 
-
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return self.itemCount;
+    return self.dataSourceList.count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    UICollectionViewCell *cell = self.scrollADBlock(collectionView, indexPath);
-    return cell;
-}
-
-#pragma mark - 创建定时器
-- (NSTimer *)timer
-{
-    if (_timer == nil ) {
-        NSTimeInterval interval;
-        if (_timeInterval > 0) {
-            interval = _timeInterval;
-        } else {
-            interval = 2.0;
-        }
-        _timer = [NSTimer scheduledTimerWithTimeInterval:interval target:self selector:@selector(nextpage) userInfo:nil repeats:YES];
-        [[NSRunLoop mainRunLoop] addTimer:_timer forMode:NSRunLoopCommonModes];
+    if (self.scrollADCellBlock) {
+        UICollectionViewCell *cell = self.scrollADCellBlock(collectionView, indexPath);
+        return cell;
+    } else {
+        NSString *url = self.dataSourceList[indexPath.item];
+        CZScrollADImageCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"CZScrollADImageCell" forIndexPath:indexPath];
+        cell.imageUrlString = url;
+        return cell;
     }
-    return _timer;
 }
 
-- (void)nextpage
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    _currentPage = (int) (scrollView.contentOffset.x / scrollView.frame.size.width + 0.5) % self.dataSourceList.count;
+}
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
 {
-    if (self.itemCount > 0) {
-        // 获取当前的indexPath.item
+    self.pageContrl.currentPage = _currentPage;
+}
+
+- (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView
+{
+    self.pageContrl.currentPage = _currentPage;
+    NSLog(@"%s", __func__);
+}
+
+// 手碰上就调用
+-(void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
+{
+    [self removeTimer];
+}
+
+// 手移开就调用
+-(void) scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
+{
+    self.timer;
+}
+
+
+
+#pragma mark - 事件
+// 下一张
+- (void)nextPage
+{
+    if (self.dataSourceList.count > 0) {
+        //(1) 获取当前的显示的indexPath.item
         NSIndexPath *currentIndexPath = [[self.collectionView indexPathsForVisibleItems] lastObject];
 
-        NSIndexPath *currentIndexPathReset = [NSIndexPath indexPathForItem:currentIndexPath.item inSection:100 / 2];
+        // 创建当前位置 设置section为50
+        NSIndexPath *resetCurrentIndexPath = [NSIndexPath indexPathForItem:currentIndexPath.item inSection:100 / 2];
 
+        // 无动画形式就位
         if (self.scrollDirection == UICollectionViewScrollDirectionVertical) {
-            [self.collectionView scrollToItemAtIndexPath:currentIndexPathReset atScrollPosition:UICollectionViewScrollPositionTop animated:NO];
+            [self.collectionView scrollToItemAtIndexPath:resetCurrentIndexPath atScrollPosition:UICollectionViewScrollPositionTop animated:NO];
         } else {
-            [self.collectionView scrollToItemAtIndexPath:currentIndexPathReset atScrollPosition:UICollectionViewScrollPositionRight animated:NO];
+            [self.collectionView scrollToItemAtIndexPath:resetCurrentIndexPath atScrollPosition:UICollectionViewScrollPositionRight animated:NO];
         }
 
-        NSInteger nextItem = currentIndexPathReset.item + 1;
-        NSInteger nextSection = currentIndexPathReset.section;
-        if (nextItem == self.itemCount) {
-            nextItem = 0;
-            nextSection++;
+        //(2) 为播放下一张做准备, item + 1
+        NSInteger nextItem = resetCurrentIndexPath.item + 1;
+        NSInteger nextSection = resetCurrentIndexPath.section;
+
+        // 判断一下, item如果在当前section的最后一个
+        if (nextItem == self.dataSourceList.count) {
+            nextItem = 0; // 归零
+            nextSection++; // 下一个组
         }
+
+        // 创建下一张的位置
         NSIndexPath *nextIndexPath = [NSIndexPath indexPathForItem:nextItem inSection:nextSection];
 
+        // 动画形式就位
         if (self.scrollDirection == UICollectionViewScrollDirectionVertical) {
             [self.collectionView scrollToItemAtIndexPath:nextIndexPath atScrollPosition:UICollectionViewScrollPositionTop animated:YES];
         } else {
@@ -147,4 +223,22 @@
         }
     }
 }
+
+// 删除定时器
+-(void)removeTimer
+{
+    [self.timer invalidate];
+    self.timer = nil;
+}
+
+
+
+#pragma mark - 初始化属性
+- (void)setupProperty
+{
+    self.scrollDirection = UICollectionViewScrollDirectionHorizontal;
+    self.timeInterval = 3.0;
+}
+
+
 @end

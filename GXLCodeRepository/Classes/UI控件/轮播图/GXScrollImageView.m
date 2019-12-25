@@ -27,8 +27,11 @@
     [self scrollViewTypeOne];
 
     [self scrollViewTypeTwo];
+
+    [self scrollViewTypeThree];
 }
 
+// 跑马灯样式
 - (void)scrollViewTypeOne
 {
     CGRect frame = CGRectMake(0, 20, SCR_WIDTH, 38);
@@ -37,7 +40,7 @@
     NSData *jsonData = [jsonStr dataUsingEncoding:NSUTF8StringEncoding];
     NSArray *list = [NSJSONSerialization JSONObjectWithData:jsonData options:kNilOptions error:nil];
 
-    CZScrollAD *scollImage = [[CZScrollAD alloc] initWithFrame:frame itemCount:list.count scrollerConfig:^(CZScrollAD * _Nonnull maker) {
+    CZScrollAD *scollImage = [[CZScrollAD alloc] initWithFrame:frame dataSourceList:list scrollerConfig:^(CZScrollAD * _Nonnull maker) {
         maker.timeInterval = 2;
         maker.scrollDirection = UICollectionViewScrollDirectionHorizontal;
     } registerCell:^(UICollectionView * _Nonnull collectionView) {
@@ -52,6 +55,7 @@
     
 }
 
+// 自定义cell轮播
 - (void)scrollViewTypeTwo
 {
     CGRect frame = CGRectMake(0, 20 + 50, SCR_WIDTH, 55);
@@ -60,7 +64,7 @@
     NSData *jsonData = [jsonStr dataUsingEncoding:NSUTF8StringEncoding];
     NSArray *list = [NSJSONSerialization JSONObjectWithData:jsonData options:kNilOptions error:nil];
 
-    CZScrollAD *scollImage = [[CZScrollAD alloc] initWithFrame:frame itemCount:list.count scrollerConfig:^(CZScrollAD * _Nonnull maker) {
+    CZScrollAD *scollImage = [[CZScrollAD alloc] initWithFrame:frame dataSourceList:list scrollerConfig:^(CZScrollAD * _Nonnull maker) {
         maker.timeInterval = 3;
         maker.scrollDirection = UICollectionViewScrollDirectionVertical;
     } registerCell:^(UICollectionView * _Nonnull collectionView) {
@@ -73,6 +77,21 @@
     }];
     [self.view addSubview:scollImage];
 
+}
+
+// 常规的一张图片轮播
+- (void)scrollViewTypeThree
+{
+    CGRect frame = CGRectMake(0, CZGetY([self.view.subviews lastObject]) + 10, SCR_WIDTH, 170);
+    NSArray *list = @[
+        @"http://jipincheng.cn/activity/img/20191118/9bb328bcbfa1478386c77e039cd35d72",
+        @"http://jipincheng.cn/activity/img/20191118/d4500fd4b4544befa7fa5b1261b20d68",
+        @"http://jipincheng.cn/activity/img/20191118/24157b27736b4379b6136788ec80997e",
+        @"http://jipincheng.cn/activity/img/20191118/c8da99525cff4c209699c9b4fd57aed2",
+    ];
+    CZScrollAD *scollImage = [[CZScrollAD alloc] initWithFrame:frame dataSourceList:list scrollerConfig:nil registerCell:nil scrollADCell:nil];
+
+    [self.view addSubview:scollImage];
 }
 
 

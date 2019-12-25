@@ -131,7 +131,7 @@
 
 #pragma mark 设置页码
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView {
-    int page = (int) (scrollView.contentOffset.x/scrollView.frame.size.width+0.5)%self.imageUrls.count;
+    int page = (int) (scrollView.contentOffset.x / scrollView.frame.size.width + 0.5) % self.imageUrls.count;
     self.pageControl.currentPage = page;
 }
 
@@ -168,14 +168,13 @@
         _collectionView.showsHorizontalScrollIndicator = NO;
         _collectionView.pagingEnabled = YES;
         [_collectionView registerClass:[PlanADCollectionViewCell class] forCellWithReuseIdentifier:@"PlanADCell"];
-        
     }
     return  _collectionView;
 }
 
 - (UIPageControl *)pageControl{
     if (!_pageControl) {
-        _pageControl = [[PlanPageControl alloc] initWithFrame:CGRectMake(self.frame.size.width*0.5, self.frame.size.height-30, self.frame.size.width*0.5, 20)];
+        _pageControl = [[PlanPageControl alloc] initWithFrame:CGRectMake(self.frame.size.width * 0.5, self.frame.size.height - 30, self.frame.size.width * 0.5, 20)];
         _pageControl.pageIndicatorTintColor = [UIColor redColor];
         _pageControl.currentPageIndicatorTintColor = [UIColor whiteColor];
         _pageControl.enabled = NO;
