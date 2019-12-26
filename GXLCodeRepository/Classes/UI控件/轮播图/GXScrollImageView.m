@@ -7,12 +7,12 @@
 //
 
 #import "GXScrollImageView.h"
+#import "CZScollerImageTool.h"
 
 #import "CZScrollAD.h"
 #import "CZScrollADCell.h"
 #import "CZScrollADCell1.h"
 
-#import <Masonry.h>
 
 @interface GXScrollImageView () <CZScrollADDelegate>
 
@@ -29,6 +29,7 @@
     [self scrollViewTypeTwo];
 
     [self scrollViewTypeThree];
+
 }
 
 // 跑马灯样式
@@ -89,9 +90,9 @@
         @"http://jipincheng.cn/activity/img/20191118/24157b27736b4379b6136788ec80997e",
         @"http://jipincheng.cn/activity/img/20191118/c8da99525cff4c209699c9b4fd57aed2",
     ];
-    CZScrollAD *scollImage = [[CZScrollAD alloc] initWithFrame:frame dataSourceList:list scrollerConfig:nil registerCell:nil scrollADCell:nil];
-
-    [self.view addSubview:scollImage];
+    CZScollerImageTool *imageView = [[CZScollerImageTool alloc] initWithFrame:frame];
+    imageView.imgList = list;
+    [self.view addSubview:imageView];
 }
 
 

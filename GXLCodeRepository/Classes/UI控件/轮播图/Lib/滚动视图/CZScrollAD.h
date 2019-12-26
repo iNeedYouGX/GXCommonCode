@@ -7,13 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class CZScrollAD;
 
 
 NS_ASSUME_NONNULL_BEGIN
 @protocol CZScrollADDelegate <NSObject>
 @optional
-- (UICollectionViewCell *)scrollADView:(UICollectionView *)scrollAD cellForItemAtIndexPath:(NSIndexPath *)indexPath;
+- (void)cz_scrollAD:(CZScrollAD *)scrollAD didSelectItemAtIndex:(NSInteger)index;
+- (void)cz_scrollAD:(CZScrollAD *)scrollAD currentItemAtIndex:(NSInteger)index;
 @end
 
 @interface CZScrollAD : UIView
@@ -22,9 +23,9 @@ NS_ASSUME_NONNULL_BEGIN
 /** 通过注册CollectionCell方式无线滚动 */
 - (instancetype)initWithFrame:(CGRect)frame dataSourceList:(NSArray *)dataSourceList scrollerConfig:(void (^)(CZScrollAD *maker))configBlock registerCell:(void (^)(UICollectionView *))registerCellBlock scrollADCell:(UICollectionViewCell * (^)(UICollectionView *collectionView, NSIndexPath *indexPath))scrollADBlock;
 
-/** 设置轮播图的时间间隔 */
+/** 设置轮播图的时间间隔: 默认3.0s */
 @property (nonatomic, assign) NSTimeInterval timeInterval;
-/** 滚动方向 */
+/** 滚动方向:默认水平 */
 @property (nonatomic, assign) UICollectionViewScrollDirection scrollDirection;
 
 @end

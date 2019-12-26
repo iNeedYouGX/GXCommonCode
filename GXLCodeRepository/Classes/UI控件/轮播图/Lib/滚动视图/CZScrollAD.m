@@ -72,10 +72,10 @@
     if (_pageContrl == nil) {
         CGRect frame = CGRectMake(0, self.height - 20, self.width, 20);
         _pageContrl = [[CZScrollADPageControl alloc] initWithFrame:frame];
-        _pageContrl.backgroundColor = [UIColor redColor];
+//        _pageContrl.backgroundColor = [UIColor redColor];
         _pageContrl.numberOfPages = self.dataSourceList.count;
         // 选中的颜色
-        _pageContrl.currentPageIndicatorTintColor = [UIColor blackColor];
+        _pageContrl.currentPageIndicatorTintColor = CZRGBColor(245, 245, 245);
         // 未选中颜色
         _pageContrl.pageIndicatorTintColor = [UIColor whiteColor];
     }
@@ -99,7 +99,7 @@
     if (!self.scrollADCellBlock) {
         [self addSubview:self.pageContrl];
     }
-    self.timer;
+    [self timer];
 }
 
 -(UICollectionView *)collectionView{
@@ -155,19 +155,15 @@
     }
 }
 
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    if ([self.delegate respondsToSelector:@selector(cz_scrollAD:didSelectItemAtIndex:)]) {
+        [self.delegate cz_scrollAD:self didSelectItemAtIndex:indexPath.item];
+    }
+}
+
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView {
     _currentPage = (int) (scrollView.contentOffset.x / scrollView.frame.size.width + 0.5) % self.dataSourceList.count;
-}
-
-- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
-{
-    self.pageContrl.currentPage = _currentPage;
-}
-
-- (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView
-{
-    self.pageContrl.currentPage = _currentPage;
-    NSLog(@"%s", __func__);
 }
 
 // 手碰上就调用
@@ -179,10 +175,30 @@
 // 手移开就调用
 -(void) scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
 {
-    self.timer;
+    [self timer];
 }
 
+// 彻底没速度了, 调用
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
+{
+    if ([self.delegate respondsToSelector:@selector(cz_scrollAD:currentItemAtIndex:)]) {
+        [self.delegate cz_scrollAD:self currentItemAtIndex:_currentPage];
+    }
+    [UIView animateWithDuration:0.25 animations:^{
+        self.pageContrl.currentPage = self->_currentPage;
+    }];
+}
 
+// 调用setContentOffset方法才调用
+- (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView
+{
+    if ([self.delegate respondsToSelector:@selector(cz_scrollAD:currentItemAtIndex:)]) {
+        [self.delegate cz_scrollAD:self currentItemAtIndex:_currentPage];
+    }
+    [UIView animateWithDuration:0.25 animations:^{
+        self.pageContrl.currentPage = self->_currentPage;
+    }];
+}
 
 #pragma mark - 事件
 // 下一张
@@ -238,6 +254,14 @@
 {
     self.scrollDirection = UICollectionViewScrollDirectionHorizontal;
     self.timeInterval = 3.0;
+}
+
+
+#pragma mark -  内存处理
+- (void)dealloc
+{
+    [self.timer invalidate];
+    self.timer = nil;
 }
 
 
