@@ -52,7 +52,13 @@
                         },
                      @{@"title" : @"轮播图使用",
                        @"control" : @"GXScrollImageView"
-                        }
+                        },
+                     @{@"title" : @"各种菜单样式",
+                       @"control" : @"GXTitlesViewController"
+                     },
+                     @{@"title" : @"各种UI样式-单独的View",
+                       @"control" : @"GXKindsOfViewController"
+                     }
                      ];
     }
     return _dataArr;

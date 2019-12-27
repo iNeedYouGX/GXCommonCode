@@ -99,7 +99,7 @@
     if (_pageContrl == nil) {
         CGRect frame = CGRectMake(0, self.frame.size.height - 20, self.frame.size.width, 20);
         _pageContrl = [[CZScrollADPageControl alloc] initWithFrame:frame];
-        _pageContrl.backgroundColor = [UIColor redColor];
+//        _pageContrl.backgroundColor = [UIColor redColor];
         _pageContrl.numberOfPages = self.dataSourceList.count;
         // 选中的颜色
         _pageContrl.currentPageIndicatorTintColor = [UIColor colorWithRed:245 / 255.0 green:245 / 255.0 blue:245 / 255.0 alpha:1.0];

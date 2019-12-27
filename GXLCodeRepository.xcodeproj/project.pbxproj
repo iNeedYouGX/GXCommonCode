@@ -19,14 +19,19 @@
 		97664EEE23AE1A1700DB8383 /* CZScrollADCell1.m in Sources */ = {isa = PBXBuildFile; fileRef = 97664EE823AE1A1700DB8383 /* CZScrollADCell1.m */; };
 		97664EEF23AE1A1700DB8383 /* CZScrollADCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97664EE923AE1A1700DB8383 /* CZScrollADCell.xib */; };
 		97664EF023AE1A1700DB8383 /* CZScrollAD.m in Sources */ = {isa = PBXBuildFile; fileRef = 97664EEB23AE1A1700DB8383 /* CZScrollAD.m */; };
-		97664EF823AE1ABE00DB8383 /* PlanPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 97664EF423AE1ABE00DB8383 /* PlanPageControl.m */; };
-		97664EF923AE1ABE00DB8383 /* PlanADScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 97664EF523AE1ABE00DB8383 /* PlanADScrollView.m */; };
-		97664EFA23AE1ABE00DB8383 /* PlanADCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 97664EF723AE1ABE00DB8383 /* PlanADCollectionViewCell.m */; };
-		97664EFD23AE1B0100DB8383 /* CZScollerImageTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 97664EFB23AE1B0100DB8383 /* CZScollerImageTool.m */; };
 		97664F0023AE1B7800DB8383 /* GXScrollImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 97664EFF23AE1B7800DB8383 /* GXScrollImageView.m */; };
 		9766AE6B23B0CBFF00789958 /* dataSource.json in Resources */ = {isa = PBXBuildFile; fileRef = 9766AE6A23B0CBFF00789958 /* dataSource.json */; };
 		9766AE6D23B0DB0700789958 /* dataSource1.json in Resources */ = {isa = PBXBuildFile; fileRef = 9766AE6C23B0DB0700789958 /* dataSource1.json */; };
 		9774AD7421CB985600DD0827 /* GXFlowLayoutController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9774AD7321CB985600DD0827 /* GXFlowLayoutController.m */; };
+		977B311923B6080F0011E1BC /* CZTitlesViewTypeLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 977B311523B6080F0011E1BC /* CZTitlesViewTypeLayout.m */; };
+		977B311A23B6080F0011E1BC /* CZCategoryLineLayoutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 977B311823B6080F0011E1BC /* CZCategoryLineLayoutView.m */; };
+		977B311D23B608420011E1BC /* GXTitlesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 977B311C23B608420011E1BC /* GXTitlesViewController.m */; };
+		977B311F23B612480011E1BC /* titlesViewDataSource.json in Resources */ = {isa = PBXBuildFile; fileRef = 977B311E23B612480011E1BC /* titlesViewDataSource.json */; };
+		977B312423B626360011E1BC /* GXKindsOfViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 977B312323B626360011E1BC /* GXKindsOfViewController.m */; };
+		977B312923B626F30011E1BC /* CZFestivalGoodsColLayoutView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 977B312623B626F30011E1BC /* CZFestivalGoodsColLayoutView.xib */; };
+		977B312A23B626F30011E1BC /* CZFestivalGoodsColLayoutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 977B312823B626F30011E1BC /* CZFestivalGoodsColLayoutView.m */; };
+		977B312C23B628E10011E1BC /* KindsOfViewData.json in Resources */ = {isa = PBXBuildFile; fileRef = 977B312B23B628E10011E1BC /* KindsOfViewData.json */; };
+		977B312F23B62A220011E1BC /* NSString+CZExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 977B312E23B62A220011E1BC /* NSString+CZExtension.m */; };
 		977C3391218D4ED000FAA144 /* GXTagTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 977C3390218D4ED000FAA144 /* GXTagTextField.m */; };
 		979585292293E9E3005FC54D /* GXPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 979585282293E9E3005FC54D /* GXPerson.m */; };
 		97A05E77218A9B25006A2CF8 /* GXAddTagToobar.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A05E76218A9B25006A2CF8 /* GXAddTagToobar.m */; };
@@ -98,20 +103,27 @@
 		97664EE923AE1A1700DB8383 /* CZScrollADCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CZScrollADCell.xib; sourceTree = "<group>"; };
 		97664EEA23AE1A1700DB8383 /* CZScrollADCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZScrollADCell.h; sourceTree = "<group>"; };
 		97664EEB23AE1A1700DB8383 /* CZScrollAD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZScrollAD.m; sourceTree = "<group>"; };
-		97664EF223AE1ABE00DB8383 /* PlanADScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlanADScrollView.h; sourceTree = "<group>"; };
-		97664EF323AE1ABE00DB8383 /* PlanADCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlanADCollectionViewCell.h; sourceTree = "<group>"; };
-		97664EF423AE1ABE00DB8383 /* PlanPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlanPageControl.m; sourceTree = "<group>"; };
-		97664EF523AE1ABE00DB8383 /* PlanADScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlanADScrollView.m; sourceTree = "<group>"; };
-		97664EF623AE1ABE00DB8383 /* PlanPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlanPageControl.h; sourceTree = "<group>"; };
-		97664EF723AE1ABE00DB8383 /* PlanADCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlanADCollectionViewCell.m; sourceTree = "<group>"; };
-		97664EFB23AE1B0100DB8383 /* CZScollerImageTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZScollerImageTool.m; sourceTree = "<group>"; };
-		97664EFC23AE1B0100DB8383 /* CZScollerImageTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZScollerImageTool.h; sourceTree = "<group>"; };
 		97664EFE23AE1B7800DB8383 /* GXScrollImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXScrollImageView.h; sourceTree = "<group>"; };
 		97664EFF23AE1B7800DB8383 /* GXScrollImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXScrollImageView.m; sourceTree = "<group>"; };
 		9766AE6A23B0CBFF00789958 /* dataSource.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = dataSource.json; sourceTree = "<group>"; };
 		9766AE6C23B0DB0700789958 /* dataSource1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = dataSource1.json; sourceTree = "<group>"; };
 		9774AD7221CB985600DD0827 /* GXFlowLayoutController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXFlowLayoutController.h; sourceTree = "<group>"; };
 		9774AD7321CB985600DD0827 /* GXFlowLayoutController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXFlowLayoutController.m; sourceTree = "<group>"; };
+		977B311423B6080F0011E1BC /* CZTitlesViewTypeLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZTitlesViewTypeLayout.h; sourceTree = "<group>"; };
+		977B311523B6080F0011E1BC /* CZTitlesViewTypeLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZTitlesViewTypeLayout.m; sourceTree = "<group>"; };
+		977B311723B6080F0011E1BC /* CZCategoryLineLayoutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZCategoryLineLayoutView.h; sourceTree = "<group>"; };
+		977B311823B6080F0011E1BC /* CZCategoryLineLayoutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZCategoryLineLayoutView.m; sourceTree = "<group>"; };
+		977B311B23B608420011E1BC /* GXTitlesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXTitlesViewController.h; sourceTree = "<group>"; };
+		977B311C23B608420011E1BC /* GXTitlesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXTitlesViewController.m; sourceTree = "<group>"; };
+		977B311E23B612480011E1BC /* titlesViewDataSource.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = titlesViewDataSource.json; sourceTree = "<group>"; };
+		977B312223B626360011E1BC /* GXKindsOfViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXKindsOfViewController.h; sourceTree = "<group>"; };
+		977B312323B626360011E1BC /* GXKindsOfViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXKindsOfViewController.m; sourceTree = "<group>"; };
+		977B312623B626F30011E1BC /* CZFestivalGoodsColLayoutView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CZFestivalGoodsColLayoutView.xib; sourceTree = "<group>"; };
+		977B312723B626F30011E1BC /* CZFestivalGoodsColLayoutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZFestivalGoodsColLayoutView.h; sourceTree = "<group>"; };
+		977B312823B626F30011E1BC /* CZFestivalGoodsColLayoutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZFestivalGoodsColLayoutView.m; sourceTree = "<group>"; };
+		977B312B23B628E10011E1BC /* KindsOfViewData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = KindsOfViewData.json; sourceTree = "<group>"; };
+		977B312D23B62A220011E1BC /* NSString+CZExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CZExtension.h"; sourceTree = "<group>"; };
+		977B312E23B62A220011E1BC /* NSString+CZExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CZExtension.m"; sourceTree = "<group>"; };
 		977C338F218D4ED000FAA144 /* GXTagTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXTagTextField.h; sourceTree = "<group>"; };
 		977C3390218D4ED000FAA144 /* GXTagTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXTagTextField.m; sourceTree = "<group>"; };
 		979585272293E9E3005FC54D /* GXPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXPerson.h; sourceTree = "<group>"; };
@@ -271,7 +283,7 @@
 			path = "轮播图";
 			sourceTree = "<group>";
 		};
-		97664EE323AE1A1700DB8383 /* 滚动视图 */ = {
+		9766AE6923B0B0A900789958 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
 				97E0046A23B30CA00028A5E5 /* 滚动样式 */,
@@ -280,31 +292,87 @@
 				97E0047123B36B0D0028A5E5 /* CZScrollADPageControl.h */,
 				97E0047223B36B0D0028A5E5 /* CZScrollADPageControl.m */,
 			);
-			path = "滚动视图";
-			sourceTree = "<group>";
-		};
-		97664EF123AE1ABE00DB8383 /* PlanADScrollView */ = {
-			isa = PBXGroup;
-			children = (
-				97664EF323AE1ABE00DB8383 /* PlanADCollectionViewCell.h */,
-				97664EF723AE1ABE00DB8383 /* PlanADCollectionViewCell.m */,
-				97664EF223AE1ABE00DB8383 /* PlanADScrollView.h */,
-				97664EF523AE1ABE00DB8383 /* PlanADScrollView.m */,
-				97664EF623AE1ABE00DB8383 /* PlanPageControl.h */,
-				97664EF423AE1ABE00DB8383 /* PlanPageControl.m */,
-			);
-			path = PlanADScrollView;
-			sourceTree = "<group>";
-		};
-		9766AE6923B0B0A900789958 /* Lib */ = {
-			isa = PBXGroup;
-			children = (
-				97664EFC23AE1B0100DB8383 /* CZScollerImageTool.h */,
-				97664EFB23AE1B0100DB8383 /* CZScollerImageTool.m */,
-				97664EF123AE1ABE00DB8383 /* PlanADScrollView */,
-				97664EE323AE1A1700DB8383 /* 滚动视图 */,
-			);
 			path = Lib;
+			sourceTree = "<group>";
+		};
+		977B311223B607FB0011E1BC /* 各种菜单样式 */ = {
+			isa = PBXGroup;
+			children = (
+				977B311B23B608420011E1BC /* GXTitlesViewController.h */,
+				977B311C23B608420011E1BC /* GXTitlesViewController.m */,
+				977B311E23B612480011E1BC /* titlesViewDataSource.json */,
+				977B311323B6080F0011E1BC /* 带有给变布局的按钮 */,
+				977B311623B6080F0011E1BC /* 平铺菜单 */,
+			);
+			path = "各种菜单样式";
+			sourceTree = "<group>";
+		};
+		977B311323B6080F0011E1BC /* 带有给变布局的按钮 */ = {
+			isa = PBXGroup;
+			children = (
+				977B311423B6080F0011E1BC /* CZTitlesViewTypeLayout.h */,
+				977B311523B6080F0011E1BC /* CZTitlesViewTypeLayout.m */,
+			);
+			path = "带有给变布局的按钮";
+			sourceTree = "<group>";
+		};
+		977B311623B6080F0011E1BC /* 平铺菜单 */ = {
+			isa = PBXGroup;
+			children = (
+				977B311723B6080F0011E1BC /* CZCategoryLineLayoutView.h */,
+				977B311823B6080F0011E1BC /* CZCategoryLineLayoutView.m */,
+			);
+			path = "平铺菜单";
+			sourceTree = "<group>";
+		};
+		977B312023B625BD0011E1BC /* 继续优化 */ = {
+			isa = PBXGroup;
+			children = (
+				97664EE023ADF8E100DB8383 /* alert弹框 */,
+				97C20BE8217D936800C78AAD /* menuController使用 */,
+				97C20BF1217DF23000C78AAD /* 图片的圆角 */,
+				97EA166921806ABF00C20CD9 /* 其他窗口的创建 */,
+				97EA16702181BDB600C20CD9 /* 小方块的床架 */,
+				97D0C62B2360580800F3B994 /* 新人引导页 */,
+				970E617922B8B70D00E68BE3 /* RAC的使用 */,
+				97DDF330224CAF0000890F53 /* 父子控制器 */,
+				97FC050E2188074800B526F8 /* 发段子 */,
+				97A86BCA21C792EF0084C219 /* 布局 */,
+				97D489CF22A6A13F00FD4EC7 /* 网易新闻首页 */,
+			);
+			path = "继续优化";
+			sourceTree = "<group>";
+		};
+		977B312123B625D40011E1BC /* 一些用过的UI样式 */ = {
+			isa = PBXGroup;
+			children = (
+				977B312523B626EB0011E1BC /* View */,
+				977B312223B626360011E1BC /* GXKindsOfViewController.h */,
+				977B312323B626360011E1BC /* GXKindsOfViewController.m */,
+			);
+			path = "一些用过的UI样式";
+			sourceTree = "<group>";
+		};
+		977B312523B626EB0011E1BC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				977B312B23B628E10011E1BC /* KindsOfViewData.json */,
+				977B312723B626F30011E1BC /* CZFestivalGoodsColLayoutView.h */,
+				977B312823B626F30011E1BC /* CZFestivalGoodsColLayoutView.m */,
+				977B312623B626F30011E1BC /* CZFestivalGoodsColLayoutView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		977B313023B62A250011E1BC /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				977B312D23B62A220011E1BC /* NSString+CZExtension.h */,
+				977B312E23B62A220011E1BC /* NSString+CZExtension.m */,
+				97EA167B2181E76000C20CD9 /* UIView+GXExtension.h */,
+				97EA167C2181E76000C20CD9 /* UIView+GXExtension.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 		97A05FCE216F004300F49C01 = {
@@ -337,6 +405,7 @@
 		97A05FFA216F29A300F49C01 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				977B313023B62A250011E1BC /* Category */,
 				97A05FDA216F004300F49C01 /* AppDelegate.h */,
 				97A05FDB216F004300F49C01 /* AppDelegate.m */,
 				97A05FF8216F236000F49C01 /* GXTabarController.h */,
@@ -349,8 +418,6 @@
 				97A05FE8216F004600F49C01 /* Info.plist */,
 				97A05FE9216F004600F49C01 /* main.m */,
 				97EA166F21806D7500C20CD9 /* PrefixHeader.pch */,
-				97EA167B2181E76000C20CD9 /* UIView+GXExtension.h */,
-				97EA167C2181E76000C20CD9 /* UIView+GXExtension.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -368,19 +435,11 @@
 		97A05FFF216F427700F49C01 /* UI控件 */ = {
 			isa = PBXGroup;
 			children = (
-				97664EE223AE19E000DB8383 /* 轮播图 */,
+				977B312123B625D40011E1BC /* 一些用过的UI样式 */,
+				977B312023B625BD0011E1BC /* 继续优化 */,
 				97FC051321884F4F00B526F8 /* 主控制器 */,
-				97664EE023ADF8E100DB8383 /* alert弹框 */,
-				97C20BE8217D936800C78AAD /* menuController使用 */,
-				97C20BF1217DF23000C78AAD /* 图片的圆角 */,
-				97EA166921806ABF00C20CD9 /* 其他窗口的创建 */,
-				97EA16702181BDB600C20CD9 /* 小方块的床架 */,
-				97D0C62B2360580800F3B994 /* 新人引导页 */,
-				970E617922B8B70D00E68BE3 /* RAC的使用 */,
-				97DDF330224CAF0000890F53 /* 父子控制器 */,
-				97FC050E2188074800B526F8 /* 发段子 */,
-				97A86BCA21C792EF0084C219 /* 布局 */,
-				97D489CF22A6A13F00FD4EC7 /* 网易新闻首页 */,
+				97664EE223AE19E000DB8383 /* 轮播图 */,
+				977B311223B607FB0011E1BC /* 各种菜单样式 */,
 			);
 			path = "UI控件";
 			sourceTree = "<group>";
@@ -483,19 +542,11 @@
 		97E0046A23B30CA00028A5E5 /* 滚动样式 */ = {
 			isa = PBXGroup;
 			children = (
-				97E0047023B30D400028A5E5 /* 纯图片 */,
 				97E0046B23B30D3C0028A5E5 /* CZScrollADImageCell.h */,
 				97E0046C23B30D3C0028A5E5 /* CZScrollADImageCell.m */,
 				97E0046D23B30D3C0028A5E5 /* CZScrollADImageCell.xib */,
 			);
 			path = "滚动样式";
-			sourceTree = "<group>";
-		};
-		97E0047023B30D400028A5E5 /* 纯图片 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "纯图片";
 			sourceTree = "<group>";
 		};
 		97EA16652180493D00C20CD9 /* 常量的整理 */ = {
@@ -660,8 +711,11 @@
 				97E0046F23B30D3C0028A5E5 /* CZScrollADImageCell.xib in Resources */,
 				97C20BF3217DF28F00C78AAD /* image.jpeg in Resources */,
 				97EA166E21806AF000C20CD9 /* GXTopWindowsController.xib in Resources */,
+				977B311F23B612480011E1BC /* titlesViewDataSource.json in Resources */,
 				97A05E79218A9B31006A2CF8 /* GXAddTagToobar.xib in Resources */,
 				97DDF340224DC9A100890F53 /* XMGThreeViewController.xib in Resources */,
+				977B312C23B628E10011E1BC /* KindsOfViewData.json in Resources */,
+				977B312923B626F30011E1BC /* CZFestivalGoodsColLayoutView.xib in Resources */,
 				97C20BF0217DF22000C78AAD /* GXCircleImageController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -718,7 +772,6 @@
 				97EA16762181CB5200C20CD9 /* GXSquareCell.m in Sources */,
 				97F1C7DB21930098009F7871 /* GXNavigationController.m in Sources */,
 				97A3415021D4DB36006DF0D2 /* GXPhotoCell.m in Sources */,
-				97664EFA23AE1ABE00DB8383 /* PlanADCollectionViewCell.m in Sources */,
 				970E617C22B8B9D400E68BE3 /* GXRACTestController.m in Sources */,
 				97664EEC23AE1A1700DB8383 /* CZScrollADCell.m in Sources */,
 				977C3391218D4ED000FAA144 /* GXTagTextField.m in Sources */,
@@ -726,13 +779,15 @@
 				97FC051621884FBC00B526F8 /* GXPlaceholderTextView.m in Sources */,
 				97A3414721D1CAAB006DF0D2 /* GXLineLayout.m in Sources */,
 				972D9EEA218B0D790013B420 /* GXAddTagController.m in Sources */,
-				97664EF823AE1ABE00DB8383 /* PlanPageControl.m in Sources */,
 				97EA166D21806AF000C20CD9 /* GXTopWindowsController.m in Sources */,
-				97664EF923AE1ABE00DB8383 /* PlanADScrollView.m in Sources */,
+				977B312F23B62A220011E1BC /* NSString+CZExtension.m in Sources */,
+				977B311923B6080F0011E1BC /* CZTitlesViewTypeLayout.m in Sources */,
 				97E0047323B36B0D0028A5E5 /* CZScrollADPageControl.m in Sources */,
 				97C20BEF217DF22000C78AAD /* GXCircleImageController.m in Sources */,
 				97A05FF9216F236000F49C01 /* GXTabarController.m in Sources */,
+				977B311D23B608420011E1BC /* GXTitlesViewController.m in Sources */,
 				97FC0511218807A500B526F8 /* GXPostWordController.m in Sources */,
+				977B312423B626360011E1BC /* GXKindsOfViewController.m in Sources */,
 				979585292293E9E3005FC54D /* GXPerson.m in Sources */,
 				97A05FF2216F013E00F49C01 /* ContolViewController.m in Sources */,
 				97C20BEB217D93AD00C78AAD /* GXMenuLabel.m in Sources */,
@@ -751,10 +806,11 @@
 				97664F0023AE1B7800DB8383 /* GXScrollImageView.m in Sources */,
 				975AC84C21DC760800316C93 /* GXGridLayout.m in Sources */,
 				97EA1668218049B300C20CD9 /* GXConst.m in Sources */,
+				977B311A23B6080F0011E1BC /* CZCategoryLineLayoutView.m in Sources */,
+				977B312A23B626F30011E1BC /* CZFestivalGoodsColLayoutView.m in Sources */,
 				97DDF334224DBDCD00890F53 /* GXParentChildController.m in Sources */,
 				97362C082179A30D0092A6D1 /* AlertViewTEST.m in Sources */,
 				97664EEE23AE1A1700DB8383 /* CZScrollADCell1.m in Sources */,
-				97664EFD23AE1B0100DB8383 /* CZScollerImageTool.m in Sources */,
 				97DDF33F224DC9A100890F53 /* XMGTwoViewController.m in Sources */,
 				973D057B22A7A93000186571 /* XMGSocialViewController.m in Sources */,
 				97EA16732181BDCA00C20CD9 /* GXSquareController.m in Sources */,

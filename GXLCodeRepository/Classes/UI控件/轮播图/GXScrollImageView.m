@@ -7,7 +7,6 @@
 //
 
 #import "GXScrollImageView.h"
-#import "CZScollerImageTool.h"
 
 #import "CZScrollAD.h"
 #import "CZScrollADCell.h"
@@ -93,6 +92,10 @@
         NSLog(@"%ld", index);
     };
     [self.view addSubview:imageView];
+
+
+
+    
 
 }
 
