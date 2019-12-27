@@ -18,6 +18,11 @@
 		97664EED23AE1A1700DB8383 /* CZScrollADCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97664EE723AE1A1700DB8383 /* CZScrollADCell1.xib */; };
 		97664EEE23AE1A1700DB8383 /* CZScrollADCell1.m in Sources */ = {isa = PBXBuildFile; fileRef = 97664EE823AE1A1700DB8383 /* CZScrollADCell1.m */; };
 		97664EEF23AE1A1700DB8383 /* CZScrollADCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97664EE923AE1A1700DB8383 /* CZScrollADCell.xib */; };
+		97664EF023AE1A1700DB8383 /* CZScrollAD.m in Sources */ = {isa = PBXBuildFile; fileRef = 97664EEB23AE1A1700DB8383 /* CZScrollAD.m */; };
+		97664EF823AE1ABE00DB8383 /* PlanPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 97664EF423AE1ABE00DB8383 /* PlanPageControl.m */; };
+		97664EF923AE1ABE00DB8383 /* PlanADScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 97664EF523AE1ABE00DB8383 /* PlanADScrollView.m */; };
+		97664EFA23AE1ABE00DB8383 /* PlanADCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 97664EF723AE1ABE00DB8383 /* PlanADCollectionViewCell.m */; };
+		97664EFD23AE1B0100DB8383 /* CZScollerImageTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 97664EFB23AE1B0100DB8383 /* CZScollerImageTool.m */; };
 		97664F0023AE1B7800DB8383 /* GXScrollImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 97664EFF23AE1B7800DB8383 /* GXScrollImageView.m */; };
 		9766AE6B23B0CBFF00789958 /* dataSource.json in Resources */ = {isa = PBXBuildFile; fileRef = 9766AE6A23B0CBFF00789958 /* dataSource.json */; };
 		9766AE6D23B0DB0700789958 /* dataSource1.json in Resources */ = {isa = PBXBuildFile; fileRef = 9766AE6C23B0DB0700789958 /* dataSource1.json */; };
@@ -46,11 +51,6 @@
 		97C20BF0217DF22000C78AAD /* GXCircleImageController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97C20BEE217DF22000C78AAD /* GXCircleImageController.xib */; };
 		97C20BF3217DF28F00C78AAD /* image.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 97C20BF2217DF28F00C78AAD /* image.jpeg */; };
 		97D0C62E2360582B00F3B994 /* CZGuideController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97D0C62C2360582B00F3B994 /* CZGuideController.m */; };
-		97D11CB223B4B4F40015761D /* CZScrollADPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 97D11CA823B4B4F40015761D /* CZScrollADPageControl.m */; };
-		97D11CB323B4B4F40015761D /* CZScrollADImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97D11CAC23B4B4F40015761D /* CZScrollADImageCell.xib */; };
-		97D11CB423B4B4F40015761D /* CZScrollADImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 97D11CAD23B4B4F40015761D /* CZScrollADImageCell.m */; };
-		97D11CB523B4B4F40015761D /* CZScrollAD.m in Sources */ = {isa = PBXBuildFile; fileRef = 97D11CB023B4B4F40015761D /* CZScrollAD.m */; };
-		97D11CB623B4B4F40015761D /* CZScollerImageTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 97D11CB123B4B4F40015761D /* CZScollerImageTool.m */; };
 		97D489D222A6A1D900FD4EC7 /* GXHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97D489D122A6A1D900FD4EC7 /* GXHomeViewController.m */; };
 		97DDF334224DBDCD00890F53 /* GXParentChildController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97DDF333224DBDCD00890F53 /* GXParentChildController.m */; };
 		97DDF336224DC50D00890F53 /* GXParentChildController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97DDF335224DC50D00890F53 /* GXParentChildController.xib */; };
@@ -59,6 +59,9 @@
 		97DDF341224DC9A100890F53 /* XMGOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97DDF33A224DC9A000890F53 /* XMGOneViewController.m */; };
 		97DDF342224DC9A100890F53 /* XMGTwoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97DDF33B224DC9A000890F53 /* XMGTwoViewController.xib */; };
 		97DDF343224DC9A100890F53 /* XMGThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97DDF33E224DC9A100890F53 /* XMGThreeViewController.m */; };
+		97E0046E23B30D3C0028A5E5 /* CZScrollADImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 97E0046C23B30D3C0028A5E5 /* CZScrollADImageCell.m */; };
+		97E0046F23B30D3C0028A5E5 /* CZScrollADImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97E0046D23B30D3C0028A5E5 /* CZScrollADImageCell.xib */; };
+		97E0047323B36B0D0028A5E5 /* CZScrollADPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 97E0047223B36B0D0028A5E5 /* CZScrollADPageControl.m */; };
 		97EA1668218049B300C20CD9 /* GXConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 97EA1667218049B300C20CD9 /* GXConst.m */; };
 		97EA166D21806AF000C20CD9 /* GXTopWindowsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97EA166B21806AF000C20CD9 /* GXTopWindowsController.m */; };
 		97EA166E21806AF000C20CD9 /* GXTopWindowsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97EA166C21806AF000C20CD9 /* GXTopWindowsController.xib */; };
@@ -88,11 +91,21 @@
 		975AC84A21DC760800316C93 /* GXGridLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXGridLayout.h; sourceTree = "<group>"; };
 		975AC84B21DC760800316C93 /* GXGridLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXGridLayout.m; sourceTree = "<group>"; };
 		97664EE423AE1A1700DB8383 /* CZScrollADCell1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZScrollADCell1.h; sourceTree = "<group>"; };
+		97664EE523AE1A1700DB8383 /* CZScrollAD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZScrollAD.h; sourceTree = "<group>"; };
 		97664EE623AE1A1700DB8383 /* CZScrollADCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZScrollADCell.m; sourceTree = "<group>"; };
 		97664EE723AE1A1700DB8383 /* CZScrollADCell1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CZScrollADCell1.xib; sourceTree = "<group>"; };
 		97664EE823AE1A1700DB8383 /* CZScrollADCell1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZScrollADCell1.m; sourceTree = "<group>"; };
 		97664EE923AE1A1700DB8383 /* CZScrollADCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CZScrollADCell.xib; sourceTree = "<group>"; };
 		97664EEA23AE1A1700DB8383 /* CZScrollADCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZScrollADCell.h; sourceTree = "<group>"; };
+		97664EEB23AE1A1700DB8383 /* CZScrollAD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZScrollAD.m; sourceTree = "<group>"; };
+		97664EF223AE1ABE00DB8383 /* PlanADScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlanADScrollView.h; sourceTree = "<group>"; };
+		97664EF323AE1ABE00DB8383 /* PlanADCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlanADCollectionViewCell.h; sourceTree = "<group>"; };
+		97664EF423AE1ABE00DB8383 /* PlanPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlanPageControl.m; sourceTree = "<group>"; };
+		97664EF523AE1ABE00DB8383 /* PlanADScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlanADScrollView.m; sourceTree = "<group>"; };
+		97664EF623AE1ABE00DB8383 /* PlanPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlanPageControl.h; sourceTree = "<group>"; };
+		97664EF723AE1ABE00DB8383 /* PlanADCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlanADCollectionViewCell.m; sourceTree = "<group>"; };
+		97664EFB23AE1B0100DB8383 /* CZScollerImageTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZScollerImageTool.m; sourceTree = "<group>"; };
+		97664EFC23AE1B0100DB8383 /* CZScollerImageTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZScollerImageTool.h; sourceTree = "<group>"; };
 		97664EFE23AE1B7800DB8383 /* GXScrollImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXScrollImageView.h; sourceTree = "<group>"; };
 		97664EFF23AE1B7800DB8383 /* GXScrollImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXScrollImageView.m; sourceTree = "<group>"; };
 		9766AE6A23B0CBFF00789958 /* dataSource.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = dataSource.json; sourceTree = "<group>"; };
@@ -139,15 +152,6 @@
 		97C20BF2217DF28F00C78AAD /* image.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image.jpeg; sourceTree = "<group>"; };
 		97D0C62C2360582B00F3B994 /* CZGuideController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZGuideController.m; sourceTree = "<group>"; };
 		97D0C62D2360582B00F3B994 /* CZGuideController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZGuideController.h; sourceTree = "<group>"; };
-		97D11CA523B4B4F40015761D /* CZScollerImageTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZScollerImageTool.h; sourceTree = "<group>"; };
-		97D11CA823B4B4F40015761D /* CZScrollADPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZScrollADPageControl.m; sourceTree = "<group>"; };
-		97D11CA923B4B4F40015761D /* CZScrollAD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZScrollAD.h; sourceTree = "<group>"; };
-		97D11CAC23B4B4F40015761D /* CZScrollADImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CZScrollADImageCell.xib; sourceTree = "<group>"; };
-		97D11CAD23B4B4F40015761D /* CZScrollADImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZScrollADImageCell.m; sourceTree = "<group>"; };
-		97D11CAE23B4B4F40015761D /* CZScrollADImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZScrollADImageCell.h; sourceTree = "<group>"; };
-		97D11CAF23B4B4F40015761D /* CZScrollADPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZScrollADPageControl.h; sourceTree = "<group>"; };
-		97D11CB023B4B4F40015761D /* CZScrollAD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZScrollAD.m; sourceTree = "<group>"; };
-		97D11CB123B4B4F40015761D /* CZScollerImageTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZScollerImageTool.m; sourceTree = "<group>"; };
 		97D489D022A6A1D900FD4EC7 /* GXHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXHomeViewController.h; sourceTree = "<group>"; };
 		97D489D122A6A1D900FD4EC7 /* GXHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXHomeViewController.m; sourceTree = "<group>"; };
 		97DDF332224DBDCD00890F53 /* GXParentChildController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXParentChildController.h; sourceTree = "<group>"; };
@@ -161,6 +165,11 @@
 		97DDF33C224DC9A100890F53 /* XMGTwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGTwoViewController.h; sourceTree = "<group>"; };
 		97DDF33D224DC9A100890F53 /* XMGThreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGThreeViewController.h; sourceTree = "<group>"; };
 		97DDF33E224DC9A100890F53 /* XMGThreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGThreeViewController.m; sourceTree = "<group>"; };
+		97E0046B23B30D3C0028A5E5 /* CZScrollADImageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CZScrollADImageCell.h; sourceTree = "<group>"; };
+		97E0046C23B30D3C0028A5E5 /* CZScrollADImageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CZScrollADImageCell.m; sourceTree = "<group>"; };
+		97E0046D23B30D3C0028A5E5 /* CZScrollADImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CZScrollADImageCell.xib; sourceTree = "<group>"; };
+		97E0047123B36B0D0028A5E5 /* CZScrollADPageControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CZScrollADPageControl.h; sourceTree = "<group>"; };
+		97E0047223B36B0D0028A5E5 /* CZScrollADPageControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CZScrollADPageControl.m; sourceTree = "<group>"; };
 		97EA1666218049B300C20CD9 /* GXConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXConst.h; sourceTree = "<group>"; };
 		97EA1667218049B300C20CD9 /* GXConst.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXConst.m; sourceTree = "<group>"; };
 		97EA166A21806AF000C20CD9 /* GXTopWindowsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXTopWindowsController.h; sourceTree = "<group>"; };
@@ -247,7 +256,6 @@
 		97664EE223AE19E000DB8383 /* 轮播图 */ = {
 			isa = PBXGroup;
 			children = (
-				97D11CA423B4B4F40015761D /* Lib */,
 				9766AE6C23B0DB0700789958 /* dataSource1.json */,
 				9766AE6A23B0CBFF00789958 /* dataSource.json */,
 				97664EFE23AE1B7800DB8383 /* GXScrollImageView.h */,
@@ -258,8 +266,45 @@
 				97664EEA23AE1A1700DB8383 /* CZScrollADCell.h */,
 				97664EE623AE1A1700DB8383 /* CZScrollADCell.m */,
 				97664EE923AE1A1700DB8383 /* CZScrollADCell.xib */,
+				9766AE6923B0B0A900789958 /* Lib */,
 			);
 			path = "轮播图";
+			sourceTree = "<group>";
+		};
+		97664EE323AE1A1700DB8383 /* 滚动视图 */ = {
+			isa = PBXGroup;
+			children = (
+				97E0046A23B30CA00028A5E5 /* 滚动样式 */,
+				97664EE523AE1A1700DB8383 /* CZScrollAD.h */,
+				97664EEB23AE1A1700DB8383 /* CZScrollAD.m */,
+				97E0047123B36B0D0028A5E5 /* CZScrollADPageControl.h */,
+				97E0047223B36B0D0028A5E5 /* CZScrollADPageControl.m */,
+			);
+			path = "滚动视图";
+			sourceTree = "<group>";
+		};
+		97664EF123AE1ABE00DB8383 /* PlanADScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				97664EF323AE1ABE00DB8383 /* PlanADCollectionViewCell.h */,
+				97664EF723AE1ABE00DB8383 /* PlanADCollectionViewCell.m */,
+				97664EF223AE1ABE00DB8383 /* PlanADScrollView.h */,
+				97664EF523AE1ABE00DB8383 /* PlanADScrollView.m */,
+				97664EF623AE1ABE00DB8383 /* PlanPageControl.h */,
+				97664EF423AE1ABE00DB8383 /* PlanPageControl.m */,
+			);
+			path = PlanADScrollView;
+			sourceTree = "<group>";
+		};
+		9766AE6923B0B0A900789958 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				97664EFC23AE1B0100DB8383 /* CZScollerImageTool.h */,
+				97664EFB23AE1B0100DB8383 /* CZScollerImageTool.m */,
+				97664EF123AE1ABE00DB8383 /* PlanADScrollView */,
+				97664EE323AE1A1700DB8383 /* 滚动视图 */,
+			);
+			path = Lib;
 			sourceTree = "<group>";
 		};
 		97A05FCE216F004300F49C01 = {
@@ -398,47 +443,6 @@
 			path = "新人引导页";
 			sourceTree = "<group>";
 		};
-		97D11CA423B4B4F40015761D /* Lib */ = {
-			isa = PBXGroup;
-			children = (
-				97D11CA523B4B4F40015761D /* CZScollerImageTool.h */,
-				97D11CB123B4B4F40015761D /* CZScollerImageTool.m */,
-				97D11CA723B4B4F40015761D /* 滚动视图 */,
-			);
-			name = Lib;
-			path = ../../../../../../GXScorllAdSDK/GXScorllAdSDK/Lib;
-			sourceTree = "<group>";
-		};
-		97D11CA723B4B4F40015761D /* 滚动视图 */ = {
-			isa = PBXGroup;
-			children = (
-				97D11CA823B4B4F40015761D /* CZScrollADPageControl.m */,
-				97D11CA923B4B4F40015761D /* CZScrollAD.h */,
-				97D11CAA23B4B4F40015761D /* 滚动样式 */,
-				97D11CAF23B4B4F40015761D /* CZScrollADPageControl.h */,
-				97D11CB023B4B4F40015761D /* CZScrollAD.m */,
-			);
-			path = "滚动视图";
-			sourceTree = "<group>";
-		};
-		97D11CAA23B4B4F40015761D /* 滚动样式 */ = {
-			isa = PBXGroup;
-			children = (
-				97D11CAB23B4B4F40015761D /* 纯图片 */,
-			);
-			path = "滚动样式";
-			sourceTree = "<group>";
-		};
-		97D11CAB23B4B4F40015761D /* 纯图片 */ = {
-			isa = PBXGroup;
-			children = (
-				97D11CAC23B4B4F40015761D /* CZScrollADImageCell.xib */,
-				97D11CAD23B4B4F40015761D /* CZScrollADImageCell.m */,
-				97D11CAE23B4B4F40015761D /* CZScrollADImageCell.h */,
-			);
-			path = "纯图片";
-			sourceTree = "<group>";
-		};
 		97D489CF22A6A13F00FD4EC7 /* 网易新闻首页 */ = {
 			isa = PBXGroup;
 			children = (
@@ -474,6 +478,24 @@
 				97DDF33B224DC9A000890F53 /* XMGTwoViewController.xib */,
 			);
 			path = "子控制";
+			sourceTree = "<group>";
+		};
+		97E0046A23B30CA00028A5E5 /* 滚动样式 */ = {
+			isa = PBXGroup;
+			children = (
+				97E0047023B30D400028A5E5 /* 纯图片 */,
+				97E0046B23B30D3C0028A5E5 /* CZScrollADImageCell.h */,
+				97E0046C23B30D3C0028A5E5 /* CZScrollADImageCell.m */,
+				97E0046D23B30D3C0028A5E5 /* CZScrollADImageCell.xib */,
+			);
+			path = "滚动样式";
+			sourceTree = "<group>";
+		};
+		97E0047023B30D400028A5E5 /* 纯图片 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "纯图片";
 			sourceTree = "<group>";
 		};
 		97EA16652180493D00C20CD9 /* 常量的整理 */ = {
@@ -635,7 +657,7 @@
 				97FEBF2E22D49DFF007BF592 /* download.plist in Resources */,
 				97A05E7E218AFFAB006A2CF8 /* PostImage.bundle in Resources */,
 				97A05FE2216F004300F49C01 /* Main.storyboard in Resources */,
-				97D11CB323B4B4F40015761D /* CZScrollADImageCell.xib in Resources */,
+				97E0046F23B30D3C0028A5E5 /* CZScrollADImageCell.xib in Resources */,
 				97C20BF3217DF28F00C78AAD /* image.jpeg in Resources */,
 				97EA166E21806AF000C20CD9 /* GXTopWindowsController.xib in Resources */,
 				97A05E79218A9B31006A2CF8 /* GXAddTagToobar.xib in Resources */,
@@ -696,14 +718,18 @@
 				97EA16762181CB5200C20CD9 /* GXSquareCell.m in Sources */,
 				97F1C7DB21930098009F7871 /* GXNavigationController.m in Sources */,
 				97A3415021D4DB36006DF0D2 /* GXPhotoCell.m in Sources */,
-				97D11CB523B4B4F40015761D /* CZScrollAD.m in Sources */,
+				97664EFA23AE1ABE00DB8383 /* PlanADCollectionViewCell.m in Sources */,
 				970E617C22B8B9D400E68BE3 /* GXRACTestController.m in Sources */,
 				97664EEC23AE1A1700DB8383 /* CZScrollADCell.m in Sources */,
 				977C3391218D4ED000FAA144 /* GXTagTextField.m in Sources */,
+				97664EF023AE1A1700DB8383 /* CZScrollAD.m in Sources */,
 				97FC051621884FBC00B526F8 /* GXPlaceholderTextView.m in Sources */,
 				97A3414721D1CAAB006DF0D2 /* GXLineLayout.m in Sources */,
 				972D9EEA218B0D790013B420 /* GXAddTagController.m in Sources */,
+				97664EF823AE1ABE00DB8383 /* PlanPageControl.m in Sources */,
 				97EA166D21806AF000C20CD9 /* GXTopWindowsController.m in Sources */,
+				97664EF923AE1ABE00DB8383 /* PlanADScrollView.m in Sources */,
+				97E0047323B36B0D0028A5E5 /* CZScrollADPageControl.m in Sources */,
 				97C20BEF217DF22000C78AAD /* GXCircleImageController.m in Sources */,
 				97A05FF9216F236000F49C01 /* GXTabarController.m in Sources */,
 				97FC0511218807A500B526F8 /* GXPostWordController.m in Sources */,
@@ -716,10 +742,10 @@
 				97DDF343224DC9A100890F53 /* XMGThreeViewController.m in Sources */,
 				97A0D00721C0B99100CBF9A1 /* GXTestViewController.m in Sources */,
 				97EA167D2181E76000C20CD9 /* UIView+GXExtension.m in Sources */,
-				97D11CB223B4B4F40015761D /* CZScrollADPageControl.m in Sources */,
 				97DDF341224DC9A100890F53 /* XMGOneViewController.m in Sources */,
 				97D0C62E2360582B00F3B994 /* CZGuideController.m in Sources */,
 				97A05FDC216F004300F49C01 /* AppDelegate.m in Sources */,
+				97E0046E23B30D3C0028A5E5 /* CZScrollADImageCell.m in Sources */,
 				97D489D222A6A1D900FD4EC7 /* GXHomeViewController.m in Sources */,
 				97EA167A2181E5A100C20CD9 /* GXFooterView.m in Sources */,
 				97664F0023AE1B7800DB8383 /* GXScrollImageView.m in Sources */,
@@ -728,11 +754,10 @@
 				97DDF334224DBDCD00890F53 /* GXParentChildController.m in Sources */,
 				97362C082179A30D0092A6D1 /* AlertViewTEST.m in Sources */,
 				97664EEE23AE1A1700DB8383 /* CZScrollADCell1.m in Sources */,
+				97664EFD23AE1B0100DB8383 /* CZScollerImageTool.m in Sources */,
 				97DDF33F224DC9A100890F53 /* XMGTwoViewController.m in Sources */,
-				97D11CB623B4B4F40015761D /* CZScollerImageTool.m in Sources */,
 				973D057B22A7A93000186571 /* XMGSocialViewController.m in Sources */,
 				97EA16732181BDCA00C20CD9 /* GXSquareController.m in Sources */,
-				97D11CB423B4B4F40015761D /* CZScrollADImageCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -877,40 +902,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = G583M5JELZ;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/GXLCodeRepository/Classes/UI控件/轮播图",
-				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/GXLCodeRepository/Other/PrefixHeader.pch";
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"${PODS_ROOT}/Headers/Public\"",
-					"\"${PODS_ROOT}/Headers/Public/Masonry\"",
-					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
-					"\"${PODS_ROOT}/Headers/Public/SVProgressHUD\"",
-					"\"$(SRCROOT)/GXLCodeRepository/Classes/UI控件/轮播图/GXScorllAdSDK.framework/Headers\"",
-				);
 				INFOPLIST_FILE = GXLCodeRepository/Other/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
-				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-ObjC",
-					"-l\"Masonry\"",
-					"-l\"SDWebImage\"",
-					"-l\"SVProgressHUD\"",
-					"-framework",
-					"\"Foundation\"",
-					"-framework",
-					"\"ImageIO\"",
-					"-framework",
-					"\"QuartzCore\"",
-					"-framework",
-					"\"UIKit\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.testtest.platform;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -926,40 +924,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = G583M5JELZ;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/GXLCodeRepository/Classes/UI控件/轮播图",
-				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/GXLCodeRepository/Other/PrefixHeader.pch";
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"${PODS_ROOT}/Headers/Public\"",
-					"\"${PODS_ROOT}/Headers/Public/Masonry\"",
-					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
-					"\"${PODS_ROOT}/Headers/Public/SVProgressHUD\"",
-					"\"$(SRCROOT)/GXLCodeRepository/Classes/UI控件/轮播图/GXScorllAdSDK.framework/Headers\"",
-				);
 				INFOPLIST_FILE = GXLCodeRepository/Other/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
-				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-ObjC",
-					"-l\"Masonry\"",
-					"-l\"SDWebImage\"",
-					"-l\"SVProgressHUD\"",
-					"-framework",
-					"\"Foundation\"",
-					"-framework",
-					"\"ImageIO\"",
-					"-framework",
-					"\"QuartzCore\"",
-					"-framework",
-					"\"UIKit\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.testtest.platform;
 				PRODUCT_NAME = "$(TARGET_NAME)";

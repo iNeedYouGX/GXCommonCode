@@ -162,20 +162,9 @@
     }
 }
 
+
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView {
     _currentPage = (int) (scrollView.contentOffset.x / scrollView.frame.size.width + 0.5) % self.dataSourceList.count;
-}
-
-// 手碰上就调用
--(void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
-{
-    [self removeTimer];
-}
-
-// 手移开就调用
--(void) scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
-{
-    [self timer];
 }
 
 // 彻底没速度了, 调用
@@ -189,6 +178,7 @@
     }];
 }
 
+
 // 调用setContentOffset方法才调用
 - (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView
 {
@@ -199,6 +189,21 @@
         self.pageContrl.currentPage = self->_currentPage;
     }];
 }
+
+
+// 手碰上就调用
+-(void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
+{
+    [self removeTimer];
+}
+
+// 手移开就调用
+-(void) scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
+{
+    [self timer];
+}
+
+
 
 #pragma mark - 事件
 // 下一张
@@ -263,6 +268,7 @@
     [self.timer invalidate];
     self.timer = nil;
 }
+
 
 
 @end

@@ -13,7 +13,6 @@
 #import "CZScrollADCell.h"
 #import "CZScrollADCell1.h"
 
-
 @interface GXScrollImageView () <CZScrollADDelegate>
 
 @end
@@ -29,7 +28,6 @@
     [self scrollViewTypeTwo];
 
     [self scrollViewTypeThree];
-
 }
 
 // 跑马灯样式
@@ -93,6 +91,7 @@
     CZScollerImageTool *imageView = [[CZScollerImageTool alloc] initWithFrame:frame];
     imageView.imgList = list;
     [self.view addSubview:imageView];
+
 }
 
 

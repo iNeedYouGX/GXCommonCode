@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 @class CZScrollAD;
 
-
 NS_ASSUME_NONNULL_BEGIN
 @protocol CZScrollADDelegate <NSObject>
 @optional

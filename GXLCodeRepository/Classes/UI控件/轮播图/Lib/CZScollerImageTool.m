@@ -10,7 +10,9 @@
 #import "UIImageView+WebCache.h"
 #import "CZScrollAD.h"
 
+
 @interface CZScollerImageTool () <CZScrollADDelegate>
+
 
 @end
 
@@ -34,18 +36,11 @@
             imageView.frame = CGRectMake(0, 0, self.width, self.height);
             [imageView sd_setImageWithURL:[NSURL URLWithString:[self.imgList firstObject]] placeholderImage:nil];
             [self addSubview:imageView];
-            UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(imageViewClicked)];
-            [imageView addGestureRecognizer:tap];
         } else {
             // 初始化控件
-//            PlanADScrollView *ad = [[PlanADScrollView alloc] initWithFrame:CGRectMake(0, 0, self.width, self.height) imageUrls:self.imgList placeholderimage:nil];
-//            ad.delegate = self;
-//            [self addSubview:ad];
-
             CZScrollAD *scroll = [[CZScrollAD alloc] initWithFrame:CGRectMake(0, 0, self.width, self.height) dataSourceList:self.imgList scrollerConfig:nil registerCell:nil scrollADCell:nil];
             scroll.delegate = self;
             [self addSubview:scroll];
-
         }
     } else {
         // 初始化控件
@@ -74,6 +69,4 @@
     NSLog(@"%------ld", index);
     !self.scrollViewCurrentBlock ? : self.scrollViewCurrentBlock(index);
 }
-
-
 @end
