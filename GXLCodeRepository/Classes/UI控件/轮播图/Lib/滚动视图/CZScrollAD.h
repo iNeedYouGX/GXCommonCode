@@ -27,6 +27,11 @@ NS_ASSUME_NONNULL_BEGIN
 /** 滚动方向:默认水平 */
 @property (nonatomic, assign) UICollectionViewScrollDirection scrollDirection;
 
+// 点击调用
+@property (nonatomic, strong) void (^selectedIndexBlock)(NSInteger index);
+// 当前index
+@property (nonatomic, strong) void (^currentIndexBlock)(NSInteger index);
+
 @end
 
 NS_ASSUME_NONNULL_END

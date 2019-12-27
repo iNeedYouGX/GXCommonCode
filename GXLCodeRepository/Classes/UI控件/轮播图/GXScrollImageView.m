@@ -88,8 +88,10 @@
         @"http://jipincheng.cn/activity/img/20191118/24157b27736b4379b6136788ec80997e",
         @"http://jipincheng.cn/activity/img/20191118/c8da99525cff4c209699c9b4fd57aed2",
     ];
-    CZScollerImageTool *imageView = [[CZScollerImageTool alloc] initWithFrame:frame];
-    imageView.imgList = list;
+    CZScrollAD *imageView = [[CZScrollAD alloc] initWithFrame:frame dataSourceList:list scrollerConfig:nil registerCell:nil scrollADCell:nil];
+    imageView.currentIndexBlock = ^(NSInteger index) {
+        NSLog(@"%ld", index);
+    };
     [self.view addSubview:imageView];
 
 }

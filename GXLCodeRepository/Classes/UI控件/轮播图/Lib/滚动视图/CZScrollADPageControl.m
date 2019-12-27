@@ -39,8 +39,8 @@
 
         if (i == self.currentPage) {
             [dot setFrame:CGRectMake(space + i * (dotW + magrin), 0, curDotW, dotW)];
-            dot.centerY = self.height / 2.0;
-            dot.centerX -= ((curDotW - dotW) / 2.0);
+            CGPoint center = dot.center;
+            dot.center = CGPointMake(center.x - ((curDotW - dotW) / 2.0), self.frame.size.height / 2.0);
         }else {
             [dot setFrame:CGRectMake(space + i * (dotW + magrin), dot.frame.origin.y, dotW, dotW)];
         }

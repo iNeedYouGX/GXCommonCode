@@ -50,47 +50,27 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        // 记录数据
-        self.dataSourceList = dataSourceList;
-        // 初始化属性
-        [self setupProperty];
-        // 外面设置属性
-        !configBlock ? : configBlock(self);
-        // 注册cell
-        !registerCellBlock ? : registerCellBlock(self.collectionView);
-        self.scrollADCellBlock = scrollADCellBlock;
-        [self createUI];
+        if (dataSourceList.count > 1) {
+            // 记录数据
+            self.dataSourceList = dataSourceList;
+            // 初始化属性
+            [self setupProperty];
+            // 外面设置属性
+            !configBlock ? : configBlock(self);
+            // 注册cell
+            !registerCellBlock ? : registerCellBlock(self.collectionView);
+            self.scrollADCellBlock = scrollADCellBlock;
+            [self createUI];
+        } else {
+            [self singletonImageView];
+        }
+
     }
     return self;
 }
 
 
 #pragma mark - 创建UI
-
-- (CZScrollADPageControl *)pageContrl
-{
-    if (_pageContrl == nil) {
-        CGRect frame = CGRectMake(0, self.height - 20, self.width, 20);
-        _pageContrl = [[CZScrollADPageControl alloc] initWithFrame:frame];
-//        _pageContrl.backgroundColor = [UIColor redColor];
-        _pageContrl.numberOfPages = self.dataSourceList.count;
-        // 选中的颜色
-        _pageContrl.currentPageIndicatorTintColor = CZRGBColor(245, 245, 245);
-        // 未选中颜色
-        _pageContrl.pageIndicatorTintColor = [UIColor whiteColor];
-    }
-    return _pageContrl;
-}
-
-- (NSTimer *)timer
-{
-    if (_timer == nil ) {
-        _timer = [NSTimer scheduledTimerWithTimeInterval:_timeInterval target:self selector:@selector(nextPage) userInfo:nil repeats:YES];
-        [[NSRunLoop mainRunLoop] addTimer:_timer forMode:NSRunLoopCommonModes];
-    }
-    return _timer;
-}
-
 // 创建UI
 - (void)createUI
 {
@@ -102,6 +82,44 @@
     [self timer];
 }
 
+
+- (void)singletonImageView
+{
+    UIImageView *imageView = [[UIImageView alloc] init];
+    imageView.frame = CGRectMake(0, 0, self.frame.size.width, self.frame.size.height);
+    imageView.image = [UIImage imageNamed:@"headDefault"];
+    [self addSubview:imageView];
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(singletonImageViewClicked)];
+    [imageView addGestureRecognizer:tap];
+}
+
+// 创建页面的小点点
+- (CZScrollADPageControl *)pageContrl
+{
+    if (_pageContrl == nil) {
+        CGRect frame = CGRectMake(0, self.frame.size.height - 20, self.frame.size.width, 20);
+        _pageContrl = [[CZScrollADPageControl alloc] initWithFrame:frame];
+        _pageContrl.backgroundColor = [UIColor redColor];
+        _pageContrl.numberOfPages = self.dataSourceList.count;
+        // 选中的颜色
+        _pageContrl.currentPageIndicatorTintColor = [UIColor colorWithRed:245 / 255.0 green:245 / 255.0 blue:245 / 255.0 alpha:1.0];
+        // 未选中颜色
+        _pageContrl.pageIndicatorTintColor = [UIColor whiteColor];
+    }
+    return _pageContrl;
+}
+
+// 添加定时器
+- (NSTimer *)timer
+{
+    if (_timer == nil ) {
+        _timer = [NSTimer scheduledTimerWithTimeInterval:_timeInterval target:self selector:@selector(nextPage) userInfo:nil repeats:YES];
+        [[NSRunLoop mainRunLoop] addTimer:_timer forMode:NSRunLoopCommonModes];
+    }
+    return _timer;
+}
+
+// 创建collectionView
 -(UICollectionView *)collectionView{
 
     if (!_collectionView ) {
@@ -126,7 +144,6 @@
         if (!self.scrollADCellBlock) {
             [_collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([CZScrollADImageCell class]) bundle:nil] forCellWithReuseIdentifier:@"CZScrollADImageCell"];
         }
-        
     }
     return  _collectionView;
 }
@@ -160,8 +177,8 @@
     if ([self.delegate respondsToSelector:@selector(cz_scrollAD:didSelectItemAtIndex:)]) {
         [self.delegate cz_scrollAD:self didSelectItemAtIndex:indexPath.item];
     }
+    !self.selectedIndexBlock ? : self.selectedIndexBlock(indexPath.item);
 }
-
 
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView {
     _currentPage = (int) (scrollView.contentOffset.x / scrollView.frame.size.width + 0.5) % self.dataSourceList.count;
@@ -173,11 +190,11 @@
     if ([self.delegate respondsToSelector:@selector(cz_scrollAD:currentItemAtIndex:)]) {
         [self.delegate cz_scrollAD:self currentItemAtIndex:_currentPage];
     }
+    !self.currentIndexBlock ? : self.currentIndexBlock(_currentPage);
     [UIView animateWithDuration:0.25 animations:^{
         self.pageContrl.currentPage = self->_currentPage;
     }];
 }
-
 
 // 调用setContentOffset方法才调用
 - (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView
@@ -185,11 +202,11 @@
     if ([self.delegate respondsToSelector:@selector(cz_scrollAD:currentItemAtIndex:)]) {
         [self.delegate cz_scrollAD:self currentItemAtIndex:_currentPage];
     }
+    !self.currentIndexBlock ? : self.currentIndexBlock(_currentPage);
     [UIView animateWithDuration:0.25 animations:^{
         self.pageContrl.currentPage = self->_currentPage;
     }];
 }
-
 
 // 手碰上就调用
 -(void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
@@ -252,7 +269,14 @@
     self.timer = nil;
 }
 
-
+// 单个图片的点击方法
+- (void)singletonImageViewClicked
+{
+    if ([self.delegate respondsToSelector:@selector(cz_scrollAD:didSelectItemAtIndex:)]) {
+        [self.delegate cz_scrollAD:self didSelectItemAtIndex:0];
+    }
+    !self.selectedIndexBlock ? : self.selectedIndexBlock(0);
+}
 
 #pragma mark - 初始化属性
 - (void)setupProperty
@@ -260,7 +284,6 @@
     self.scrollDirection = UICollectionViewScrollDirectionHorizontal;
     self.timeInterval = 3.0;
 }
-
 
 #pragma mark -  内存处理
 - (void)dealloc
