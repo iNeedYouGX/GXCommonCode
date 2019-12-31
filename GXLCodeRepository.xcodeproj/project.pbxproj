@@ -14,6 +14,11 @@
 		973D057B22A7A93000186571 /* XMGSocialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 973D057A22A7A93000186571 /* XMGSocialViewController.m */; };
 		9746574022BB59A2001AFCF0 /* RACPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 9746573F22BB59A2001AFCF0 /* RACPerson.m */; };
 		975AC84C21DC760800316C93 /* GXGridLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 975AC84B21DC760800316C93 /* GXGridLayout.m */; };
+		975BCB5F23BB4BDB009E0CED /* CZCollectionTypeOneCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 975BCB5C23BB4BDB009E0CED /* CZCollectionTypeOneCell.m */; };
+		975BCB6023BB4BDB009E0CED /* CZCollectionTypeOneCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 975BCB5D23BB4BDB009E0CED /* CZCollectionTypeOneCell.xib */; };
+		975BCB6523BB5675009E0CED /* CZguessWhatYouLikeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 975BCB6223BB5675009E0CED /* CZguessWhatYouLikeCell.m */; };
+		975BCB6623BB5675009E0CED /* CZguessWhatYouLikeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 975BCB6323BB5675009E0CED /* CZguessWhatYouLikeCell.xib */; };
+		975BCB6F23BB64B5009E0CED /* CALayer+LayerColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 975BCB6D23BB64B5009E0CED /* CALayer+LayerColor.m */; };
 		97664EEC23AE1A1700DB8383 /* CZScrollADCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 97664EE623AE1A1700DB8383 /* CZScrollADCell.m */; };
 		97664EED23AE1A1700DB8383 /* CZScrollADCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97664EE723AE1A1700DB8383 /* CZScrollADCell1.xib */; };
 		97664EEE23AE1A1700DB8383 /* CZScrollADCell1.m in Sources */ = {isa = PBXBuildFile; fileRef = 97664EE823AE1A1700DB8383 /* CZScrollADCell1.m */; };
@@ -75,6 +80,7 @@
 		97EA167A2181E5A100C20CD9 /* GXFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 97EA16792181E5A100C20CD9 /* GXFooterView.m */; };
 		97EA167D2181E76000C20CD9 /* UIView+GXExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 97EA167C2181E76000C20CD9 /* UIView+GXExtension.m */; };
 		97F1C7DB21930098009F7871 /* GXNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97F1C7DA21930098009F7871 /* GXNavigationController.m */; };
+		97F2116B23B9A9530052FADC /* GXTestViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 97F2116A23B9A9530052FADC /* GXTestViewController1.m */; };
 		97FC0511218807A500B526F8 /* GXPostWordController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97FC0510218807A500B526F8 /* GXPostWordController.m */; };
 		97FC051621884FBC00B526F8 /* GXPlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 97FC051521884FBC00B526F8 /* GXPlaceholderTextView.m */; };
 		97FEBF2E22D49DFF007BF592 /* download.plist in Resources */ = {isa = PBXBuildFile; fileRef = 97FEBF2D22D49DFF007BF592 /* download.plist */; };
@@ -95,6 +101,14 @@
 		9746573F22BB59A2001AFCF0 /* RACPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACPerson.m; sourceTree = "<group>"; };
 		975AC84A21DC760800316C93 /* GXGridLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXGridLayout.h; sourceTree = "<group>"; };
 		975AC84B21DC760800316C93 /* GXGridLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXGridLayout.m; sourceTree = "<group>"; };
+		975BCB5C23BB4BDB009E0CED /* CZCollectionTypeOneCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZCollectionTypeOneCell.m; sourceTree = "<group>"; };
+		975BCB5D23BB4BDB009E0CED /* CZCollectionTypeOneCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CZCollectionTypeOneCell.xib; sourceTree = "<group>"; };
+		975BCB5E23BB4BDB009E0CED /* CZCollectionTypeOneCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZCollectionTypeOneCell.h; sourceTree = "<group>"; };
+		975BCB6223BB5675009E0CED /* CZguessWhatYouLikeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZguessWhatYouLikeCell.m; sourceTree = "<group>"; wrapsLines = 1; };
+		975BCB6323BB5675009E0CED /* CZguessWhatYouLikeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CZguessWhatYouLikeCell.xib; sourceTree = "<group>"; };
+		975BCB6423BB5675009E0CED /* CZguessWhatYouLikeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZguessWhatYouLikeCell.h; sourceTree = "<group>"; };
+		975BCB6D23BB64B5009E0CED /* CALayer+LayerColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+LayerColor.m"; sourceTree = "<group>"; };
+		975BCB6E23BB64B5009E0CED /* CALayer+LayerColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+LayerColor.h"; sourceTree = "<group>"; };
 		97664EE423AE1A1700DB8383 /* CZScrollADCell1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZScrollADCell1.h; sourceTree = "<group>"; };
 		97664EE523AE1A1700DB8383 /* CZScrollAD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZScrollAD.h; sourceTree = "<group>"; };
 		97664EE623AE1A1700DB8383 /* CZScrollADCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZScrollADCell.m; sourceTree = "<group>"; };
@@ -117,7 +131,7 @@
 		977B311C23B608420011E1BC /* GXTitlesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXTitlesViewController.m; sourceTree = "<group>"; };
 		977B311E23B612480011E1BC /* titlesViewDataSource.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = titlesViewDataSource.json; sourceTree = "<group>"; };
 		977B312223B626360011E1BC /* GXKindsOfViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXKindsOfViewController.h; sourceTree = "<group>"; };
-		977B312323B626360011E1BC /* GXKindsOfViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXKindsOfViewController.m; sourceTree = "<group>"; };
+		977B312323B626360011E1BC /* GXKindsOfViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXKindsOfViewController.m; sourceTree = "<group>"; wrapsLines = 1; };
 		977B312623B626F30011E1BC /* CZFestivalGoodsColLayoutView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CZFestivalGoodsColLayoutView.xib; sourceTree = "<group>"; };
 		977B312723B626F30011E1BC /* CZFestivalGoodsColLayoutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZFestivalGoodsColLayoutView.h; sourceTree = "<group>"; };
 		977B312823B626F30011E1BC /* CZFestivalGoodsColLayoutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZFestivalGoodsColLayoutView.m; sourceTree = "<group>"; };
@@ -198,6 +212,8 @@
 		97EA167C2181E76000C20CD9 /* UIView+GXExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+GXExtension.m"; sourceTree = "<group>"; };
 		97F1C7D921930098009F7871 /* GXNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXNavigationController.h; sourceTree = "<group>"; };
 		97F1C7DA21930098009F7871 /* GXNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXNavigationController.m; sourceTree = "<group>"; };
+		97F2116923B9A9530052FADC /* GXTestViewController1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXTestViewController1.h; sourceTree = "<group>"; };
+		97F2116A23B9A9530052FADC /* GXTestViewController1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXTestViewController1.m; sourceTree = "<group>"; };
 		97FC050F218807A500B526F8 /* GXPostWordController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXPostWordController.h; sourceTree = "<group>"; };
 		97FC0510218807A500B526F8 /* GXPostWordController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXPostWordController.m; sourceTree = "<group>"; };
 		97FC051421884FBC00B526F8 /* GXPlaceholderTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXPlaceholderTextView.h; sourceTree = "<group>"; };
@@ -254,6 +270,33 @@
 				975AC84B21DC760800316C93 /* GXGridLayout.m */,
 			);
 			path = "自己算的格子布局";
+			sourceTree = "<group>";
+		};
+		975BCB5B23BB4BCA009E0CED /* View1 */ = {
+			isa = PBXGroup;
+			children = (
+				975BCB5E23BB4BDB009E0CED /* CZCollectionTypeOneCell.h */,
+				975BCB5C23BB4BDB009E0CED /* CZCollectionTypeOneCell.m */,
+				975BCB5D23BB4BDB009E0CED /* CZCollectionTypeOneCell.xib */,
+			);
+			path = View1;
+			sourceTree = "<group>";
+		};
+		975BCB6123BB5422009E0CED /* View2 */ = {
+			isa = PBXGroup;
+			children = (
+				975BCB6423BB5675009E0CED /* CZguessWhatYouLikeCell.h */,
+				975BCB6223BB5675009E0CED /* CZguessWhatYouLikeCell.m */,
+				975BCB6323BB5675009E0CED /* CZguessWhatYouLikeCell.xib */,
+			);
+			path = View2;
+			sourceTree = "<group>";
+		};
+		975BCB6723BB631F009E0CED /* View3 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View3;
 			sourceTree = "<group>";
 		};
 		97664EE023ADF8E100DB8383 /* alert弹框 */ = {
@@ -343,30 +386,37 @@
 			path = "继续优化";
 			sourceTree = "<group>";
 		};
-		977B312123B625D40011E1BC /* 一些用过的UI样式 */ = {
-			isa = PBXGroup;
-			children = (
-				977B312523B626EB0011E1BC /* View */,
-				977B312223B626360011E1BC /* GXKindsOfViewController.h */,
-				977B312323B626360011E1BC /* GXKindsOfViewController.m */,
-			);
-			path = "一些用过的UI样式";
-			sourceTree = "<group>";
-		};
-		977B312523B626EB0011E1BC /* View */ = {
+		977B312123B625D40011E1BC /* CollectionViewCell样式 */ = {
 			isa = PBXGroup;
 			children = (
 				977B312B23B628E10011E1BC /* KindsOfViewData.json */,
+				975BCB6723BB631F009E0CED /* View3 */,
+				975BCB6123BB5422009E0CED /* View2 */,
+				975BCB5B23BB4BCA009E0CED /* View1 */,
+				977B312523B626EB0011E1BC /* View0 */,
+				977B312223B626360011E1BC /* GXKindsOfViewController.h */,
+				977B312323B626360011E1BC /* GXKindsOfViewController.m */,
+				97F2116923B9A9530052FADC /* GXTestViewController1.h */,
+				97F2116A23B9A9530052FADC /* GXTestViewController1.m */,
+			);
+			path = "CollectionViewCell样式";
+			sourceTree = "<group>";
+		};
+		977B312523B626EB0011E1BC /* View0 */ = {
+			isa = PBXGroup;
+			children = (
 				977B312723B626F30011E1BC /* CZFestivalGoodsColLayoutView.h */,
 				977B312823B626F30011E1BC /* CZFestivalGoodsColLayoutView.m */,
 				977B312623B626F30011E1BC /* CZFestivalGoodsColLayoutView.xib */,
 			);
-			path = View;
+			path = View0;
 			sourceTree = "<group>";
 		};
 		977B313023B62A250011E1BC /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				975BCB6E23BB64B5009E0CED /* CALayer+LayerColor.h */,
+				975BCB6D23BB64B5009E0CED /* CALayer+LayerColor.m */,
 				977B312D23B62A220011E1BC /* NSString+CZExtension.h */,
 				977B312E23B62A220011E1BC /* NSString+CZExtension.m */,
 				97EA167B2181E76000C20CD9 /* UIView+GXExtension.h */,
@@ -384,6 +434,7 @@
 				A2DCE2F4E525FD6D3FE5FAB7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
+			wrapsLines = 1;
 		};
 		97A05FD8216F004300F49C01 /* Products */ = {
 			isa = PBXGroup;
@@ -435,9 +486,9 @@
 		97A05FFF216F427700F49C01 /* UI控件 */ = {
 			isa = PBXGroup;
 			children = (
-				977B312123B625D40011E1BC /* 一些用过的UI样式 */,
-				977B312023B625BD0011E1BC /* 继续优化 */,
 				97FC051321884F4F00B526F8 /* 主控制器 */,
+				977B312123B625D40011E1BC /* CollectionViewCell样式 */,
+				977B312023B625BD0011E1BC /* 继续优化 */,
 				97664EE223AE19E000DB8383 /* 轮播图 */,
 				977B311223B607FB0011E1BC /* 各种菜单样式 */,
 			);
@@ -709,12 +760,14 @@
 				97A05E7E218AFFAB006A2CF8 /* PostImage.bundle in Resources */,
 				97A05FE2216F004300F49C01 /* Main.storyboard in Resources */,
 				97E0046F23B30D3C0028A5E5 /* CZScrollADImageCell.xib in Resources */,
+				975BCB6023BB4BDB009E0CED /* CZCollectionTypeOneCell.xib in Resources */,
 				97C20BF3217DF28F00C78AAD /* image.jpeg in Resources */,
 				97EA166E21806AF000C20CD9 /* GXTopWindowsController.xib in Resources */,
 				977B311F23B612480011E1BC /* titlesViewDataSource.json in Resources */,
 				97A05E79218A9B31006A2CF8 /* GXAddTagToobar.xib in Resources */,
 				97DDF340224DC9A100890F53 /* XMGThreeViewController.xib in Resources */,
 				977B312C23B628E10011E1BC /* KindsOfViewData.json in Resources */,
+				975BCB6623BB5675009E0CED /* CZguessWhatYouLikeCell.xib in Resources */,
 				977B312923B626F30011E1BC /* CZFestivalGoodsColLayoutView.xib in Resources */,
 				97C20BF0217DF22000C78AAD /* GXCircleImageController.xib in Resources */,
 			);
@@ -767,12 +820,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				97C20BE3217D92AE00C78AAD /* MenuController.m in Sources */,
+				975BCB6523BB5675009E0CED /* CZguessWhatYouLikeCell.m in Sources */,
 				9746574022BB59A2001AFCF0 /* RACPerson.m in Sources */,
 				97A05FEA216F004600F49C01 /* main.m in Sources */,
 				97EA16762181CB5200C20CD9 /* GXSquareCell.m in Sources */,
 				97F1C7DB21930098009F7871 /* GXNavigationController.m in Sources */,
+				975BCB5F23BB4BDB009E0CED /* CZCollectionTypeOneCell.m in Sources */,
 				97A3415021D4DB36006DF0D2 /* GXPhotoCell.m in Sources */,
 				970E617C22B8B9D400E68BE3 /* GXRACTestController.m in Sources */,
+				975BCB6F23BB64B5009E0CED /* CALayer+LayerColor.m in Sources */,
 				97664EEC23AE1A1700DB8383 /* CZScrollADCell.m in Sources */,
 				977C3391218D4ED000FAA144 /* GXTagTextField.m in Sources */,
 				97664EF023AE1A1700DB8383 /* CZScrollAD.m in Sources */,
@@ -785,6 +841,7 @@
 				97E0047323B36B0D0028A5E5 /* CZScrollADPageControl.m in Sources */,
 				97C20BEF217DF22000C78AAD /* GXCircleImageController.m in Sources */,
 				97A05FF9216F236000F49C01 /* GXTabarController.m in Sources */,
+				97F2116B23B9A9530052FADC /* GXTestViewController1.m in Sources */,
 				977B311D23B608420011E1BC /* GXTitlesViewController.m in Sources */,
 				97FC0511218807A500B526F8 /* GXPostWordController.m in Sources */,
 				977B312423B626360011E1BC /* GXKindsOfViewController.m in Sources */,

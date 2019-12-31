@@ -20,45 +20,46 @@
 - (NSArray *)dataArr
 {
     if (_dataArr == nil) {
-        _dataArr = @[@{@"title" : @"弹框的创建",
-                       @"control" : @"AlertViewTEST"
-                       },
-                     @{@"title" : @"menuController的创建",
-                       @"control" : @"MenuController"
-                       },
-                     @{@"title" : @"切圆角的方法",
-                       @"control" : @"GXCircleImageController"
-                       },
-                     @{@"title" : @"UIWindow的创建",
-                       @"control" : @"GXTopWindowsController"
-                       },
-                     @{@"title" : @"UITableView的创建",
-                       @"control" : @"GXSquareController"
-                       },
-                     @{@"title" : @"发段子",
-                       @"control" : @"GXPostWordController"
-                       },
-                     @{@"title" : @"布局",
-                       @"control" : @"GXFlowLayoutController"
-                       },
-                     @{@"title" : @"父子控制器",
-                       @"control" : @"GXParentChildController"
-                       },
-                     @{@"title" : @"网易新闻首页",
-                       @"control" : @"GXHomeViewController"
-                       },
-                     @{@"title" : @"RAC的使用",
-                       @"control" : @"GXRACTestController"
-                        },
-                     @{@"title" : @"轮播图使用",
-                       @"control" : @"GXScrollImageView"
-                        },
-                     @{@"title" : @"各种菜单样式",
-                       @"control" : @"GXTitlesViewController"
-                     },
-                     @{@"title" : @"各种UI样式-单独的View",
-                       @"control" : @"GXKindsOfViewController"
-                     }
+        _dataArr = @[
+            @{@"title" : @"各种菜单样式",
+              @"control" : @"GXTitlesViewController"
+            },
+            @{@"title" : @"CollectionViewCell样式",
+              @"control" : @"GXKindsOfViewController"
+            },
+            @{@"title" : @"弹框的创建",
+              @"control" : @"AlertViewTEST"
+            },
+            @{@"title" : @"menuController的创建",
+              @"control" : @"MenuController"
+            },
+            @{@"title" : @"切圆角的方法",
+              @"control" : @"GXCircleImageController"
+            },
+            @{@"title" : @"UIWindow的创建",
+              @"control" : @"GXTopWindowsController"
+            },
+            @{@"title" : @"UITableView的创建",
+              @"control" : @"GXSquareController"
+            },
+            @{@"title" : @"发段子",
+              @"control" : @"GXPostWordController"
+            },
+            @{@"title" : @"布局",
+              @"control" : @"GXFlowLayoutController"
+            },
+            @{@"title" : @"父子控制器",
+              @"control" : @"GXParentChildController"
+            },
+            @{@"title" : @"网易新闻首页",
+              @"control" : @"GXHomeViewController"
+            },
+            @{@"title" : @"RAC的使用",
+              @"control" : @"GXRACTestController"
+            },
+            @{@"title" : @"轮播图使用",
+              @"control" : @"GXScrollImageView"
+            }
                      ];
     }
     return _dataArr;
