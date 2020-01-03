@@ -9,5 +9,8 @@ target 'GXLCodeRepository' do
   pod 'SVProgressHUD'
   pod 'SDWebImage'
   pod 'Masonry'
+  pod 'AFNetworking'
+  pod 'MJExtension'
+  pod 'MJRefresh'
 
 end

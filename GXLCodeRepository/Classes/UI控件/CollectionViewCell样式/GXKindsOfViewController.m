@@ -8,7 +8,6 @@
 
 #import "GXKindsOfViewController.h"
 #import "CZFestivalGoodsColLayoutView.h"
-#import "GXTestViewController1.h"
 #import "CZCollectionTypeOneCell.h"
 #import "CZguessWhatYouLikeCell.h"
 

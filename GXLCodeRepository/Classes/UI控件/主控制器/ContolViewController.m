@@ -27,7 +27,10 @@
             @{@"title" : @"CollectionViewCell样式",
               @"control" : @"GXKindsOfViewController"
             },
-            @{@"title" : @"弹框的创建",
+            @{@"title" : @"TableViewCell样式",
+              @"control" : @"GXSomeTableCellController"
+            },
+            @{@"title" : @"弹框Alert样式",
               @"control" : @"AlertViewTEST"
             },
             @{@"title" : @"menuController的创建",
@@ -68,7 +71,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor redColor];
-    UITableView *tableView =[[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+    CGRect frame = CGRectMake(0, 0, SCR_WIDTH, SCR_HEIGHT - (IsiPhoneX ? (49 + 34) : 49));
+    UITableView *tableView = [[UITableView alloc] initWithFrame:frame style:UITableViewStylePlain];
     tableView.delegate = self;
     tableView.dataSource = self;
     [self.view addSubview:tableView];
