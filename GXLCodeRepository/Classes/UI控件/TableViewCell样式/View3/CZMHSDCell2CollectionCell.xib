@@ -77,10 +77,10 @@
             </constraints>
             <size key="customSize" width="305" height="442"/>
             <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                 <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
                     <integer key="value" value="6"/>
                 </userDefinedRuntimeAttribute>
-                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
             </userDefinedRuntimeAttributes>
             <connections>
                 <outlet property="actualPriceLabel" destination="BGc-RA-nMR" id="meR-Kd-4ho"/>

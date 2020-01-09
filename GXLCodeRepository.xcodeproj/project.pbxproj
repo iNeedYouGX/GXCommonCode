@@ -73,6 +73,8 @@
 		97A6ADCC23BDCAB7008E4596 /* CZMHSDCommodityCell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97A6ADCA23BDCAB6008E4596 /* CZMHSDCommodityCell2.xib */; };
 		97A6ADD023BDCADB008E4596 /* CZMHSDCell2CollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A6ADCE23BDCADA008E4596 /* CZMHSDCell2CollectionCell.m */; };
 		97A6ADD123BDCADB008E4596 /* CZMHSDCell2CollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97A6ADCF23BDCADB008E4596 /* CZMHSDCell2CollectionCell.xib */; };
+		97A6DDE723C75C4400C2CFC7 /* UILabel+CZAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A6DDE423C75C4400C2CFC7 /* UILabel+CZAdapter.m */; };
+		97A6DDE823C75C4400C2CFC7 /* UIFont+CZExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A6DDE623C75C4400C2CFC7 /* UIFont+CZExtension.m */; };
 		97C20BE3217D92AE00C78AAD /* MenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97C20BE2217D92AE00C78AAD /* MenuController.m */; };
 		97C20BE7217D930100C78AAD /* MenuController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97C20BE6217D930100C78AAD /* MenuController.xib */; };
 		97C20BEB217D93AD00C78AAD /* GXMenuLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 97C20BEA217D93AD00C78AAD /* GXMenuLabel.m */; };
@@ -216,6 +218,10 @@
 		97A6ADCD23BDCADA008E4596 /* CZMHSDCell2CollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZMHSDCell2CollectionCell.h; sourceTree = "<group>"; };
 		97A6ADCE23BDCADA008E4596 /* CZMHSDCell2CollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZMHSDCell2CollectionCell.m; sourceTree = "<group>"; };
 		97A6ADCF23BDCADB008E4596 /* CZMHSDCell2CollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CZMHSDCell2CollectionCell.xib; sourceTree = "<group>"; };
+		97A6DDE323C75C4300C2CFC7 /* UIFont+CZExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+CZExtension.h"; sourceTree = "<group>"; };
+		97A6DDE423C75C4400C2CFC7 /* UILabel+CZAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+CZAdapter.m"; sourceTree = "<group>"; };
+		97A6DDE523C75C4400C2CFC7 /* UILabel+CZAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+CZAdapter.h"; sourceTree = "<group>"; };
+		97A6DDE623C75C4400C2CFC7 /* UIFont+CZExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+CZExtension.m"; sourceTree = "<group>"; };
 		97C20BE1217D92AE00C78AAD /* MenuController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuController.h; sourceTree = "<group>"; };
 		97C20BE2217D92AE00C78AAD /* MenuController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuController.m; sourceTree = "<group>"; };
 		97C20BE6217D930100C78AAD /* MenuController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuController.xib; sourceTree = "<group>"; };
@@ -461,6 +467,10 @@
 		977B313023B62A250011E1BC /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				97A6DDE323C75C4300C2CFC7 /* UIFont+CZExtension.h */,
+				97A6DDE623C75C4400C2CFC7 /* UIFont+CZExtension.m */,
+				97A6DDE523C75C4400C2CFC7 /* UILabel+CZAdapter.h */,
+				97A6DDE423C75C4400C2CFC7 /* UILabel+CZAdapter.m */,
 				97A6ADB323BDB757008E4596 /* NSDictionary+CZExtension.h */,
 				97A6ADB423BDB758008E4596 /* NSDictionary+CZExtension.m */,
 				975BCB6E23BB64B5009E0CED /* CALayer+LayerColor.h */,
@@ -962,6 +972,7 @@
 				972D9EEA218B0D790013B420 /* GXAddTagController.m in Sources */,
 				97EA166D21806AF000C20CD9 /* GXTopWindowsController.m in Sources */,
 				977B312F23B62A220011E1BC /* NSString+CZExtension.m in Sources */,
+				97A6DDE823C75C4400C2CFC7 /* UIFont+CZExtension.m in Sources */,
 				97A6ADAF23BDB6D4008E4596 /* GXNetTool.m in Sources */,
 				97A6ADAD23BDB6D4008E4596 /* KCUtilMd5.m in Sources */,
 				977B311923B6080F0011E1BC /* CZTitlesViewTypeLayout.m in Sources */,
@@ -994,6 +1005,7 @@
 				97664F0023AE1B7800DB8383 /* GXScrollImageView.m in Sources */,
 				975AC84C21DC760800316C93 /* GXGridLayout.m in Sources */,
 				97EA1668218049B300C20CD9 /* GXConst.m in Sources */,
+				97A6DDE723C75C4400C2CFC7 /* UILabel+CZAdapter.m in Sources */,
 				977B311A23B6080F0011E1BC /* CZCategoryLineLayoutView.m in Sources */,
 				97A6ADAE23BDB6D4008E4596 /* CZReachabilityHandle.m in Sources */,
 				977B312A23B626F30011E1BC /* CZFestivalGoodsColLayoutView.m in Sources */,
