@@ -10,32 +10,32 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CZFestivalGoodsColLayoutView">
-            <rect key="frame" x="0.0" y="0.0" width="100" height="184"/>
+            <rect key="frame" x="0.0" y="0.0" width="148" height="165"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4gW-Jg-1CV">
-                    <rect key="frame" x="0.0" y="0.0" width="100" height="184"/>
+                    <rect key="frame" x="0.0" y="0.0" width="148" height="165"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="testImage1" translatesAutoresizingMaskIntoConstraints="NO" id="7Wh-JD-eHG">
-                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                            <rect key="frame" x="0.0" y="0.0" width="148" height="100"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="100" id="Mzk-vn-240"/>
                             </constraints>
                             <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
                                     <integer key="value" value="0"/>
                                 </userDefinedRuntimeAttribute>
-                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                             </userDefinedRuntimeAttributes>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="学生宿舍榨汁机家用炸水果汁小型充电动便携式…" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CLJ-MX-B42">
-                            <rect key="frame" x="4" y="104" width="92" height="16"/>
+                            <rect key="frame" x="4" y="104" width="140" height="16"/>
                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                             <color key="textColor" red="0.12549019610000001" green="0.12549019610000001" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4EX-NW-DWD">
-                            <rect key="frame" x="50.5" y="149" width="31" height="14.5"/>
+                            <rect key="frame" x="50.5" y="130" width="31" height="14.5"/>
                             <attributedString key="attributedText">
                                 <fragment content="¥699">
                                     <attributes>
@@ -48,13 +48,13 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥599" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TfK-aj-CHK">
-                            <rect key="frame" x="4" y="146.5" width="40.5" height="19.5"/>
+                            <rect key="frame" x="4" y="127.5" width="40.5" height="19.5"/>
                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
                             <color key="textColor" red="0.8862745098" green="0.34509803919999998" blue="0.21960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vMT-97-GvN">
-                            <rect key="frame" x="4" y="171" width="38" height="13"/>
+                            <rect key="frame" x="4" y="152" width="38" height="13"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Main-icon6" translatesAutoresizingMaskIntoConstraints="NO" id="1CK-bx-HYO">
                                     <rect key="frame" x="0.0" y="0.0" width="38" height="13"/>
@@ -101,7 +101,7 @@
                     </constraints>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="补 3.21" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="adS-K9-VjX">
-                    <rect key="frame" x="47" y="171" width="33.5" height="13"/>
+                    <rect key="frame" x="47" y="152" width="33.5" height="13"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="13" id="Mbb-am-wRN"/>
                     </constraints>
@@ -146,7 +146,7 @@
                 <outlet property="smallImageView" destination="LOC-Tb-B4q" id="FXf-gd-ZZH"/>
                 <outlet property="titleLabel" destination="CLJ-MX-B42" id="Qgo-Et-oIE"/>
             </connections>
-            <point key="canvasLocation" x="-387.19999999999999" y="-193.4032983508246"/>
+            <point key="canvasLocation" x="-348.80000000000001" y="-201.94902548725639"/>
         </view>
     </objects>
     <resources>

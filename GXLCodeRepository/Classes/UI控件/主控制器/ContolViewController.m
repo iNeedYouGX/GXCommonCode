@@ -27,8 +27,14 @@
             @{@"title" : @"CollectionViewCell样式",
               @"control" : @"GXKindsOfViewController"
             },
+            @{@"title" : @"UICollectionView使用",
+              @"control" : @"GXCollectionViewDemoController"
+            },
             @{@"title" : @"TableViewCell样式",
               @"control" : @"GXSomeTableCellController"
+            },
+            @{@"title" : @"UITableView的使用",
+              @"control" : @"GXSquareController"
             },
             @{@"title" : @"弹框Alert样式",
               @"control" : @"AlertViewTEST"
@@ -41,9 +47,6 @@
             },
             @{@"title" : @"UIWindow的创建",
               @"control" : @"GXTopWindowsController"
-            },
-            @{@"title" : @"UITableView的创建",
-              @"control" : @"GXSquareController"
             },
             @{@"title" : @"发段子",
               @"control" : @"GXPostWordController"

@@ -27,8 +27,12 @@ static NSString *SquareID = @"SquareID";
     // 注册tableViewHeaderView
     [self.tableView registerClass:[UITableViewHeaderFooterView class] forHeaderFooterViewReuseIdentifier:@"sectionHeaderView"];
     [self.tableView registerClass:[UITableViewHeaderFooterView class] forHeaderFooterViewReuseIdentifier:@"sectionFooterView"];
-    // cell下面的横线
-//    self.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
+
+    // UITableView的常见设置
+    // 分割线颜色
+    self.tableView.separatorColor = [UIColor redColor];
+    // 隐藏分割线
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
 
     // 调整footer和header
     self.tableView.sectionHeaderHeight = 35;
@@ -39,10 +43,10 @@ static NSString *SquareID = @"SquareID";
     self.tableView.tableHeaderView = [[GXFooterView alloc] init];
 
     // 调整inset
-//    self.tableView.contentInset = UIEdgeInsetsMake(-25, 0, 0, 0);
+    self.tableView.contentInset = UIEdgeInsetsMake(-25, 0, 0, 0);
 }
 
-#pragma mark - <UITableViewDelegate>
+#pragma mark - <UITableViewDataSource>
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     return 2;

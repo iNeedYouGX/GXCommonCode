@@ -23,6 +23,7 @@
 #define IsiPhoneX (((int)((SCR_HEIGHT / SCR_WIDTH) * 100) == 216) ? YES : NO)
 #define SCR_WIDTH [UIScreen mainScreen].bounds.size.width
 #define SCR_HEIGHT [UIScreen mainScreen].bounds.size.height
+#define FSS(size) (size * (SCR_WIDTH / 375.0f))
 
 ///**
 // 颜色

@@ -81,6 +81,7 @@
 		97C20BEF217DF22000C78AAD /* GXCircleImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97C20BED217DF22000C78AAD /* GXCircleImageController.m */; };
 		97C20BF0217DF22000C78AAD /* GXCircleImageController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97C20BEE217DF22000C78AAD /* GXCircleImageController.xib */; };
 		97C20BF3217DF28F00C78AAD /* image.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 97C20BF2217DF28F00C78AAD /* image.jpeg */; };
+		97C4098923C889D900F59DA6 /* GXCollectionViewDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97C4098823C889D900F59DA6 /* GXCollectionViewDemoController.m */; };
 		97D0C62E2360582B00F3B994 /* CZGuideController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97D0C62C2360582B00F3B994 /* CZGuideController.m */; };
 		97D489D222A6A1D900FD4EC7 /* GXHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97D489D122A6A1D900FD4EC7 /* GXHomeViewController.m */; };
 		97DDF334224DBDCD00890F53 /* GXParentChildController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97DDF333224DBDCD00890F53 /* GXParentChildController.m */; };
@@ -231,6 +232,8 @@
 		97C20BED217DF22000C78AAD /* GXCircleImageController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXCircleImageController.m; sourceTree = "<group>"; };
 		97C20BEE217DF22000C78AAD /* GXCircleImageController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GXCircleImageController.xib; sourceTree = "<group>"; };
 		97C20BF2217DF28F00C78AAD /* image.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image.jpeg; sourceTree = "<group>"; };
+		97C4098723C889D900F59DA6 /* GXCollectionViewDemoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXCollectionViewDemoController.h; sourceTree = "<group>"; };
+		97C4098823C889D900F59DA6 /* GXCollectionViewDemoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXCollectionViewDemoController.m; sourceTree = "<group>"; };
 		97D0C62C2360582B00F3B994 /* CZGuideController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZGuideController.m; sourceTree = "<group>"; };
 		97D0C62D2360582B00F3B994 /* CZGuideController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZGuideController.h; sourceTree = "<group>"; };
 		97D489D022A6A1D900FD4EC7 /* GXHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXHomeViewController.h; sourceTree = "<group>"; };
@@ -429,7 +432,6 @@
 				97C20BE8217D936800C78AAD /* menuController使用 */,
 				97C20BF1217DF23000C78AAD /* 图片的圆角 */,
 				97EA166921806ABF00C20CD9 /* 其他窗口的创建 */,
-				97EA16702181BDB600C20CD9 /* 小方块的床架 */,
 				97D0C62B2360580800F3B994 /* 新人引导页 */,
 				970E617922B8B70D00E68BE3 /* RAC的使用 */,
 				97DDF330224CAF0000890F53 /* 父子控制器 */,
@@ -543,9 +545,11 @@
 		97A05FFF216F427700F49C01 /* UI控件 */ = {
 			isa = PBXGroup;
 			children = (
+				97C4098623C8898300F59DA6 /* UICollectionView的使用 */,
 				97FC051321884F4F00B526F8 /* 主控制器 */,
 				977B312123B625D40011E1BC /* CollectionViewCell样式 */,
 				97A6AD9E23BD86D9008E4596 /* TableViewCell样式 */,
+				97EA16702181BDB600C20CD9 /* UITableView的使用 */,
 				97664EE023ADF8E100DB8383 /* alert弹框 */,
 				97664EE223AE19E000DB8383 /* 轮播图 */,
 				977B311223B607FB0011E1BC /* 各种菜单样式 */,
@@ -670,6 +674,15 @@
 			path = "图片的圆角";
 			sourceTree = "<group>";
 		};
+		97C4098623C8898300F59DA6 /* UICollectionView的使用 */ = {
+			isa = PBXGroup;
+			children = (
+				97C4098723C889D900F59DA6 /* GXCollectionViewDemoController.h */,
+				97C4098823C889D900F59DA6 /* GXCollectionViewDemoController.m */,
+			);
+			path = "UICollectionView的使用";
+			sourceTree = "<group>";
+		};
 		97D0C62B2360580800F3B994 /* 新人引导页 */ = {
 			isa = PBXGroup;
 			children = (
@@ -745,14 +758,14 @@
 			path = "其他窗口的创建";
 			sourceTree = "<group>";
 		};
-		97EA16702181BDB600C20CD9 /* 小方块的床架 */ = {
+		97EA16702181BDB600C20CD9 /* UITableView的使用 */ = {
 			isa = PBXGroup;
 			children = (
 				97EA16712181BDCA00C20CD9 /* GXSquareController.h */,
 				97EA16722181BDCA00C20CD9 /* GXSquareController.m */,
 				97EA16772181E57B00C20CD9 /* View */,
 			);
-			path = "小方块的床架";
+			path = "UITableView的使用";
 			sourceTree = "<group>";
 		};
 		97EA16772181E57B00C20CD9 /* View */ = {
@@ -983,6 +996,7 @@
 				977B311D23B608420011E1BC /* GXTitlesViewController.m in Sources */,
 				97FC0511218807A500B526F8 /* GXPostWordController.m in Sources */,
 				977B312423B626360011E1BC /* GXKindsOfViewController.m in Sources */,
+				97C4098923C889D900F59DA6 /* GXCollectionViewDemoController.m in Sources */,
 				979585292293E9E3005FC54D /* GXPerson.m in Sources */,
 				97A05FF2216F013E00F49C01 /* ContolViewController.m in Sources */,
 				97C20BEB217D93AD00C78AAD /* GXMenuLabel.m in Sources */,

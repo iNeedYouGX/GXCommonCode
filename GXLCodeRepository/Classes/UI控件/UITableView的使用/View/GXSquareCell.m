@@ -13,13 +13,19 @@
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
+        // 设置指示器
         self.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-        
-        
-//        UIImageView *bgView = [[UIImageView alloc] init];
-//        bgView.image = [UIImage imageNamed:@"mainCellBackground"];
-        // 技术点: backgroundView在contentView的下面
-//        self.backgroundView = bgView;
+        self.accessoryView = [[UISwitch alloc] init];
+
+        // 设置选中的背景色
+        UIView *selectedBackgroundView = [[UIView alloc] init];
+        selectedBackgroundView.backgroundColor = [UIColor redColor];
+        self.selectedBackgroundView = selectedBackgroundView;
+
+        // 设置默认的背景色
+        UIImageView *bgView = [[UIImageView alloc] init];
+        bgView.image = [UIImage imageNamed:@"taobaoDetai_coupon"];
+        self.backgroundView = bgView;
         
         self.textLabel.textColor = [UIColor darkGrayColor];
         self.textLabel.font = [UIFont systemFontOfSize:16];
