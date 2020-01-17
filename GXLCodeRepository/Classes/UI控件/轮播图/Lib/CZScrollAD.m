@@ -229,11 +229,9 @@
     if (self.dataSourceList.count > 0) {
         //(1) 获取当前的显示的indexPath.item
         NSIndexPath *currentIndexPath = [[self.collectionView indexPathsForVisibleItems] lastObject];
-
         // 创建当前位置 设置section为50
         NSIndexPath *resetCurrentIndexPath = [NSIndexPath indexPathForItem:currentIndexPath.item inSection:100 / 2];
-
-        // 无动画形式就位
+        // 无动画形式跑到section为50位置
         if (self.scrollDirection == UICollectionViewScrollDirectionVertical) {
             [self.collectionView scrollToItemAtIndexPath:resetCurrentIndexPath atScrollPosition:UICollectionViewScrollPositionTop animated:NO];
         } else {
@@ -250,10 +248,10 @@
             nextSection++; // 下一个组
         }
 
-        // 创建下一张的位置
+        // 根据参数创建下一张的位置
         NSIndexPath *nextIndexPath = [NSIndexPath indexPathForItem:nextItem inSection:nextSection];
 
-        // 动画形式就位
+        // 动画形式就位到section为item + 1位置
         if (self.scrollDirection == UICollectionViewScrollDirectionVertical) {
             [self.collectionView scrollToItemAtIndexPath:nextIndexPath atScrollPosition:UICollectionViewScrollPositionTop animated:YES];
         } else {
@@ -291,7 +289,5 @@
     [self.timer invalidate];
     self.timer = nil;
 }
-
-
 
 @end
