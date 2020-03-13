@@ -54,6 +54,8 @@
 @property (nonatomic, strong) void (^block)(CZCategoryItem *);
 /** 指示器 */
 @property (nonatomic, strong) UIView *minline;
+/** <#注释#> */
+@property (nonatomic, strong) id recordElement;
 @end
 
 @implementation CZCategoryLineLayoutView
@@ -62,13 +64,19 @@
 {
     NSMutableArray *list = [NSMutableArray array];
     for (NSDictionary *dic in items) {
-        if (![dic isKindOfClass:[NSDictionary class]]) return @[];
-        CZCategoryItem *item = [[CZCategoryItem alloc] init];
-        item.categoryName = dic[NameKey];
-        item.categoryId = dic[IdKey];
-        item.categoryImage = dic[imageKey];
-        item.objectInfo = dic[objectKey];
-        [list addObject:item];
+
+        if (![dic isKindOfClass:[NSDictionary class]]) {
+            CZCategoryItem *item = [[CZCategoryItem alloc] init];
+            item.categoryName = (NSString *)dic;
+            [list addObject:item];
+        } else {
+            CZCategoryItem *item = [[CZCategoryItem alloc] init];
+            item.categoryName = dic[NameKey];
+            item.categoryId = dic[IdKey];
+            item.categoryImage = dic[imageKey];
+            item.objectInfo = dic[objectKey];
+            [list addObject:item];
+        }
     }
     return list;
 }
@@ -81,13 +89,15 @@
     view.categoryItems = items;
     if (type == 0) {
         [view createView];
-    } else {
+    } else if (type == 1) {
         [view createLineTitle];
+    } else if (type == 2) {
+        [view createViewTypeThree];
     }
     return view;
 }
 
-
+#pragma mark - 样式一
 - (void)createView
 {
     CGFloat width = 50;
@@ -213,4 +223,66 @@
     }
 }
 
+#pragma mark - 样式三
+- (void)createViewTypeThree
+{
+    NSInteger count = self.categoryItems.count;
+    for (int i = 0; i < count; i++) {
+        CZCategoryItem *item = self.categoryItems[i];
+        UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+        [btn setTitleColor:UIColorFromRGB(0x9D9D9D) forState:UIControlStateNormal];
+        [btn setTitleColor:UIColorFromRGB(0xE25838) forState:UIControlStateSelected];
+        [btn setTitle:item.categoryName forState:UIControlStateNormal];
+        btn.titleLabel.font = [UIFont fontWithName:@"PingFangSC-Medium" size: 18];
+        btn.width = SCR_WIDTH / count;
+        btn.height = 33;
+        btn.x = i * btn.width;
+        btn.tag = i;
+        [self addSubview:btn];
+        [btn layoutIfNeeded];
+        UIView *line = [[UIView alloc] initWithFrame:CGRectMake(btn.titleLabel.x, btn.height - 2.5, btn.titleLabel.width, 2.5)];
+        line.tag = 100;
+        line.layer.cornerRadius = line.height / 2;
+        line.backgroundColor = UIColorFromRGB(0xE25838);
+        [btn addSubview:line];
+        if (i == 0) {
+            btn.selected = YES;
+            line.hidden = NO;
+            self.recordElement = btn;
+        } else {
+            line.hidden = YES;
+        }
+        [btn addTarget:self action:@selector(viewTypeThreeAction:) forControlEvents:UIControlEventTouchUpInside];
+    }
+    self.height = CZGetY([self.subviews lastObject]);
+}
+
+- (void)viewTypeThreeAction:(UIButton *)sender
+{
+    if (self.recordElement == sender) {
+        return;
+    }
+
+    // 设置选中
+    sender.selected = YES;
+    UIView *line = [sender viewWithTag:100];
+    line.hidden = NO;
+
+    // 还原选中
+    UIButton *recordElement = self.recordElement;
+    recordElement.selected = NO;
+    UIView *line1 = [self.recordElement viewWithTag:100];
+    line1.hidden = YES;
+
+    self.categoryItem = self.categoryItems[sender.tag];
+    !self.block ? : self.block(self.categoryItem);
+
+    self.recordElement = sender;
+}
+
+#pragma mark - 样式4
+- (void)createViewTypeFour
+{
+
+}
 @end

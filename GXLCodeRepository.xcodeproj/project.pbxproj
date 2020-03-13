@@ -399,6 +399,7 @@
 		977B311223B607FB0011E1BC /* 各种菜单样式 */ = {
 			isa = PBXGroup;
 			children = (
+				97F07847241B4DAB006A080D /* New Group */,
 				977B311B23B608420011E1BC /* GXTitlesViewController.h */,
 				977B311C23B608420011E1BC /* GXTitlesViewController.m */,
 				977B311E23B612480011E1BC /* titlesViewDataSource.json */,
@@ -545,14 +546,14 @@
 		97A05FFF216F427700F49C01 /* UI控件 */ = {
 			isa = PBXGroup;
 			children = (
-				97C4098623C8898300F59DA6 /* UICollectionView的使用 */,
 				97FC051321884F4F00B526F8 /* 主控制器 */,
+				977B311223B607FB0011E1BC /* 各种菜单样式 */,
+				97C4098623C8898300F59DA6 /* UICollectionView的使用 */,
 				977B312123B625D40011E1BC /* CollectionViewCell样式 */,
 				97A6AD9E23BD86D9008E4596 /* TableViewCell样式 */,
 				97EA16702181BDB600C20CD9 /* UITableView的使用 */,
 				97664EE023ADF8E100DB8383 /* alert弹框 */,
 				97664EE223AE19E000DB8383 /* 轮播图 */,
-				977B311223B607FB0011E1BC /* 各种菜单样式 */,
 				977B312023B625BD0011E1BC /* 继续优化 */,
 			);
 			path = "UI控件";
@@ -777,6 +778,13 @@
 				97EA16792181E5A100C20CD9 /* GXFooterView.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		97F07847241B4DAB006A080D /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		97FC050E2188074800B526F8 /* 发段子 */ = {

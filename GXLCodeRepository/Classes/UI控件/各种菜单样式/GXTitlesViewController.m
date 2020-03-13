@@ -21,7 +21,7 @@
  相关属性：
  @property(nonatomic)         BOOL         reversesTitleShadowWhenHighlighted;  // default is NO. if YES, shadow reverses to shift between engrave and emboss appearance
 
- @property(nonatomic)         BOOL         adjustsImageWhenHighlighted;   // default is YES. if YES, image is drawn darker when highlighted(pressed)
+ @property(nonatomic)         BOOL         adjustsImageWhenHighlighted;   // default is YES. if YES, image is drawn darker when highlighted(pressed) 如果图片还会变灰,这个属性设置NO可以保证图片不变灰
 
  @property(nonatomic)         BOOL         adjustsImageWhenDisabled;      // default is YES. if YES, image is drawn lighter when disabled
 
@@ -37,6 +37,7 @@
     [self type1];
     [self type2];
     [self type3];
+    [self type4];
 }
 
 - (void)type1
@@ -45,6 +46,10 @@
     CZTitlesViewTypeLayout *line = [[CZTitlesViewTypeLayout alloc] initWithFrame:frame];
     line.backgroundColor = UIColorFromRGB(0xF5F5F5);
     [self.view addSubview:line];
+
+    [line setBlcok:^(BOOL isLine, BOOL isAsc, NSInteger index) {
+        NSLog(@"%d---%d----%ld", isLine, isAsc, index);
+    }];
 }
 
 - (void)type2
@@ -73,6 +78,17 @@
     // 分类的按钮
     NSArray *categoryList = [CZCategoryLineLayoutView categoryItems:list setupNameKey:@"categoryName" imageKey:@"img" IdKey:@"categoryId" objectKey:@""];
     CZCategoryLineLayoutView *categoryView = [CZCategoryLineLayoutView categoryLineLayoutViewWithFrame:frame Items:categoryList type:1 didClickedIndex:^(CZCategoryItem * _Nonnull item) {
+        NSLog(@"%@", item.categoryName);
+    }];
+    categoryView.backgroundColor = UIColorFromRGB(0xF5F5F5);
+    [self.view addSubview:categoryView];
+}
+
+- (void)type4
+{
+    NSArray *categoryList = [CZCategoryLineLayoutView categoryItems:@[@"搜极品城", @"搜淘宝"] setupNameKey:@"categoryName" imageKey:@"img" IdKey:@"categoryId" objectKey:@""];
+    CGRect frame = CGRectMake(0, CZGetY([self.view.subviews lastObject]) + 10, SCR_WIDTH, 0);
+    CZCategoryLineLayoutView *categoryView = [CZCategoryLineLayoutView categoryLineLayoutViewWithFrame:frame Items:categoryList type:2 didClickedIndex:^(CZCategoryItem * _Nonnull item) {
         NSLog(@"%@", item.categoryName);
     }];
     categoryView.backgroundColor = UIColorFromRGB(0xF5F5F5);
