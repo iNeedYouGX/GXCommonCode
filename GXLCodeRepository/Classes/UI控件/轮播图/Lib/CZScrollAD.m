@@ -58,7 +58,7 @@
             // 外面设置属性
             !configBlock ? : configBlock(self);
             // 注册cell
-            !registerCellBlock ? : registerCellBlock(self.collectionView);
+            !registerCellBlock ? : registerCellBlock(self. collectionView);
             self.scrollADCellBlock = scrollADCellBlock;
             [self createUI];
         } else {
@@ -79,7 +79,9 @@
     if (!self.scrollADCellBlock) {
         [self addSubview:self.pageContrl];
     }
-    [self timer];
+    if (self.isAutoScroll == YES) {
+        [self timer];
+    }
 }
 
 
@@ -138,6 +140,7 @@
         _collectionView.delegate = self;
         _collectionView.showsHorizontalScrollIndicator = NO;
         _collectionView.showsVerticalScrollIndicator = NO;
+        // 滚一个屏
         _collectionView.pagingEnabled = YES;
 
         // 默认是存图片轮播
@@ -217,7 +220,9 @@
 // 手移开就调用
 -(void) scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
 {
-    [self timer];
+    if (self.isAutoScroll == YES) {
+        [self timer];
+    }
 }
 
 
@@ -279,6 +284,7 @@
 #pragma mark - 初始化属性
 - (void)setupProperty
 {
+    self.isAutoScroll = YES;
     self.scrollDirection = UICollectionViewScrollDirectionHorizontal;
     self.timeInterval = 3.0;
 }

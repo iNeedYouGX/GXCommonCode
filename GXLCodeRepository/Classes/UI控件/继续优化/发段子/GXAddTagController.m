@@ -199,7 +199,7 @@
     self.view.backgroundColor = [UIColor whiteColor];
     self.title = @"添加标签";
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"完成" style:UIBarButtonItemStyleDone target:self action:@selector(done:)];
-    self.navigationController.navigationBar.translucent = NO;
+
 }
 
 - (void)done:(UIButton *)sender

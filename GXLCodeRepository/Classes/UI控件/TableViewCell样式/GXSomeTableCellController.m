@@ -27,7 +27,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor redColor];
-    self.navigationController.navigationBar.translucent = NO;
+    
 
     // 创建表
     [self.view addSubview:self.tableView];

@@ -51,9 +51,13 @@
 		97A05FF9216F236000F49C01 /* GXTabarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A05FF7216F236000F49C01 /* GXTabarController.m */; };
 		97A05FFE216F2A9800F49C01 /* OCExampleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A05FFD216F2A9800F49C01 /* OCExampleController.m */; };
 		97A0D00721C0B99100CBF9A1 /* GXTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A0D00621C0B99100CBF9A1 /* GXTestViewController.m */; };
+		97A30BED24230618009D7089 /* GXFunctionExampleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A30BEC24230618009D7089 /* GXFunctionExampleController.m */; };
 		97A3414721D1CAAB006DF0D2 /* GXLineLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A3414621D1CAAB006DF0D2 /* GXLineLayout.m */; };
 		97A3415021D4DB36006DF0D2 /* GXPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A3414E21D4DB36006DF0D2 /* GXPhotoCell.m */; };
 		97A3415121D4DB36006DF0D2 /* GXPhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97A3414F21D4DB36006DF0D2 /* GXPhotoCell.xib */; };
+		97A4DC4E24238C4A0085F076 /* GXButtonsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A4DC4D24238C4A0085F076 /* GXButtonsViewController.m */; };
+		97A4DC5124238D530085F076 /* GXButtons.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A4DC5024238D530085F076 /* GXButtons.m */; };
+		97A4DC54242451C90085F076 /* GXShareToSocial.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A4DC53242451C90085F076 /* GXShareToSocial.m */; };
 		97A6AD9D23BD85B1008E4596 /* GXSomeTableCellController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A6AD9C23BD85B1008E4596 /* GXSomeTableCellController.m */; };
 		97A6ADAC23BDB6D4008E4596 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A6ADA023BDB6D4008E4596 /* Reachability.m */; };
 		97A6ADAD23BDB6D4008E4596 /* KCUtilMd5.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A6ADA223BDB6D4008E4596 /* KCUtilMd5.m */; };
@@ -183,11 +187,19 @@
 		97A05FFD216F2A9800F49C01 /* OCExampleController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCExampleController.m; sourceTree = "<group>"; };
 		97A0D00521C0B99100CBF9A1 /* GXTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXTestViewController.h; sourceTree = "<group>"; };
 		97A0D00621C0B99100CBF9A1 /* GXTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXTestViewController.m; sourceTree = "<group>"; };
+		97A30BEB24230618009D7089 /* GXFunctionExampleController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXFunctionExampleController.h; sourceTree = "<group>"; };
+		97A30BEC24230618009D7089 /* GXFunctionExampleController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXFunctionExampleController.m; sourceTree = "<group>"; };
 		97A3414521D1CAAB006DF0D2 /* GXLineLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXLineLayout.h; sourceTree = "<group>"; };
 		97A3414621D1CAAB006DF0D2 /* GXLineLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXLineLayout.m; sourceTree = "<group>"; };
 		97A3414D21D4DB36006DF0D2 /* GXPhotoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXPhotoCell.h; sourceTree = "<group>"; };
 		97A3414E21D4DB36006DF0D2 /* GXPhotoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXPhotoCell.m; sourceTree = "<group>"; };
 		97A3414F21D4DB36006DF0D2 /* GXPhotoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GXPhotoCell.xib; sourceTree = "<group>"; };
+		97A4DC4C24238C4A0085F076 /* GXButtonsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXButtonsViewController.h; sourceTree = "<group>"; };
+		97A4DC4D24238C4A0085F076 /* GXButtonsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXButtonsViewController.m; sourceTree = "<group>"; };
+		97A4DC4F24238D530085F076 /* GXButtons.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXButtons.h; sourceTree = "<group>"; };
+		97A4DC5024238D530085F076 /* GXButtons.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXButtons.m; sourceTree = "<group>"; };
+		97A4DC52242451C90085F076 /* GXShareToSocial.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXShareToSocial.h; sourceTree = "<group>"; };
+		97A4DC53242451C90085F076 /* GXShareToSocial.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXShareToSocial.m; sourceTree = "<group>"; };
 		97A6AD9B23BD85B1008E4596 /* GXSomeTableCellController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXSomeTableCellController.h; sourceTree = "<group>"; };
 		97A6AD9C23BD85B1008E4596 /* GXSomeTableCellController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXSomeTableCellController.m; sourceTree = "<group>"; };
 		97A6ADA023BDB6D4008E4596 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
@@ -399,7 +411,6 @@
 		977B311223B607FB0011E1BC /* 各种菜单样式 */ = {
 			isa = PBXGroup;
 			children = (
-				97F07847241B4DAB006A080D /* New Group */,
 				977B311B23B608420011E1BC /* GXTitlesViewController.h */,
 				977B311C23B608420011E1BC /* GXTitlesViewController.m */,
 				977B311E23B612480011E1BC /* titlesViewDataSource.json */,
@@ -517,18 +528,19 @@
 		97A05FFA216F29A300F49C01 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				97FEBF2D22D49DFF007BF592 /* download.plist */,
 				97A05FDA216F004300F49C01 /* AppDelegate.h */,
 				97A05FDB216F004300F49C01 /* AppDelegate.m */,
 				97A05FF8216F236000F49C01 /* GXTabarController.h */,
 				97A05FF7216F236000F49C01 /* GXTabarController.m */,
 				97F1C7D921930098009F7871 /* GXNavigationController.h */,
 				97F1C7DA21930098009F7871 /* GXNavigationController.m */,
+				97EA166F21806D7500C20CD9 /* PrefixHeader.pch */,
 				97A05FE0216F004300F49C01 /* Main.storyboard */,
 				97A05FE3216F004600F49C01 /* Assets.xcassets */,
 				97A05FE5216F004600F49C01 /* LaunchScreen.storyboard */,
 				97A05FE8216F004600F49C01 /* Info.plist */,
 				97A05FE9216F004600F49C01 /* main.m */,
-				97EA166F21806D7500C20CD9 /* PrefixHeader.pch */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -536,7 +548,7 @@
 		97A05FFB216F29B600F49C01 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				97FEBF2D22D49DFF007BF592 /* download.plist */,
+				97A30BEA242303A8009D7089 /* Function常用功能 */,
 				97A06000216F428500F49C01 /* OC语法 */,
 				97A05FFF216F427700F49C01 /* UI控件 */,
 			);
@@ -546,6 +558,7 @@
 		97A05FFF216F427700F49C01 /* UI控件 */ = {
 			isa = PBXGroup;
 			children = (
+				97A4DC4B24238C0E0085F076 /* 各种小按钮 */,
 				97FC051321884F4F00B526F8 /* 主控制器 */,
 				977B311223B607FB0011E1BC /* 各种菜单样式 */,
 				97C4098623C8898300F59DA6 /* UICollectionView的使用 */,
@@ -569,6 +582,27 @@
 				97A05FFD216F2A9800F49C01 /* OCExampleController.m */,
 			);
 			path = "OC语法";
+			sourceTree = "<group>";
+		};
+		97A30BEA242303A8009D7089 /* Function常用功能 */ = {
+			isa = PBXGroup;
+			children = (
+				97A30BEB24230618009D7089 /* GXFunctionExampleController.h */,
+				97A30BEC24230618009D7089 /* GXFunctionExampleController.m */,
+				97C1962424246B0900CEBD7F /* 系统分享 */,
+			);
+			path = "Function常用功能";
+			sourceTree = "<group>";
+		};
+		97A4DC4B24238C0E0085F076 /* 各种小按钮 */ = {
+			isa = PBXGroup;
+			children = (
+				97A4DC4C24238C4A0085F076 /* GXButtonsViewController.h */,
+				97A4DC4D24238C4A0085F076 /* GXButtonsViewController.m */,
+				97A4DC4F24238D530085F076 /* GXButtons.h */,
+				97A4DC5024238D530085F076 /* GXButtons.m */,
+			);
+			path = "各种小按钮";
 			sourceTree = "<group>";
 		};
 		97A6AD9E23BD86D9008E4596 /* TableViewCell样式 */ = {
@@ -648,6 +682,15 @@
 				975AC84821DC71C700316C93 /* 流水布局基础上的变化 */,
 			);
 			path = "布局";
+			sourceTree = "<group>";
+		};
+		97C1962424246B0900CEBD7F /* 系统分享 */ = {
+			isa = PBXGroup;
+			children = (
+				97A4DC52242451C90085F076 /* GXShareToSocial.h */,
+				97A4DC53242451C90085F076 /* GXShareToSocial.m */,
+			);
+			path = "系统分享";
 			sourceTree = "<group>";
 		};
 		97C20BE8217D936800C78AAD /* menuController使用 */ = {
@@ -778,13 +821,6 @@
 				97EA16792181E5A100C20CD9 /* GXFooterView.m */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		97F07847241B4DAB006A080D /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 		97FC050E2188074800B526F8 /* 发段子 */ = {
@@ -976,7 +1012,9 @@
 				975BCB6523BB5675009E0CED /* CZguessWhatYouLikeCell.m in Sources */,
 				9746574022BB59A2001AFCF0 /* RACPerson.m in Sources */,
 				97A05FEA216F004600F49C01 /* main.m in Sources */,
+				97A4DC54242451C90085F076 /* GXShareToSocial.m in Sources */,
 				97EA16762181CB5200C20CD9 /* GXSquareCell.m in Sources */,
+				97A4DC4E24238C4A0085F076 /* GXButtonsViewController.m in Sources */,
 				97F1C7DB21930098009F7871 /* GXNavigationController.m in Sources */,
 				975BCB5F23BB4BDB009E0CED /* CZCollectionTypeOneCell.m in Sources */,
 				97A3415021D4DB36006DF0D2 /* GXPhotoCell.m in Sources */,
@@ -984,11 +1022,13 @@
 				970E617C22B8B9D400E68BE3 /* GXRACTestController.m in Sources */,
 				975BCB6F23BB64B5009E0CED /* CALayer+LayerColor.m in Sources */,
 				97664EEC23AE1A1700DB8383 /* CZScrollADCell.m in Sources */,
+				97A4DC5124238D530085F076 /* GXButtons.m in Sources */,
 				977C3391218D4ED000FAA144 /* GXTagTextField.m in Sources */,
 				97A6ADB823BDB7B2008E4596 /* CZProgressHUD.m in Sources */,
 				97664EF023AE1A1700DB8383 /* CZScrollAD.m in Sources */,
 				97A6ADB123BDB6D4008E4596 /* CZPhoneModelHandle.m in Sources */,
 				97FC051621884FBC00B526F8 /* GXPlaceholderTextView.m in Sources */,
+				97A30BED24230618009D7089 /* GXFunctionExampleController.m in Sources */,
 				97A3414721D1CAAB006DF0D2 /* GXLineLayout.m in Sources */,
 				972D9EEA218B0D790013B420 /* GXAddTagController.m in Sources */,
 				97EA166D21806AF000C20CD9 /* GXTopWindowsController.m in Sources */,
@@ -1067,6 +1107,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -1126,6 +1167,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

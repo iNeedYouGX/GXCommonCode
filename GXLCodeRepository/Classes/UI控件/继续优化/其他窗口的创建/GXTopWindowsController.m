@@ -36,7 +36,7 @@ static UIWindow *window_;
 - (void)viewDidLoad {
     [super viewDidLoad];
     // 设置导航不透明, 原点在导航下面
-    self.navigationController.navigationBar.translucent = NO;
+    
 
     // 添加滚动视图
     [self.view addSubview:self.scrollerView];

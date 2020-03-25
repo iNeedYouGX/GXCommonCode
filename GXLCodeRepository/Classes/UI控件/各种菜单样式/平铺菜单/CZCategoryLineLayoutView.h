@@ -9,10 +9,19 @@
 #import <UIKit/UIKit.h>
 NS_ASSUME_NONNULL_BEGIN
 
+typedef NS_ENUM(NSUInteger, CZCategoryLineLayoutViewType) {
+    CZCategoryLineLayoutViewTypeMultipleLines,
+    CZCategoryLineLayoutViewTypeAline,
+    CZCategoryLineLayoutViewTypeDefault,
+};
+
 @interface CZCategoryItem : NSObject
+/** 设置选中的第几个 */
+@property (nonatomic, assign) NSInteger selecedIndex;
 @property (nonatomic, strong) NSString * categoryId;
 @property (nonatomic, strong) NSString *categoryImage;
 @property (nonatomic, strong) NSString *categoryName;
+@property (nonatomic, assign) NSInteger index;
 /** 存储的各种数据 */
 @property (nonatomic, strong) id objectInfo;
 @end
@@ -26,12 +35,13 @@ NS_ASSUME_NONNULL_BEGIN
 /** 初始化, type : 0多行创建, 其他是一行创建 */
 + (instancetype)categoryLineLayoutViewWithFrame:(CGRect)frame Items:(NSArray <CZCategoryItem *> *)items type:(NSInteger)type didClickedIndex:(void (^)(CZCategoryItem *item))block;
 
-
+#pragma mark - 刷新
 
 /** 根据数组创建 */
 @property (nonatomic, strong) NSArray <CZCategoryItem *> *categoryItems;
 /** 每个item的数据 */
 @property (nonatomic, strong) CZCategoryItem *categoryItem;
+
 @end
 
 NS_ASSUME_NONNULL_END

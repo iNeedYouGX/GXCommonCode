@@ -24,6 +24,9 @@
             @{@"title" : @"各种菜单样式",
               @"control" : @"GXTitlesViewController"
             },
+            @{@"title" : @"各种小按钮",
+              @"control" : @"GXButtonsViewController"
+            },
             @{@"title" : @"CollectionViewCell样式",
               @"control" : @"GXKindsOfViewController"
             },
@@ -74,7 +77,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor redColor];
-    CGRect frame = CGRectMake(0, 0, SCR_WIDTH, SCR_HEIGHT - (IsiPhoneX ? (49 + 34) : 49));
+//    [self.navigationController setNavigationBarHidden:YES];
+    // translucent为YES透明时候0点在0, 0点, 为NO, 0点在0, 64, 他们都自动下调64的, 如果是第一个滚动视图
+    [self.navigationController.navigationBar setTranslucent:NO];
+    
+
+    CGRect frame = CGRectMake(0, 0, SCR_WIDTH, SCR_HEIGHT - (IsiPhoneX ? (49 + 34) : 49) - 64);
     UITableView *tableView = [[UITableView alloc] initWithFrame:frame style:UITableViewStylePlain];
     tableView.delegate = self;
     tableView.dataSource = self;

@@ -56,9 +56,20 @@
 @property (nonatomic, strong) UIView *minline;
 /** <#注释#> */
 @property (nonatomic, strong) id recordElement;
+
+/** <#注释#> */
+@property (nonatomic, strong) NSMutableArray *saveBtns;
 @end
 
 @implementation CZCategoryLineLayoutView
+
+- (NSMutableArray *)saveBtns
+{
+    if (_saveBtns == nil) {
+        _saveBtns = [NSMutableArray array];
+    }
+    return _saveBtns;
+}
 
 + (NSArray *)categoryItems:(NSArray *)items setupNameKey:(NSString *)NameKey imageKey:(NSString *)imageKey IdKey:(NSString *)IdKey objectKey:(NSString *)objectKey
 {
@@ -93,11 +104,15 @@
         [view createLineTitle];
     } else if (type == 2) {
         [view createViewTypeThree];
+    } else if (type == 3) {
+        [view createViewTypeFour:0];
+    } else if (type == 4) {
+        [view createViewTypeFour:1];
     }
     return view;
 }
 
-#pragma mark - 样式一
+#pragma mark - 样式1
 - (void)createView
 {
     CGFloat width = 50;
@@ -133,11 +148,12 @@
 - (void)categoryButtonAction:(CZCategoryButton *)sender
 {
     self.categoryItem = self.categoryItems[sender.tag];
+    self.categoryItem.index = sender.tag;
     !self.block ? : self.block(self.categoryItem);
 }
 
 
-#pragma mark - 创建所有按钮在一条线上
+#pragma mark - 样式2 - 创建所有按钮在一条线上
 - (void)createLineTitle
 {
     UIScrollView *categoryView = [[UIScrollView alloc] init];
@@ -173,6 +189,7 @@
 
 //        CGFloat contentWidth = self.width * ((count + (cols - 1)) / cols);
 //        CGFloat contentWidth = self.width * 2;
+        // itemWidth 四舍五入
         CGFloat contentWidth = (int)(itemWidth + 0.5) * (i + 1);
         categoryView.contentSize = (CGSizeMake(contentWidth, 0));
     }
@@ -223,15 +240,15 @@
     }
 }
 
-#pragma mark - 样式三
+#pragma mark - 样式3
 - (void)createViewTypeThree
 {
     NSInteger count = self.categoryItems.count;
     for (int i = 0; i < count; i++) {
         CZCategoryItem *item = self.categoryItems[i];
         UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-        [btn setTitleColor:UIColorFromRGB(0x9D9D9D) forState:UIControlStateNormal];
-        [btn setTitleColor:UIColorFromRGB(0xE25838) forState:UIControlStateSelected];
+        [btn setTitleColor:UIColorFromRGB(0xFFFFFF) forState:UIControlStateNormal];
+        [btn setTitleColor:UIColorFromRGB(0xFFD224) forState:UIControlStateSelected];
         [btn setTitle:item.categoryName forState:UIControlStateNormal];
         btn.titleLabel.font = [UIFont fontWithName:@"PingFangSC-Medium" size: 18];
         btn.width = SCR_WIDTH / count;
@@ -243,7 +260,7 @@
         UIView *line = [[UIView alloc] initWithFrame:CGRectMake(btn.titleLabel.x, btn.height - 2.5, btn.titleLabel.width, 2.5)];
         line.tag = 100;
         line.layer.cornerRadius = line.height / 2;
-        line.backgroundColor = UIColorFromRGB(0xE25838);
+        line.backgroundColor = UIColorFromRGB(0xFFD224);
         [btn addSubview:line];
         if (i == 0) {
             btn.selected = YES;
@@ -275,14 +292,97 @@
     line1.hidden = YES;
 
     self.categoryItem = self.categoryItems[sender.tag];
+    self.categoryItem.index = sender.tag;
     !self.block ? : self.block(self.categoryItem);
 
     self.recordElement = sender;
 }
 
 #pragma mark - 样式4
-- (void)createViewTypeFour
+- (void)createViewTypeFour:(NSInteger)type
 {
+    if (self.height == 0) {
+        [CZProgressHUD showProgressHUDWithText:@" 样式4高度等于0!!!!!"];
+        [CZProgressHUD hideAfterDelay:1.5];
+    }
 
+    UIScrollView *backView = [[UIScrollView alloc] init];
+    backView.showsHorizontalScrollIndicator = NO;
+    backView.height = self.height;
+    backView.width = SCR_WIDTH;
+    [self addSubview:backView];
+
+    NSInteger count = self.categoryItems.count;
+    CGFloat space = 20;
+    CGFloat btnX = 15;
+    for (int i = 0; i < count; i++) {
+        CZCategoryItem *item = self.categoryItems[i];
+        UIButton *btn = [[UIButton alloc] init];
+        btn.tag = i;
+        [btn setTitle:item.categoryName forState:UIControlStateNormal];
+        btn.titleLabel.font = [UIFont fontWithName:@"PingFangSC-Medium" size: 14];
+        [btn setTitleColor:UIColorFromRGB(0x565252) forState:UIControlStateNormal];
+        [btn setTitleColor:UIColorFromRGB(0xE25838) forState:UIControlStateSelected];
+        [btn sizeToFit];
+        btn.height = 25;
+        btn.centerY = backView.height / 2.0;
+        btn.x = btnX;
+        [backView addSubview:btn];
+//        [self.saveBtns addObject:btn];
+        btn.contentEdgeInsets = UIEdgeInsetsMake(0, 8, 0, 8);
+        btn.width += 16;
+        btnX += (space + btn.width);
+        btn.layer.cornerRadius = 3;
+        [btn addTarget:self action:@selector(viewTypeFourAction:) forControlEvents:UIControlEventTouchUpInside];
+        if (type == 1) {
+            btn.backgroundColor = [UIColor whiteColor];
+        }
+
+        backView.contentSize = CGSizeMake(btnX, 0);
+
+        if (i == item.selecedIndex) {
+            btn.selected = YES;
+            self.recordElement = btn;
+        }
+    }
 }
+
+- (void)viewTypeFourAction:(UIButton *)sender
+{
+    if (self.recordElement == sender) {
+        return;
+    }
+
+    // 设置选中
+    sender.selected = YES;
+
+    // 还原选中
+    UIButton *recordElement = self.recordElement;
+    recordElement.selected = NO;
+
+    self.categoryItem = self.categoryItems[sender.tag];
+    !self.block ? : self.block(self.categoryItem);
+
+    self.recordElement = sender;
+}
+
+
+#pragma mark - 样式5
+- (void)createViewTypeFive
+{
+    if (self.height == 0) {
+        [CZProgressHUD showProgressHUDWithText:@" 样式5高度等于0!!!!!"];
+        [CZProgressHUD hideAfterDelay:1.5];
+    }
+    [self createViewTypeFour:1];
+}
+
+#pragma mark - 样式6
+- (void)createViewTypeSix
+{
+    
+}
+
+
+
 @end

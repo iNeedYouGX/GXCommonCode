@@ -10,6 +10,7 @@
 #import "ContolViewController.h"
 #import "OCExampleController.h"
 #import "GXNavigationController.h"
+#import "GXFunctionExampleController.h"
 
 @interface GXTabarController ()
 
@@ -31,6 +32,13 @@
     UITabBarItem *tabBarItem = [UITabBarItem appearance];
     [tabBarItem setTitleTextAttributes:normalAttrs forState:UIControlStateNormal];
     [tabBarItem setTitleTextAttributes:selectedAttrs forState:UIControlStateSelected];
+
+    // 设置tabbar的背景颜色
+    [[UITabBar appearance] setBarTintColor:CZRGBColor(254, 254, 254)];
+
+    // 设配iOS12, tabbar抖动问题
+    // Translucent 半透明
+    [[UITabBar appearance] setTranslucent:YES];
 }
 
 
@@ -40,7 +48,9 @@
     //添加子控制器
     [self setupChildVc:[[ContolViewController alloc] init] title:@"UI控件展示" image:@"tabBar_essence_icon" selectedImage:@"tabBar_essence_click_icon"];
 
-    [self setupChildVc:[[OCExampleController alloc] init] title:@"OC逻辑" image:@"tabBar_new_icon" selectedImage:@"tabBar_new_click_icon"];
+    [self setupChildVc:[[GXFunctionExampleController alloc] init] title:@"常用功能" image:@"tabBar_me_icon" selectedImage:@"tabBar_me_click_icon"];
+
+    [self setupChildVc:[[OCExampleController alloc] init] title:@"OC语法" image:@"tabBar_new_icon" selectedImage:@"tabBar_new_click_icon"];
     
 }
 
