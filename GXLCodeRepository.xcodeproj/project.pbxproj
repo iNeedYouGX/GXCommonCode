@@ -13,6 +13,7 @@
 		97362C082179A30D0092A6D1 /* AlertViewTEST.m in Sources */ = {isa = PBXBuildFile; fileRef = 97362C072179A30D0092A6D1 /* AlertViewTEST.m */; };
 		973D057B22A7A93000186571 /* XMGSocialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 973D057A22A7A93000186571 /* XMGSocialViewController.m */; };
 		9746574022BB59A2001AFCF0 /* RACPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 9746573F22BB59A2001AFCF0 /* RACPerson.m */; };
+		974E9E9D242AF4900005662C /* GXZoomImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 974E9E9C242AF4900005662C /* GXZoomImageView.m */; };
 		975AC84C21DC760800316C93 /* GXGridLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 975AC84B21DC760800316C93 /* GXGridLayout.m */; };
 		975BCB5F23BB4BDB009E0CED /* CZCollectionTypeOneCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 975BCB5C23BB4BDB009E0CED /* CZCollectionTypeOneCell.m */; };
 		975BCB6023BB4BDB009E0CED /* CZCollectionTypeOneCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 975BCB5D23BB4BDB009E0CED /* CZCollectionTypeOneCell.xib */; };
@@ -124,6 +125,8 @@
 		973D057A22A7A93000186571 /* XMGSocialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGSocialViewController.m; sourceTree = "<group>"; };
 		9746573E22BB59A2001AFCF0 /* RACPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RACPerson.h; sourceTree = "<group>"; };
 		9746573F22BB59A2001AFCF0 /* RACPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACPerson.m; sourceTree = "<group>"; };
+		974E9E9B242AF4900005662C /* GXZoomImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXZoomImageView.h; sourceTree = "<group>"; };
+		974E9E9C242AF4900005662C /* GXZoomImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXZoomImageView.m; sourceTree = "<group>"; };
 		975AC84A21DC760800316C93 /* GXGridLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXGridLayout.h; sourceTree = "<group>"; };
 		975AC84B21DC760800316C93 /* GXGridLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXGridLayout.m; sourceTree = "<group>"; };
 		975BCB5C23BB4BDB009E0CED /* CZCollectionTypeOneCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZCollectionTypeOneCell.m; sourceTree = "<group>"; };
@@ -320,6 +323,15 @@
 				9746573F22BB59A2001AFCF0 /* RACPerson.m */,
 			);
 			path = "RAC的使用";
+			sourceTree = "<group>";
+		};
+		974E9E9A242AF4640005662C /* 点击图片放大 */ = {
+			isa = PBXGroup;
+			children = (
+				974E9E9B242AF4900005662C /* GXZoomImageView.h */,
+				974E9E9C242AF4900005662C /* GXZoomImageView.m */,
+			);
+			path = "点击图片放大";
 			sourceTree = "<group>";
 		};
 		975AC84821DC71C700316C93 /* 流水布局基础上的变化 */ = {
@@ -558,6 +570,7 @@
 		97A05FFF216F427700F49C01 /* UI控件 */ = {
 			isa = PBXGroup;
 			children = (
+				974E9E9A242AF4640005662C /* 点击图片放大 */,
 				97A4DC4B24238C0E0085F076 /* 各种小按钮 */,
 				97FC051321884F4F00B526F8 /* 主控制器 */,
 				977B311223B607FB0011E1BC /* 各种菜单样式 */,
@@ -1017,6 +1030,7 @@
 				97A4DC4E24238C4A0085F076 /* GXButtonsViewController.m in Sources */,
 				97F1C7DB21930098009F7871 /* GXNavigationController.m in Sources */,
 				975BCB5F23BB4BDB009E0CED /* CZCollectionTypeOneCell.m in Sources */,
+				974E9E9D242AF4900005662C /* GXZoomImageView.m in Sources */,
 				97A3415021D4DB36006DF0D2 /* GXPhotoCell.m in Sources */,
 				97A6ADBD23BDBB7D008E4596 /* CZCZFreeChargeCell2.m in Sources */,
 				970E617C22B8B9D400E68BE3 /* GXRACTestController.m in Sources */,

@@ -8,6 +8,7 @@
 
 #import "CZCZFreeChargeCell2.h"
 #import "UIImageView+WebCache.h"
+#import "GXZoomImageView.h"
 
 @interface CZCZFreeChargeCell2 ()
 /** 大图片 */
@@ -60,6 +61,17 @@
     [super awakeFromNib];
     self.selectionStyle = UITableViewCellSelectionStyleNone;
     self.priceLabel.font = [UIFont fontWithName:@"PingFangSC-Medium" size: 18];
+
+    // 添加放大图片控件
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(showZoomImage:)];
+    self.bigImageView.userInteractionEnabled = YES;
+    [self.bigImageView addGestureRecognizer:tap];
+    
+}
+
+- (void)showZoomImage:(UIGestureRecognizer *)tap
+{
+    [GXZoomImageView showZoomImage:tap.view];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

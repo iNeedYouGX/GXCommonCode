@@ -7,6 +7,7 @@
 //
 
 #import "GXFooterView.h"
+#import "GXZoomImageView.h"
 
 @implementation GXFooterView
 
@@ -33,7 +34,8 @@
     for (int i = 0; i < count; i++) {
         UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
         btn.backgroundColor = [UIColor colorWithRed:arc4random() % 255 / 255.0 green:arc4random() % 255 / 255.0 blue:arc4random() % 255 / 255.0 alpha:1];
-        
+        NSString *imageName = [NSString stringWithFormat:@"%d", i];
+        [btn setBackgroundImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
         NSInteger col = i % maxCols;
         NSInteger row = i / maxCols;
     
@@ -45,6 +47,8 @@
         [self addSubview:btn];
         
         self.height = CGRectGetMaxY(btn.frame);
+
+        [btn addTarget:self action:@selector(zoomImageView:) forControlEvents:UIControlEventTouchUpInside];
     }
 }
 
@@ -53,6 +57,12 @@
 {
     UIImage *image = [UIImage imageNamed:@"image.jpeg"];
     [image drawInRect:rect];
+}
+
+- (void)zoomImageView:(UIButton *)sender
+{
+    [sender.imageView layoutIfNeeded];
+    [GXZoomImageView showZoomImage:sender];
 }
 
 @end
