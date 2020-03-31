@@ -12,5 +12,6 @@ target 'GXLCodeRepository' do
   pod 'AFNetworking'
   pod 'MJExtension'
   pod 'MJRefresh'
+  pod 'WMPageController' 
 
 end

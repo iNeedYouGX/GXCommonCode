@@ -35,7 +35,9 @@
         UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
         btn.backgroundColor = [UIColor colorWithRed:arc4random() % 255 / 255.0 green:arc4random() % 255 / 255.0 blue:arc4random() % 255 / 255.0 alpha:1];
         NSString *imageName = [NSString stringWithFormat:@"%d", i];
-        [btn setBackgroundImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
+//        [btn setBackgroundImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
+        [btn setImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
+
         NSInteger col = i % maxCols;
         NSInteger row = i / maxCols;
     

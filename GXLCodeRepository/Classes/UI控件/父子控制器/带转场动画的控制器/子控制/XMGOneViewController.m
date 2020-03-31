@@ -33,8 +33,20 @@ NSString *ID = @"one";
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
-    cell.textLabel.text = [NSString stringWithFormat:@"oneoneone - %zd", indexPath.row];
+    if (indexPath.row == 0) {
+        cell.textLabel.text = @"三方WMPageController";
+    } else {
+        cell.textLabel.text = [NSString stringWithFormat:@"oneoneone - %zd", indexPath.row];
+    }
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+     if (indexPath.row == 0) {
+         UIViewController *toVc = [[NSClassFromString(@"GX_WMPageController") alloc] init];
+         [self.navigationController pushViewController:toVc animated:YES];
+     }
 }
 
 - (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration

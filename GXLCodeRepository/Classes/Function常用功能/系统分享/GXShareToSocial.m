@@ -48,28 +48,28 @@ NSString *const UIActivityTypeZSCustomMine = @"GXCustomActivityMine";
         shareImage4,
     ]; // 必须要提供url 才会显示分享标签否则只显示图片
 
-    UIActivityViewController *activityViewController = [[UIActivityViewController alloc]
-                                                         initWithActivityItems:activityItems applicationActivities:@[[[GXCustomActivity alloc] init]]];
-    
+    UIActivityViewController *activityVC = [[UIActivityViewController alloc] initWithActivityItems:activityItems applicationActivities:@[[[GXCustomActivity alloc] init]]];
+
     //设定不想显示的平台和功能
     NSArray *excludeArray = @[
         UIActivityTypeAirDrop,
         UIActivityTypePrint,
         UIActivityTypePostToVimeo,
         UIActivityTypeMessage,
+        UIActivityTypeMessage,
+        UIActivityTypeMail,
     ];
 
     //不需要分享的图标
-    activityViewController.excludedActivityTypes = excludeArray;
+    activityVC.excludedActivityTypes = excludeArray;
 
     // 分享的回调
-    [activityViewController setCompletionWithItemsHandler:^(UIActivityType  _Nullable activityType, BOOL completed, NSArray * _Nullable returnedItems, NSError * _Nullable activityError) {
+    [activityVC setCompletionWithItemsHandler:^(UIActivityType  _Nullable activityType, BOOL completed, NSArray * _Nullable returnedItems, NSError * _Nullable activityError) {
         NSLog(@"activityType: %@,\n completed: %d,\n returnedItems:%@,\n activityError:%@", activityType, completed, returnedItems, activityError);
     }];
 
-
     CURRENTVC(currentVc);
-    [currentVc presentViewController: activityViewController animated: YES completion: nil];
+    [currentVc presentViewController:activityVC animated: YES completion: nil];
 
 }
 

@@ -9,6 +9,7 @@
 #import "GXFunctionExampleController.h"
 #import "GXNetTool.h"
 #import "GXShareToSocial.h"
+#import "GXSaveImageToPhone.h"
 
 @interface GXFunctionExampleController () <UITableViewDelegate, UITableViewDataSource>
 /** 表单 */
@@ -24,7 +25,10 @@
     if (_dataArr == nil) {
         _dataArr = @[
             @{@"title" : @"系统自带的分享",
-              @"control" : @(0)
+              @"index" : @(0)
+            },
+            @{@"title" : @"最简单的保存图片到手机",
+              @"index" : @(1)
             },
                      ];
     }
@@ -66,6 +70,7 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
+//        cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
     cell.textLabel.text = [self.dataArr[indexPath.row] objectForKey:@"title"];
     return cell;
@@ -73,9 +78,28 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSInteger number = [self.dataArr[indexPath.row][@"control"] integerValue];
-    if (indexPath.row == number) {
-        [GXShareToSocial shareToSocial];
+    NSInteger number = [self.dataArr[indexPath.row][@"index"] integerValue];
+    [self jumpFunction:number];
+}
+
+- (void)jumpFunction:(NSInteger)index
+{
+    switch (index) {
+        case 0:
+        {
+            [GXShareToSocial shareToSocial];
+            break;
+        }
+        case 1:
+        {
+            for (int i = 1; i < 21; i++) {
+                UIImage *image = [UIImage imageNamed:[NSString stringWithFormat:@"%d", i]];
+                [GXSaveImageToPhone saveBatchImage:image];
+            }
+            break;
+        }
+        default:
+            break;
     }
 }
 

@@ -17,7 +17,6 @@ static double duration_ = 0.25;
 {
     UIWindow *window = [UIApplication sharedApplication].keyWindow;
 
-
     // 通过坐标系转, 返回当前的view的尺寸
     oldRect_ = [obj convertRect:obj.bounds toView:window];
 
@@ -25,7 +24,7 @@ static double duration_ = 0.25;
     UIView *backView = [[UIView alloc] init];
     backView.width = SCR_WIDTH;
     backView.height = SCR_HEIGHT;
-    backView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.7];
+    backView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:1];
     [window addSubview:backView];
     
     // 添加隐藏手势
@@ -57,6 +56,10 @@ static double duration_ = 0.25;
 // 拿到image
 + (UIImage *)getImageWithObj:(__kindof UIView * _Nonnull)obj
 {
+/**
+ 注意: 如果设置[btn setImage:], btn.imageView可以拿到图片
+      如果设置[btn setBackgroundImage:], btn.imageView拿不到图片, 需求通过遍历
+ */
     if ([obj isKindOfClass:[UIImageView class]]) { // 是imageView
         UIImageView *imageView = (UIImageView *)obj;
         return (UIImage *)imageView.image;

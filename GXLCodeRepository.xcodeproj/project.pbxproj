@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		381881636C015606B6444F98 /* libPods-GXLCodeRepository.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C8D510534E78F9435F53B1F /* libPods-GXLCodeRepository.a */; };
 		970E617C22B8B9D400E68BE3 /* GXRACTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 970E617B22B8B9D400E68BE3 /* GXRACTestController.m */; };
+		9713D4DF242C6E31004F1697 /* GXSaveImageToPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 9713D4DE242C6E31004F1697 /* GXSaveImageToPhone.m */; };
 		972D9EEA218B0D790013B420 /* GXAddTagController.m in Sources */ = {isa = PBXBuildFile; fileRef = 972D9EE9218B0D790013B420 /* GXAddTagController.m */; };
 		97362C082179A30D0092A6D1 /* AlertViewTEST.m in Sources */ = {isa = PBXBuildFile; fileRef = 97362C072179A30D0092A6D1 /* AlertViewTEST.m */; };
 		973D057B22A7A93000186571 /* XMGSocialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 973D057A22A7A93000186571 /* XMGSocialViewController.m */; };
@@ -28,6 +29,13 @@
 		97664F0023AE1B7800DB8383 /* GXScrollImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 97664EFF23AE1B7800DB8383 /* GXScrollImageView.m */; };
 		9766AE6B23B0CBFF00789958 /* dataSource.json in Resources */ = {isa = PBXBuildFile; fileRef = 9766AE6A23B0CBFF00789958 /* dataSource.json */; };
 		9766AE6D23B0DB0700789958 /* dataSource1.json in Resources */ = {isa = PBXBuildFile; fileRef = 9766AE6C23B0DB0700789958 /* dataSource1.json */; };
+		976D780C242DC87700BF84AF /* GX_WMPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 976D780B242DC87700BF84AF /* GX_WMPageController.m */; };
+		976D781B242DCD0D00BF84AF /* WMPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 976D780E242DCD0D00BF84AF /* WMPageController.m */; };
+		976D781C242DCD0E00BF84AF /* UIViewController+WMPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 976D780F242DCD0D00BF84AF /* UIViewController+WMPageController.m */; };
+		976D781D242DCD0E00BF84AF /* WMMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 976D7815242DCD0D00BF84AF /* WMMenuItem.m */; };
+		976D781E242DCD0E00BF84AF /* WMScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 976D7816242DCD0D00BF84AF /* WMScrollView.m */; };
+		976D781F242DCD0E00BF84AF /* WMMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 976D7817242DCD0D00BF84AF /* WMMenuView.m */; };
+		976D7820242DCD0E00BF84AF /* WMProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 976D7818242DCD0D00BF84AF /* WMProgressView.m */; };
 		9774AD7421CB985600DD0827 /* GXFlowLayoutController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9774AD7321CB985600DD0827 /* GXFlowLayoutController.m */; };
 		977B311923B6080F0011E1BC /* CZTitlesViewTypeLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 977B311523B6080F0011E1BC /* CZTitlesViewTypeLayout.m */; };
 		977B311A23B6080F0011E1BC /* CZCategoryLineLayoutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 977B311823B6080F0011E1BC /* CZCategoryLineLayoutView.m */; };
@@ -117,6 +125,8 @@
 		3F5DD05C2D861CBD99A0182A /* Pods-GXLCodeRepository.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GXLCodeRepository.release.xcconfig"; path = "Pods/Target Support Files/Pods-GXLCodeRepository/Pods-GXLCodeRepository.release.xcconfig"; sourceTree = "<group>"; };
 		970E617A22B8B9D400E68BE3 /* GXRACTestController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXRACTestController.h; sourceTree = "<group>"; };
 		970E617B22B8B9D400E68BE3 /* GXRACTestController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXRACTestController.m; sourceTree = "<group>"; };
+		9713D4DD242C6E31004F1697 /* GXSaveImageToPhone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXSaveImageToPhone.h; sourceTree = "<group>"; };
+		9713D4DE242C6E31004F1697 /* GXSaveImageToPhone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXSaveImageToPhone.m; sourceTree = "<group>"; };
 		972D9EE8218B0D790013B420 /* GXAddTagController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXAddTagController.h; sourceTree = "<group>"; };
 		972D9EE9218B0D790013B420 /* GXAddTagController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXAddTagController.m; sourceTree = "<group>"; };
 		97362C062179A30D0092A6D1 /* AlertViewTEST.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlertViewTEST.h; sourceTree = "<group>"; };
@@ -149,6 +159,20 @@
 		97664EFF23AE1B7800DB8383 /* GXScrollImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXScrollImageView.m; sourceTree = "<group>"; };
 		9766AE6A23B0CBFF00789958 /* dataSource.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = dataSource.json; sourceTree = "<group>"; };
 		9766AE6C23B0DB0700789958 /* dataSource1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = dataSource1.json; sourceTree = "<group>"; };
+		976D780A242DC87700BF84AF /* GX_WMPageController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GX_WMPageController.h; sourceTree = "<group>"; };
+		976D780B242DC87700BF84AF /* GX_WMPageController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GX_WMPageController.m; sourceTree = "<group>"; };
+		976D780E242DCD0D00BF84AF /* WMPageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMPageController.m; sourceTree = "<group>"; };
+		976D780F242DCD0D00BF84AF /* UIViewController+WMPageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+WMPageController.m"; sourceTree = "<group>"; };
+		976D7811242DCD0D00BF84AF /* WMScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMScrollView.h; sourceTree = "<group>"; };
+		976D7812242DCD0D00BF84AF /* WMMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMMenuItem.h; sourceTree = "<group>"; };
+		976D7813242DCD0D00BF84AF /* WMMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMMenuView.h; sourceTree = "<group>"; };
+		976D7814242DCD0D00BF84AF /* WMProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMProgressView.h; sourceTree = "<group>"; };
+		976D7815242DCD0D00BF84AF /* WMMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMMenuItem.m; sourceTree = "<group>"; };
+		976D7816242DCD0D00BF84AF /* WMScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMScrollView.m; sourceTree = "<group>"; };
+		976D7817242DCD0D00BF84AF /* WMMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMMenuView.m; sourceTree = "<group>"; };
+		976D7818242DCD0D00BF84AF /* WMProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMProgressView.m; sourceTree = "<group>"; };
+		976D7819242DCD0D00BF84AF /* WMPageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMPageController.h; sourceTree = "<group>"; };
+		976D781A242DCD0D00BF84AF /* UIViewController+WMPageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+WMPageController.h"; sourceTree = "<group>"; };
 		9774AD7221CB985600DD0827 /* GXFlowLayoutController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXFlowLayoutController.h; sourceTree = "<group>"; };
 		9774AD7321CB985600DD0827 /* GXFlowLayoutController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXFlowLayoutController.m; sourceTree = "<group>"; };
 		977B311423B6080F0011E1BC /* CZTitlesViewTypeLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZTitlesViewTypeLayout.h; sourceTree = "<group>"; };
@@ -325,6 +349,15 @@
 			path = "RAC的使用";
 			sourceTree = "<group>";
 		};
+		9713D4DC242C6DF7004F1697 /* 保存图片到手机 */ = {
+			isa = PBXGroup;
+			children = (
+				9713D4DD242C6E31004F1697 /* GXSaveImageToPhone.h */,
+				9713D4DE242C6E31004F1697 /* GXSaveImageToPhone.m */,
+			);
+			path = "保存图片到手机";
+			sourceTree = "<group>";
+		};
 		974E9E9A242AF4640005662C /* 点击图片放大 */ = {
 			isa = PBXGroup;
 			children = (
@@ -420,6 +453,54 @@
 			path = Lib;
 			sourceTree = "<group>";
 		};
+		976D7808242DC65500BF84AF /* 带转场动画的控制器 */ = {
+			isa = PBXGroup;
+			children = (
+				97DDF332224DBDCD00890F53 /* GXParentChildController.h */,
+				97DDF333224DBDCD00890F53 /* GXParentChildController.m */,
+				97DDF335224DC50D00890F53 /* GXParentChildController.xib */,
+				97DDF344224DCB3100890F53 /* 子控制 */,
+			);
+			path = "带转场动画的控制器";
+			sourceTree = "<group>";
+		};
+		976D7809242DC6C900BF84AF /* 三方WMPageController */ = {
+			isa = PBXGroup;
+			children = (
+				976D780D242DCD0D00BF84AF /* WMPageController */,
+				976D780A242DC87700BF84AF /* GX_WMPageController.h */,
+				976D780B242DC87700BF84AF /* GX_WMPageController.m */,
+			);
+			path = "三方WMPageController";
+			sourceTree = "<group>";
+		};
+		976D780D242DCD0D00BF84AF /* WMPageController */ = {
+			isa = PBXGroup;
+			children = (
+				976D7819242DCD0D00BF84AF /* WMPageController.h */,
+				976D780E242DCD0D00BF84AF /* WMPageController.m */,
+				976D781A242DCD0D00BF84AF /* UIViewController+WMPageController.h */,
+				976D780F242DCD0D00BF84AF /* UIViewController+WMPageController.m */,
+				976D7810242DCD0D00BF84AF /* WMMenuView */,
+			);
+			path = WMPageController;
+			sourceTree = "<group>";
+		};
+		976D7810242DCD0D00BF84AF /* WMMenuView */ = {
+			isa = PBXGroup;
+			children = (
+				976D7813242DCD0D00BF84AF /* WMMenuView.h */,
+				976D7817242DCD0D00BF84AF /* WMMenuView.m */,
+				976D7811242DCD0D00BF84AF /* WMScrollView.h */,
+				976D7816242DCD0D00BF84AF /* WMScrollView.m */,
+				976D7812242DCD0D00BF84AF /* WMMenuItem.h */,
+				976D7815242DCD0D00BF84AF /* WMMenuItem.m */,
+				976D7814242DCD0D00BF84AF /* WMProgressView.h */,
+				976D7818242DCD0D00BF84AF /* WMProgressView.m */,
+			);
+			path = WMMenuView;
+			sourceTree = "<group>";
+		};
 		977B311223B607FB0011E1BC /* 各种菜单样式 */ = {
 			isa = PBXGroup;
 			children = (
@@ -448,22 +529,6 @@
 				977B311823B6080F0011E1BC /* CZCategoryLineLayoutView.m */,
 			);
 			path = "平铺菜单";
-			sourceTree = "<group>";
-		};
-		977B312023B625BD0011E1BC /* 继续优化 */ = {
-			isa = PBXGroup;
-			children = (
-				97C20BE8217D936800C78AAD /* menuController使用 */,
-				97C20BF1217DF23000C78AAD /* 图片的圆角 */,
-				97EA166921806ABF00C20CD9 /* 其他窗口的创建 */,
-				97D0C62B2360580800F3B994 /* 新人引导页 */,
-				970E617922B8B70D00E68BE3 /* RAC的使用 */,
-				97DDF330224CAF0000890F53 /* 父子控制器 */,
-				97FC050E2188074800B526F8 /* 发段子 */,
-				97A86BCA21C792EF0084C219 /* 布局 */,
-				97D489CF22A6A13F00FD4EC7 /* 网易新闻首页 */,
-			);
-			path = "继续优化";
 			sourceTree = "<group>";
 		};
 		977B312123B625D40011E1BC /* CollectionViewCell样式 */ = {
@@ -570,9 +635,9 @@
 		97A05FFF216F427700F49C01 /* UI控件 */ = {
 			isa = PBXGroup;
 			children = (
+				97FC051321884F4F00B526F8 /* 主控制器 */,
 				974E9E9A242AF4640005662C /* 点击图片放大 */,
 				97A4DC4B24238C0E0085F076 /* 各种小按钮 */,
-				97FC051321884F4F00B526F8 /* 主控制器 */,
 				977B311223B607FB0011E1BC /* 各种菜单样式 */,
 				97C4098623C8898300F59DA6 /* UICollectionView的使用 */,
 				977B312123B625D40011E1BC /* CollectionViewCell样式 */,
@@ -580,7 +645,14 @@
 				97EA16702181BDB600C20CD9 /* UITableView的使用 */,
 				97664EE023ADF8E100DB8383 /* alert弹框 */,
 				97664EE223AE19E000DB8383 /* 轮播图 */,
-				977B312023B625BD0011E1BC /* 继续优化 */,
+				97C20BE8217D936800C78AAD /* menuController使用 */,
+				97C20BF1217DF23000C78AAD /* 图片的圆角 */,
+				97EA166921806ABF00C20CD9 /* 其他窗口的创建 */,
+				97D0C62B2360580800F3B994 /* 新人引导页 */,
+				970E617922B8B70D00E68BE3 /* RAC的使用 */,
+				97DDF330224CAF0000890F53 /* 父子控制器 */,
+				97FC050E2188074800B526F8 /* 发段子 */,
+				97A86BCA21C792EF0084C219 /* 布局 */,
 			);
 			path = "UI控件";
 			sourceTree = "<group>";
@@ -600,6 +672,7 @@
 		97A30BEA242303A8009D7089 /* Function常用功能 */ = {
 			isa = PBXGroup;
 			children = (
+				9713D4DC242C6DF7004F1697 /* 保存图片到手机 */,
 				97A30BEB24230618009D7089 /* GXFunctionExampleController.h */,
 				97A30BEC24230618009D7089 /* GXFunctionExampleController.m */,
 				97C1962424246B0900CEBD7F /* 系统分享 */,
@@ -763,10 +836,9 @@
 		97DDF330224CAF0000890F53 /* 父子控制器 */ = {
 			isa = PBXGroup;
 			children = (
-				97DDF332224DBDCD00890F53 /* GXParentChildController.h */,
-				97DDF333224DBDCD00890F53 /* GXParentChildController.m */,
-				97DDF335224DC50D00890F53 /* GXParentChildController.xib */,
-				97DDF344224DCB3100890F53 /* 子控制 */,
+				976D7809242DC6C900BF84AF /* 三方WMPageController */,
+				97D489CF22A6A13F00FD4EC7 /* 网易新闻首页 */,
+				976D7808242DC65500BF84AF /* 带转场动画的控制器 */,
 			);
 			path = "父子控制器";
 			sourceTree = "<group>";
@@ -1022,6 +1094,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				97C20BE3217D92AE00C78AAD /* MenuController.m in Sources */,
+				976D781F242DCD0E00BF84AF /* WMMenuView.m in Sources */,
 				975BCB6523BB5675009E0CED /* CZguessWhatYouLikeCell.m in Sources */,
 				9746574022BB59A2001AFCF0 /* RACPerson.m in Sources */,
 				97A05FEA216F004600F49C01 /* main.m in Sources */,
@@ -1035,6 +1108,8 @@
 				97A6ADBD23BDBB7D008E4596 /* CZCZFreeChargeCell2.m in Sources */,
 				970E617C22B8B9D400E68BE3 /* GXRACTestController.m in Sources */,
 				975BCB6F23BB64B5009E0CED /* CALayer+LayerColor.m in Sources */,
+				976D781B242DCD0D00BF84AF /* WMPageController.m in Sources */,
+				976D781D242DCD0E00BF84AF /* WMMenuItem.m in Sources */,
 				97664EEC23AE1A1700DB8383 /* CZScrollADCell.m in Sources */,
 				97A4DC5124238D530085F076 /* GXButtons.m in Sources */,
 				977C3391218D4ED000FAA144 /* GXTagTextField.m in Sources */,
@@ -1049,9 +1124,12 @@
 				977B312F23B62A220011E1BC /* NSString+CZExtension.m in Sources */,
 				97A6DDE823C75C4400C2CFC7 /* UIFont+CZExtension.m in Sources */,
 				97A6ADAF23BDB6D4008E4596 /* GXNetTool.m in Sources */,
+				976D781C242DCD0E00BF84AF /* UIViewController+WMPageController.m in Sources */,
 				97A6ADAD23BDB6D4008E4596 /* KCUtilMd5.m in Sources */,
 				977B311923B6080F0011E1BC /* CZTitlesViewTypeLayout.m in Sources */,
 				97E0047323B36B0D0028A5E5 /* CZScrollADPageControl.m in Sources */,
+				976D780C242DC87700BF84AF /* GX_WMPageController.m in Sources */,
+				976D781E242DCD0E00BF84AF /* WMScrollView.m in Sources */,
 				97C20BEF217DF22000C78AAD /* GXCircleImageController.m in Sources */,
 				97A05FF9216F236000F49C01 /* GXTabarController.m in Sources */,
 				97A6ADCB23BDCAB7008E4596 /* CZMHSDCommodityCell2.m in Sources */,
@@ -1077,11 +1155,13 @@
 				97A6ADB523BDB758008E4596 /* NSDictionary+CZExtension.m in Sources */,
 				97E0046E23B30D3C0028A5E5 /* CZScrollADImageCell.m in Sources */,
 				97D489D222A6A1D900FD4EC7 /* GXHomeViewController.m in Sources */,
+				976D7820242DCD0E00BF84AF /* WMProgressView.m in Sources */,
 				97EA167A2181E5A100C20CD9 /* GXFooterView.m in Sources */,
 				97664F0023AE1B7800DB8383 /* GXScrollImageView.m in Sources */,
 				975AC84C21DC760800316C93 /* GXGridLayout.m in Sources */,
 				97EA1668218049B300C20CD9 /* GXConst.m in Sources */,
 				97A6DDE723C75C4400C2CFC7 /* UILabel+CZAdapter.m in Sources */,
+				9713D4DF242C6E31004F1697 /* GXSaveImageToPhone.m in Sources */,
 				977B311A23B6080F0011E1BC /* CZCategoryLineLayoutView.m in Sources */,
 				97A6ADAE23BDB6D4008E4596 /* CZReachabilityHandle.m in Sources */,
 				977B312A23B626F30011E1BC /* CZFestivalGoodsColLayoutView.m in Sources */,
