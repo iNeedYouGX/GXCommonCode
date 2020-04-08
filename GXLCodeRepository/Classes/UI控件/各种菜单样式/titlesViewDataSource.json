@@ -88,5 +88,23 @@
         "orderNum": 10,
         "status": 1,
         "type": 10
+    },
+    {
+        "categoryId": "b4397722cad8495ab006cf1ea4951061",
+        "parentId": "12adcd21cfbb4958851198a7a98c22ae",
+        "categoryName": "脱毛仪",
+        "img": "http://jipincheng.cn/category/img/20191223/13ee3ecebe9e41b6999bf77d030d0577",
+        "orderNum": 9,
+        "status": 1,
+        "type": 10
+    },
+    {
+        "categoryId": "b9ea22d162424770a3ec889963ae46f6",
+        "parentId": "12adcd21cfbb4958851198a7a98c22ae",
+        "categoryName": "足浴盆",
+        "img": "http://jipincheng.cn/category/img/20191223/5b98701027e84556a4e88e67acf8b04b",
+        "orderNum": 10,
+        "status": 1,
+        "type": 10
     }
 ]

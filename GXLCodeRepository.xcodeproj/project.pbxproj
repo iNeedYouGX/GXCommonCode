@@ -25,7 +25,7 @@
 		97664EED23AE1A1700DB8383 /* CZScrollADCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97664EE723AE1A1700DB8383 /* CZScrollADCell1.xib */; };
 		97664EEE23AE1A1700DB8383 /* CZScrollADCell1.m in Sources */ = {isa = PBXBuildFile; fileRef = 97664EE823AE1A1700DB8383 /* CZScrollADCell1.m */; };
 		97664EEF23AE1A1700DB8383 /* CZScrollADCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97664EE923AE1A1700DB8383 /* CZScrollADCell.xib */; };
-		97664EF023AE1A1700DB8383 /* CZScrollAD.m in Sources */ = {isa = PBXBuildFile; fileRef = 97664EEB23AE1A1700DB8383 /* CZScrollAD.m */; };
+		97664EF023AE1A1700DB8383 /* GXScrollAD.m in Sources */ = {isa = PBXBuildFile; fileRef = 97664EEB23AE1A1700DB8383 /* GXScrollAD.m */; };
 		97664F0023AE1B7800DB8383 /* GXScrollImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 97664EFF23AE1B7800DB8383 /* GXScrollImageView.m */; };
 		9766AE6B23B0CBFF00789958 /* dataSource.json in Resources */ = {isa = PBXBuildFile; fileRef = 9766AE6A23B0CBFF00789958 /* dataSource.json */; };
 		9766AE6D23B0DB0700789958 /* dataSource1.json in Resources */ = {isa = PBXBuildFile; fileRef = 9766AE6C23B0DB0700789958 /* dataSource1.json */; };
@@ -104,9 +104,9 @@
 		97DDF341224DC9A100890F53 /* XMGOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97DDF33A224DC9A000890F53 /* XMGOneViewController.m */; };
 		97DDF342224DC9A100890F53 /* XMGTwoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97DDF33B224DC9A000890F53 /* XMGTwoViewController.xib */; };
 		97DDF343224DC9A100890F53 /* XMGThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97DDF33E224DC9A100890F53 /* XMGThreeViewController.m */; };
-		97E0046E23B30D3C0028A5E5 /* CZScrollADImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 97E0046C23B30D3C0028A5E5 /* CZScrollADImageCell.m */; };
-		97E0046F23B30D3C0028A5E5 /* CZScrollADImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97E0046D23B30D3C0028A5E5 /* CZScrollADImageCell.xib */; };
-		97E0047323B36B0D0028A5E5 /* CZScrollADPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 97E0047223B36B0D0028A5E5 /* CZScrollADPageControl.m */; };
+		97E0046E23B30D3C0028A5E5 /* GXScrollADImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 97E0046C23B30D3C0028A5E5 /* GXScrollADImageCell.m */; };
+		97E0046F23B30D3C0028A5E5 /* GXScrollADImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97E0046D23B30D3C0028A5E5 /* GXScrollADImageCell.xib */; };
+		97E0047323B36B0D0028A5E5 /* GXScrollADPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 97E0047223B36B0D0028A5E5 /* GXScrollADPageControl.m */; };
 		97EA1668218049B300C20CD9 /* GXConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 97EA1667218049B300C20CD9 /* GXConst.m */; };
 		97EA166D21806AF000C20CD9 /* GXTopWindowsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97EA166B21806AF000C20CD9 /* GXTopWindowsController.m */; };
 		97EA166E21806AF000C20CD9 /* GXTopWindowsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97EA166C21806AF000C20CD9 /* GXTopWindowsController.xib */; };
@@ -115,6 +115,7 @@
 		97EA167A2181E5A100C20CD9 /* GXFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 97EA16792181E5A100C20CD9 /* GXFooterView.m */; };
 		97EA167D2181E76000C20CD9 /* UIView+GXExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 97EA167C2181E76000C20CD9 /* UIView+GXExtension.m */; };
 		97F1C7DB21930098009F7871 /* GXNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97F1C7DA21930098009F7871 /* GXNavigationController.m */; };
+		97FBED4E243475E7002303E6 /* GX_WMPageStyleOneController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97FBED4D243475E7002303E6 /* GX_WMPageStyleOneController.m */; };
 		97FC0511218807A500B526F8 /* GXPostWordController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97FC0510218807A500B526F8 /* GXPostWordController.m */; };
 		97FC051621884FBC00B526F8 /* GXPlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 97FC051521884FBC00B526F8 /* GXPlaceholderTextView.m */; };
 		97FEBF2E22D49DFF007BF592 /* download.plist in Resources */ = {isa = PBXBuildFile; fileRef = 97FEBF2D22D49DFF007BF592 /* download.plist */; };
@@ -148,13 +149,13 @@
 		975BCB6D23BB64B5009E0CED /* CALayer+LayerColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+LayerColor.m"; sourceTree = "<group>"; };
 		975BCB6E23BB64B5009E0CED /* CALayer+LayerColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+LayerColor.h"; sourceTree = "<group>"; };
 		97664EE423AE1A1700DB8383 /* CZScrollADCell1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZScrollADCell1.h; sourceTree = "<group>"; };
-		97664EE523AE1A1700DB8383 /* CZScrollAD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZScrollAD.h; sourceTree = "<group>"; };
+		97664EE523AE1A1700DB8383 /* GXScrollAD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXScrollAD.h; sourceTree = "<group>"; };
 		97664EE623AE1A1700DB8383 /* CZScrollADCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZScrollADCell.m; sourceTree = "<group>"; };
 		97664EE723AE1A1700DB8383 /* CZScrollADCell1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CZScrollADCell1.xib; sourceTree = "<group>"; };
 		97664EE823AE1A1700DB8383 /* CZScrollADCell1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZScrollADCell1.m; sourceTree = "<group>"; };
 		97664EE923AE1A1700DB8383 /* CZScrollADCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CZScrollADCell.xib; sourceTree = "<group>"; };
 		97664EEA23AE1A1700DB8383 /* CZScrollADCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZScrollADCell.h; sourceTree = "<group>"; };
-		97664EEB23AE1A1700DB8383 /* CZScrollAD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZScrollAD.m; sourceTree = "<group>"; };
+		97664EEB23AE1A1700DB8383 /* GXScrollAD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXScrollAD.m; sourceTree = "<group>"; };
 		97664EFE23AE1B7800DB8383 /* GXScrollImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXScrollImageView.h; sourceTree = "<group>"; };
 		97664EFF23AE1B7800DB8383 /* GXScrollImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXScrollImageView.m; sourceTree = "<group>"; };
 		9766AE6A23B0CBFF00789958 /* dataSource.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = dataSource.json; sourceTree = "<group>"; };
@@ -288,11 +289,11 @@
 		97DDF33C224DC9A100890F53 /* XMGTwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGTwoViewController.h; sourceTree = "<group>"; };
 		97DDF33D224DC9A100890F53 /* XMGThreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGThreeViewController.h; sourceTree = "<group>"; };
 		97DDF33E224DC9A100890F53 /* XMGThreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGThreeViewController.m; sourceTree = "<group>"; };
-		97E0046B23B30D3C0028A5E5 /* CZScrollADImageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CZScrollADImageCell.h; sourceTree = "<group>"; };
-		97E0046C23B30D3C0028A5E5 /* CZScrollADImageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CZScrollADImageCell.m; sourceTree = "<group>"; };
-		97E0046D23B30D3C0028A5E5 /* CZScrollADImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CZScrollADImageCell.xib; sourceTree = "<group>"; };
-		97E0047123B36B0D0028A5E5 /* CZScrollADPageControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CZScrollADPageControl.h; sourceTree = "<group>"; };
-		97E0047223B36B0D0028A5E5 /* CZScrollADPageControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CZScrollADPageControl.m; sourceTree = "<group>"; };
+		97E0046B23B30D3C0028A5E5 /* GXScrollADImageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXScrollADImageCell.h; sourceTree = "<group>"; };
+		97E0046C23B30D3C0028A5E5 /* GXScrollADImageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXScrollADImageCell.m; sourceTree = "<group>"; };
+		97E0046D23B30D3C0028A5E5 /* GXScrollADImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GXScrollADImageCell.xib; sourceTree = "<group>"; };
+		97E0047123B36B0D0028A5E5 /* GXScrollADPageControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXScrollADPageControl.h; sourceTree = "<group>"; };
+		97E0047223B36B0D0028A5E5 /* GXScrollADPageControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXScrollADPageControl.m; sourceTree = "<group>"; };
 		97EA1666218049B300C20CD9 /* GXConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXConst.h; sourceTree = "<group>"; };
 		97EA1667218049B300C20CD9 /* GXConst.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXConst.m; sourceTree = "<group>"; };
 		97EA166A21806AF000C20CD9 /* GXTopWindowsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXTopWindowsController.h; sourceTree = "<group>"; };
@@ -309,6 +310,8 @@
 		97EA167C2181E76000C20CD9 /* UIView+GXExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+GXExtension.m"; sourceTree = "<group>"; };
 		97F1C7D921930098009F7871 /* GXNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXNavigationController.h; sourceTree = "<group>"; };
 		97F1C7DA21930098009F7871 /* GXNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXNavigationController.m; sourceTree = "<group>"; };
+		97FBED4C243475E7002303E6 /* GX_WMPageStyleOneController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GX_WMPageStyleOneController.h; sourceTree = "<group>"; };
+		97FBED4D243475E7002303E6 /* GX_WMPageStyleOneController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GX_WMPageStyleOneController.m; sourceTree = "<group>"; };
 		97FC050F218807A500B526F8 /* GXPostWordController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXPostWordController.h; sourceTree = "<group>"; };
 		97FC0510218807A500B526F8 /* GXPostWordController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXPostWordController.m; sourceTree = "<group>"; };
 		97FC051421884FBC00B526F8 /* GXPlaceholderTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXPlaceholderTextView.h; sourceTree = "<group>"; };
@@ -445,15 +448,15 @@
 			isa = PBXGroup;
 			children = (
 				97E0046A23B30CA00028A5E5 /* 滚动样式 */,
-				97664EE523AE1A1700DB8383 /* CZScrollAD.h */,
-				97664EEB23AE1A1700DB8383 /* CZScrollAD.m */,
-				97E0047123B36B0D0028A5E5 /* CZScrollADPageControl.h */,
-				97E0047223B36B0D0028A5E5 /* CZScrollADPageControl.m */,
+				97664EE523AE1A1700DB8383 /* GXScrollAD.h */,
+				97664EEB23AE1A1700DB8383 /* GXScrollAD.m */,
+				97E0047123B36B0D0028A5E5 /* GXScrollADPageControl.h */,
+				97E0047223B36B0D0028A5E5 /* GXScrollADPageControl.m */,
 			);
 			path = Lib;
 			sourceTree = "<group>";
 		};
-		976D7808242DC65500BF84AF /* 带转场动画的控制器 */ = {
+		976D7808242DC65500BF84AF /* 主控制器 */ = {
 			isa = PBXGroup;
 			children = (
 				97DDF332224DBDCD00890F53 /* GXParentChildController.h */,
@@ -461,7 +464,7 @@
 				97DDF335224DC50D00890F53 /* GXParentChildController.xib */,
 				97DDF344224DCB3100890F53 /* 子控制 */,
 			);
-			path = "带转场动画的控制器";
+			path = "主控制器";
 			sourceTree = "<group>";
 		};
 		976D7809242DC6C900BF84AF /* 三方WMPageController */ = {
@@ -470,6 +473,8 @@
 				976D780D242DCD0D00BF84AF /* WMPageController */,
 				976D780A242DC87700BF84AF /* GX_WMPageController.h */,
 				976D780B242DC87700BF84AF /* GX_WMPageController.m */,
+				97FBED4C243475E7002303E6 /* GX_WMPageStyleOneController.h */,
+				97FBED4D243475E7002303E6 /* GX_WMPageStyleOneController.m */,
 			);
 			path = "三方WMPageController";
 			sourceTree = "<group>";
@@ -574,6 +579,15 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
+		9786B2232436FF5C00762BCA /* 主控制器 */ = {
+			isa = PBXGroup;
+			children = (
+				97A30BEB24230618009D7089 /* GXFunctionExampleController.h */,
+				97A30BEC24230618009D7089 /* GXFunctionExampleController.m */,
+			);
+			path = "主控制器";
+			sourceTree = "<group>";
+		};
 		97A05FCE216F004300F49C01 = {
 			isa = PBXGroup;
 			children = (
@@ -672,9 +686,8 @@
 		97A30BEA242303A8009D7089 /* Function常用功能 */ = {
 			isa = PBXGroup;
 			children = (
+				9786B2232436FF5C00762BCA /* 主控制器 */,
 				9713D4DC242C6DF7004F1697 /* 保存图片到手机 */,
-				97A30BEB24230618009D7089 /* GXFunctionExampleController.h */,
-				97A30BEC24230618009D7089 /* GXFunctionExampleController.m */,
 				97C1962424246B0900CEBD7F /* 系统分享 */,
 			);
 			path = "Function常用功能";
@@ -836,9 +849,9 @@
 		97DDF330224CAF0000890F53 /* 父子控制器 */ = {
 			isa = PBXGroup;
 			children = (
+				976D7808242DC65500BF84AF /* 主控制器 */,
 				976D7809242DC6C900BF84AF /* 三方WMPageController */,
 				97D489CF22A6A13F00FD4EC7 /* 网易新闻首页 */,
-				976D7808242DC65500BF84AF /* 带转场动画的控制器 */,
 			);
 			path = "父子控制器";
 			sourceTree = "<group>";
@@ -861,9 +874,9 @@
 		97E0046A23B30CA00028A5E5 /* 滚动样式 */ = {
 			isa = PBXGroup;
 			children = (
-				97E0046B23B30D3C0028A5E5 /* CZScrollADImageCell.h */,
-				97E0046C23B30D3C0028A5E5 /* CZScrollADImageCell.m */,
-				97E0046D23B30D3C0028A5E5 /* CZScrollADImageCell.xib */,
+				97E0046B23B30D3C0028A5E5 /* GXScrollADImageCell.h */,
+				97E0046C23B30D3C0028A5E5 /* GXScrollADImageCell.m */,
+				97E0046D23B30D3C0028A5E5 /* GXScrollADImageCell.xib */,
 			);
 			path = "滚动样式";
 			sourceTree = "<group>";
@@ -1030,7 +1043,7 @@
 				97FEBF2E22D49DFF007BF592 /* download.plist in Resources */,
 				97A05E7E218AFFAB006A2CF8 /* PostImage.bundle in Resources */,
 				97A05FE2216F004300F49C01 /* Main.storyboard in Resources */,
-				97E0046F23B30D3C0028A5E5 /* CZScrollADImageCell.xib in Resources */,
+				97E0046F23B30D3C0028A5E5 /* GXScrollADImageCell.xib in Resources */,
 				975BCB6023BB4BDB009E0CED /* CZCollectionTypeOneCell.xib in Resources */,
 				97C20BF3217DF28F00C78AAD /* image.jpeg in Resources */,
 				97EA166E21806AF000C20CD9 /* GXTopWindowsController.xib in Resources */,
@@ -1114,7 +1127,7 @@
 				97A4DC5124238D530085F076 /* GXButtons.m in Sources */,
 				977C3391218D4ED000FAA144 /* GXTagTextField.m in Sources */,
 				97A6ADB823BDB7B2008E4596 /* CZProgressHUD.m in Sources */,
-				97664EF023AE1A1700DB8383 /* CZScrollAD.m in Sources */,
+				97664EF023AE1A1700DB8383 /* GXScrollAD.m in Sources */,
 				97A6ADB123BDB6D4008E4596 /* CZPhoneModelHandle.m in Sources */,
 				97FC051621884FBC00B526F8 /* GXPlaceholderTextView.m in Sources */,
 				97A30BED24230618009D7089 /* GXFunctionExampleController.m in Sources */,
@@ -1127,7 +1140,7 @@
 				976D781C242DCD0E00BF84AF /* UIViewController+WMPageController.m in Sources */,
 				97A6ADAD23BDB6D4008E4596 /* KCUtilMd5.m in Sources */,
 				977B311923B6080F0011E1BC /* CZTitlesViewTypeLayout.m in Sources */,
-				97E0047323B36B0D0028A5E5 /* CZScrollADPageControl.m in Sources */,
+				97E0047323B36B0D0028A5E5 /* GXScrollADPageControl.m in Sources */,
 				976D780C242DC87700BF84AF /* GX_WMPageController.m in Sources */,
 				976D781E242DCD0E00BF84AF /* WMScrollView.m in Sources */,
 				97C20BEF217DF22000C78AAD /* GXCircleImageController.m in Sources */,
@@ -1139,6 +1152,7 @@
 				97C4098923C889D900F59DA6 /* GXCollectionViewDemoController.m in Sources */,
 				979585292293E9E3005FC54D /* GXPerson.m in Sources */,
 				97A05FF2216F013E00F49C01 /* ContolViewController.m in Sources */,
+				97FBED4E243475E7002303E6 /* GX_WMPageStyleOneController.m in Sources */,
 				97C20BEB217D93AD00C78AAD /* GXMenuLabel.m in Sources */,
 				9774AD7421CB985600DD0827 /* GXFlowLayoutController.m in Sources */,
 				97A05E77218A9B25006A2CF8 /* GXAddTagToobar.m in Sources */,
@@ -1153,7 +1167,7 @@
 				97A05FDC216F004300F49C01 /* AppDelegate.m in Sources */,
 				97A6ADD023BDCADB008E4596 /* CZMHSDCell2CollectionCell.m in Sources */,
 				97A6ADB523BDB758008E4596 /* NSDictionary+CZExtension.m in Sources */,
-				97E0046E23B30D3C0028A5E5 /* CZScrollADImageCell.m in Sources */,
+				97E0046E23B30D3C0028A5E5 /* GXScrollADImageCell.m in Sources */,
 				97D489D222A6A1D900FD4EC7 /* GXHomeViewController.m in Sources */,
 				976D7820242DCD0E00BF84AF /* WMProgressView.m in Sources */,
 				97EA167A2181E5A100C20CD9 /* GXFooterView.m in Sources */,

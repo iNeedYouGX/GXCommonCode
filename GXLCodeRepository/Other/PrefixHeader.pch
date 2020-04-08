@@ -38,6 +38,8 @@ UINavigationController *nav = tabbar.selectedViewController;\
 UIViewController *currentVc = nav.topViewController;
 
 
+#import "CZProgressHUD.h"
+
 
 
 #endif /* PrefixHeader_pch */

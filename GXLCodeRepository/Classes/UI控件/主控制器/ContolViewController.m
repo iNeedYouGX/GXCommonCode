@@ -27,17 +27,17 @@
             @{@"title" : @"各种小按钮",
               @"control" : @"GXButtonsViewController"
             },
-            @{@"title" : @"CollectionViewCell样式",
-              @"control" : @"GXKindsOfViewController"
-            },
             @{@"title" : @"UICollectionView使用",
               @"control" : @"GXCollectionViewDemoController"
+            },
+            @{@"title" : @"UITableView的使用",
+              @"control" : @"GXSquareController"
             },
             @{@"title" : @"TableViewCell样式",
               @"control" : @"GXSomeTableCellController"
             },
-            @{@"title" : @"UITableView的使用",
-              @"control" : @"GXSquareController"
+            @{@"title" : @"CollectionViewCell样式",
+              @"control" : @"GXKindsOfViewController"
             },
             @{@"title" : @"弹框Alert样式",
               @"control" : @"AlertViewTEST"
@@ -59,9 +59,6 @@
             },
             @{@"title" : @"父子控制器",
               @"control" : @"GXParentChildController"
-            },
-            @{@"title" : @"网易新闻首页",
-              @"control" : @"GXHomeViewController"
             },
             @{@"title" : @"RAC的使用",
               @"control" : @"GXRACTestController"

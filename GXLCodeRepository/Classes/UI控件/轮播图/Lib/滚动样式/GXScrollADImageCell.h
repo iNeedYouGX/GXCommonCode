@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface CZScrollADImageCell : UICollectionViewCell
+@interface GXScrollADImageCell : UICollectionViewCell
 /** <#注释#> */
 @property (nonatomic, strong) NSDictionary *param;
 /** <#注释#> */

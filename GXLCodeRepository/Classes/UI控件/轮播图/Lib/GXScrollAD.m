@@ -6,11 +6,11 @@
 //  Copyright © 2019 JasonBourne. All rights reserved.
 //
 
-#import "CZScrollAD.h"
-#import "CZScrollADImageCell.h" // 单独图片
-#import "CZScrollADPageControl.h" // 小原点
+#import "GXScrollAD.h"
+#import "GXScrollADImageCell.h" // 单独图片
+#import "GXScrollADPageControl.h" // 小原点
 
-@interface CZScrollAD () <UICollectionViewDelegate, UICollectionViewDataSource>
+@interface GXScrollAD () <UICollectionViewDelegate, UICollectionViewDataSource>
 @property (nonatomic, strong) UICollectionView *collectionView;
 /** <#注释#> */
 @property (nonatomic, strong) NSTimer *timer;
@@ -19,18 +19,17 @@
 /** <#注释#> */
 @property (nonatomic, strong) Class cellClass;
 
-/** <#注释#> */
-@property (nonatomic, strong) NSArray *dataSourceList;
+
 
 /** <#注释#> */
-@property (nonatomic, strong) CZScrollADPageControl *pageContrl;
+@property (nonatomic, strong) GXScrollADPageControl *pageContrl;
 
 /** 当前页码 */
 @property (nonatomic, assign) NSInteger currentPage;
 
 @end
 
-@implementation CZScrollAD
+@implementation GXScrollAD
 #pragma mark -- xib创建时候使用的
 - (instancetype)initWithCoder:(NSCoder *)coder
 {
@@ -46,7 +45,7 @@
 }
 
 #pragma mark - 正常便利构造创建
-- (instancetype)initWithFrame:(CGRect)frame dataSourceList:(NSArray *)dataSourceList scrollerConfig:(void (^)(CZScrollAD *maker))configBlock registerCell:(void (^)(UICollectionView *))registerCellBlock scrollADCell:(UICollectionViewCell * (^)(UICollectionView *collectionView, NSIndexPath *indexPath))scrollADCellBlock
+- (instancetype)initWithFrame:(CGRect)frame dataSourceList:(NSArray *)dataSourceList scrollerConfig:(void (^)(GXScrollAD *maker))configBlock registerCell:(void (^)(UICollectionView *))registerCellBlock scrollADCell:(UICollectionViewCell * (^)(UICollectionView *collectionView, NSIndexPath *indexPath))scrollADCellBlock
 {
     self = [super initWithFrame:frame];
     if (self) {
@@ -76,7 +75,7 @@
 {
     [self addSubview:self.collectionView];
 //    [self.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:0 inSection:100 / 2] atScrollPosition:UICollectionViewScrollPositionTop animated:YES];
-    if (!self.scrollADCellBlock) {
+    if (!self.scrollADCellBlock && self.isShowPageView) {
         [self addSubview:self.pageContrl];
     }
     if (self.isAutoScroll == YES) {
@@ -96,11 +95,11 @@
 }
 
 // 创建页面的小点点
-- (CZScrollADPageControl *)pageContrl
+- (GXScrollADPageControl *)pageContrl
 {
     if (_pageContrl == nil) {
         CGRect frame = CGRectMake(0, self.frame.size.height - 20, self.frame.size.width, 20);
-        _pageContrl = [[CZScrollADPageControl alloc] initWithFrame:frame];
+        _pageContrl = [[GXScrollADPageControl alloc] initWithFrame:frame];
 //        _pageContrl.backgroundColor = [UIColor redColor];
         _pageContrl.numberOfPages = self.dataSourceList.count;
         // 选中的颜色
@@ -133,7 +132,8 @@
         flowLayout.scrollDirection = self.scrollDirection;
 
         _collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height) collectionViewLayout:flowLayout];
-        _collectionView.backgroundColor = [UIColor whiteColor];
+//        _collectionView.backgroundColor = [UIColor whiteColor];
+        _collectionView.backgroundColor = [UIColor clearColor];
         // 手否可以手滑
         _collectionView.scrollEnabled = YES;
         _collectionView.dataSource = self;
@@ -145,7 +145,7 @@
 
         // 默认是存图片轮播
         if (!self.scrollADCellBlock) {
-            [_collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([CZScrollADImageCell class]) bundle:nil] forCellWithReuseIdentifier:@"CZScrollADImageCell"];
+            [_collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([GXScrollADImageCell class]) bundle:nil] forCellWithReuseIdentifier:@"CZScrollADImageCell"];
         }
     }
     return  _collectionView;
@@ -169,7 +169,7 @@
         return cell;
     } else {
         NSString *url = self.dataSourceList[indexPath.item];
-        CZScrollADImageCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"CZScrollADImageCell" forIndexPath:indexPath];
+        GXScrollADImageCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"CZScrollADImageCell" forIndexPath:indexPath];
         cell.imageUrlString = url;
         return cell;
     }
@@ -287,6 +287,12 @@
     self.isAutoScroll = YES;
     self.scrollDirection = UICollectionViewScrollDirectionHorizontal;
     self.timeInterval = 3.0;
+}
+
+#pragma mark - 刷新
+- (void)reloadDataSource
+{
+    [self.collectionView reloadData];
 }
 
 #pragma mark -  内存处理

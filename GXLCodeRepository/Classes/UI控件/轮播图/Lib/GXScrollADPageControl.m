@@ -6,9 +6,9 @@
 //  Copyright © 2019 JasonBourne. All rights reserved.
 //
 
-#import "CZScrollADPageControl.h"
+#import "GXScrollADPageControl.h"
 
-@implementation CZScrollADPageControl
+@implementation GXScrollADPageControl
 
 #define dotW 7
 #define curDotW 15
@@ -47,6 +47,9 @@
     }
 
 }
+
+//[pageController setValue:[UIImage imageNamed:@"BluePoint.png"] forKeyPath:@"_currentPageImage"];
+//[pageController setValue:[UIImage imageNamed:@"black"] forKeyPath:@"_pageImage"];
 
 
 @end

@@ -104,4 +104,16 @@
 }
 
 
+#pragma mark - 简单的功能
+/** 复制到剪切板 */
+- (void)generalPaste
+{
+    UIPasteboard *posteboard = [UIPasteboard generalPasteboard];
+    posteboard.string = @"";
+    [CZProgressHUD showProgressHUDWithText:@"复制成功"];
+    [CZProgressHUD hideAfterDelay:1.5];
+}
+
+
+
 @end

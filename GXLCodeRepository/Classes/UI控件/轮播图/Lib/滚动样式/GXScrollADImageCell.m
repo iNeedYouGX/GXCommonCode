@@ -6,15 +6,15 @@
 //  Copyright © 2019 JasonBourne. All rights reserved.
 //
 
-#import "CZScrollADImageCell.h"
-#import <UIImageView+WebCache.h>
+#import "GXScrollADImageCell.h"
+#import "UIImageView+WebCache.h"
 
-@interface CZScrollADImageCell ()
+@interface GXScrollADImageCell ()
 /** 图片 */
 @property (nonatomic, weak) IBOutlet UIImageView *imageView;
 @end
 
-@implementation CZScrollADImageCell
+@implementation GXScrollADImageCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];

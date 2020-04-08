@@ -14,7 +14,8 @@
 @interface GXParentChildController ()
 /** 正在显示的控制器 */
 @property (nonatomic, weak) UIViewController *showingVc;
-
+/** <#注释#> */
+@property (nonatomic, weak) IBOutlet UIView *btnsBackView;
 @end
 
 @implementation GXParentChildController
@@ -25,6 +26,8 @@
     [self addChildViewController:[[XMGOneViewController alloc] init]];
     [self addChildViewController:[[XMGTwoViewController alloc] init]];
     [self addChildViewController:[[XMGThreeViewController alloc] init]];
+
+    [self buttonClick:[self.btnsBackView.subviews objectAtIndex:0]];
 }
 
 - (IBAction)buttonClick:(UIButton *)button {

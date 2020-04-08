@@ -7,6 +7,7 @@
 //
 
 #import "GX_WMPageController.h"
+#import "GX_WMPageStyleOneController.h"
 
 @interface GX_WMPageController ()
 /** <#注释#> */
@@ -17,7 +18,7 @@
 - (NSArray *)mainTitles
 {
     if (_mainTitles == nil) {
-        _mainTitles = @[@"每日精选", @"宣传素材"];
+        _mainTitles = @[@"每日精选", @"宣传素材", @"每日精选"];
     }
     return _mainTitles;
 }
@@ -25,43 +26,28 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-}
+    self.navigationController.navigationBar.translucent = YES;
 
-- (void)gx_menuViewStyle
-{
-    WMPageController *hotVc = (WMPageController *)self;
-    hotVc.selectIndex = 0;
-    hotVc.menuViewStyle = WMMenuViewStyleDefault;
-    hotVc.menuItemWidth = 40;
-    NSString *margin = [NSString stringWithFormat:@"%lf", (SCR_WIDTH - 160 - 44) / 3.0];
-    hotVc.itemsMargins = @[@"22", margin, margin, margin, @"22"];
-    hotVc.titleFontName = @"PingFangSC-Medium";
-    hotVc.titleColorNormal = UIColorFromRGB(0xFFFFFF);
-    hotVc.titleColorSelected = UIColorFromRGB(0xFFD224);
-    hotVc.titleSizeNormal = 18;
-    hotVc.titleSizeSelected = 18;
 }
 
 - (void)loadView
 {
     [super loadView];
+
     self.selectIndex = 0;
     self.menuViewStyle = WMMenuViewStyleLine;
-    self.menuViewLayoutMode = WMMenuViewLayoutModeLeft;   // Item 紧靠屏幕左侧
+    self.menuViewLayoutMode = WMMenuViewLayoutModeScatter;
 
-
-    self.progressWidth = 30;
-    self.progressHeight = 3;
+    self.progressHeight = 2.5;
     self.progressColor = UIColorFromRGB(0xFFD224);
-    self.progressViewBottomSpace = 3;
+    self.progressViewBottomSpace = 5;
 
-    self.automaticallyCalculatesItemWidths = NO;
-    self.itemMargin = 21;
-    self.titleFontName = @"PingFangSC-Regular";
+    self.automaticallyCalculatesItemWidths = YES;
+    self.titleFontName = @"PingFangSC-Medium";
     self.titleColorNormal = UIColorFromRGB(0xFFFFFF);
     self.titleColorSelected = UIColorFromRGB(0xFFD224);
-    self.titleSizeNormal = 14;
-    self.titleSizeSelected = 14;
+    self.titleSizeNormal = 18;
+    self.titleSizeSelected = 18;
 }
 
 #pragma mark - Datasource & Delegate
@@ -74,14 +60,20 @@
     switch (index) {
         case 0:
         {
-            UIViewController *vc = [[UIViewController alloc] init];
-            vc.view.backgroundColor = RANDOMCOLOR;
+            GX_WMPageStyleOneController *vc = [[GX_WMPageStyleOneController alloc] init];
+            vc.index = 1;
             return vc;
         }
         case 1:
         {
-            UIViewController *vc = [[UIViewController alloc] init];
-            vc.view.backgroundColor = RANDOMCOLOR;
+            GX_WMPageStyleOneController *vc = [[GX_WMPageStyleOneController alloc] init];
+            vc.index = 2;
+            return vc;
+        }
+        case 2:
+        {
+            GX_WMPageStyleOneController *vc = [[GX_WMPageStyleOneController alloc] init];
+            vc.index = 3;
             return vc;
         }
         default:
@@ -98,12 +90,12 @@
 }
 
 - (CGRect)pageController:(WMPageController *)pageController preferredFrameForMenuView:(WMMenuView *)menuView {
-    menuView.backgroundColor = UIColorFromRGB(0xE25838);
+    menuView.backgroundColor = RANDOMCOLOR;
     return CGRectMake(0, (IsiPhoneX ? 88 : 64), SCR_WIDTH, 50);
 }
 
 - (CGRect)pageController:(WMPageController *)pageController preferredFrameForContentView:(WMScrollView *)contentView {
-    return CGRectMake(0, (IsiPhoneX ? 88 : 64) + 33, SCR_WIDTH, SCR_HEIGHT - ((IsiPhoneX ? 88 : 64) + 33 + (IsiPhoneX ? 83 : 49)));
+    return CGRectMake(0, (IsiPhoneX ? 88 : 64) + 51, SCR_WIDTH, SCR_HEIGHT - ((IsiPhoneX ? 88 : 64) + 50 + (IsiPhoneX ? 83 : 49)));
 }
 
 - (void)pageController:(WMPageController *)pageController didEnterViewController:(__kindof UIViewController *)viewController withInfo:(NSDictionary *)info

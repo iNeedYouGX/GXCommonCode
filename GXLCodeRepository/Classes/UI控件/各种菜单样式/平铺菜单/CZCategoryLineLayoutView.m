@@ -186,7 +186,6 @@
         [btn addTarget:self action:@selector(categoryButtonAction:) forControlEvents:UIControlEventTouchUpInside];
         categoryView.height = CZGetY(btn);
 
-
 //        CGFloat contentWidth = self.width * ((count + (cols - 1)) / cols);
 //        CGFloat contentWidth = self.width * 2;
         // itemWidth 四舍五入

@@ -493,7 +493,7 @@
         item.textAlignment = NSTextAlignmentCenter;
         item.userInteractionEnabled = YES;
         item.backgroundColor = [UIColor clearColor];
-        item.backgroundColor = RANDOMCOLOR;
+//        item.backgroundColor = RANDOMCOLOR;
         item.normalSize    = [self sizeForState:WMMenuItemStateNormal atIndex:i];
         item.selectedSize  = [self sizeForState:WMMenuItemStateSelected atIndex:i];
         item.normalColor   = [self colorForState:WMMenuItemStateNormal atIndex:i];
