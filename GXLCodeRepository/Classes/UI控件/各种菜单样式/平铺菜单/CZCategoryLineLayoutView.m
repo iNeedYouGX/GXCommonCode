@@ -57,19 +57,9 @@
 /** <#注释#> */
 @property (nonatomic, strong) id recordElement;
 
-/** <#注释#> */
-@property (nonatomic, strong) NSMutableArray *saveBtns;
 @end
 
 @implementation CZCategoryLineLayoutView
-
-- (NSMutableArray *)saveBtns
-{
-    if (_saveBtns == nil) {
-        _saveBtns = [NSMutableArray array];
-    }
-    return _saveBtns;
-}
 
 + (NSArray *)categoryItems:(NSArray *)items setupNameKey:(NSString *)NameKey imageKey:(NSString *)imageKey IdKey:(NSString *)IdKey objectKey:(NSString *)objectKey
 {
@@ -93,27 +83,23 @@
 }
 
 
-+ (instancetype)categoryLineLayoutViewWithFrame:(CGRect)frame Items:(NSArray <CZCategoryItem *> *)items type:(NSInteger)type didClickedIndex:(void (^)(CZCategoryItem *item))block
++ (instancetype)categoryLineLayoutViewWithFrame:(CGRect)frame Items:(NSArray <CZCategoryItem *> *)items type:(CZCategoryLineLayoutViewType)type didClickedIndex:(void (^)(CZCategoryItem *item))block
 {
     CZCategoryLineLayoutView *view = [[CZCategoryLineLayoutView alloc] initWithFrame:frame];
     view.block = block;
     view.categoryItems = items;
-    if (type == 0) {
-        [view createView];
-    } else if (type == 1) {
+    if (type == CZCategoryLineLayoutViewTypeVertical) {
+        [view createVerticalView];
+    } else if (type == CZCategoryLineLayoutViewTypeLine) {
         [view createLineTitle];
-    } else if (type == 2) {
-        [view createViewTypeThree];
-    } else if (type == 3) {
-        [view createViewTypeFour:0];
-    } else if (type == 4) {
-        [view createViewTypeFour:1];
+    } else if (type == CZCategoryLineLayoutViewTypeDefault) {
+        [view createDefaultView:1];
     }
     return view;
 }
 
 #pragma mark - 样式1
-- (void)createView
+- (void)createVerticalView
 {
     CGFloat width = 50;
     CGFloat height = width + 30;
@@ -239,66 +225,8 @@
     }
 }
 
-#pragma mark - 样式3
-- (void)createViewTypeThree
-{
-    NSInteger count = self.categoryItems.count;
-    for (int i = 0; i < count; i++) {
-        CZCategoryItem *item = self.categoryItems[i];
-        UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-        [btn setTitleColor:UIColorFromRGB(0xFFFFFF) forState:UIControlStateNormal];
-        [btn setTitleColor:UIColorFromRGB(0xFFD224) forState:UIControlStateSelected];
-        [btn setTitle:item.categoryName forState:UIControlStateNormal];
-        btn.titleLabel.font = [UIFont fontWithName:@"PingFangSC-Medium" size: 18];
-        btn.width = SCR_WIDTH / count;
-        btn.height = 33;
-        btn.x = i * btn.width;
-        btn.tag = i;
-        [self addSubview:btn];
-        [btn layoutIfNeeded];
-        UIView *line = [[UIView alloc] initWithFrame:CGRectMake(btn.titleLabel.x, btn.height - 2.5, btn.titleLabel.width, 2.5)];
-        line.tag = 100;
-        line.layer.cornerRadius = line.height / 2;
-        line.backgroundColor = UIColorFromRGB(0xFFD224);
-        [btn addSubview:line];
-        if (i == 0) {
-            btn.selected = YES;
-            line.hidden = NO;
-            self.recordElement = btn;
-        } else {
-            line.hidden = YES;
-        }
-        [btn addTarget:self action:@selector(viewTypeThreeAction:) forControlEvents:UIControlEventTouchUpInside];
-    }
-    self.height = CZGetY([self.subviews lastObject]);
-}
-
-- (void)viewTypeThreeAction:(UIButton *)sender
-{
-    if (self.recordElement == sender) {
-        return;
-    }
-
-    // 设置选中
-    sender.selected = YES;
-    UIView *line = [sender viewWithTag:100];
-    line.hidden = NO;
-
-    // 还原选中
-    UIButton *recordElement = self.recordElement;
-    recordElement.selected = NO;
-    UIView *line1 = [self.recordElement viewWithTag:100];
-    line1.hidden = YES;
-
-    self.categoryItem = self.categoryItems[sender.tag];
-    self.categoryItem.index = sender.tag;
-    !self.block ? : self.block(self.categoryItem);
-
-    self.recordElement = sender;
-}
-
-#pragma mark - 样式4
-- (void)createViewTypeFour:(NSInteger)type
+#pragma mark - 正常排一排的
+- (void)createDefaultView:(NSInteger)type
 {
     if (self.height == 0) {
         [CZProgressHUD showProgressHUDWithText:@" 样式4高度等于0!!!!!"];
@@ -366,21 +294,6 @@
 }
 
 
-#pragma mark - 样式5
-- (void)createViewTypeFive
-{
-    if (self.height == 0) {
-        [CZProgressHUD showProgressHUDWithText:@" 样式5高度等于0!!!!!"];
-        [CZProgressHUD hideAfterDelay:1.5];
-    }
-    [self createViewTypeFour:1];
-}
-
-#pragma mark - 样式6
-- (void)createViewTypeSix
-{
-    
-}
 
 
 

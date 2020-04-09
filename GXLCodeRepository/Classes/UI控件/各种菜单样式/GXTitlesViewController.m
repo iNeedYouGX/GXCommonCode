@@ -11,7 +11,8 @@
 #import "CZCategoryLineLayoutView.h"
 
 @interface GXTitlesViewController ()
-
+/** <#注释#> */
+@property (nonatomic, strong) NSArray *dataSource;
 @end
 
 @implementation GXTitlesViewController
@@ -28,6 +29,20 @@
  @property(nonatomic)         BOOL         showsTouchWhenHighlighted;     // default is NO. if YES, show a simple feedback (currently a glow) while highlighted
  */
 
+#pragma mark - 数据
+- (NSArray *)dataSource
+{
+    if (_dataSource == nil) {
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"titlesViewDataSource" ofType:@"json"];
+        NSString *jsonStr = [[NSString alloc] initWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
+        NSData *jsonData = [jsonStr dataUsingEncoding:NSUTF8StringEncoding];
+        NSArray *list = [NSJSONSerialization JSONObjectWithData:jsonData options:kNilOptions error:nil];
+        _dataSource = list;
+    }
+    return _dataSource;;
+}
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
@@ -36,11 +51,9 @@
     [self type2];
     [self type3];
     [self type4];
-    [self type5];
-    [self type6];
 }
 
-
+#pragma mark - 创建UI
 - (void)type1
 {
     CGRect frame = CGRectMake(0, CZGetY([self.view.subviews lastObject]) + 10, SCR_WIDTH, 0);
@@ -55,10 +68,7 @@
 
 - (void)type2
 {
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"titlesViewDataSource" ofType:@"json"];
-    NSString *jsonStr = [[NSString alloc] initWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
-    NSData *jsonData = [jsonStr dataUsingEncoding:NSUTF8StringEncoding];
-    NSArray *list = [NSJSONSerialization JSONObjectWithData:jsonData options:kNilOptions error:nil];
+    NSArray *list = self.dataSource;
     CGRect frame = CGRectMake(0, CZGetY([self.view.subviews lastObject]) + 10, SCR_WIDTH, 0);
     // 分类的按钮
     NSArray *categoryList = [CZCategoryLineLayoutView categoryItems:list setupNameKey:@"categoryName" imageKey:@"img" IdKey:@"categoryId" objectKey:@""];
@@ -71,10 +81,7 @@
 
 - (void)type3
 {
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"titlesViewDataSource" ofType:@"json"];
-    NSString *jsonStr = [[NSString alloc] initWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
-    NSData *jsonData = [jsonStr dataUsingEncoding:NSUTF8StringEncoding];
-    NSArray *list = [NSJSONSerialization JSONObjectWithData:jsonData options:kNilOptions error:nil];
+    NSArray *list = self.dataSource;
     CGRect frame = CGRectMake(0, CZGetY([self.view.subviews lastObject]) + 10, SCR_WIDTH, 0);
     // 分类的按钮
     NSArray *categoryList = [CZCategoryLineLayoutView categoryItems:list setupNameKey:@"categoryName" imageKey:@"img" IdKey:@"categoryId" objectKey:@""];
@@ -85,60 +92,14 @@
     [self.view addSubview:categoryView];
 }
 
+
 - (void)type4
 {
-    NSArray *categoryList = [CZCategoryLineLayoutView categoryItems:@[@"搜极品城", @"搜淘宝"] setupNameKey:@"categoryName" imageKey:@"img" IdKey:@"categoryId" objectKey:@""];
-    CGRect frame = CGRectMake(0, CZGetY([self.view.subviews lastObject]) + 10, SCR_WIDTH, 0);
+    NSArray *list = self.dataSource;
+    CGRect frame = CGRectMake(0, CZGetY([self.view.subviews lastObject]) + 10, SCR_WIDTH, 50);
+    // 分类的按钮
+    NSArray *categoryList = [CZCategoryLineLayoutView categoryItems:list setupNameKey:@"categoryName" imageKey:@"img" IdKey:@"categoryId" objectKey:@""];
     CZCategoryLineLayoutView *categoryView = [CZCategoryLineLayoutView categoryLineLayoutViewWithFrame:frame Items:categoryList type:2 didClickedIndex:^(CZCategoryItem * _Nonnull item) {
-        NSLog(@"%@", item.categoryName);
-    }];
-    categoryView.backgroundColor = UIColorFromRGB(0xF5F5F5);
-    [self.view addSubview:categoryView];
-}
-
-
-- (void)type5
-{
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"titlesViewDataSource" ofType:@"json"];
-    NSString *jsonStr = [[NSString alloc] initWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
-    NSData *jsonData = [jsonStr dataUsingEncoding:NSUTF8StringEncoding];
-    NSArray *list = [NSJSONSerialization JSONObjectWithData:jsonData options:kNilOptions error:nil];
-    CGRect frame = CGRectMake(0, CZGetY([self.view.subviews lastObject]) + 10, SCR_WIDTH, 50);
-    // 分类的按钮
-    NSArray *categoryList = [CZCategoryLineLayoutView categoryItems:list setupNameKey:@"categoryName" imageKey:@"img" IdKey:@"categoryId" objectKey:@""];
-    CZCategoryLineLayoutView *categoryView = [CZCategoryLineLayoutView categoryLineLayoutViewWithFrame:frame Items:categoryList type:3 didClickedIndex:^(CZCategoryItem * _Nonnull item) {
-        NSLog(@"%@", item.categoryName);
-    }];
-    categoryView.backgroundColor = UIColorFromRGB(0xF5F5F5);
-    [self.view addSubview:categoryView];
-}
-
-- (void)type6
-{
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"titlesViewDataSource" ofType:@"json"];
-    NSString *jsonStr = [[NSString alloc] initWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
-    NSData *jsonData = [jsonStr dataUsingEncoding:NSUTF8StringEncoding];
-    NSArray *list = [NSJSONSerialization JSONObjectWithData:jsonData options:kNilOptions error:nil];
-    CGRect frame = CGRectMake(0, CZGetY([self.view.subviews lastObject]) + 10, SCR_WIDTH, 50);
-    // 分类的按钮
-    NSArray *categoryList = [CZCategoryLineLayoutView categoryItems:list setupNameKey:@"categoryName" imageKey:@"img" IdKey:@"categoryId" objectKey:@""];
-    CZCategoryLineLayoutView *categoryView = [CZCategoryLineLayoutView categoryLineLayoutViewWithFrame:frame Items:categoryList type:4 didClickedIndex:^(CZCategoryItem * _Nonnull item) {
-        NSLog(@"%@", item.categoryName);
-    }];
-    categoryView.backgroundColor = UIColorFromRGB(0xF5F5F5);
-    [self.view addSubview:categoryView];
-}
-
-- (void)type7
-{
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"titlesViewDataSource" ofType:@"json"];
-    NSString *jsonStr = [[NSString alloc] initWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
-    NSData *jsonData = [jsonStr dataUsingEncoding:NSUTF8StringEncoding];
-    NSArray *list = [NSJSONSerialization JSONObjectWithData:jsonData options:kNilOptions error:nil];
-    CGRect frame = CGRectMake(0, CZGetY([self.view.subviews lastObject]) + 10, SCR_WIDTH, 0);
-    // 分类的按钮
-    NSArray *categoryList = [CZCategoryLineLayoutView categoryItems:list setupNameKey:@"categoryName" imageKey:@"img" IdKey:@"categoryId" objectKey:@""];
-    CZCategoryLineLayoutView *categoryView = [CZCategoryLineLayoutView categoryLineLayoutViewWithFrame:frame Items:categoryList type:4 didClickedIndex:^(CZCategoryItem * _Nonnull item) {
         NSLog(@"%@", item.categoryName);
     }];
     categoryView.backgroundColor = UIColorFromRGB(0xF5F5F5);
