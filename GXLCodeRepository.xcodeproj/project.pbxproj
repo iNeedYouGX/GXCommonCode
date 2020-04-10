@@ -119,6 +119,7 @@
 		97FC0511218807A500B526F8 /* GXPostWordController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97FC0510218807A500B526F8 /* GXPostWordController.m */; };
 		97FC051621884FBC00B526F8 /* GXPlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 97FC051521884FBC00B526F8 /* GXPlaceholderTextView.m */; };
 		97FEBF2E22D49DFF007BF592 /* download.plist in Resources */ = {isa = PBXBuildFile; fileRef = 97FEBF2D22D49DFF007BF592 /* download.plist */; };
+		C8F26438244041A8009475F6 /* CZAlertView1Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = C8F26436244041A8009475F6 /* CZAlertView1Controller.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -318,6 +319,8 @@
 		97FC051521884FBC00B526F8 /* GXPlaceholderTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXPlaceholderTextView.m; sourceTree = "<group>"; };
 		97FEBF2D22D49DFF007BF592 /* download.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = download.plist; sourceTree = "<group>"; };
 		9C8D510534E78F9435F53B1F /* libPods-GXLCodeRepository.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GXLCodeRepository.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8F26436244041A8009475F6 /* CZAlertView1Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZAlertView1Controller.m; sourceTree = "<group>"; };
+		C8F26437244041A8009475F6 /* CZAlertView1Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZAlertView1Controller.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -418,6 +421,8 @@
 		97664EE023ADF8E100DB8383 /* alert弹框 */ = {
 			isa = PBXGroup;
 			children = (
+				C8F26437244041A8009475F6 /* CZAlertView1Controller.h */,
+				C8F26436244041A8009475F6 /* CZAlertView1Controller.m */,
 				97A6ADB623BDB7B2008E4596 /* CZProgressHUD.h */,
 				97A6ADB723BDB7B2008E4596 /* CZProgressHUD.m */,
 				97362C062179A30D0092A6D1 /* AlertViewTEST.h */,
@@ -1127,6 +1132,7 @@
 				97A4DC5124238D530085F076 /* GXButtons.m in Sources */,
 				977C3391218D4ED000FAA144 /* GXTagTextField.m in Sources */,
 				97A6ADB823BDB7B2008E4596 /* CZProgressHUD.m in Sources */,
+				C8F26438244041A8009475F6 /* CZAlertView1Controller.m in Sources */,
 				97664EF023AE1A1700DB8383 /* GXScrollAD.m in Sources */,
 				97A6ADB123BDB6D4008E4596 /* CZPhoneModelHandle.m in Sources */,
 				97FC051621884FBC00B526F8 /* GXPlaceholderTextView.m in Sources */,

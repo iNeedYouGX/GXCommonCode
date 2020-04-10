@@ -7,8 +7,10 @@
 //
 
 #import "AlertViewTEST.h"
+#import "CZAlertView1Controller.h"
 
-@interface AlertViewTEST ()<UITableViewDelegate, UITableViewDataSource>
+
+@interface AlertViewTEST ()<UITableViewDelegate, UITableViewDataSource, UIPopoverPresentationControllerDelegate>
 /** 表单 */
 @property (nonatomic, strong) UITableView *tableView;
 /** 数据 */
@@ -51,7 +53,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 5;
+    return 6;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -102,9 +104,31 @@
 
         }]];
         [self presentViewController:alertView animated:YES completion:nil];
+    } else if (indexPath.row == 5) {
+        // 此为自定义的ViewController
+        CZAlertView1Controller *view = [[CZAlertView1Controller alloc] init];
+        // 设定大小(此处也可不做设置,不做设置的效果如下图)
+        view.preferredContentSize = CGSizeMake(100, 100);
+        // 初始化
+        view.modalPresentationStyle = UIModalPresentationPopover;
+        UIPopoverPresentationController *popVC = view.popoverPresentationController;
+        popVC.permittedArrowDirections = UIPopoverArrowDirectionUp; // 箭头位置
+        popVC.sourceRect = CGRectMake(0, 0, 50, 0); // 弹出视图显示位置
+        // 设置代理
+        popVC.delegate = self;
+        popVC.sourceView = [self.tableView cellForRowAtIndexPath:indexPath];
+        
+        // 退出视图
+        [self presentViewController:view animated:YES completion:nil];
+        
     }
     [CZProgressHUD hideAfterDelay:1.5];
 }
 
+-(UIModalPresentationStyle)adaptivePresentationStyleForPresentationController:(UIPresentationController *)controller
+{
+    // 此处为不适配(如果选择其他,会自动视频屏幕,上面设置的大小就毫无意义了)
+    return UIModalPresentationNone;
+}
 
 @end
