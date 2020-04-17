@@ -32,6 +32,10 @@
     
 }
 
+
+
+
+
 #pragma mark - 让数组里面的所有控件执行同一个方法
 - (void)example1
 {

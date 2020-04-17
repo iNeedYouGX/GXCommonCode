@@ -10,14 +10,14 @@
 
 @implementation GXZoomImageView
 
-// static改变全局变量为当前文件访问,
+// static改变全局变量为当前文件访问, 防止有其他文件重名!
 static CGRect oldRect_;
 static double duration_ = 0.25;
 + (void)showZoomImage:(__kindof UIView * _Nonnull)obj
 {
     UIWindow *window = [UIApplication sharedApplication].keyWindow;
 
-    // 通过坐标系转, 返回当前的view的尺寸
+    // 通过坐标系转换, 返回当前的view的尺寸
     oldRect_ = [obj convertRect:obj.bounds toView:window];
 
     // 创建父视图
@@ -31,7 +31,7 @@ static double duration_ = 0.25;
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hideImage:)];
     [backView addGestureRecognizer:tap];
 
-    // 拿到图片放置到记录的位置
+    // 拿到图片先放到老位置
     UIImageView *currentImageView = [[UIImageView alloc] init];
     currentImageView.frame = oldRect_;
     [backView addSubview:currentImageView];
@@ -39,7 +39,7 @@ static double duration_ = 0.25;
     currentImageView.image = [self getImageWithObj:obj];
 
 
-    // 根据屏幕宽b度, 计算图片的放大高度
+    // 根据屏幕宽, 计算图片的放大高度
     CGFloat currentH = currentImageView.image.size.height * SCR_WIDTH / currentImageView.image.size.width;
     NSLog(@"-------%d", isnan(currentH));
     if (isnan(currentH)) {
@@ -58,7 +58,7 @@ static double duration_ = 0.25;
 {
 /**
  注意: 如果设置[btn setImage:], btn.imageView可以拿到图片
-      如果设置[btn setBackgroundImage:], btn.imageView拿不到图片, 需求通过遍历
+      如果设置[btn setBackgroundImage:], btn.imageView拿不到图片, 通过遍历拿到
  */
     if ([obj isKindOfClass:[UIImageView class]]) { // 是imageView
         UIImageView *imageView = (UIImageView *)obj;

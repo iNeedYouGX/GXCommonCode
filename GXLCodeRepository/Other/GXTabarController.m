@@ -52,6 +52,8 @@
 
     [self setupChildVc:[[OCExampleController alloc] init] title:@"OC语法" image:@"tabBar_new_icon" selectedImage:@"tabBar_new_click_icon"];
     
+    self.selectedIndex = 1;
+    
 }
 
 - (void)setupChildVc:(UIViewController *)vc title:(NSString *)title image:(NSString *)image selectedImage:(NSString *)selectedImage

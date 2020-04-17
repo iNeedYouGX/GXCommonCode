@@ -10,7 +10,7 @@
 #import "GXSquareCell.h"
 #import "GXFooterView.h"
 
-@interface GXSquareController ()<UITableViewDelegate, UITableViewDataSource>
+@interface GXSquareController () <UITableViewDelegate, UITableViewDataSource>
 
 @end
 

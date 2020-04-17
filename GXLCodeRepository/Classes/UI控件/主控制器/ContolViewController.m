@@ -66,7 +66,7 @@
             @{@"title" : @"轮播图使用",
               @"control" : @"GXScrollImageView"
             }
-                     ];
+             ];
     }
     return _dataArr;
 }
