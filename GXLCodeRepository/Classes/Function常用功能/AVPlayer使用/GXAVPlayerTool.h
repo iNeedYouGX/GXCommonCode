@@ -16,12 +16,18 @@ NS_ASSUME_NONNULL_BEGIN
 + (instancetype)aVPlayerFrame:(CGRect)frame andURLStr:(NSString *)url;
 
 // 监听播放进度与状态的刷新
-- (void)aVPlayerProgress:(void (^)(CGFloat scale, NSTimeInterval currentTime))block;
+- (void)aVPlayerProgress:(void (^)(CGFloat scale, NSTimeInterval currentTime, NSTimeInterval totalTime))block;
 
-// 监听Status属性
+/**
+ * 监听Status属性, 返回当前AVPlayer的状态
+ * AVPlayerStatusUnknown = 0,
+ * AVPlayerStatusReadyToPlay = 1, // 准备好了
+ * AVPlayerStatusFailed = 2
+ */
 - (void)aVAddObserverStatus:(void (^)(AVPlayerStatus status, AVPlayerItem *playerItem))avplayerStatusBlock;
+
 // 监听播放完毕, 之后循环播放
-- (void)moviePlayDidEnd;
+- (void)moviePlayDidEndThenLoopIt;
 
 // 设置视频播放位置
 - (void)aVplayerToTime:(NSTimeInterval)time;
@@ -31,6 +37,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 // 暂停
 - (void)pause;
+
+// 停止
+- (void)stop;
 @end
 
 NS_ASSUME_NONNULL_END

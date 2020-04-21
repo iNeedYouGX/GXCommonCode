@@ -28,15 +28,15 @@
     
     self.navigationController.navigationBar.translucent = NO;
     
-    // 第三步: 创建播放器
+    // 创建播放器
     NSString *localFilePath1 = [[NSBundle mainBundle] pathForResource:@"12秒nn" ofType:@"mp4"];
     GXAVPlayerTool *playerView = [GXAVPlayerTool aVPlayerFrame:CGRectMake(10, 10, 200, 200) andURLStr:localFilePath1];
     self.playerView = playerView;
     [self.view addSubview:playerView];
     
-    // 播放进度与状态的刷新
+    // 获取播放进度
     __weak __typeof(self) weakSelf = self;
-    [playerView aVPlayerProgress:^(CGFloat scale, NSTimeInterval currentTime) {
+    [playerView aVPlayerProgress:^(CGFloat scale, NSTimeInterval currentTime, NSTimeInterval totalTime) {
         // 设置滑块的当前进度
         [weakSelf.progressView setProgress:scale animated:YES];
         weakSelf.slider.value = currentTime;
@@ -45,7 +45,7 @@
         NSLog(@"当前的播放时间: %@", currentTimeStr);
     }];
 
-    // 观察Status属性，成功之后得到视频的长度
+    // 获得视频加载状态
     [playerView aVAddObserverStatus:^(AVPlayerStatus status, AVPlayerItem *playerItem) {
         if (status == 1) {
             //获取视频长度
@@ -58,9 +58,6 @@
             self.progressView.progress = 0;
         }
     }];
-
-    
-
 }
 
 /** 播放 */
@@ -78,7 +75,7 @@
 /** 停止 */
 - (IBAction)stop
 {
-    
+    [self.playerView stop];
 }
 
 //UISlider的响应方法:拖动滑块，改变播放进度

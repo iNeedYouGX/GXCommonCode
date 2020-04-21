@@ -14,8 +14,13 @@
 
 /** 监听当前播放时间 */
 @property (nonatomic, assign) id timerObserver;
+
 /** 返回播放器的状态 */
 @property (nonatomic, strong) void (^avplayerStatusBlock)(AVPlayerStatus, AVPlayerItem *);
+
+// 内存管理
+/** 是否添加了status观察者 */
+@property (nonatomic, assign) BOOL isAddObserveStatus;
 @end
 
 
@@ -37,7 +42,7 @@
     // 第3步: 创建显示视频的AVPlayerLayer,设置视频显示属性，并添加视频图层
     AVPlayerLayer *avLayer = [AVPlayerLayer playerLayerWithPlayer:toolView.player];
     avLayer.videoGravity = AVLayerVideoGravityResizeAspect; // 等比例  默认
-    avLayer.backgroundColor = [UIColor cyanColor].CGColor;
+//    avLayer.backgroundColor = [UIColor cyanColor].CGColor;
     avLayer.frame = CGRectMake(0, 0, toolView.width, toolView.height);
     [toolView.layer addSublayer:avLayer];
     
@@ -47,6 +52,9 @@
 #pragma mark - 监听Status属性
 - (void)aVAddObserverStatus:(void (^)(AVPlayerStatus status, AVPlayerItem *playerItem))avplayerStatusBlock
 {
+    // 是否添加了观察者
+    self.isAddObserveStatus = YES;
+    
     // 添加属性观察, 观察Status属性，可以在加载成功之后得到视频的长度
     [self.player.currentItem addObserver:self forKeyPath:@"status" options:NSKeyValueObservingOptionNew context:nil];
     
@@ -64,7 +72,7 @@
 
 
 #pragma mark - 监听播放进度与状态的刷新
-- (void)aVPlayerProgress:(void (^)(CGFloat scale, NSTimeInterval currentTime))block
+- (void)aVPlayerProgress:(void (^)(CGFloat scale, NSTimeInterval currentTime, NSTimeInterval totalTime))block
 {
     __weak __typeof(self) weakSelf = self;
     self.timerObserver = [self.player addPeriodicTimeObserverForInterval:CMTimeMake(1, 1) queue:dispatch_get_main_queue() usingBlock:^(CMTime time) {
@@ -78,7 +86,7 @@
         // 设置滑块的当前进度
         CGFloat scale = currentTime / totalTime;
 
-        block(scale, currentTime);
+        block(scale, currentTime, totalTime);
     }];
 }
 
@@ -154,19 +162,24 @@
     [self.player pause];
 }
 
-#pragma mark - 监听播放完毕
-- (void)moviePlayDidEnd
+#pragma mark - /** 停止 */
+- (void)stop
+{
+    [self.player.currentItem seekToTime:kCMTimeZero];
+    [self.player pause];
+}
+
+#pragma mark - 监听播放完毕, 视频循环播放
+- (void)moviePlayDidEndThenLoopIt
 {
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(moviePlayDidEnd:) name:AVPlayerItemDidPlayToEndTimeNotification object:self.player.currentItem];
 }
 
-#pragma mark - 视频循环播放
-- (void)moviePlayDidEnd:(NSNotification*)notification{
-    
+// 视频循环播放
+- (void)moviePlayDidEnd:(NSNotification*)notification
+{
     AVPlayerItem *item = [notification object];
-    
     [item seekToTime:kCMTimeZero];
-    
     [self.player play];
 }
 
@@ -198,7 +211,10 @@
 {
     // 移除时，调用removeTimeObserver
     [self.player removeTimeObserver:self.timerObserver];
-    [self.player.currentItem removeObserver:self forKeyPath:@"status"];
+    
+    if (self.isAddObserveStatus) {
+        [self.player.currentItem removeObserver:self forKeyPath:@"status"];
+    }
 }
 
 /**

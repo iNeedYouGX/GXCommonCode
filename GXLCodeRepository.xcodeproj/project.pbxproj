@@ -119,10 +119,12 @@
 		97FC0511218807A500B526F8 /* GXPostWordController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97FC0510218807A500B526F8 /* GXPostWordController.m */; };
 		97FC051621884FBC00B526F8 /* GXPlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 97FC051521884FBC00B526F8 /* GXPlaceholderTextView.m */; };
 		97FEBF2E22D49DFF007BF592 /* download.plist in Resources */ = {isa = PBXBuildFile; fileRef = 97FEBF2D22D49DFF007BF592 /* download.plist */; };
+		C8091F19244D5C5400CC86B7 /* GXImageHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = C8091F18244D5C5400CC86B7 /* GXImageHandler.m */; };
+		C8091F1F244D699700CC86B7 /* UIImage+GXImageExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = C8091F1E244D699700CC86B7 /* UIImage+GXImageExtension.m */; };
+		C8091F22244D75F500CC86B7 /* GXAVPlayerTool.m in Sources */ = {isa = PBXBuildFile; fileRef = C8091F20244D75F500CC86B7 /* GXAVPlayerTool.m */; };
 		C89A6FB0244959C500640BDA /* GXAVPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C89A6FAF244959C500640BDA /* GXAVPlayerViewController.m */; };
 		C8D772972449611800B76C5C /* GXAVPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8D772962449611800B76C5C /* GXAVPlayerViewController.xib */; };
 		C8D7729924498DB000B76C5C /* 12秒nn.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C8D7729824498DB000B76C5C /* 12秒nn.mp4 */; };
-		C8D7729C2449ADC200B76C5C /* GXAVPlayerTool.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D7729B2449ADC200B76C5C /* GXAVPlayerTool.m */; };
 		C8F26438244041A8009475F6 /* CZAlertView1Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = C8F26436244041A8009475F6 /* CZAlertView1Controller.m */; };
 /* End PBXBuildFile section */
 
@@ -323,12 +325,16 @@
 		97FC051521884FBC00B526F8 /* GXPlaceholderTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXPlaceholderTextView.m; sourceTree = "<group>"; };
 		97FEBF2D22D49DFF007BF592 /* download.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = download.plist; sourceTree = "<group>"; };
 		9C8D510534E78F9435F53B1F /* libPods-GXLCodeRepository.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GXLCodeRepository.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8091F17244D5C5400CC86B7 /* GXImageHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXImageHandler.h; sourceTree = "<group>"; };
+		C8091F18244D5C5400CC86B7 /* GXImageHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXImageHandler.m; sourceTree = "<group>"; };
+		C8091F1D244D699700CC86B7 /* UIImage+GXImageExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+GXImageExtension.h"; sourceTree = "<group>"; };
+		C8091F1E244D699700CC86B7 /* UIImage+GXImageExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GXImageExtension.m"; sourceTree = "<group>"; };
+		C8091F20244D75F500CC86B7 /* GXAVPlayerTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXAVPlayerTool.m; sourceTree = "<group>"; };
+		C8091F21244D75F500CC86B7 /* GXAVPlayerTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXAVPlayerTool.h; sourceTree = "<group>"; };
 		C89A6FAE244959C500640BDA /* GXAVPlayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXAVPlayerViewController.h; sourceTree = "<group>"; };
 		C89A6FAF244959C500640BDA /* GXAVPlayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXAVPlayerViewController.m; sourceTree = "<group>"; };
 		C8D772962449611800B76C5C /* GXAVPlayerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GXAVPlayerViewController.xib; sourceTree = "<group>"; };
 		C8D7729824498DB000B76C5C /* 12秒nn.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "12秒nn.mp4"; sourceTree = "<group>"; };
-		C8D7729A2449ADC200B76C5C /* GXAVPlayerTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXAVPlayerTool.h; sourceTree = "<group>"; };
-		C8D7729B2449ADC200B76C5C /* GXAVPlayerTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXAVPlayerTool.m; sourceTree = "<group>"; };
 		C8F26436244041A8009475F6 /* CZAlertView1Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZAlertView1Controller.m; sourceTree = "<group>"; };
 		C8F26437244041A8009475F6 /* CZAlertView1Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZAlertView1Controller.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -701,8 +707,9 @@
 		97A30BEA242303A8009D7089 /* Function常用功能 */ = {
 			isa = PBXGroup;
 			children = (
-				C89A6FB124495D5000640BDA /* AVPlayer使用 */,
+				C8091F16244D5C0F00CC86B7 /* 图片处理 */,
 				9786B2232436FF5C00762BCA /* 主控制器 */,
+				C89A6FB124495D5000640BDA /* AVPlayer使用 */,
 				9713D4DC242C6DF7004F1697 /* 保存图片到手机 */,
 				97C1962424246B0900CEBD7F /* 系统分享 */,
 			);
@@ -983,15 +990,26 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C8091F16244D5C0F00CC86B7 /* 图片处理 */ = {
+			isa = PBXGroup;
+			children = (
+				C8091F17244D5C5400CC86B7 /* GXImageHandler.h */,
+				C8091F18244D5C5400CC86B7 /* GXImageHandler.m */,
+				C8091F1D244D699700CC86B7 /* UIImage+GXImageExtension.h */,
+				C8091F1E244D699700CC86B7 /* UIImage+GXImageExtension.m */,
+			);
+			path = "图片处理";
+			sourceTree = "<group>";
+		};
 		C89A6FB124495D5000640BDA /* AVPlayer使用 */ = {
 			isa = PBXGroup;
 			children = (
+				C8091F21244D75F500CC86B7 /* GXAVPlayerTool.h */,
+				C8091F20244D75F500CC86B7 /* GXAVPlayerTool.m */,
 				C8D7729824498DB000B76C5C /* 12秒nn.mp4 */,
 				C89A6FAE244959C500640BDA /* GXAVPlayerViewController.h */,
 				C89A6FAF244959C500640BDA /* GXAVPlayerViewController.m */,
 				C8D772962449611800B76C5C /* GXAVPlayerViewController.xib */,
-				C8D7729A2449ADC200B76C5C /* GXAVPlayerTool.h */,
-				C8D7729B2449ADC200B76C5C /* GXAVPlayerTool.m */,
 			);
 			path = "AVPlayer使用";
 			sourceTree = "<group>";
@@ -1141,6 +1159,7 @@
 				976D781F242DCD0E00BF84AF /* WMMenuView.m in Sources */,
 				975BCB6523BB5675009E0CED /* CZguessWhatYouLikeCell.m in Sources */,
 				9746574022BB59A2001AFCF0 /* RACPerson.m in Sources */,
+				C8091F1F244D699700CC86B7 /* UIImage+GXImageExtension.m in Sources */,
 				97A05FEA216F004600F49C01 /* main.m in Sources */,
 				97A4DC54242451C90085F076 /* GXShareToSocial.m in Sources */,
 				97EA16762181CB5200C20CD9 /* GXSquareCell.m in Sources */,
@@ -1178,6 +1197,7 @@
 				976D781E242DCD0E00BF84AF /* WMScrollView.m in Sources */,
 				97C20BEF217DF22000C78AAD /* GXCircleImageController.m in Sources */,
 				97A05FF9216F236000F49C01 /* GXTabarController.m in Sources */,
+				C8091F22244D75F500CC86B7 /* GXAVPlayerTool.m in Sources */,
 				97A6ADCB23BDCAB7008E4596 /* CZMHSDCommodityCell2.m in Sources */,
 				977B311D23B608420011E1BC /* GXTitlesViewController.m in Sources */,
 				97FC0511218807A500B526F8 /* GXPostWordController.m in Sources */,
@@ -1192,7 +1212,6 @@
 				97A6ADC623BDC57D008E4596 /* CZMHSDCommodityCell.m in Sources */,
 				97A05FFE216F2A9800F49C01 /* OCExampleController.m in Sources */,
 				97A6AD9D23BD85B1008E4596 /* GXSomeTableCellController.m in Sources */,
-				C8D7729C2449ADC200B76C5C /* GXAVPlayerTool.m in Sources */,
 				97DDF343224DC9A100890F53 /* XMGThreeViewController.m in Sources */,
 				97A0D00721C0B99100CBF9A1 /* GXTestViewController.m in Sources */,
 				97EA167D2181E76000C20CD9 /* UIView+GXExtension.m in Sources */,
@@ -1212,6 +1231,7 @@
 				9713D4DF242C6E31004F1697 /* GXSaveImageToPhone.m in Sources */,
 				977B311A23B6080F0011E1BC /* CZCategoryLineLayoutView.m in Sources */,
 				97A6ADAE23BDB6D4008E4596 /* CZReachabilityHandle.m in Sources */,
+				C8091F19244D5C5400CC86B7 /* GXImageHandler.m in Sources */,
 				977B312A23B626F30011E1BC /* CZFestivalGoodsColLayoutView.m in Sources */,
 				97DDF334224DBDCD00890F53 /* GXParentChildController.m in Sources */,
 				97362C082179A30D0092A6D1 /* AlertViewTEST.m in Sources */,
