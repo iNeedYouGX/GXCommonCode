@@ -9,6 +9,7 @@
 #import "GXScrollAD.h"
 #import "GXScrollADImageCell.h" // 单独图片
 #import "GXScrollADPageControl.h" // 小原点
+#import "UIImageView+WebCache.h"
 
 @interface GXScrollAD () <UICollectionViewDelegate, UICollectionViewDataSource>
 @property (nonatomic, strong) UICollectionView *collectionView;
@@ -49,9 +50,9 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
+        // 记录数据
+        self.dataSourceList = dataSourceList;
         if (dataSourceList.count > 1) {
-            // 记录数据
-            self.dataSourceList = dataSourceList;
             // 初始化属性
             [self setupProperty];
             // 外面设置属性
@@ -68,7 +69,6 @@
     return self;
 }
 
-
 #pragma mark - 创建UI
 // 创建UI
 - (void)createUI
@@ -83,12 +83,11 @@
     }
 }
 
-
 - (void)singletonImageView
 {
     UIImageView *imageView = [[UIImageView alloc] init];
     imageView.frame = CGRectMake(0, 0, self.frame.size.width, self.frame.size.height);
-    imageView.image = [UIImage imageNamed:@"headDefault"];
+    [imageView sd_setImageWithURL:[NSURL URLWithString:[self.dataSourceList firstObject]] placeholderImage:[UIImage imageNamed:@"headDefault"]];
     [self addSubview:imageView];
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(singletonImageViewClicked)];
     [imageView addGestureRecognizer:tap];

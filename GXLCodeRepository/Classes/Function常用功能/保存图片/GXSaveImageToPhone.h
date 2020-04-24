@@ -11,6 +11,11 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface GXSaveImageToPhone : NSObject
+
+/**
+ * 保存图片到手机
+ * @param object 必须是图片, 或者图片的数组
+ */
 + (void)saveBatchImage:(id)object;
 @end
 

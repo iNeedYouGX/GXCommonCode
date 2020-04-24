@@ -9,28 +9,37 @@
 #import "GXSaveImageToPhone.h"
 #import "SDWebImageManager.h"
 
+@interface GXSaveImageToPhone()
+
+@end
+
 @implementation GXSaveImageToPhone
-#pragma mark - /** 保存图片到本地 */
+/** 图片数组 */
+static NSMutableArray *imagesList_;
+
+#pragma mark - /** 递归保存图片到本地 */
 + (void)saveBatchImage:(id)object
 {
+    [CZProgressHUD showProgressHUDWithText:nil];
     if ([object isKindOfClass:[NSArray class]]) {
-        NSArray *images = object;
-        for (int i = 0; i < images.count; i++) {
-            id obj = images[i];
-            dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-                [self saveImage:obj];
-            });
-        }
+        imagesList_ = [NSMutableArray arrayWithArray:object];
     } else {
-        [self saveImage:object];
+        imagesList_ = [NSMutableArray arrayWithObject:object];
     }
+    
+    id obj = imagesList_[0];
+    [self saveImage:obj];
 
 }
 
 + (void)saveImage:(id)image
 {
     // 注意: The app's Info.plist must contain an NSPhotoLibraryAddUsageDescription
-
+    
+    if (imagesList_.count == 0) {
+        return;
+    }
+    
     if ([image isKindOfClass:[NSString class]]) {
         // 保存图片
         [[SDWebImageManager sharedManager] loadImageWithURL:[NSURL URLWithString:image] options:SDWebImageRetryFailed progress:^(NSInteger receivedSize, NSInteger expectedSize, NSURL * _Nullable targetURL) {
@@ -52,9 +61,18 @@
         [CZProgressHUD showProgressHUDWithText:msg];
         [CZProgressHUD hideAfterDelay:1.5];
     }else{
-        msg = @"保存图片成功" ;
-        [CZProgressHUD showProgressHUDWithText:msg];
-        [CZProgressHUD hideAfterDelay:1.5];
+        [imagesList_ removeObjectAtIndex:0];
+        if (imagesList_.count == 0) {
+            msg = @"保存图片成功" ;
+            [CZProgressHUD hideAfterDelay:0];
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.25 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                [CZProgressHUD showProgressHUDWithText:msg];
+                [CZProgressHUD hideAfterDelay:1.5];
+            });
+            
+        } else {
+            [self saveImage:[imagesList_ firstObject]];
+        }
     }
 }
 @end

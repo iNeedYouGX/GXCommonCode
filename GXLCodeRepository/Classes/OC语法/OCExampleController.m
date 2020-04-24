@@ -29,6 +29,14 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     
+    NSString *str = @"";
+    
+    
+//    将string字符串转换为array数组
+     NSArray  *array = [str componentsSeparatedByString:@","]; // --分隔符
+
+//    将array数组转换为string字符串
+     NSString *str1 = [array componentsJoinedByString:@","]; // --分隔符
     
 }
 

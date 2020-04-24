@@ -35,16 +35,16 @@ NS_ASSUME_NONNULL_BEGIN
 /** 自动滚动: 默认是YES */
 @property (nonatomic, assign) BOOL isAutoScroll;
 
-// 是否显示pageView
+/** 显示pageView: 默认是隐藏 */
 @property (nonatomic, assign) BOOL isShowPageView;
 
-// 点击调用
+/** 点击调用 */
 @property (nonatomic, strong) void (^selectedIndexBlock)(NSInteger index);
 
-// 当前index
+/** 当前index */
 @property (nonatomic, strong) void (^currentIndexBlock)(NSInteger index);
 
-// 刷新
+/** 刷新 */
 - (void)reloadDataSource;
 
 @end

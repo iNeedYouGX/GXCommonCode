@@ -7,6 +7,7 @@
 //
 
 #import "GXCollectionViewDemoController.h"
+#import "GXCollectionAutoLayoutDemoController.h"
 
 @interface GXCollectionViewDemoController () <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 /** 表 */
@@ -131,4 +132,10 @@
 }
 
 
+#pragma mark - <UICollectionViewDelegate>
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    GXCollectionAutoLayoutDemoController *vc = [[GXCollectionAutoLayoutDemoController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
 @end

@@ -13,6 +13,8 @@
 @interface GXTitlesViewController ()
 /** <#注释#> */
 @property (nonatomic, strong) NSArray *dataSource;
+/** <#注释#> */
+@property (nonatomic, strong) UIScrollView *scrollView;
 @end
 
 @implementation GXTitlesViewController
@@ -28,6 +30,18 @@
 
  @property(nonatomic)         BOOL         showsTouchWhenHighlighted;     // default is NO. if YES, show a simple feedback (currently a glow) while highlighted
  */
+
+- (UIScrollView *)scrollView
+{
+    if (_scrollView == nil) {
+        _scrollView = [[UIScrollView alloc] init];
+        _scrollView.size = CGSizeMake(SCR_WIDTH, SCR_HEIGHT - (IsiPhoneX ? 83 : 49) - 49);
+        _scrollView.backgroundColor = UIColorFromRGB(0xE04625);
+        _scrollView.showsVerticalScrollIndicator = NO;
+        _scrollView.showsHorizontalScrollIndicator = NO;
+    }
+    return _scrollView;
+}
 
 #pragma mark - 数据
 - (NSArray *)dataSource
@@ -46,65 +60,45 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
+    
+    [self.view addSubview:self.scrollView];
 
+    // 带改变布局的
     [self type1];
-    [self type2];
-    [self type3];
-    [self type4];
+    
+    [self createCategoryWithType:CZCategoryLineLayoutViewTypeDefault];
+    [self createCategoryWithType:CZCategoryLineLayoutViewTypeLine];
+    [self createCategoryWithType:CZCategoryLineLayoutViewTypeTwoLine];
+    [self createCategoryWithType:CZCategoryLineLayoutViewTypeVertical];
+    
+    
+    self.scrollView.contentSize = CGSizeMake(0, CZGetY([self.view.subviews lastObject]) + 500);
 }
 
-#pragma mark - 创建UI
+#pragma mark - 带改变布局的
 - (void)type1
 {
-    CGRect frame = CGRectMake(0, CZGetY([self.view.subviews lastObject]) + 10, SCR_WIDTH, 0);
+    CGRect frame = CGRectMake(0, CZGetY([self.scrollView.subviews lastObject]) + 10, SCR_WIDTH, 0);
     CZTitlesViewTypeLayout *line = [[CZTitlesViewTypeLayout alloc] initWithFrame:frame];
     line.backgroundColor = UIColorFromRGB(0xF5F5F5);
-    [self.view addSubview:line];
+    [self.scrollView addSubview:line];
 
     [line setBlcok:^(BOOL isLine, BOOL isAsc, NSInteger index) {
         NSLog(@"%d---%d----%ld", isLine, isAsc, index);
     }];
 }
 
-- (void)type2
+- (void)createCategoryWithType:(CZCategoryLineLayoutViewType)type
 {
     NSArray *list = self.dataSource;
-    CGRect frame = CGRectMake(0, CZGetY([self.view.subviews lastObject]) + 10, SCR_WIDTH, 0);
+    CGRect frame = CGRectMake(0, CZGetY([self.scrollView.subviews lastObject]) + 10, SCR_WIDTH, 50);
     // 分类的按钮
     NSArray *categoryList = [CZCategoryLineLayoutView categoryItems:list setupNameKey:@"categoryName" imageKey:@"img" IdKey:@"categoryId" objectKey:@""];
-    CZCategoryLineLayoutView *categoryView = [CZCategoryLineLayoutView categoryLineLayoutViewWithFrame:frame Items:categoryList type:0 didClickedIndex:^(CZCategoryItem * _Nonnull item) {
+    CZCategoryLineLayoutView *categoryView = [CZCategoryLineLayoutView categoryLineLayoutViewWithFrame:frame Items:categoryList type:type didClickedIndex:^(CZCategoryItem * _Nonnull item) {
         NSLog(@"%@", item.categoryName);
     }];
     categoryView.backgroundColor = UIColorFromRGB(0xF5F5F5);
-    [self.view addSubview:categoryView];
+    [self.scrollView addSubview:categoryView];
 }
-
-- (void)type3
-{
-    NSArray *list = self.dataSource;
-    CGRect frame = CGRectMake(0, CZGetY([self.view.subviews lastObject]) + 10, SCR_WIDTH, 0);
-    // 分类的按钮
-    NSArray *categoryList = [CZCategoryLineLayoutView categoryItems:list setupNameKey:@"categoryName" imageKey:@"img" IdKey:@"categoryId" objectKey:@""];
-    CZCategoryLineLayoutView *categoryView = [CZCategoryLineLayoutView categoryLineLayoutViewWithFrame:frame Items:categoryList type:1 didClickedIndex:^(CZCategoryItem * _Nonnull item) {
-        NSLog(@"%@", item.categoryName);
-    }];
-    categoryView.backgroundColor = UIColorFromRGB(0xF5F5F5);
-    [self.view addSubview:categoryView];
-}
-
-
-- (void)type4
-{
-    NSArray *list = self.dataSource;
-    CGRect frame = CGRectMake(0, CZGetY([self.view.subviews lastObject]) + 10, SCR_WIDTH, 50);
-    // 分类的按钮
-    NSArray *categoryList = [CZCategoryLineLayoutView categoryItems:list setupNameKey:@"categoryName" imageKey:@"img" IdKey:@"categoryId" objectKey:@""];
-    CZCategoryLineLayoutView *categoryView = [CZCategoryLineLayoutView categoryLineLayoutViewWithFrame:frame Items:categoryList type:2 didClickedIndex:^(CZCategoryItem * _Nonnull item) {
-        NSLog(@"%@", item.categoryName);
-    }];
-    categoryView.backgroundColor = UIColorFromRGB(0xF5F5F5);
-    [self.view addSubview:categoryView];
-}
-
 
 @end

@@ -1,44 +1,34 @@
 //
-//  GXFunctionExampleController.m
+//  GXSolutionsaBugsController.m
 //  GXLCodeRepository
 //
-//  Created by JasonBourne on 2020/3/19.
+//  Created by JsonBourne on 2020/4/23.
 //  Copyright © 2020 JasonBourne. All rights reserved.
 //
 
-#import "GXFunctionExampleController.h"
-#import "GXNetTool.h"
-#import "GXShareToSocial.h"
-#import "GXSaveImageToPhone.h"
-#import "GXAVPlayerViewController.h"
-@interface GXFunctionExampleController () <UITableViewDelegate, UITableViewDataSource>
+#import "GXSolutionsaBugsController.h"
+
+@interface GXSolutionsaBugsController () <UITableViewDelegate, UITableViewDataSource>
 /** 表单 */
 @property (nonatomic, strong) UITableView *tableView;
 /** 数据 */
 @property (nonatomic, strong) NSArray *dataArr;
+
 @end
 
-@implementation GXFunctionExampleController
+@implementation GXSolutionsaBugsController
 
 - (NSArray *)dataArr
 {
     if (_dataArr == nil) {
         _dataArr = @[
             @{
-                @"title" : @"系统自带的分享",
+                @"title" : @"在iOS13中, 阿里SDK模态的web为PageSheet",
                 @"index" : @(0)
              },
             @{
                 @"title" : @"最简单的保存图片到手机",
                 @"index" : @(1)
-            },
-            @{
-                @"title" : @"复制剪切板",
-                @"index" : @(2)
-            },
-            @{
-                @"title" : @"AVPlayer简单使用",
-                @"control" : @"GXAVPlayerViewController",
             },
                      ];
     }
@@ -80,6 +70,7 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
+        cell.textLabel.font = [UIFont systemFontOfSize:12];
 //        cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
     cell.textLabel.text = [self.dataArr[indexPath.row] objectForKey:@"title"];
@@ -104,22 +95,18 @@
         switch (number) {
             case 0:
             {
-                [GXShareToSocial shareToSocial];
+                [CZProgressHUD showProgressHUDWithText:@"添加<UIViewController+LL_Utils.h>文件"];
+                [CZProgressHUD hideAfterDelay:3];
                 break;
             }
             case 1:
             {
-                NSMutableArray *images = [NSMutableArray array];
-                for (int i = 1; i < 2; i++) {
-                    UIImage *image = [UIImage imageNamed:[NSString stringWithFormat:@"%d", i]];
-                    [images addObject:@"http://jipincheng.cn/activity/img/20191227/dd0cf1d942324999bbfac8c4184fda85"];
-                }
-                [GXSaveImageToPhone saveBatchImage:images];
+                
                 break;
             }
-            case 2: // 复制到剪切板
+            case 2:
             {
-                [self generalPaste];
+                
                 break;
             }
             default:
@@ -129,15 +116,9 @@
 }
 
 
-#pragma mark - 简单的功能
-/** 复制到剪切板 */
-- (void)generalPaste
-{
-    UIPasteboard *posteboard = [UIPasteboard generalPasteboard];
-    posteboard.string = @"";
-    [CZProgressHUD showProgressHUDWithText:@"复制成功"];
-    [CZProgressHUD hideAfterDelay:1.5];
-}
+
+
+
 
 
 

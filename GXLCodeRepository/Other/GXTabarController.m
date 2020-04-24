@@ -11,6 +11,8 @@
 #import "OCExampleController.h"
 #import "GXNavigationController.h"
 #import "GXFunctionExampleController.h"
+#import "GXSolutionsaBugsController.h"
+
 
 @interface GXTabarController ()
 
@@ -52,7 +54,9 @@
 
     [self setupChildVc:[[OCExampleController alloc] init] title:@"OC语法" image:@"tabBar_new_icon" selectedImage:@"tabBar_new_click_icon"];
     
-    self.selectedIndex = 1;
+    [self setupChildVc:[[GXSolutionsaBugsController alloc] init] title:@"BugsFix" image:@"tabBar_friendTrends_icon" selectedImage:@"tabBar_friendTrends_click_icon"];
+    
+    self.selectedIndex = 0;
     
 }
 
