@@ -21,6 +21,9 @@
 {
     if (_dataArr == nil) {
         _dataArr = @[
+            @{@"title" : @"WKWebView使用",
+              @"control" : @"GXWKWebViewController"
+            },
             @{@"title" : @"各种菜单样式",
               @"control" : @"GXTitlesViewController"
             },
@@ -79,7 +82,7 @@
         self.automaticallyAdjustsScrollViewInsets = NO;
     }
     
-    self.view.backgroundColor = [UIColor redColor];
+    self.view.backgroundColor = [UIColor whiteColor];
 //    [self.navigationController setNavigationBarHidden:YES];
     // translucent为YES透明时候0点在0, 0点, 为NO, 0点在0, 64, 他们都自动下调64的, 如果是第一个滚动视图
     [self.navigationController.navigationBar setTranslucent:NO];
