@@ -1,8 +1,8 @@
 //
-//  GXImageHandler.h
+//  GXSingletonObject.h
 //  GXLCodeRepository
 //
-//  Created by JsonBourne on 2020/4/20.
+//  Created by JsonBourne on 2020/5/11.
 //  Copyright © 2020 JasonBourne. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface GXImageHandler : UIViewController
+@interface GXSingletonObject : NSObject
 
 @end
 

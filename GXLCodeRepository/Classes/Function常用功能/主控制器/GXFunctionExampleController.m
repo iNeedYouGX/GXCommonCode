@@ -19,7 +19,7 @@
 @end
 
 @implementation GXFunctionExampleController
-
+#pragma mark - 数据
 - (NSArray *)dataArr
 {
     if (_dataArr == nil) {
@@ -40,11 +40,24 @@
                 @"title" : @"AVPlayer简单使用",
                 @"control" : @"GXAVPlayerViewController",
             },
+            @{
+                @"title" : @"改变图片的颜色",
+                @"control" : @"GXImageHandler",
+            },
+            @{
+                @"title" : @"阴影设置",
+                @"control" : @"GXShadowHandler",
+            },
+            @{
+                @"title" : @"输出图片",
+                @"control" : @"GXOutputImageController",
+            },
                      ];
     }
     return _dataArr;
 }
 
+#pragma mark - 创建UI
 - (UITableView *)tableView
 {
     if (_tableView == nil) {
@@ -56,14 +69,15 @@
     return _tableView;
 }
 
+#pragma mark - 生命周期
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor redColor];
+    self.view.backgroundColor = [UIColor whiteColor];
     // 创建表
     [self.view addSubview:self.tableView];
 }
 
-
+#pragma mark - 代理
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return self.dataArr.count;
@@ -81,16 +95,19 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
 //        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        cell.textLabel.font = [UIFont fontWithName:@"PingFangSC-Medium" size: 15];
     }
     cell.textLabel.text = [self.dataArr[indexPath.row] objectForKey:@"title"];
     return cell;
 }
 
+#pragma mark - cell的跳转
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [self jumpFunction:indexPath.row];
 }
 
+#pragma mark - 跳转到指定也面
 - (void)jumpFunction:(NSInteger)index
 {
     Class currentClass = NSClassFromString([self.dataArr[index] objectForKey:@"control"]);
@@ -102,19 +119,14 @@
     } else {
         NSInteger number = [[self.dataArr[index] objectForKey:@"index"] integerValue];
         switch (number) {
-            case 0:
+            case 0: // 分享
             {
-                [GXShareToSocial shareToSocial];
+                [self share];
                 break;
             }
-            case 1:
+            case 1: // 保存图片
             {
-                NSMutableArray *images = [NSMutableArray array];
-                for (int i = 1; i < 2; i++) {
-                    UIImage *image = [UIImage imageNamed:[NSString stringWithFormat:@"%d", i]];
-                    [images addObject:@"http://jipincheng.cn/activity/img/20191227/dd0cf1d942324999bbfac8c4184fda85"];
-                }
-                [GXSaveImageToPhone saveBatchImage:images];
+                [self saveImage];
                 break;
             }
             case 2: // 复制到剪切板
@@ -137,6 +149,23 @@
     posteboard.string = @"";
     [CZProgressHUD showProgressHUDWithText:@"复制成功"];
     [CZProgressHUD hideAfterDelay:1.5];
+}
+
+/** 分享 */
+- (void)share
+{
+    [GXShareToSocial shareToSocial];
+}
+
+/** 保存图片 */
+- (void)saveImage
+{
+    NSMutableArray *images = [NSMutableArray array];
+    for (int i = 1; i < 2; i++) {
+        UIImage *image = [UIImage imageNamed:[NSString stringWithFormat:@"%d", i]];
+        [images addObject:image];
+    }
+    [GXSaveImageToPhone saveBatchImage:images];
 }
 
 

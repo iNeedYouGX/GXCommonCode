@@ -1,44 +1,36 @@
 //
-//  OCExampleController.m
+//  GXSolutionsaBugsController.m
 //  GXLCodeRepository
 //
-//  Created by JasonBourne on 2018/10/11.
-//  Copyright © 2018年 JasonBourne. All rights reserved.
+//  Created by JsonBourne on 2020/4/23.
+//  Copyright © 2020 JasonBourne. All rights reserved.
 //
 
-#import "OCExampleController.h"
+#import "GXSolutionsaBugsController.h"
 
-@interface OCExampleController ()<UITableViewDelegate, UITableViewDataSource>
+@interface GXSolutionsaBugsController () <UITableViewDelegate, UITableViewDataSource>
 /** 表单 */
 @property (nonatomic, strong) UITableView *tableView;
 /** 数据 */
 @property (nonatomic, strong) NSArray *dataArr;
-/** 数组 */
-@property (nonatomic, strong) NSMutableArray *viewsArr;
+
 @end
 
-@implementation OCExampleController
+@implementation GXSolutionsaBugsController
+
 - (NSArray *)dataArr
 {
     if (_dataArr == nil) {
         _dataArr = @[
             @{
-                @"title" : @"结构体的创建",
+                @"title" : @"在iOS13中, 阿里SDK模态的web为PageSheet",
                 @"index" : @(0)
-            },
-            @{
-                @"title" : @"数组方法",
-                @"control" : @"GXArrayFunctionController",
-            },
-            @{
-                @"title" : @"字符串方法",
-                @"control" : @"GXStringFunctionController",
-            },
-            @{
-                @"title" : @"获取时间",
-                @"control" : @"GXDateFunction",
-            },
-                     ];
+             },
+             @{
+                 @"title" : @"MRC导入ARC模式 添加-fno-objc-arc",
+                 @"index" : @(1)
+              },
+                    ];
     }
     return _dataArr;
 }
@@ -54,31 +46,13 @@
     return _tableView;
 }
 
-// 初始化
-- (NSMutableArray *)viewsArr
-{
-    if (_viewsArr == nil) {
-        _viewsArr = [NSMutableArray array];
-    }
-    return _viewsArr;
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     self.view.backgroundColor = [UIColor whiteColor];
     // 创建表
     [self.view addSubview:self.tableView];
-    
-    NSString *str = @"";
-    
-    
-//    将string字符串转换为array数组
-     NSArray  *array = [str componentsSeparatedByString:@","]; // --分隔符
-
-//    将array数组转换为string字符串
-     NSString *str1 = [array componentsJoinedByString:@","]; // --分隔符
 }
+
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -96,6 +70,8 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
+        cell.textLabel.font = [UIFont systemFontOfSize:12];
+//        cell.selectionStyle = UITableViewCellSelectionStyleNone;
         cell.textLabel.font = [UIFont fontWithName:@"PingFangSC-Medium" size: 15];
     }
     cell.textLabel.text = [self.dataArr[indexPath.row] objectForKey:@"title"];
@@ -120,11 +96,13 @@
         switch (number) {
             case 0:
             {
-                [self example1];
+                [CZProgressHUD showProgressHUDWithText:@"添加<UIViewController+LL_Utils.h>文件"];
+                [CZProgressHUD hideAfterDelay:3];
                 break;
             }
             case 1:
             {
+                
                 break;
             }
             case 2:
@@ -137,22 +115,4 @@
         }
     }
 }
-
-#pragma mark - 结构体的创建
-- (void)example1
-{
-    struct GXRect {
-        CGFloat x;
-        CGFloat y;
-        CGFloat w;
-        CGFloat h;
-    };
-    
-    typedef struct GXRect GXRect;
-    GXRect rect = {1, 1, 1, 2};
-    
-    NSLog(@"%lf", rect.x);
-    
-}
-
 @end

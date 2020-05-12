@@ -1,16 +1,16 @@
 //
-//  GXImageHandler.h
+//  GXCategoryPageControl.h
 //  GXLCodeRepository
 //
-//  Created by JsonBourne on 2020/4/20.
+//  Created by JsonBourne on 2020/4/26.
 //  Copyright © 2020 JasonBourne. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface GXImageHandler : UIViewController
+@interface GXCategoryPageControl : UIPageControl
 
 @end
 

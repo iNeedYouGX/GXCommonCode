@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GXOutputImageController">
+            <connections>
+                <outlet property="imageView" destination="DzL-fT-ydN" id="bbg-cq-E9Q"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wer-no-ML6">
+                    <rect key="frame" x="107" y="433" width="200" height="30"/>
+                    <color key="backgroundColor" red="0.88620406389999995" green="0.3453732431" blue="0.21861878039999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="POt-wE-N83"/>
+                        <constraint firstAttribute="width" constant="200" id="wPR-Xa-c3P"/>
+                    </constraints>
+                    <state key="normal" title="根据颜色生成图片">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="outputImage:" destination="-1" eventType="touchUpInside" id="GcA-Cj-7Dc"/>
+                    </connections>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DzL-fT-ydN">
+                    <rect key="frame" x="10" y="283" width="394" height="100"/>
+                    <color key="backgroundColor" red="0.6767122149" green="0.49898642300000001" blue="0.20954832430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="JWB-Zp-8Xt"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I5j-0D-Xjb">
+                    <rect key="frame" x="107" y="523" width="200" height="30"/>
+                    <color key="backgroundColor" red="0.88620406389999995" green="0.3453732431" blue="0.21861878039999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="DR6-7b-s4Z"/>
+                        <constraint firstAttribute="height" constant="30" id="fwr-Y3-89A"/>
+                    </constraints>
+                    <state key="normal" title="保存图片到手机">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="outputImage:" destination="-1" eventType="touchUpInside" id="7bQ-fT-f9N"/>
+                        <action selector="shareImage:" destination="-1" eventType="touchUpInside" id="Z2z-LZ-Cv7"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="I5j-0D-Xjb" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="0L2-rz-ZI8"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="DzL-fT-ydN" secondAttribute="trailing" constant="10" id="1Eh-mS-9SS"/>
+                <constraint firstItem="Wer-no-ML6" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="7cn-Xn-Vxs"/>
+                <constraint firstItem="I5j-0D-Xjb" firstAttribute="top" secondItem="Wer-no-ML6" secondAttribute="bottom" constant="60" id="Fo2-O4-CDm"/>
+                <constraint firstItem="DzL-fT-ydN" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="10" id="h9j-WH-nr0"/>
+                <constraint firstItem="Wer-no-ML6" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="lMU-RT-Bof"/>
+                <constraint firstItem="Wer-no-ML6" firstAttribute="top" secondItem="DzL-fT-ydN" secondAttribute="bottom" constant="50" id="uwG-56-RVb"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="-207.24637681159422" y="86.383928571428569"/>
+        </view>
+    </objects>
+</document>
