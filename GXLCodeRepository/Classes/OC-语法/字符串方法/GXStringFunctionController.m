@@ -1,18 +1,19 @@
 //
-//  GXDateFunction.m
+//  GXStringFunctionController.m
 //  GXLCodeRepository
 //
 //  Created by JsonBourne on 2020/5/11.
 //  Copyright © 2020 JasonBourne. All rights reserved.
 //
 
-#import "GXDateFunction.h"
+#import "GXStringFunctionController.h"
 
-@interface GXDateFunction ()
+@interface GXStringFunctionController ()
 @property (nonatomic, strong) UIScrollView *scrollerView;
+
 @end
 
-@implementation GXDateFunction
+@implementation GXStringFunctionController
 
 - (UIScrollView *)scrollerView
 {
@@ -30,7 +31,7 @@
 {
      UILabel *label = [[UILabel alloc] init];
      label.text = text;
-     label.font = [UIFont fontWithName:@"PingFangSC-Medium" size: 17];;
+     label.font = [UIFont fontWithName:@"PingFangSC-Medium" size: 17];
      label.numberOfLines = 0;
      label.textAlignment = NSTextAlignmentCenter;
      label.y = CZGetY([self.scrollerView.subviews lastObject]) + 10;
@@ -45,16 +46,15 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.scrollerView];
-    
     [self example1];
     
-    self.scrollerView.contentSize = CGSizeMake(0, CZGetY([self.scrollerView.subviews lastObject]) + 120);
     
+    self.scrollerView.contentSize = CGSizeMake(0, CZGetY([self.scrollerView.subviews lastObject]) + 120);
 }
 
 - (void)example1
 {
-    [self.scrollerView addSubview:[self createLabel:@"1. 当前的星期"]];
+    [self.scrollerView addSubview:[self createLabel:@"1. 判断字符串是否包含其他元素"]];
     UIView *shareView = [[UIView alloc] init];
     shareView.y = CZGetY([self.scrollerView.subviews lastObject]) + 10;
     shareView.x = 10;
@@ -68,7 +68,7 @@
     
     UILabel *label = [[UILabel alloc] init];
     label.textColor = UIColorFromRGB(0x9E65AE);
-    label.text = [self weekdayStringFromDate:[NSDate date]];
+    label.text = @"if ([searchStr rangeOfString:@\"substr\"].location != NSNotFound) { \n//条件为真，表示字符串searchStr包含一个@\"substr\"\n }";
     label.font = [UIFont fontWithName:@"PingFangSC-Medium" size: 13];
     label.numberOfLines = 0;
     label.textAlignment = NSTextAlignmentCenter;
@@ -81,24 +81,7 @@
     shareView.height = label.height + 20;
     
     [shareView addSubview:label];
-}
-
-// 得到当前的星期字符串
-- (NSString *)weekdayStringFromDate:(NSDate*)inputDate {
-
-    NSArray *weekdays = [NSArray arrayWithObjects: [NSNull null], @"星期天", @"星期一", @"星期二", @"星期三", @"星期四", @"星期五", @"星期六", nil];
     
-    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
-    
-    NSTimeZone *timeZone = [[NSTimeZone alloc] initWithName:@"Asia/SuZhou"];
-    
-    [calendar setTimeZone: timeZone];
-    
-    NSCalendarUnit calendarUnit = NSCalendarUnitWeekday;
-    
-    NSDateComponents *theComponents = [calendar components:calendarUnit fromDate:inputDate];
-    
-    return [weekdays objectAtIndex:theComponents.weekday];
 }
 
 @end

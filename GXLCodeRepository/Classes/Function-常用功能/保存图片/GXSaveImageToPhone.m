@@ -35,7 +35,6 @@ static NSMutableArray *imagesList_;
 + (void)saveImage:(id)image
 {
     // 注意: The app's Info.plist must contain an NSPhotoLibraryAddUsageDescription
-    
     if (imagesList_.count == 0) {
         return;
     }

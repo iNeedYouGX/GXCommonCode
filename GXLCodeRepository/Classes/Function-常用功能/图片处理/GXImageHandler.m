@@ -33,7 +33,7 @@
 {
      UILabel *label = [[UILabel alloc] init];
      label.text = text;
-     label.font = [UIFont boldSystemFontOfSize:20];
+     label.font = [UIFont fontWithName:@"PingFangSC-Medium" size: 17];
      label.numberOfLines = 0;
      label.textAlignment = NSTextAlignmentCenter;
      label.y = CZGetY([self.scrollerView.subviews lastObject]) + 10;

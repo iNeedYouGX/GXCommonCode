@@ -35,6 +35,10 @@
                 @"control" : @"GXStringFunctionController",
             },
             @{
+                @"title" : @"富文本方法",
+                @"control" : @"GXAttrStringFuncController",
+            },
+            @{
                 @"title" : @"获取时间",
                 @"control" : @"GXDateFunction",
             },
@@ -71,7 +75,6 @@
     [self.view addSubview:self.tableView];
     
     NSString *str = @"";
-    
     
 //    将string字符串转换为array数组
      NSArray  *array = [str componentsSeparatedByString:@","]; // --分隔符

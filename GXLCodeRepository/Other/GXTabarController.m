@@ -12,6 +12,8 @@
 #import "GXNavigationController.h"
 #import "GXFunctionExampleController.h"
 #import "GXSolutionsaBugsController.h"
+#import "GXPersonalBlogController.h"
+
 
 
 @interface GXTabarController ()
@@ -54,7 +56,7 @@
 
     [self setupChildVc:[[OCExampleController alloc] init] title:@"OC语法" image:@"tabBar_new_icon" selectedImage:@"tabBar_new_click_icon"];
     
-    [self setupChildVc:[[GXSolutionsaBugsController alloc] init] title:@"BugsFix" image:@"tabBar_friendTrends_icon" selectedImage:@"tabBar_friendTrends_click_icon"];
+    [self setupChildVc:[[GXPersonalBlogController alloc] init] title:@"技术博客" image:@"tabBar_friendTrends_icon" selectedImage:@"tabBar_friendTrends_click_icon"];
     
     self.selectedIndex = 0;
     

@@ -24,7 +24,6 @@ static double duration_ = 0.25;
     UIView *backView = [[UIView alloc] init];
     backView.width = SCR_WIDTH;
     backView.height = SCR_HEIGHT;
-    backView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:1];
     [window addSubview:backView];
     
     // 添加隐藏手势
@@ -50,6 +49,8 @@ static double duration_ = 0.25;
     [UIView animateWithDuration:duration_ animations:^{
         currentImageView.frame = CGRectMake(0, 0, SCR_WIDTH, currentH);
         currentImageView.centerY = SCR_HEIGHT / 2.0;
+    } completion:^(BOOL finished) {
+        backView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:1];
     }];
 }
 
@@ -79,6 +80,7 @@ static double duration_ = 0.25;
 + (void)hideImage:(UIGestureRecognizer *)tap
 {
     UIView *backView = tap.view;
+    backView.backgroundColor = [UIColor clearColor];
     UIImageView *imageView = [backView viewWithTag:1];
 
     // 动画跑到记录的位置, 隐藏
