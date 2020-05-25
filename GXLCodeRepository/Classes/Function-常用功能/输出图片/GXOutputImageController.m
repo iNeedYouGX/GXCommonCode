@@ -21,7 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.theView = [[UIView alloc]initWithFrame:CGRectMake(10, 100, SCR_WIDTH -  20, 44)];
+    self.theView = [[UIView alloc]initWithFrame:CGRectMake(10, 20, SCR_WIDTH - 20, 44)];
     self.theView.layer.cornerRadius = 10;
     self.theView.layer.masksToBounds = YES;
     [self.view addSubview:self.theView];

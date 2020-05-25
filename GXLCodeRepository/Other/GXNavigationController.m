@@ -18,6 +18,7 @@
     [super viewDidLoad];
    
     [self.navigationBar setTranslucent:NO];
+    self.navigationBar.prefersLargeTitles = YES;
 }
 
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated

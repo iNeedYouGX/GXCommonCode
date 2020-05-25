@@ -22,6 +22,9 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.rootViewController = [[GXTabarController alloc] init];
     [self.window makeKeyAndVisible];
+    
+    sleep(0);
+    
     return YES;
 }
 

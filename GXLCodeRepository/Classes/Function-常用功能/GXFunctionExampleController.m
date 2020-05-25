@@ -25,15 +25,19 @@
     if (_dataArr == nil) {
         _dataArr = @[
             @{
-                @"title" : @"系统自带的分享",
+                @"title" : @"系统分享",
                 @"index" : @(0)
              },
             @{
-                @"title" : @"最简单的保存图片到手机",
+                @"title" : @"保存图片",
                 @"index" : @(1)
             },
             @{
-                @"title" : @"复制剪切板",
+                @"title" : @"输出图片",
+                @"control" : @"GXOutputImageController",
+            },
+            @{
+                @"title" : @"复制",
                 @"index" : @(2)
             },
             @{
@@ -41,7 +45,7 @@
                 @"control" : @"GXAVPlayerViewController",
             },
             @{
-                @"title" : @"改变图片的颜色",
+                @"title" : @"改变图片颜色",
                 @"control" : @"GXImageHandler",
             },
             @{
@@ -49,8 +53,12 @@
                 @"control" : @"GXShadowHandler",
             },
             @{
-                @"title" : @"输出图片",
-                @"control" : @"GXOutputImageController",
+                @"title" : @"iOS跳转",
+                @"control" : @"GXSkipToAppController",
+            },
+            @{
+                @"title" : @"iOS退出",
+                @"control" : @"GXExitApplicationController",
             },
                      ];
     }

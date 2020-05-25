@@ -14,7 +14,6 @@
 @property (nonatomic, strong) UITableView *tableView;
 /** 数据 */
 @property (nonatomic, strong) NSArray *dataArr;
-
 @end
 
 @implementation GXPersonalBlogController
@@ -24,7 +23,7 @@
     if (_dataArr == nil) {
         _dataArr = @[
             @{
-                @"title" : @"BugsFix",
+                @"title" : @"Bugs总结",
                 @"control" : @"GXSolutionsaBugsController",
             },
             @{
@@ -50,6 +49,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
+    
     // 创建表
     [self.view addSubview:self.tableView];
 }

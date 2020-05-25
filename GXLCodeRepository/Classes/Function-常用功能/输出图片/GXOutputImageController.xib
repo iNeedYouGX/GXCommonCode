@@ -33,7 +33,7 @@
                         <action selector="outputImage:" destination="-1" eventType="touchUpInside" id="GcA-Cj-7Dc"/>
                     </connections>
                 </button>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DzL-fT-ydN">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DzL-fT-ydN">
                     <rect key="frame" x="10" y="283" width="394" height="100"/>
                     <color key="backgroundColor" red="0.6767122149" green="0.49898642300000001" blue="0.20954832430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>

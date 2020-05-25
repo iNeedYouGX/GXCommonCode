@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface GXElementLabel : UILabel
 + (instancetype)elementLabelMainTitle:(NSString *)Title;
++ (void)elementLabelMainTitle:(NSString *)title containView:(UIView *)containView;
 @end
 
 NS_ASSUME_NONNULL_END

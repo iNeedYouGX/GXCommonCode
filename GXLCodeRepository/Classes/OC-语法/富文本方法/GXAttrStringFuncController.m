@@ -40,6 +40,7 @@
     self.scrollerView.contentSize = CGSizeMake(0, CZGetY([self.scrollerView.subviews lastObject]) + 120);
 }
 
+#pragma mark - 基本样式
 - (void)example1
 {
     [self MTitle:@"1. 创建一个富文本"];

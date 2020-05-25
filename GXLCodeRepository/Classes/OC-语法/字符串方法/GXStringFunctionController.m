@@ -54,33 +54,15 @@
 
 - (void)example1
 {
-    [self.scrollerView addSubview:[self createLabel:@"1. 判断字符串是否包含其他元素"]];
-    UIView *shareView = [[UIView alloc] init];
-    shareView.y = CZGetY([self.scrollerView.subviews lastObject]) + 10;
-    shareView.x = 10;
-    shareView.height = 80;
-    shareView.width = SCR_WIDTH - 20;
-    shareView.backgroundColor = UIColorFromRGB(0x0E0504);
-    shareView.layer.shadowOpacity = 1;
-    shareView.layer.shadowColor = UIColorFromRGB(0x9E65AE).CGColor;
-    shareView.layer.cornerRadius = 7.5;
-    [self.scrollerView addSubview:shareView];
+    [GXElementLabel elementLabelMainTitle:@"1. 判断字符串是否包含其他元素" containView:self.scrollerView];
     
-    UILabel *label = [[UILabel alloc] init];
-    label.textColor = UIColorFromRGB(0x9E65AE);
-    label.text = @"if ([searchStr rangeOfString:@\"substr\"].location != NSNotFound) { \n//条件为真，表示字符串searchStr包含一个@\"substr\"\n }";
-    label.font = [UIFont fontWithName:@"PingFangSC-Medium" size: 13];
-    label.numberOfLines = 0;
-    label.textAlignment = NSTextAlignmentCenter;
-    CGSize size = [label sizeThatFits:CGSizeMake(SCR_WIDTH - 40, 10)];
-    label.x = 10;
-    label.y = 10;
-    label.width = size.width;
-    label.height = size.height;
+    NSString *subStr1 = @"if ([searchStr rangeOfString:@\"substr\"].location != NSNotFound) { \n//条件为真，表示字符串searchStr包含一个@\"substr\"\n }";
+    [GXElementView elementViewTitle:subStr1 containView:self.scrollerView];
     
-    shareView.height = label.height + 20;
     
-    [shareView addSubview:label];
+    [GXElementLabel elementLabelMainTitle:@"2. 截取固定位置字符并修改" containView:self.scrollerView];
+    NSString *subStr2 = @"NSString *numberString = [subStr1 stringByReplacingCharactersInRange:NSMakeRange(3, 4) withString:@\"****\"];";
+    [GXElementView elementViewTitle:subStr2 containView:self.scrollerView];
     
 }
 

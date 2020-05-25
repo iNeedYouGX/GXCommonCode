@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GXExitApplicationController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ehm-HD-u3r">
+                    <rect key="frame" x="20" y="86" width="374" height="317.5"/>
+                    <mutableString key="text">abort: 这是默认的程序结束函数,这种方式可能会或可能不会以刷新与关闭打开的文件或删除临时文件,这与你的设计有关.                            
+
+exit: 附加了关闭打开文件与返回状态码给执行环境,并调用你用atexit注册的返回函数                                                                                 
+
+assert(1) 为oc中的宏，只在debug模式下有用，当条件成立时，程序不会终止掉；当条件不成立时，程序终止。
+
+警告：不要使用exit函数，调用exit会让用户感觉程序崩溃了，不会有按Home键返回时的平滑过渡和动画效果；另外，使用exit可能会丢失数据，因为调用exit并不会调用-applicationWillTerminate:方法和UIApplicationDelegate方法；
+
+如果在开发或者测试中确实需要强行终止程序时，推荐使用abort 函数和assert宏；
+</mutableString>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y4y-3k-9GK">
+                    <rect key="frame" x="20" y="444" width="374" height="44"/>
+                    <color key="backgroundColor" red="0.88620406389999995" green="0.3453732431" blue="0.21861878039999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="D4Y-kQ-EyW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" title="exit 方法">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
+                            <integer key="value" value="22"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="exit:" destination="-1" eventType="touchUpInside" id="wbj-Bc-CeA"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ib-6q-4bM">
+                    <rect key="frame" x="20" y="527" width="374" height="44"/>
+                    <color key="backgroundColor" red="0.88620406389999995" green="0.3453732431" blue="0.21861878039999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="2tQ-Ru-8of"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" title="abort 方法">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
+                            <integer key="value" value="22"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="abort:" destination="-1" eventType="touchUpInside" id="A0s-fl-SMn"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="1ib-6q-4bM" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="20H-8Q-aoO"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Y4y-3k-9GK" secondAttribute="trailing" constant="20" id="Bed-Ny-k89"/>
+                <constraint firstItem="Y4y-3k-9GK" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="EWs-gg-SN1"/>
+                <constraint firstItem="Ehm-HD-u3r" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="YCb-5k-afe"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Ehm-HD-u3r" secondAttribute="trailing" constant="20" id="Zu6-wM-e8M"/>
+                <constraint firstItem="1ib-6q-4bM" firstAttribute="top" secondItem="Y4y-3k-9GK" secondAttribute="bottom" constant="39" id="c5d-J7-RIQ"/>
+                <constraint firstItem="Y4y-3k-9GK" firstAttribute="top" secondItem="Ehm-HD-u3r" secondAttribute="bottom" constant="40.5" id="qNC-oe-hOM"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="1ib-6q-4bM" secondAttribute="trailing" constant="20" id="utL-D3-E8z"/>
+                <constraint firstItem="Ehm-HD-u3r" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="42" id="xW8-rR-T9S"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="23" y="101"/>
+        </view>
+    </objects>
+</document>
