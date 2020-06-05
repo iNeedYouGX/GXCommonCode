@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>14</key>
+	<string>// 获取当前时间
+- (NSString *)currentDateStr {
+    NSDate *currentData = [NSDate date];
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    // HH是24进制，hh是12进制
+    formatter.dateFormat = @&quot;yyyy-MM-dd HH:mm:ss&quot;;
+    NSString *stirng = [formatter stringFromDate:currentData];
+    NSLog(@&quot;%@&quot;, stirng);
+    return stirng;
+}</string>
+	<key>13</key>
+	<string>// 获取当前时间戳
+- (NSString *)currentTimeStr {
+    NSDate *currentData = [NSDate date];
+    NSTimeInterval interval = [currentData timeIntervalSince1970];// *1000 是精确到毫秒，不乘就是精确到秒;
+    NSString *timeString = [NSString stringWithFormat:@&quot;%.0lf&quot;, interval];
+    NSLog(@&quot;%@&quot;, timeString);
+    return timeString;
+}</string>
+	<key>12</key>
+	<string>// 时间转化成秒
+- (void)timeIntervalWithDate:(NSDate *)date
+{
+    // 返回1970-1-1开始走过的秒数
+    NSTimeInterval interval = [date timeIntervalSince1970];
+    
+    //获取两个时间的时间差
+    NSDate *date6 = [NSDate dateWithTimeIntervalSince1970:11];//返回1970-1-1过11秒
+    NSDate *date7 = [NSDate dateWithTimeIntervalSince1970:10];//返回1970-1-1过10秒
+    NSTimeInterval interval1 = [date6 timeIntervalSinceDate:date7];
+}</string>
+	<key>11</key>
+	<string>// 通过日历获取星期字符串
+- (NSString *)weekdayStringFromDate:(NSDate*)inputDate {
+
+    NSArray *weekdays = [NSArray arrayWithObjects: [NSNull null], @&quot;星期天&quot;, @&quot;星期一&quot;, @&quot;星期二&quot;, @&quot;星期三&quot;, @&quot;星期四&quot;, @&quot;星期五&quot;, @&quot;星期六&quot;, nil];
+    
+    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+    
+    NSTimeZone *timeZone = [[NSTimeZone alloc] initWithName:@&quot;Asia/SuZhou&quot;];
+    
+    [calendar setTimeZone: timeZone];
+    
+    NSCalendarUnit type = NSCalendarUnitWeekday;
+    
+    //  利用日历获取这个时间的日历信息
+    NSDateComponents *theComponents = [calendar components:type fromDate:inputDate];
+    
+    return [weekdays objectAtIndex:theComponents.weekday];
+}</string>
+	<key>10</key>
+	<string>// 通过日历计算时间差
+- (void)dateDifferenceValue {
+    NSDate *date = [NSDate date];
+    NSDate *date1 = [NSDate dateWithTimeIntervalSince1970:0];
+    
+    // 1.创建日历
+    NSCalendar *calendar = [NSCalendar currentCalendar];
+    NSCalendarUnit type = NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay | NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond;
+    
+    // 2.利用日历对象比较两个时间的差值
+    NSDateComponents *cmps = [calendar components:type fromDate:date1 toDate:date options:0];
+    
+    // 3.输出结果
+    NSLog(@&quot;两个时间相差%ld年%ld月%ld日%ld小时%ld分钟%ld秒&quot;, cmps.year, cmps.month, cmps.day, cmps.hour, cmps.minute, cmps.second);
+}</string>
+</dict>
+</plist>

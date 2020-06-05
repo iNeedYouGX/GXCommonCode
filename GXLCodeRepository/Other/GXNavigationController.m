@@ -18,8 +18,10 @@
     [super viewDidLoad];
    
     [self.navigationBar setTranslucent:NO];
-    self.navigationBar.prefersLargeTitles = YES;
+    self.navigationBar.backgroundColor = [UIColor whiteColor];
+//    self.navigationBar.prefersLargeTitles = YES;
 }
+
 
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
 {
@@ -29,6 +31,10 @@
     [super pushViewController:viewController animated:animated];
 }
 
+- (UIStatusBarStyle)preferredStatusBarStyle
+{
+    return UIStatusBarStyleDefault;
+}
 
 #pragma mark - 控制屏幕旋转方法
 - (BOOL)shouldAutorotate{

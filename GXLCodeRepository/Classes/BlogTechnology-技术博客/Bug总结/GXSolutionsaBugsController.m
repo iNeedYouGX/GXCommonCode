@@ -41,7 +41,7 @@
 
 - (void)example1
 {
-    NSString *subStr1 = @"1. 在iOS13中, 阿里SDK模态的web为PageSheet \n 添加<UIViewController+LL_Utils.h>文件";
+    NSString *subStr1 = @"1. 在iOS13中, 修改阿里SDK模态的webView的弹出模式PageSheet为FullScreen \n 添加<UIViewController+LL_Utils.h>文件";
     [GXElementView elementViewTitle:subStr1 containView:self.scrollerView];
     
     NSString *subStr2 = @"2. MRC导入ARC模式 添加-fno-objc-arc";

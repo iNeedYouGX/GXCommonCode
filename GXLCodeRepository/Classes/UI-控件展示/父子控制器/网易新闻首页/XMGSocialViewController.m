@@ -33,4 +33,9 @@ static NSString *ID = @"social";
     cell.textLabel.text = [NSString stringWithFormat:@"%@ - %zd", self.title, indexPath.row];
     return cell;
 }
+
+- (void)dealloc
+{
+    NSLog(@"%s", __FUNCTION__);
+}
 @end

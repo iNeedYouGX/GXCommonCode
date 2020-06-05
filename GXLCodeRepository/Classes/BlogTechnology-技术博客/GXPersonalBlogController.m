@@ -8,6 +8,7 @@
 
 #import "GXPersonalBlogController.h"
 #import "GXSolutionsaBugsController.h"
+#import "GXNetTool.h"
 
 @interface GXPersonalBlogController ()<UITableViewDelegate, UITableViewDataSource>
 /** 表单 */
@@ -44,6 +45,11 @@
         self.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
     }
     return _tableView;
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
 }
 
 - (void)viewDidLoad {

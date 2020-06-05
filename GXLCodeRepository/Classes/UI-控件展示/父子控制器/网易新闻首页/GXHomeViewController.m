@@ -192,4 +192,8 @@
     leftLabel.transform = CGAffineTransformMakeScale(transLeftScale, transLeftScale);
 }
 
+- (void)dealloc
+{
+    NSLog(@"---------------------");
+}
 @end

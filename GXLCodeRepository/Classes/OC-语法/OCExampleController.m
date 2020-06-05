@@ -38,10 +38,6 @@
                 @"title" : @"富文本方法",
                 @"control" : @"GXAttrStringFuncController",
             },
-            @{
-                @"title" : @"获取时间",
-                @"control" : @"GXDateFunction",
-            },
                      ];
     }
     return _dataArr;

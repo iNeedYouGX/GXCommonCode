@@ -1,0 +1,1006 @@
+{
+    "msg": "success",
+    "code": "2",
+    "data": {
+        "ad1List": [
+            {
+                "img": "http://jipincheng.cn/activity/img/20200602/17f60a334dca4a0f90d82ce39769e7b3",
+                "type": 13,
+                "name": "超红日日抢",
+                "objectId": "https://s.click.taobao.com/4zUyzzu",
+                "color": "FF5363"
+            },
+            {
+                "img": "http://jipincheng.cn/activity/img/20200604/8b08f715860344598471c4ca22fbf401",
+                "type": 0,
+                "name": "邀请好友得现金大奖",
+                "objectId": "",
+                "color": "1a1557"
+            },
+            {
+                "img": "http://jipincheng.cn/activity/img/20200602/27187d4ebcc246cb8a0833ea2d13c4c1",
+                "type": 13,
+                "name": "天猫618主会场--满300减40",
+                "objectId": "http://share.jipincheng.cn/share/act.html?back=3",
+                "color": "98002f"
+            },
+            {
+                "img": "http://jipincheng.cn/activity/img/20200602/840db96fd24546979b953e929c01a772",
+                "type": 13,
+                "name": "天猫超市618—休闲零食会场",
+                "objectId": "http://share.jipincheng.cn/share/act.html?back=2",
+                "color": "fe9611"
+            },
+            {
+                "img": "http://jipincheng.cn/activity/img/20200528/a8c221803c2d4beca18586880157a0b7",
+                "type": 13,
+                "name": "618赚钱攻略",
+                "objectId": "https://www.jipincheng.cn/new-free/618Page",
+                "color": "680ecf"
+            },
+            {
+                "img": "http://jipincheng.cn/activity/img/20200527/faa7ef14cd174b768790a0c6123278f9",
+                "type": 13,
+                "name": "618拼多多预售主会场",
+                "objectId": "https://p.pinduoduo.com/4ds9yWTD",
+                "color": "efa4f6"
+            }
+        ],
+        "boxList": [
+            {
+                "id": "37cd8685d77048c4866c2959f3b43149",
+                "iconUrl": "http://jipincheng.cn/category/img/20200603/b2c856fb344f4c13861dc3cfb350b25b",
+                "title": "天猫超市",
+                "orderNum": 1,
+                "status": 1,
+                "type": 4,
+                "targetId": "https://s.click.taobao.com/92q5tiv"
+            },
+            {
+                "id": "259eb2d21a484c3f875ff77cebd88a69",
+                "iconUrl": "http://jipincheng.cn/category/img/20200603/591a4df8ca964dc094e884655026c5d6",
+                "title": "618红包",
+                "orderNum": 2,
+                "status": 1,
+                "type": 4,
+                "targetId": "https://s.click.taobao.com/4zUyzzu"
+            },
+            {
+                "id": "3e2893c12b434d4cb68ebedb8da55c47",
+                "iconUrl": "http://jipincheng.cn/category/img/20200603/60e599ed344347fe89f47451ba220d62",
+                "title": "天猫国际    ",
+                "orderNum": 3,
+                "status": 1,
+                "type": 4,
+                "targetId": "https://s.click.taobao.com/gD26tiv"
+            },
+            {
+                "id": "5d77f465830842abae78d652938b78e3",
+                "iconUrl": "http://jipincheng.cn/category/img/20200603/42737d690a9c4a98acbb2aacbd3140e2",
+                "title": "9.9包邮",
+                "orderNum": 4,
+                "status": 1,
+                "type": 1,
+                "targetId": "dcdc61d9955a42b5be7b0107fe4a2d26"
+            },
+            {
+                "id": "80a9548b0c2f4961910e91f746f0179e",
+                "iconUrl": "http://jipincheng.cn/category/img/20200603/37da5eadf5c64755a6c26bf6f2e9994f",
+                "title": "聚划算",
+                "orderNum": 5,
+                "status": 1,
+                "type": 4,
+                "targetId": "https://s.click.taobao.com/E5c5tiv"
+            },
+            {
+                "id": "2ce7c5fad1084cc4a711f3a749b3cac9",
+                "iconUrl": "http://jipincheng.cn/category/img/20200603/13fd3fb72e604b2b936945286bc1bde0",
+                "title": "新品首发",
+                "orderNum": 6,
+                "status": 1,
+                "type": 1,
+                "targetId": "ca12ee2492cc4e4397b428a9833a43eb"
+            },
+            {
+                "id": "218150e971ad426fb32a2c966bb2a579",
+                "iconUrl": "http://jipincheng.cn/category/img/20200603/1336a745b4df4c378ca668ff3c51521d",
+                "title": "京东",
+                "orderNum": 7,
+                "status": 1,
+                "type": 12,
+                "targetId": null
+            },
+            {
+                "id": "965c1c4274a9464aba418820151442a5",
+                "iconUrl": "http://jipincheng.cn/category/img/20200603/32254c72742b41aca0ece8bf48eb94f9",
+                "title": "新人专享",
+                "orderNum": 8,
+                "status": 1,
+                "type": 11,
+                "targetId": null
+            },
+            {
+                "id": "1017d02934c74cedb2a6167f4d335e48",
+                "iconUrl": "http://jipincheng.cn/category/img/20200603/c31f04115c90483b9f7eb40e29162e0c",
+                "title": "拼多多",
+                "orderNum": 9,
+                "status": 1,
+                "type": 13,
+                "targetId": null
+            },
+            {
+                "id": "61db98631a4d42f38db97898ca76bd4e",
+                "iconUrl": "http://jipincheng.cn/category/img/20200603/2b0a323a383347f98e9807157aec4878",
+                "title": "邀请有奖",
+                "orderNum": 10,
+                "status": 1,
+                "type": 15,
+                "targetId": null
+            }
+        ],
+        "messageList": [
+            {
+                "id": "03f2bc8a931747d9a0912dafddb43f86",
+                "avatar": "http://jipincheng.cn/avatar/img/20200211/b3b38d8676104a2b8bb651d81c177841",
+                "content": "132****8895获得返现216.7元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "041b44aeddf24a08be47828c6916b2f1",
+                "avatar": "http://jipincheng.cn/avatar/img/20200210/a77d0371cbb94da588db36fcbb255c51",
+                "content": "172****4521获得返现47元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "0578cd75d3e74c0ca309b6beefc862a0",
+                "avatar": "http://jipincheng.cn/avatar/img/20200211/a7ffe3e1e32243d28f9771781a62ce2b",
+                "content": "134****8625获得返现34.15元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "0a1f429e57504ceca9d63e2f58ba5374",
+                "avatar": "http://jipincheng.cn/avatar/img/20200210/ba9abb62cfd84f059ca5c0828ae73ff4",
+                "content": "130****2548获得返现218.9元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "0ac0b2ca3eb049ba9084904264931ad5",
+                "avatar": "http://jipincheng.cn/avatar/img/20200211/43b190f80bba40809b94bf09ea98f949",
+                "content": "150****3610获得返现76.43元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "0f2b3d4a0f0f4fa38b2da468fec192f5",
+                "avatar": "http://jipincheng.cn/avatar/img/20200210/a0b96333c3504d3187538c073c8d2e13",
+                "content": "130****8420获得返现98.8元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "0fd1470d10ce4b8b9bce702f5790cfeb",
+                "avatar": "http://jipincheng.cn/avatar/img/20200210/dee9e9fdefce45c09d34ccf65695139f",
+                "content": "171****8963获得返现179.3元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "116e8ae238234e78945224026c4042dc",
+                "avatar": "http://jipincheng.cn/avatar/img/20200211/0bd5ca3ee61e4f7c8963e707670dbfc8",
+                "content": "134****5871获得返现45.6元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "117d95082a3a40bfa347bcb2b683d691",
+                "avatar": "http://jipincheng.cn/avatar/img/20200211/f08bc0425fb54685832188b3fc418e20",
+                "content": "134****3695获得返现28.9元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "125236b36e6947bf8bcefa86108bfcd0",
+                "avatar": "http://jipincheng.cn/avatar/img/20200211/83b37a4222cd47f1a61a18d9aada1899",
+                "content": "150****3692获得返现69.3元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "13f679c1ad44429d8a06d86275d4481f",
+                "avatar": "http://jipincheng.cn/avatar/img/20200210/688bbc5011c049f9ba84c1a7ec8511fe",
+                "content": "130****7853获得返现57.4元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "154463804a6d4aefab88c91f1e16db96",
+                "avatar": "http://jipincheng.cn/avatar/img/20200211/533566cbdaa14a2d9efcb48a52a34d85",
+                "content": "131****5634获得返现87.14元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "15dee16405df455d984ade2305124331",
+                "avatar": "http://jipincheng.cn/avatar/img/20200211/63984c95f5c54063b1159fc535438066",
+                "content": "132****9963获得返现126.8元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "17233ffaed6a483aa1f4beeb5153c0d6",
+                "avatar": "http://jipincheng.cn/avatar/img/20200211/742033288fbd4abcaf4b9c82356717f2",
+                "content": "134****5620获得返现265.98元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "185abf305d6146be8fdb63aeb13c7f29",
+                "avatar": "http://jipincheng.cn/avatar/img/20200211/49dc6f4185234cedb00ca6146b1709e2",
+                "content": "182****9650获得返现67.8元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "1edee52920fa496b861e5a8367419a6c",
+                "avatar": "http://jipincheng.cn/avatar/img/20200210/e308a8e51a6544ddbd5cc444415cd02f",
+                "content": "180****9671获得返现236元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "243589d39cfb447f9ce139a44195649b",
+                "avatar": "http://jipincheng.cn/avatar/img/20200211/9ec4cff14ce6415b8d91869e850130d5",
+                "content": "153****5520获得返现元28.9，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "25fe0755fe31489187abc3b59669ce12",
+                "avatar": "http://jipincheng.cn/avatar/img/20200210/1e86390e4cba40189700b0082015a84c",
+                "content": "172****1021了获得返现168.45元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "268ca5ce036e44968e4ec93f22d418f2",
+                "avatar": "http://jipincheng.cn/avatar/img/20191223/79b7f51a2dd0468997ded2f29b73011a",
+                "content": "满目山河获得返现55元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "26d91ecb386a473e8a8cf0e413cef5b4",
+                "avatar": "http://jipincheng.cn/avatar/img/20200211/26831a07bebc4146ac428e11e6c729cf",
+                "content": "134****5213获得返现76.33元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "279eb81a80b54e4d9f8d047cd9099b57",
+                "avatar": "http://jipincheng.cn/avatar/img/20191223/b696ede038ab4cd0b5ae58e67bd25726",
+                "content": "周建姬获得返现63元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "295ed7df5d8a4a32802501c94bde5296",
+                "avatar": "http://jipincheng.cn/avatar/img/20200211/f24c20cd6f5f41208501e372af33a092",
+                "content": "181***9986获得返现249.7元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "2e62b8926c8e4283ab7f0e2bf29603c4",
+                "avatar": "http://jipincheng.cn/avatar/img/20200211/7245e370112a4855a7ae03f70bef242d",
+                "content": "151***1259获得返现116.34元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "34c82e0a177343bf92f05d059ca20785",
+                "avatar": "http://jipincheng.cn/avatar/img/20200211/83a197d8272e4e1080d3b9cc53e81ab4",
+                "content": "134****2596获得返现145元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "394f00b89428412ead010c0cafef1a93",
+                "avatar": "http://jipincheng.cn/avatar/img/20200210/791e9a18a33d46c39eb8e2a415c98dc9",
+                "content": "151****4582获得返现33.6元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "3ba7ec7a7155492688cc872daf94bbaf",
+                "avatar": "http://jipincheng.cn/avatar/img/20200210/11c85e76d40a4ac5885712e2312376da",
+                "content": "170****6931获得返现45.8元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "3e42ec71cacd4d859c5a9e040e345242",
+                "avatar": "http://jipincheng.cn/avatar/img/20200211/02e6b500769f48f59c5b23c4aaccc161",
+                "content": "182***2089获得返现67.8元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "44fe41387061461b9edddd5041ab8541",
+                "avatar": "http://jipincheng.cn/avatar/img/20200210/1c40a6a5d4714573b7367dc6e87e48ce",
+                "content": "150****3625获得返现267元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "4678583b4c8d41e68709897c47889402",
+                "avatar": "http://jipincheng.cn/avatar/img/20200210/df41fd4786b645af872cb8f926605400",
+                "content": "蛋壳获得返现98.23元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "4b22eb281b554516a0e81d76170c2fe6",
+                "avatar": "http://jipincheng.cn/avatar/img/20200210/8af86c388d2246ca935411f05d773a6c",
+                "content": "吃鱼的猫获得返现68元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "5283bc1bbab940f580d1aaefd61113f3",
+                "avatar": "http://jipincheng.cn/avatar/img/20200211/93c4649d87a1402690aff04b6fc80cd0",
+                "content": "小洋人获得返现109元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "560496c960d749349f6e9322225ded31",
+                "avatar": "http://jipincheng.cn/avatar/img/20200210/7f0c12eae903474085f9a5c32b7e9f36",
+                "content": "151****5932获得返现213元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "5965ad04edab440c820043c1cebd0b54",
+                "avatar": "http://jipincheng.cn/avatar/img/20200210/1d73f2c3623c4e1f94dbf3bc727b64ea",
+                "content": "何勇获得返现97.89元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "5b139520959344f394b0f78deccbb636",
+                "avatar": "http://jipincheng.cn/avatar/img/20200211/7186345baf424f99816748f150faa628",
+                "content": "180****6953获得返现78.6元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "5e42eb83a1a84b91ba98a991542a0cbf",
+                "avatar": "http://jipincheng.cn/avatar/img/20200210/78a664566d714fcda35b9e405b9d50f7",
+                "content": "蒲公英获得返现267.8元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "5e9ebd9e9bcb4a6aaf2f5746759cc861",
+                "avatar": "http://jipincheng.cn/avatar/img/20200211/eaf852ae6af64ab4bdecfafdb08b4a19",
+                "content": "曹梦婷获得返现265.87元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "5f166c4db25843808e1fd615b5ec0af7",
+                "avatar": "http://jipincheng.cn/avatar/img/20200210/b6448e030934442cb18104c464e50d5f",
+                "content": "向日葵获得返现46.2元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "60641476792d46609727bf67e23719aa",
+                "avatar": "http://jipincheng.cn/avatar/img/20200210/651674bdfa0e4a9692f9c408a0a955a1",
+                "content": "如影随形获得返现67.4元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "6179869fc06647c98ea61f783cbdb47e",
+                "avatar": "http://jipincheng.cn/avatar/img/20200211/e8fbd31c141c4426b8132344fb8030db",
+                "content": "172****0296获得返现76.8元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "620927caa9a64c42ba86b181b97659de",
+                "avatar": "http://jipincheng.cn/avatar/img/20200211/6362d848d0194461af21630b5f0a17d0",
+                "content": "金色年华获得返现156.6元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "62f4557dc6174761baa797a67a17945f",
+                "avatar": "http://jipincheng.cn/avatar/img/20200211/158628421d3846c89f744274054755f2",
+                "content": "倪深获得返现145.89元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "6366b301287d4f0594a0ccbb0f7acd22",
+                "avatar": "http://jipincheng.cn/avatar/img/20191223/b2fbd9ce9c744f0cbacb6a6bb89811a9",
+                "content": "170****1132获得返现43元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "64f8c7a356d043dbac8a2c44cfba5f1b",
+                "avatar": "http://jipincheng.cn/avatar/img/20200210/42487960a0cf48d89c928711919e4bfe",
+                "content": "菠萝获得返现54.9元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "653bab283a7e46fe84a4b2ade88aed51",
+                "avatar": "http://jipincheng.cn/avatar/img/20200211/6bf926d753ab47079b7f86f164ee3432",
+                "content": "182****0713获得返现209.7元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "65cb4f13740549f5a745b39b95a2d887",
+                "avatar": "http://jipincheng.cn/avatar/img/20200211/9d91fce7daf24259b835a04444954889",
+                "content": "秋获得返现158.9元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "66c4852bcf1d464ea83ad59950d7a8ef",
+                "avatar": "http://jipincheng.cn/avatar/img/20200210/d39ee64da6314b0da98e6e9aa291dee0",
+                "content": "九九获得返现76.5元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "68236dc211e04446953495b5d115fc3d",
+                "avatar": "http://jipincheng.cn/avatar/img/20200211/ebf11750e6e64bac81cd4f9220787e05",
+                "content": "158****5677获得返现215.5元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "6d1b4400d594424081b7194adf171dc4",
+                "avatar": "http://jipincheng.cn/avatar/img/20200210/7080e8995d444f2ea262ca28e89a3aaf",
+                "content": "小贝贝获得返现172.4元，支付宝提现成功贝",
+                "type": 1
+            },
+            {
+                "id": "70f118f4b5604d7bbee442a34fad7102",
+                "avatar": "http://jipincheng.cn/avatar/img/20200211/7aa426e218f54b1a8a0f953364c1028c",
+                "content": "河马获得返现215.14元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "744ece1900ff41f0a434e6fd703e2afd",
+                "avatar": "http://jipincheng.cn/avatar/img/20200211/54e0221bfd9e43a6934969ef93abb9ce",
+                "content": "131****0264获得返现134.6元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "76ac0e5a1c6547faa96a6a6674d1b898",
+                "avatar": "http://jipincheng.cn/avatar/img/20200211/dc6ede9942c74ab281cfe2c1a91ce1b9",
+                "content": "153****0200获得返现178.95元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "792810d41e0240ab80422aa25bdc89af",
+                "avatar": "http://jipincheng.cn/avatar/img/20200211/8c6044f3122440eb82b0e007fe07f317",
+                "content": "静静获得返现150.06元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "7d8d4b162c07414f89018b1fcd506ffc",
+                "avatar": "http://jipincheng.cn/avatar/img/20191223/61b3cbc30fa140f99f45b0b97aba6565",
+                "content": "151****6225获得返现23元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "80b7cdd0a1eb401e8a8b5ee3df786f06",
+                "avatar": "http://jipincheng.cn/avatar/img/20191223/0017de8b1a8c4374adf1ef9b27a6807c",
+                "content": "132****1003获得返现22元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "81e4b7a3e667487eb555851dbca9a8ca",
+                "avatar": "http://jipincheng.cn/avatar/img/20200211/f69cfe0ec170466baa6d2fe4365e6733",
+                "content": "131****5714获得返现165.9元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "851bde91af9b4e68ac1cf4d80564be30",
+                "avatar": "http://jipincheng.cn/avatar/img/20200211/7c1385a63c29453c9a9563143cf74c99",
+                "content": "丁书获得返现245.76元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "8688457e9c584bed9bbcc3994d679e01",
+                "avatar": "http://jipincheng.cn/avatar/img/20191223/2c1d921a51b941c0a6e78ca0427731b8",
+                "content": "150****8896获得返现45元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "88fb5ca6773240568b7e3d74169d7335",
+                "avatar": "http://jipincheng.cn/avatar/img/20200210/aabde9b22d0545ffba6a54c7b663b31c",
+                "content": "稻草人获得返现67.89元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "90d48819cf1d41b8a045e08cc9c99b79",
+                "avatar": "http://jipincheng.cn/avatar/img/20191223/9ecddc7fdd4540788976494294d86235",
+                "content": "180****8002获得返现78元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "9160e118b457414db6829c90e7f499c0",
+                "avatar": "http://jipincheng.cn/avatar/img/20200210/3a431dd627354e7c9583925fcd09e919",
+                "content": "吃水果的猪猪获得返现元126.7，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "9172b0d4d2fd432194f73ef6fc40498f",
+                "avatar": "http://jipincheng.cn/avatar/img/20200210/6a40a8672dec432dabd985e28348357f",
+                "content": "187****1136获得返现23.8元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "92473a65fc534ba694bf715b8640f392",
+                "avatar": "http://jipincheng.cn/avatar/img/20200211/9a521c185bd84c2797378dbbbe371a4b",
+                "content": "李娜获得返现165.8元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "95a403b2dbce42e3bde644cdd99aa6e2",
+                "avatar": "http://jipincheng.cn/avatar/img/20200210/def356537b04479c862ea768950364da",
+                "content": "小小佳获得返现156元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "9ab976d538c94f16ad550bc860ff5590",
+                "avatar": "http://jipincheng.cn/avatar/img/20200211/6d17b0a6ef0e48669fc884b94f525786",
+                "content": "131****7785获得返现134元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "9ec1f2a8dc9249dfb27308db8e49bbbd",
+                "avatar": "http://jipincheng.cn/avatar/img/20191223/a79e1d3537df4f1eb3999eb2126d550e",
+                "content": "150****4326获得返现56元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "9f735800e550461d95f2dbb11f19e165",
+                "avatar": "http://jipincheng.cn/avatar/img/20200210/b63b17d0750d4d8f85a2f2ae69ff99e7",
+                "content": "热心市民获得返现143元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "9fd36c5c815c4a409b89c65b6e37d510",
+                "avatar": "http://jipincheng.cn/avatar/img/20200211/84e55b18199a42759aaa977525afb281",
+                "content": "159****0962获得返现78.64元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "a0fcf0d232414edb919ebf1dd1c3d132",
+                "avatar": "http://jipincheng.cn/avatar/img/20200211/135919c27858400f875e6a6671437fe5",
+                "content": "134****5562获得返现43.7元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "a45f0c0632804086918171bd4ed0261e",
+                "avatar": "http://jipincheng.cn/avatar/img/20191223/0972ae743b1949558c64ed359abfbac2",
+                "content": "170****1182获得返现89元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "a8af9648e0c448e9a88395c3f86d513f",
+                "avatar": "http://jipincheng.cn/avatar/img/20191223/ba4eecf20e6f43b3b85acc30cf71be7c",
+                "content": "150****7596获得返现96元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "ac5b3de6e0744bd3b1ed7fdf17e79908",
+                "avatar": "http://jipincheng.cn/avatar/img/20200211/5c281f82709345d5b5b0d4f2db7c5fd2",
+                "content": "李晓伟获得返现56.9元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "acb53630440a42f5a0cbeab7ed813245",
+                "avatar": "http://jipincheng.cn/avatar/img/20200211/69c65259bbc34b509f1b22c5acd4cdb5",
+                "content": "张连获得返现167.9元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "ae8a5ae608ae43bfa9b291ab62064cf2",
+                "avatar": "http://jipincheng.cn/avatar/img/20200210/420ce1169eda44e78a5981c68c8059ef",
+                "content": "182****2087获得返现元66，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "b1806661e346422ba87a8d45f18a0abb",
+                "avatar": "http://jipincheng.cn/avatar/img/20200211/dcb59acce81545138596dc9510c0a678",
+                "content": "小飞获得返现98.06元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "b29e53ba108440d39a450689ad0613f3",
+                "avatar": "http://jipincheng.cn/avatar/img/20200211/642d9d404549466c85dbd9351980699a",
+                "content": "占经获得返现208.7元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "b6191d3ae4174f92bf59ce13301062aa",
+                "avatar": "http://jipincheng.cn/avatar/img/20200211/c587282f7e25480f81f728ca871191b8",
+                "content": "157****2030获得返现116.9元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "b65c23638a114bd4b1e6ea377ceb5c25",
+                "avatar": "http://jipincheng.cn/avatar/img/20200210/d4c1597816ff4e08a1804a0ab74ce059",
+                "content": "小光明获得返现147.56元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "b90801f63e304679a6005294b8d687f3",
+                "avatar": "http://jipincheng.cn/avatar/img/20200210/78dd1b87ac8942869d38e2a580af0212",
+                "content": "156****9633获得返现56.7元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "b98e404f02e546219322c2ada84f0296",
+                "avatar": "http://jipincheng.cn/avatar/img/20191223/5950457be24249abbd3a60a8611a2d18",
+                "content": "Harry获得返现29元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "bc0462d04fbd4c45af735e9f0683fcf0",
+                "avatar": "http://jipincheng.cn/avatar/img/20200211/3fb62c8c78b74c98ac29a587ca582bff",
+                "content": "130****6325获得返现78.4元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "c2563731d1bc4198ae44fcb6e0400a55",
+                "avatar": "http://jipincheng.cn/avatar/img/20200210/76af0d7fb8c94bc287ba2962b70b0073",
+                "content": "棉花糖获得返现89.6元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "c2bd643b70774633a9669aa5f6b67d68",
+                "avatar": "http://jipincheng.cn/avatar/img/20200211/88d5290311e641898ca03785a8212c38",
+                "content": "卷毛获得返现98.7元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "cd379aba2628433eaac2711624bd0188",
+                "avatar": "http://jipincheng.cn/avatar/img/20200210/9cdf713c41754d9daa3d6b61a4143203",
+                "content": "130****5598获得返现156.8元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "cddeeeac21bc46ba86a6fa4b796d6c3a",
+                "avatar": "http://jipincheng.cn/avatar/img/20200211/cad97c1c5ff3454892d68509347c7fea",
+                "content": "詹詹获得返现165元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "d0744c58472a40e8ac85415462d95391",
+                "avatar": "http://jipincheng.cn/avatar/img/20200210/52975f89fd2e43629a64b767b58deec9",
+                "content": "130****5499获得返现217.4元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "d440b323083f46389c876681bcf58bb0",
+                "avatar": "http://jipincheng.cn/avatar/img/20200210/298694bbb4e14955a1618d4d5763569c",
+                "content": "不忘初心获得返现123.45元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "d80b39523ef34d4097ef2cdb95f3c429",
+                "avatar": "http://jipincheng.cn/avatar/img/20200211/7f34e0a4df984da7bc69f0fd436cdd68",
+                "content": "阿娇获得返现68.7元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "d83ce4dfc9464be89ed10071766e732d",
+                "avatar": "http://jipincheng.cn/avatar/img/20200210/a0e0eb8c29a84e64a427625aa768a621",
+                "content": "旺仔获得返现75元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "da058cda633e4a008df71260c468f8aa",
+                "avatar": "http://jipincheng.cn/avatar/img/20200211/49d98cd8824c4ab88e051c8af72d1074",
+                "content": "187****6542获得返现74.14元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "daec66d7369f4449bc245a55be026851",
+                "avatar": "http://jipincheng.cn/avatar/img/20200210/e0b20b7aafd342b588430ae07715a6d2",
+                "content": "默默获得返现72.83元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "dcdc06184e5c433ca3b5a2135060b7f8",
+                "avatar": "http://jipincheng.cn/avatar/img/20200211/f80fdd48278440a0b21f320b01356bb2",
+                "content": "阿布鲁获得返现264.6元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "e01d8bcfde3646f68ca4ca89b0e8f402",
+                "avatar": "http://jipincheng.cn/avatar/img/20200210/afd1549165fe4a9598720dada4ebb7e4",
+                "content": "137****0294获得返现78元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "e6bdb401efa44304b0e0b91be1d58428",
+                "avatar": "http://jipincheng.cn/avatar/img/20200211/8cc611d5564f407a8593609fd0df1885",
+                "content": "栗子蛋糕获得返现216元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "eb4760040d194c84b29642ddf5bca062",
+                "avatar": "http://jipincheng.cn/avatar/img/20191223/90468258ffc8463482fb63fb66b62b08",
+                "content": "170****8965获得返现45元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "ebd9738ce7d849b880ea68fa6da48898",
+                "avatar": "http://jipincheng.cn/avatar/img/20200211/5c864b4b706a443b9246a3a4125a8d98",
+                "content": "150****9861获得返现54.9元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "ec6a44418c0243b58a302d9f920a78b3",
+                "avatar": "http://jipincheng.cn/avatar/img/20200211/b818e414d3c04f19b107db8929a3c8a4",
+                "content": "137****6033获得返现210.6元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "eca2a124bed24df1b32121abb54dd611",
+                "avatar": "http://jipincheng.cn/avatar/img/20200211/308ca78ff57649dea9b5675cea87a06b",
+                "content": "盼盼获得返现74.7元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "f823e8551c054ecb963bc6e80c2e9051",
+                "avatar": "http://jipincheng.cn/avatar/img/20200211/af9b798296fb4fe2ab796f251eb5d671",
+                "content": "程卓获得返现145.7元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "f94331ad83fc445b93f38c2c81aba1d2",
+                "avatar": "http://jipincheng.cn/avatar/img/20200211/24726066eb744838969d151eae3015f6",
+                "content": "189****5621获得返现76.04元，支付宝提现成功",
+                "type": 1
+            },
+            {
+                "id": "fba93277132b40989cbb130b6b563bf7",
+                "avatar": "http://jipincheng.cn/avatar/img/20200211/6d06c4135b61447ea08dfd9bad0b20ff",
+                "content": "刘青获得返现123.06元，支付宝提现成功",
+                "type": 1
+            }
+        ],
+        "wechat": null,
+        "avatar": null,
+        "allowanceGoodsList": [
+            {
+                "img": "https://img.alicdn.com/bao/uploaded/i2/3673095162/O1CN01lLPMSd1o0F5oy9lgR_!!0-item_pic.jpg",
+                "otherPrice": "3.9",
+                "totalCouponPrice": "3.9",
+                "buyPrice": "0",
+                "useAllowancePrice": "1.9"
+            },
+            {
+                "img": "https://img.alicdn.com/bao/uploaded/i3/333649050/O1CN01D4fvrm2GiwzvkTVim_!!333649050-0-lubanu-s.jpg",
+                "otherPrice": "3.9",
+                "totalCouponPrice": "3.9",
+                "buyPrice": "0",
+                "useAllowancePrice": "1.9"
+            },
+            {
+                "img": "https://img.alicdn.com/bao/uploaded/i1/3310562923/O1CN01Zfp81g1XSmH07qjDe_!!0-item_pic.jpg",
+                "otherPrice": "5.8",
+                "totalCouponPrice": "5.8",
+                "buyPrice": "0",
+                "useAllowancePrice": "2.8"
+            },
+            {
+                "img": "https://img.alicdn.com/bao/uploaded/i1/706167437/O1CN01qi0Rxl24oC8sMVapM_!!0-item_pic.jpg",
+                "otherPrice": "8.9",
+                "totalCouponPrice": "8.9",
+                "buyPrice": "0",
+                "useAllowancePrice": "5.9"
+            }
+        ],
+        "activityList": [
+            {
+                "img": "http://jipincheng.cn/activity/img/20200422/67e42fe657d64a61a9b1118595b24cfa",
+                "type": 18,
+                "name": "特惠购专区",
+                "objectId": null,
+                "color": null
+            },
+            {
+                "img": "http://jipincheng.cn/activity/img/20200528/ec45830e56f5444a93dba3c22c27688d",
+                "type": 11,
+                "name": "一元专区",
+                "objectId": "1",
+                "color": null
+            },
+            {
+                "img": "http://jipincheng.cn/activity/img/20200528/6d6030c41c164ea1a28a55fe2f1d0616",
+                "type": 13,
+                "name": "618天猫国际主会场",
+                "objectId": "https://s.click.taobao.com/dwtQShv",
+                "color": null
+            },
+            {
+                "img": "http://jipincheng.cn/activity/img/20200528/a405d56ec8eb4a1ca00e14ccaee68481",
+                "type": 13,
+                "name": "618聚划算会场",
+                "objectId": "https://s.click.taobao.com/zEaVShv",
+                "color": null
+            },
+            {
+                "img": "http://jipincheng.cn/activity/img/20200528/79473eb009be4293a7f8201600c9673a",
+                "type": 13,
+                "name": "618拼多多主会场",
+                "objectId": "https://p.pinduoduo.com/4ds9yWTD",
+                "color": null
+            },
+            {
+                "img": "http://jipincheng.cn/activity/img/20200528/cc48bc3cf0064f7eb1db00bb24ef72fb",
+                "type": 13,
+                "name": "京东618",
+                "objectId": "https://u.jd.com/eP9ZBl",
+                "color": null
+            },
+            {
+                "img": "http://jipincheng.cn/activity/img/20200422/856c6af575fd4c35b21d036f2eddcc2d",
+                "type": 11,
+                "name": "大额优惠券",
+                "objectId": "fbf977959d7b4ab3a495a5084a163cdd",
+                "color": null
+            },
+            {
+                "img": "http://jipincheng.cn/activity/img/20200422/11e29670446b4644a20a541e2af8e482",
+                "type": 11,
+                "name": "高返专区",
+                "objectId": "688d6708b8b64816ae52713c4f291b71",
+                "color": null
+            }
+        ],
+        "ad2": {
+            "img": "http://jipincheng.cn/activity/img/20200528/20656a9820674a72b30045c22642fe2d",
+            "type": 13,
+            "name": "天猫618主会场",
+            "objectId": "http://share.jipincheng.cn/share/act.html?back=0",
+            "color": "EA5925"
+        },
+        "hotGoodsList": [
+            {
+                "goodsType": 1,
+                "source": 2,
+                "img": "https://img.alicdn.com/bao/uploaded/i3/628189716/O1CN01EFJYZK2LdymOU7C2p_!!0-item_pic.jpg",
+                "whiteImage": "https://img.alicdn.com/bao/uploaded/TB1D3e.DbY1gK0jSZTEXXXDQVXa.png",
+                "actualPrice": "39.9",
+                "couponPrice": 0,
+                "otherGoodsId": "599496118272",
+                "otherName": "【百草味-零食组合】网红小吃大礼包休闲食品吃货散装",
+                "otherPrice": "39.9",
+                "shopIcon": null,
+                "shopName": "百草味旗舰店",
+                "volume": "1792717",
+                "commissionRate": 1.6,
+                "fee": "0.55",
+                "buyPrice": "39.36",
+                "buyRate": "9.9"
+            },
+            {
+                "goodsType": 1,
+                "source": 2,
+                "img": "https://img.alicdn.com/bao/uploaded/i1/2930255252/O1CN01t1DZ9w1ofSiNPgSi6_!!0-item_pic.jpg",
+                "whiteImage": "https://img.alicdn.com/bao/uploaded/TB1uFI8bW61gK0jSZFlXXXDKFXa.png",
+                "actualPrice": "8.9",
+                "couponPrice": 1,
+                "otherGoodsId": "598088771970",
+                "otherName": "漫花原木纸巾抽纸家用整箱实惠装餐巾纸卫生纸面巾纸抽婴儿擦手纸",
+                "otherPrice": "9.9",
+                "shopIcon": null,
+                "shopName": "漫花旗舰店",
+                "volume": "925940",
+                "commissionRate": 20,
+                "fee": "1.52",
+                "buyPrice": "7.39",
+                "buyRate": "7.5"
+            },
+            {
+                "goodsType": 1,
+                "source": 2,
+                "img": "https://img.alicdn.com/bao/uploaded/i3/3965833216/O1CN01dTTl5o1ZcyLnybqFS_!!0-item_pic.jpg",
+                "whiteImage": "https://img.alicdn.com/bao/uploaded/TB12eP9eF67gK0jSZPfXXahhFXa.png",
+                "actualPrice": "34.7",
+                "couponPrice": 5,
+                "otherGoodsId": "598614273525",
+                "otherName": "预售 李子柒柳州螺蛳粉广西特产螺丝粉速食方便面米线螺狮粉3袋装",
+                "otherPrice": "39.7",
+                "shopIcon": null,
+                "shopName": "李子柒旗舰店",
+                "volume": "1617423",
+                "commissionRate": 6.01,
+                "fee": "1.78",
+                "buyPrice": "32.93",
+                "buyRate": "8.3"
+            },
+            {
+                "goodsType": 1,
+                "source": 2,
+                "img": "https://img.alicdn.com/bao/uploaded/i1/4217952040/O1CN01ZqTayw1QwMZhYDsHI_!!4217952040-0-lubanu-s.jpg",
+                "whiteImage": "https://img.alicdn.com/bao/uploaded/TB1_ZoSVyLaK1RjSZFxXXamPFXa.png",
+                "actualPrice": "2.8",
+                "couponPrice": 3,
+                "otherGoodsId": "579837973670",
+                "otherName": "张记垃圾袋家用加厚一次性批发黑色背心手提式拉圾塑料袋中号大号",
+                "otherPrice": "5.8",
+                "shopIcon": null,
+                "shopName": "定度家居专营店",
+                "volume": "662453",
+                "commissionRate": 60,
+                "fee": "1.43",
+                "buyPrice": "1.38",
+                "buyRate": "2.4"
+            },
+            {
+                "goodsType": 1,
+                "source": 2,
+                "img": "https://img.alicdn.com/bao/uploaded/i1/4144020062/O1CN012vqkmt1CKRA0h732L_!!4144020062-0-lubanu-s.jpg",
+                "whiteImage": "https://img.alicdn.com/bao/uploaded/TB1m7k5tebviK0jSZFNXXaApXXa.png",
+                "actualPrice": "49",
+                "couponPrice": 10,
+                "otherGoodsId": "594188372494",
+                "otherName": "colorkey珂拉琪丝绒雾面哑光空气唇釉唇彩女学生口红王子异星选",
+                "otherPrice": "59",
+                "shopIcon": null,
+                "shopName": "colorkey旗舰店",
+                "volume": "565590",
+                "commissionRate": 6.01,
+                "fee": "2.51",
+                "buyPrice": "46.5",
+                "buyRate": "7.9"
+            },
+            {
+                "goodsType": 1,
+                "source": 2,
+                "img": "https://img.alicdn.com/bao/uploaded/i2/2102889776/O1CN01NSkviQ2M5SXnYQcT1_!!0-item_pic.jpg",
+                "whiteImage": "https://img.alicdn.com/bao/uploaded/TB1Ue86VCzqK1RjSZFLXXcn2XXa.png",
+                "actualPrice": "24.8",
+                "couponPrice": 0,
+                "otherGoodsId": "547242584163",
+                "otherName": "4条 莱朵毛巾纯棉成人洗脸洗澡家用全棉男女帕柔软吸水不掉毛批发",
+                "otherPrice": "24.8",
+                "shopIcon": null,
+                "shopName": "莱朵旗舰店",
+                "volume": "216911",
+                "commissionRate": 1.5,
+                "fee": "0.32",
+                "buyPrice": "24.49",
+                "buyRate": "9.9"
+            },
+            {
+                "goodsType": 1,
+                "source": 2,
+                "img": "https://img.alicdn.com/bao/uploaded/i2/3864499871/O1CN01WyEUvA2MmyAERIMXt_!!0-item_pic.jpg",
+                "whiteImage": "",
+                "actualPrice": "39.9",
+                "couponPrice": 80,
+                "otherGoodsId": "596228691859",
+                "otherName": "【直营】Aola'KD天竺葵洁肤沐浴露KD-8603/ 500ml孕妇适用",
+                "otherPrice": "119.9",
+                "shopIcon": null,
+                "shopName": "傲来国旗舰店",
+                "volume": "35130",
+                "commissionRate": 40,
+                "fee": "13.57",
+                "buyPrice": "26.34",
+                "buyRate": "2.2"
+            },
+            {
+                "goodsType": 1,
+                "source": 2,
+                "img": "https://img.alicdn.com/bao/uploaded/i4/2024058652/O1CN01hoS8zb2DmfJUX8w71_!!0-item_pic.jpg",
+                "whiteImage": "https://img.alicdn.com/bao/uploaded/TB1HJyyUYrpK1RjSZTEXXcWAVXa.png",
+                "actualPrice": "5.8",
+                "couponPrice": 10,
+                "otherGoodsId": "560253896325",
+                "otherName": "iPhoneX钢化膜11promax苹果Xs手机贴膜iPhoneXsMax全屏覆盖11pro/7/8plus防窥偷窥iPhoneXR蓝光XR防窥膜se2 X",
+                "otherPrice": "15.8",
+                "shopIcon": null,
+                "shopName": "古尚古旗舰店",
+                "volume": "377004",
+                "commissionRate": 42,
+                "fee": "2.08",
+                "buyPrice": "3.73",
+                "buyRate": "2.4"
+            },
+            {
+                "goodsType": 1,
+                "source": 2,
+                "img": "https://img.alicdn.com/bao/uploaded/i1/3159007826/O1CN01Hov0Ox27gMBb9Ou3x_!!0-item_pic.jpg",
+                "whiteImage": "",
+                "actualPrice": "28",
+                "couponPrice": 0,
+                "otherGoodsId": "598662860754",
+                "otherName": "香薰家用卧室内持久熏香精油无火香水摆件厕所房间卫生间香氛除味",
+                "otherPrice": "28",
+                "shopIcon": null,
+                "shopName": "umbz旗舰店",
+                "volume": "8424",
+                "commissionRate": 15,
+                "fee": "3.57",
+                "buyPrice": "24.43",
+                "buyRate": "8.8"
+            }
+        ],
+        "newUser": false
+    }
+}

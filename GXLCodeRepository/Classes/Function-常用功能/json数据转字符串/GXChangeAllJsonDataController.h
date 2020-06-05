@@ -1,8 +1,8 @@
 //
-//  GXDateFunction.h
+//  GXChangeAllJsonDataController.h
 //  GXLCodeRepository
 //
-//  Created by JsonBourne on 2020/5/11.
+//  Created by JsonBourne on 2020/6/4.
 //  Copyright © 2020 JasonBourne. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface GXDateFunction : UIViewController
+@interface GXChangeAllJsonDataController : UIViewController
 
 @end
 

@@ -121,13 +121,15 @@
 		C8091F19244D5C5400CC86B7 /* GXImageHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = C8091F18244D5C5400CC86B7 /* GXImageHandler.m */; };
 		C8091F1F244D699700CC86B7 /* UIImage+GXImageExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = C8091F1E244D699700CC86B7 /* UIImage+GXImageExtension.m */; };
 		C8091F22244D75F500CC86B7 /* GXAVPlayerTool.m in Sources */ = {isa = PBXBuildFile; fileRef = C8091F20244D75F500CC86B7 /* GXAVPlayerTool.m */; };
+		C836F15824892950003C5E7C /* GXChangeAllJsonDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = C836F15724892950003C5E7C /* GXChangeAllJsonDataController.m */; };
+		C836F15A248929BC003C5E7C /* searchGoods.json in Resources */ = {isa = PBXBuildFile; fileRef = C836F159248929BC003C5E7C /* searchGoods.json */; };
 		C8392E70246A537B002759F5 /* GXWKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8392E6F246A537B002759F5 /* GXWKWebViewController.m */; };
 		C841FFC4246901E500D3F13D /* GXOutputImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = C841FFC2246901E500D3F13D /* GXOutputImageController.m */; };
 		C841FFC5246901E500D3F13D /* GXOutputImageController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C841FFC3246901E500D3F13D /* GXOutputImageController.xib */; };
 		C841FFC9246931BD00D3F13D /* GXArrayFunctionController.m in Sources */ = {isa = PBXBuildFile; fileRef = C841FFC8246931BC00D3F13D /* GXArrayFunctionController.m */; };
 		C841FFCD2469582400D3F13D /* GXSingletonObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C841FFCC2469582400D3F13D /* GXSingletonObject.m */; };
-		C841FFD124695C5300D3F13D /* GXDateFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = C841FFD024695C5300D3F13D /* GXDateFunction.m */; };
 		C841FFD52469616D00D3F13D /* GXStringFunctionController.m in Sources */ = {isa = PBXBuildFile; fileRef = C841FFD42469616D00D3F13D /* GXStringFunctionController.m */; };
+		C8448CC5247CBB74003A6F31 /* GXDateController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8448CC4247CBB74003A6F31 /* GXDateController.m */; };
 		C84C7B61247625C100470D46 /* GXExitApplicationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C84C7B5F247625C100470D46 /* GXExitApplicationController.m */; };
 		C84C7B62247625C100470D46 /* GXExitApplicationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C84C7B60247625C100470D46 /* GXExitApplicationController.xib */; };
 		C84D3CD42474FA1300ED70A7 /* GXSkipToAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = C84D3CD22474FA1300ED70A7 /* GXSkipToAppController.m */; };
@@ -150,6 +152,7 @@
 		C8634DD5246ABAAF00A649CA /* GXPersonalBlogController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8634DD4246ABAAF00A649CA /* GXPersonalBlogController.m */; };
 		C8634DDA246AC09E00A649CA /* GXCommonlyUsedToolsController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8634DD9246AC09D00A649CA /* GXCommonlyUsedToolsController.m */; };
 		C8634DDF246AC2CF00A649CA /* GXCUTool1Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = C8634DDE246AC2CF00A649CA /* GXCUTool1Controller.m */; };
+		C868F83A2480D6F100CF4C39 /* GXDateControllerList.plist in Resources */ = {isa = PBXBuildFile; fileRef = C868F8392480D6F100CF4C39 /* GXDateControllerList.plist */; };
 		C883CEFE2462834200E56F6A /* GX_WMPageCustomStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = C883CEFD2462834200E56F6A /* GX_WMPageCustomStyle.m */; };
 		C89A6FB0244959C500640BDA /* GXAVPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C89A6FAF244959C500640BDA /* GXAVPlayerViewController.m */; };
 		C8D772972449611800B76C5C /* GXAVPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8D772962449611800B76C5C /* GXAVPlayerViewController.xib */; };
@@ -361,6 +364,9 @@
 		C8091F1E244D699700CC86B7 /* UIImage+GXImageExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GXImageExtension.m"; sourceTree = "<group>"; };
 		C8091F20244D75F500CC86B7 /* GXAVPlayerTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXAVPlayerTool.m; sourceTree = "<group>"; };
 		C8091F21244D75F500CC86B7 /* GXAVPlayerTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXAVPlayerTool.h; sourceTree = "<group>"; };
+		C836F15624892950003C5E7C /* GXChangeAllJsonDataController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXChangeAllJsonDataController.h; sourceTree = "<group>"; };
+		C836F15724892950003C5E7C /* GXChangeAllJsonDataController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXChangeAllJsonDataController.m; sourceTree = "<group>"; };
+		C836F159248929BC003C5E7C /* searchGoods.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = searchGoods.json; sourceTree = "<group>"; };
 		C8392E6E246A537B002759F5 /* GXWKWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXWKWebViewController.h; sourceTree = "<group>"; };
 		C8392E6F246A537B002759F5 /* GXWKWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXWKWebViewController.m; sourceTree = "<group>"; };
 		C841FFC1246901E500D3F13D /* GXOutputImageController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXOutputImageController.h; sourceTree = "<group>"; };
@@ -370,10 +376,10 @@
 		C841FFC8246931BC00D3F13D /* GXArrayFunctionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXArrayFunctionController.m; sourceTree = "<group>"; };
 		C841FFCB2469582400D3F13D /* GXSingletonObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXSingletonObject.h; sourceTree = "<group>"; };
 		C841FFCC2469582400D3F13D /* GXSingletonObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXSingletonObject.m; sourceTree = "<group>"; };
-		C841FFCF24695C5300D3F13D /* GXDateFunction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXDateFunction.h; sourceTree = "<group>"; };
-		C841FFD024695C5300D3F13D /* GXDateFunction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXDateFunction.m; sourceTree = "<group>"; };
 		C841FFD32469616D00D3F13D /* GXStringFunctionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXStringFunctionController.h; sourceTree = "<group>"; };
 		C841FFD42469616D00D3F13D /* GXStringFunctionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXStringFunctionController.m; sourceTree = "<group>"; };
+		C8448CC3247CBB74003A6F31 /* GXDateController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXDateController.h; sourceTree = "<group>"; };
+		C8448CC4247CBB74003A6F31 /* GXDateController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXDateController.m; sourceTree = "<group>"; };
 		C84C7B5E247625C100470D46 /* GXExitApplicationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXExitApplicationController.h; sourceTree = "<group>"; };
 		C84C7B5F247625C100470D46 /* GXExitApplicationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXExitApplicationController.m; sourceTree = "<group>"; };
 		C84C7B60247625C100470D46 /* GXExitApplicationController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GXExitApplicationController.xib; sourceTree = "<group>"; };
@@ -409,6 +415,7 @@
 		C8634DD9246AC09D00A649CA /* GXCommonlyUsedToolsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXCommonlyUsedToolsController.m; sourceTree = "<group>"; };
 		C8634DDD246AC2CF00A649CA /* GXCUTool1Controller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXCUTool1Controller.h; sourceTree = "<group>"; };
 		C8634DDE246AC2CF00A649CA /* GXCUTool1Controller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXCUTool1Controller.m; sourceTree = "<group>"; };
+		C868F8392480D6F100CF4C39 /* GXDateControllerList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = GXDateControllerList.plist; sourceTree = "<group>"; };
 		C883CEFC2462834200E56F6A /* GX_WMPageCustomStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GX_WMPageCustomStyle.h; sourceTree = "<group>"; };
 		C883CEFD2462834200E56F6A /* GX_WMPageCustomStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GX_WMPageCustomStyle.m; sourceTree = "<group>"; };
 		C89A6FAE244959C500640BDA /* GXAVPlayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXAVPlayerViewController.h; sourceTree = "<group>"; };
@@ -778,7 +785,6 @@
 				97A05FFD216F2A9800F49C01 /* OCExampleController.m */,
 				C8E4E6C5246CE17900E51CCC /* 富文本方法 */,
 				C841FFD22469614600D3F13D /* 字符串方法 */,
-				C841FFCE24695BFB00D3F13D /* 获取时间 */,
 				C841FFCA246956F900D3F13D /* 单利模式 */,
 				C841FFC62469319100D3F13D /* 数组方法 */,
 				97A6AD9F23BDB6D4008E4596 /* 网络请求工具 */,
@@ -790,8 +796,10 @@
 		97A30BEA242303A8009D7089 /* Function-常用功能 */ = {
 			isa = PBXGroup;
 			children = (
+				C836F155248928F1003C5E7C /* json数据转字符串 */,
 				97A30BEB24230618009D7089 /* GXFunctionExampleController.h */,
 				97A30BEC24230618009D7089 /* GXFunctionExampleController.m */,
+				C8448CC2247CBB40003A6F31 /* 获取时间 */,
 				C84C7B5D2476259400470D46 /* 推出app */,
 				C84D3CD02474F9DF00ED70A7 /* iOS 跳转 */,
 				C841FFC02469019100D3F13D /* 输出图片 */,
@@ -1079,6 +1087,16 @@
 			path = "图片处理";
 			sourceTree = "<group>";
 		};
+		C836F155248928F1003C5E7C /* json数据转字符串 */ = {
+			isa = PBXGroup;
+			children = (
+				C836F159248929BC003C5E7C /* searchGoods.json */,
+				C836F15624892950003C5E7C /* GXChangeAllJsonDataController.h */,
+				C836F15724892950003C5E7C /* GXChangeAllJsonDataController.m */,
+			);
+			path = "json数据转字符串";
+			sourceTree = "<group>";
+		};
 		C8392E6D246A5343002759F5 /* WKWebView */ = {
 			isa = PBXGroup;
 			children = (
@@ -1116,15 +1134,6 @@
 			path = "单利模式";
 			sourceTree = "<group>";
 		};
-		C841FFCE24695BFB00D3F13D /* 获取时间 */ = {
-			isa = PBXGroup;
-			children = (
-				C841FFCF24695C5300D3F13D /* GXDateFunction.h */,
-				C841FFD024695C5300D3F13D /* GXDateFunction.m */,
-			);
-			path = "获取时间";
-			sourceTree = "<group>";
-		};
 		C841FFD22469614600D3F13D /* 字符串方法 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1132,6 +1141,16 @@
 				C841FFD42469616D00D3F13D /* GXStringFunctionController.m */,
 			);
 			path = "字符串方法";
+			sourceTree = "<group>";
+		};
+		C8448CC2247CBB40003A6F31 /* 获取时间 */ = {
+			isa = PBXGroup;
+			children = (
+				C8448CC3247CBB74003A6F31 /* GXDateController.h */,
+				C8448CC4247CBB74003A6F31 /* GXDateController.m */,
+				C868F8392480D6F100CF4C39 /* GXDateControllerList.plist */,
+			);
+			path = "获取时间";
 			sourceTree = "<group>";
 		};
 		C84C7B5D2476259400470D46 /* 推出app */ = {
@@ -1377,6 +1396,7 @@
 				97A3415121D4DB36006DF0D2 /* GXPhotoCell.xib in Resources */,
 				C85B4D14246BB8450004CE3D /* 6f3813bcbbfab587.png in Resources */,
 				97A6ADCC23BDCAB7008E4596 /* CZMHSDCommodityCell2.xib in Resources */,
+				C836F15A248929BC003C5E7C /* searchGoods.json in Resources */,
 				97664EEF23AE1A1700DB8383 /* CZScrollADCell.xib in Resources */,
 				97A05FE7216F004600F49C01 /* LaunchScreen.storyboard in Resources */,
 				C861D0EE24516D6C00E3E409 /* CollectionAutoLayoutCell.xib in Resources */,
@@ -1408,6 +1428,7 @@
 				97A6ADD123BDCADB008E4596 /* CZMHSDCell2CollectionCell.xib in Resources */,
 				97A6ADB023BDB6D4008E4596 /* wwwipinchengcn.cer in Resources */,
 				977B312923B626F30011E1BC /* CZFestivalGoodsColLayoutView.xib in Resources */,
+				C868F83A2480D6F100CF4C39 /* GXDateControllerList.plist in Resources */,
 				97C20BF0217DF22000C78AAD /* GXCircleImageController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1485,6 +1506,7 @@
 				C841FFCD2469582400D3F13D /* GXSingletonObject.m in Sources */,
 				C8634DDA246AC09E00A649CA /* GXCommonlyUsedToolsController.m in Sources */,
 				C883CEFE2462834200E56F6A /* GX_WMPageCustomStyle.m in Sources */,
+				C836F15824892950003C5E7C /* GXChangeAllJsonDataController.m in Sources */,
 				C8F26438244041A8009475F6 /* CZAlertView1Controller.m in Sources */,
 				97664EF023AE1A1700DB8383 /* GXScrollAD.m in Sources */,
 				C89A6FB0244959C500640BDA /* GXAVPlayerViewController.m in Sources */,
@@ -1495,6 +1517,7 @@
 				97A3414721D1CAAB006DF0D2 /* GXLineLayout.m in Sources */,
 				972D9EEA218B0D790013B420 /* GXAddTagController.m in Sources */,
 				97EA166D21806AF000C20CD9 /* GXTopWindowsController.m in Sources */,
+				C8448CC5247CBB74003A6F31 /* GXDateController.m in Sources */,
 				977B312F23B62A220011E1BC /* NSString+CZExtension.m in Sources */,
 				97A6DDE823C75C4400C2CFC7 /* UIFont+CZExtension.m in Sources */,
 				97A6ADAF23BDB6D4008E4596 /* GXNetTool.m in Sources */,
@@ -1542,7 +1565,6 @@
 				97D489D222A6A1D900FD4EC7 /* GXHomeViewController.m in Sources */,
 				976D7820242DCD0E00BF84AF /* WMProgressView.m in Sources */,
 				97EA167A2181E5A100C20CD9 /* GXFooterView.m in Sources */,
-				C841FFD124695C5300D3F13D /* GXDateFunction.m in Sources */,
 				C8392E70246A537B002759F5 /* GXWKWebViewController.m in Sources */,
 				97664F0023AE1B7800DB8383 /* GXScrollImageView.m in Sources */,
 				C85B4D12246BB7830004CE3D /* GXWrite.m in Sources */,

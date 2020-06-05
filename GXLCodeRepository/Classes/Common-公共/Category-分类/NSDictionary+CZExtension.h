@@ -15,6 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSDictionary *)deleteAllNullValue;
 - (NSDictionary *)changeAllNnmberValue;
 - (NSDictionary *)changeAllValueWithString;
+- (NSDictionary *)changeAllStringValue;
 
 @end
 

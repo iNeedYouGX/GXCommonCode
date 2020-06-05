@@ -60,6 +60,14 @@
                 @"title" : @"iOS退出",
                 @"control" : @"GXExitApplicationController",
             },
+            @{
+                @"title" : @"获取时间",
+                @"control" : @"GXDateController"
+            },
+            @{
+                @"title" : @"将Json数据策底改为字符串",
+                @"control" : @"GXChangeAllJsonDataController"
+            },
                      ];
     }
     return _dataArr;
@@ -140,6 +148,11 @@
             case 2: // 复制到剪切板
             {
                 [self generalPaste];
+                break;
+            }
+            case 3: //
+            {
+                
                 break;
             }
             default:
