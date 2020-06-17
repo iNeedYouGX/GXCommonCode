@@ -68,6 +68,9 @@
             },
             @{@"title" : @"轮播图使用",
               @"control" : @"GXScrollImageView"
+            },
+            @{@"title" : @"选择器使用",
+              @"control" : @"GXCustomPickerView"
             }
              ];
     }
@@ -76,6 +79,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     if (@available(iOS 11.0, *)) {
         [UIScrollView appearance].contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
     } else {

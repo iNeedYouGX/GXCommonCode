@@ -118,6 +118,7 @@
 		97FC0511218807A500B526F8 /* GXPostWordController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97FC0510218807A500B526F8 /* GXPostWordController.m */; };
 		97FC051621884FBC00B526F8 /* GXPlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 97FC051521884FBC00B526F8 /* GXPlaceholderTextView.m */; };
 		97FEBF2E22D49DFF007BF592 /* download.plist in Resources */ = {isa = PBXBuildFile; fileRef = 97FEBF2D22D49DFF007BF592 /* download.plist */; };
+		C8033B29249224E7004BA3D3 /* GXCustomPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C8033B28249224E7004BA3D3 /* GXCustomPickerView.m */; };
 		C8091F19244D5C5400CC86B7 /* GXImageHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = C8091F18244D5C5400CC86B7 /* GXImageHandler.m */; };
 		C8091F1F244D699700CC86B7 /* UIImage+GXImageExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = C8091F1E244D699700CC86B7 /* UIImage+GXImageExtension.m */; };
 		C8091F22244D75F500CC86B7 /* GXAVPlayerTool.m in Sources */ = {isa = PBXBuildFile; fileRef = C8091F20244D75F500CC86B7 /* GXAVPlayerTool.m */; };
@@ -152,6 +153,8 @@
 		C8634DD5246ABAAF00A649CA /* GXPersonalBlogController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8634DD4246ABAAF00A649CA /* GXPersonalBlogController.m */; };
 		C8634DDA246AC09E00A649CA /* GXCommonlyUsedToolsController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8634DD9246AC09D00A649CA /* GXCommonlyUsedToolsController.m */; };
 		C8634DDF246AC2CF00A649CA /* GXCUTool1Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = C8634DDE246AC2CF00A649CA /* GXCUTool1Controller.m */; };
+		C8653E5524936F1A003ECD16 /* GXCustomDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C8653E5224936F1A003ECD16 /* GXCustomDatePickerView.m */; };
+		C8653E5624936F1A003ECD16 /* GXCustomDatePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8653E5324936F1A003ECD16 /* GXCustomDatePickerView.xib */; };
 		C868F83A2480D6F100CF4C39 /* GXDateControllerList.plist in Resources */ = {isa = PBXBuildFile; fileRef = C868F8392480D6F100CF4C39 /* GXDateControllerList.plist */; };
 		C883CEFE2462834200E56F6A /* GX_WMPageCustomStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = C883CEFD2462834200E56F6A /* GX_WMPageCustomStyle.m */; };
 		C89A6FB0244959C500640BDA /* GXAVPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C89A6FAF244959C500640BDA /* GXAVPlayerViewController.m */; };
@@ -358,6 +361,8 @@
 		97FC051521884FBC00B526F8 /* GXPlaceholderTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXPlaceholderTextView.m; sourceTree = "<group>"; };
 		97FEBF2D22D49DFF007BF592 /* download.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = download.plist; sourceTree = "<group>"; };
 		9C8D510534E78F9435F53B1F /* libPods-GXLCodeRepository.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GXLCodeRepository.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8033B27249224E7004BA3D3 /* GXCustomPickerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXCustomPickerView.h; sourceTree = "<group>"; };
+		C8033B28249224E7004BA3D3 /* GXCustomPickerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXCustomPickerView.m; sourceTree = "<group>"; };
 		C8091F17244D5C5400CC86B7 /* GXImageHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXImageHandler.h; sourceTree = "<group>"; };
 		C8091F18244D5C5400CC86B7 /* GXImageHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXImageHandler.m; sourceTree = "<group>"; };
 		C8091F1D244D699700CC86B7 /* UIImage+GXImageExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+GXImageExtension.h"; sourceTree = "<group>"; };
@@ -415,6 +420,9 @@
 		C8634DD9246AC09D00A649CA /* GXCommonlyUsedToolsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXCommonlyUsedToolsController.m; sourceTree = "<group>"; };
 		C8634DDD246AC2CF00A649CA /* GXCUTool1Controller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXCUTool1Controller.h; sourceTree = "<group>"; };
 		C8634DDE246AC2CF00A649CA /* GXCUTool1Controller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXCUTool1Controller.m; sourceTree = "<group>"; };
+		C8653E5224936F1A003ECD16 /* GXCustomDatePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXCustomDatePickerView.m; sourceTree = "<group>"; };
+		C8653E5324936F1A003ECD16 /* GXCustomDatePickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GXCustomDatePickerView.xib; sourceTree = "<group>"; };
+		C8653E5424936F1A003ECD16 /* GXCustomDatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXCustomDatePickerView.h; sourceTree = "<group>"; };
 		C868F8392480D6F100CF4C39 /* GXDateControllerList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = GXDateControllerList.plist; sourceTree = "<group>"; };
 		C883CEFC2462834200E56F6A /* GX_WMPageCustomStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GX_WMPageCustomStyle.h; sourceTree = "<group>"; };
 		C883CEFD2462834200E56F6A /* GX_WMPageCustomStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GX_WMPageCustomStyle.m; sourceTree = "<group>"; };
@@ -756,6 +764,7 @@
 			children = (
 				97A05FF0216F013E00F49C01 /* ContolViewController.h */,
 				97A05FF1216F013E00F49C01 /* ContolViewController.m */,
+				C8033B26249222E9004BA3D3 /* 时间选择器 */,
 				C8392E6D246A5343002759F5 /* WKWebView */,
 				974E9E9A242AF4640005662C /* 点击图片放大 */,
 				97A4DC4B24238C0E0085F076 /* 各种小按钮 */,
@@ -787,7 +796,6 @@
 				C841FFD22469614600D3F13D /* 字符串方法 */,
 				C841FFCA246956F900D3F13D /* 单利模式 */,
 				C841FFC62469319100D3F13D /* 数组方法 */,
-				97A6AD9F23BDB6D4008E4596 /* 网络请求工具 */,
 				97EA16652180493D00C20CD9 /* 常量的整理 */,
 			);
 			path = "OC-语法";
@@ -1078,6 +1086,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C8033B26249222E9004BA3D3 /* 时间选择器 */ = {
+			isa = PBXGroup;
+			children = (
+				C8653E5424936F1A003ECD16 /* GXCustomDatePickerView.h */,
+				C8653E5224936F1A003ECD16 /* GXCustomDatePickerView.m */,
+				C8653E5324936F1A003ECD16 /* GXCustomDatePickerView.xib */,
+				C8033B27249224E7004BA3D3 /* GXCustomPickerView.h */,
+				C8033B28249224E7004BA3D3 /* GXCustomPickerView.m */,
+			);
+			path = "时间选择器";
+			sourceTree = "<group>";
+		};
 		C8091F16244D5C0F00CC86B7 /* 图片处理 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1186,6 +1206,7 @@
 		C85B4D03246B8C400004CE3D /* Common-公共 */ = {
 			isa = PBXGroup;
 			children = (
+				97A6AD9F23BDB6D4008E4596 /* 网络请求工具 */,
 				977B313023B62A250011E1BC /* Category-分类 */,
 				C85B4D07246B8EA20004CE3D /* Adapter-适配器 */,
 				C85B4D06246B8DF40004CE3D /* Handler-管理者 */,
@@ -1411,6 +1432,7 @@
 				97E0046F23B30D3C0028A5E5 /* GXScrollADImageCell.xib in Resources */,
 				975BCB6023BB4BDB009E0CED /* CZCollectionTypeOneCell.xib in Resources */,
 				97C20BF3217DF28F00C78AAD /* image.jpeg in Resources */,
+				C8653E5624936F1A003ECD16 /* GXCustomDatePickerView.xib in Resources */,
 				97EA166E21806AF000C20CD9 /* GXTopWindowsController.xib in Resources */,
 				C84D3CD52474FA1300ED70A7 /* GXSkipToAppController.xib in Resources */,
 				C85B4D16246BB9020004CE3D /* acba1fe67c44b454.png in Resources */,
@@ -1524,11 +1546,13 @@
 				976D781C242DCD0E00BF84AF /* UIViewController+WMPageController.m in Sources */,
 				97A6ADAD23BDB6D4008E4596 /* KCUtilMd5.m in Sources */,
 				977B311923B6080F0011E1BC /* CZTitlesViewTypeLayout.m in Sources */,
+				C8653E5524936F1A003ECD16 /* GXCustomDatePickerView.m in Sources */,
 				97E0047323B36B0D0028A5E5 /* GXScrollADPageControl.m in Sources */,
 				976D780C242DC87700BF84AF /* GX_WMPageController.m in Sources */,
 				976D781E242DCD0E00BF84AF /* WMScrollView.m in Sources */,
 				97C20BEF217DF22000C78AAD /* GXCircleImageController.m in Sources */,
 				97A05FF9216F236000F49C01 /* GXTabarController.m in Sources */,
+				C8033B29249224E7004BA3D3 /* GXCustomPickerView.m in Sources */,
 				C8091F22244D75F500CC86B7 /* GXAVPlayerTool.m in Sources */,
 				97A6ADCB23BDCAB7008E4596 /* CZMHSDCommodityCell2.m in Sources */,
 				C84E4DCA2463A7A2004BA4B7 /* GXShadowHandler.m in Sources */,

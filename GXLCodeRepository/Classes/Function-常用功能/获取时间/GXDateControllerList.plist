@@ -8,6 +8,7 @@
     NSDate *currentData = [NSDate date];
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     // HH是24进制，hh是12进制
+    [formatter setTimeZone:[NSTimeZone timeZoneWithName:@"Asia/Shanghai"]];
     formatter.dateFormat = @&quot;yyyy-MM-dd HH:mm:ss&quot;;
     NSString *stirng = [formatter stringFromDate:currentData];
     NSLog(@&quot;%@&quot;, stirng);

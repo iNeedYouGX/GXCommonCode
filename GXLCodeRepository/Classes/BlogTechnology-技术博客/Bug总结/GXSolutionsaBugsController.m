@@ -77,6 +77,9 @@
     @"解决：AlibcTradeShowParams对象的backUrl属性不要进行设置";
     [GXElementView elementViewTitle:subStr9 containView:self.scrollerView];
     
+    NSString *subStr10 = @"10. modal时候, 如果设置了modalPresentationStyle=UIModalPresentationFullScreen, 他的presentingView可以走viewWillappear方法, 如果设置了后面视图保留, 将要显示的方法不会触发";
+    [GXElementView elementViewTitle:subStr10 containView:self.scrollerView];
+    
     
 }
 

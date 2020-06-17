@@ -259,4 +259,11 @@
     [view.layer addSublayer:border];
 }
 
+// 单边圆角
+//        UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:CGRectMake(0, 0, SCR_WIDTH - 40, 60) byRoundingCorners:UIRectCornerTopLeft | UIRectCornerTopRight cornerRadii:CGSizeMake(10, 10)];
+//        CAShapeLayer *maskLayer = [[CAShapeLayer  alloc]  init];
+//        maskLayer.frame = cell.bounds;
+//        maskLayer.path = maskPath.CGPath;
+//        cell.layer.mask = maskLayer;
+
 @end

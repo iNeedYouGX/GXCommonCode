@@ -373,4 +373,67 @@
     return param;
 }
 
+
+- (void)downloadFile {
+
+  NSString *url = @"http://test.service.jdimage.cn/dcm/download/91330482307418997W.file?objectKey=/91330482307418997W/2018/12/04/CT/acdc8243d1724acefe2c6369ed901ce1/film/MR22035.bmp";
+  NSURL *URL = [NSURL URLWithString:url];
+  //1.创建管理者
+  NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
+  AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:configuration];
+
+   // 构建HEAD请求
+    NSMutableURLRequest *headRequest = [NSMutableURLRequest requestWithURL:URL];
+    [headRequest setHTTPMethod:@"HEAD"];
+    // 清空Accept-Encoding请求头字段，不接受Gzip压缩
+    [headRequest setValue:@"" forHTTPHeaderField:@"Accept-Encoding"];
+
+    NSURLSessionDataTask *headTask = [manager dataTaskWithRequest:headRequest uploadProgress:nil downloadProgress:nil completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
+
+        // 第一步
+        // 设置总数已经监听数据下载了多少
+        long long totalUnitCount = response.expectedContentLength;
+        NSLog(@"%lld", totalUnitCount);
+        NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:URL];
+        [manager setDownloadTaskDidWriteDataBlock:^(NSURLSession * _Nonnull session, NSURLSessionDownloadTask * _Nonnull downloadTask, int64_t bytesWritten, int64_t totalBytesWritten, int64_t totalBytesExpectedToWrite) {
+            // 一共下载的数totalBytesWritten
+//            NSLog(@"---totalBytesExpectedToWrite : %lli, totalBytesWritten : %lli", totalBytesExpectedToWrite, totalBytesWritten);
+            //胖胖提醒: 注意这个地方不是主线程 *****************
+            NSString *progress = [NSString stringWithFormat:@"下载:%f%%",100.0 * totalBytesWritten / totalUnitCount];
+            NSLog(@"%@", progress);
+
+
+        }];
+
+        // 第二步, 常规操作, 监听下载完成后, 文件放到哪里
+        NSURLSessionDownloadTask *downloadTask = [manager downloadTaskWithRequest:request progress:nil destination:^NSURL * _Nonnull(NSURL * _Nonnull targetPath, NSURLResponse * _Nonnull response) {
+
+            NSString *caches = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject];
+            //拼接文件全路径
+            NSString *fullpath = [caches stringByAppendingPathComponent:response.suggestedFilename];
+            NSURL *filePathUrl = [NSURL fileURLWithPath:fullpath];
+
+            return filePathUrl;
+        } completionHandler:^(NSURLResponse * _Nonnull response, NSURL * _Nullable filePath, NSError * _Nullable error) {
+            if (error) {
+
+            }
+            if(filePath){ // 第三步, 肯定下载完成后, 把图片赋值, 就好了, 希望胖糊能看得明白,
+                NSLog(@"filePath : %@", filePath);
+
+                UIImageView *imageView =[[UIImageView alloc] init];
+                imageView.width = 200;
+                imageView.height = 200;
+                imageView.image = [UIImage imageWithContentsOfFile:filePath.path];
+
+                [[UIApplication sharedApplication].keyWindow addSubview:imageView];
+
+            }
+        }];
+        [downloadTask resume];
+    }];
+    [headTask resume];
+
+}
+
 @end

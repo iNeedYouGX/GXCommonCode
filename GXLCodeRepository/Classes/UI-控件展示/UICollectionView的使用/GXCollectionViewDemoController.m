@@ -100,7 +100,11 @@
 #pragma mark - <UICollectionViewDelegateFlowLayout>
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    return CGSizeMake(50, 50); // 每个块尺寸
+    if (indexPath.row == 0) {
+        return CGSizeMake(SCR_WIDTH - 30, 50);
+    } else {
+        return CGSizeMake((SCR_WIDTH - 40) / 2.0, 50); // 每个块尺寸
+    }
 }
 
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
@@ -116,7 +120,7 @@
 
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section
 {
-    return 100; // 最小"间"距
+    return 10; // 最小"列"间距
 }
 
 
