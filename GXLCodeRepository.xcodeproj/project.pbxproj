@@ -130,6 +130,7 @@
 		C841FFC9246931BD00D3F13D /* GXArrayFunctionController.m in Sources */ = {isa = PBXBuildFile; fileRef = C841FFC8246931BC00D3F13D /* GXArrayFunctionController.m */; };
 		C841FFCD2469582400D3F13D /* GXSingletonObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C841FFCC2469582400D3F13D /* GXSingletonObject.m */; };
 		C841FFD52469616D00D3F13D /* GXStringFunctionController.m in Sources */ = {isa = PBXBuildFile; fileRef = C841FFD42469616D00D3F13D /* GXStringFunctionController.m */; };
+		C842DC66249B4E46003DC6E0 /* GXChainProgrammingControlller.m in Sources */ = {isa = PBXBuildFile; fileRef = C842DC65249B4E46003DC6E0 /* GXChainProgrammingControlller.m */; };
 		C8448CC5247CBB74003A6F31 /* GXDateController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8448CC4247CBB74003A6F31 /* GXDateController.m */; };
 		C84C7B61247625C100470D46 /* GXExitApplicationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C84C7B5F247625C100470D46 /* GXExitApplicationController.m */; };
 		C84C7B62247625C100470D46 /* GXExitApplicationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C84C7B60247625C100470D46 /* GXExitApplicationController.xib */; };
@@ -156,6 +157,8 @@
 		C8653E5524936F1A003ECD16 /* GXCustomDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C8653E5224936F1A003ECD16 /* GXCustomDatePickerView.m */; };
 		C8653E5624936F1A003ECD16 /* GXCustomDatePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8653E5324936F1A003ECD16 /* GXCustomDatePickerView.xib */; };
 		C868F83A2480D6F100CF4C39 /* GXDateControllerList.plist in Resources */ = {isa = PBXBuildFile; fileRef = C868F8392480D6F100CF4C39 /* GXDateControllerList.plist */; };
+		C870BFD2249C69F3001DF147 /* GXMVCDesignPatternControlller.m in Sources */ = {isa = PBXBuildFile; fileRef = C870BFD0249C69F3001DF147 /* GXMVCDesignPatternControlller.m */; };
+		C870BFD3249C69F3001DF147 /* GXMVCDesignPatternControlller.xib in Resources */ = {isa = PBXBuildFile; fileRef = C870BFD1249C69F3001DF147 /* GXMVCDesignPatternControlller.xib */; };
 		C883CEFE2462834200E56F6A /* GX_WMPageCustomStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = C883CEFD2462834200E56F6A /* GX_WMPageCustomStyle.m */; };
 		C89A6FB0244959C500640BDA /* GXAVPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C89A6FAF244959C500640BDA /* GXAVPlayerViewController.m */; };
 		C8D772972449611800B76C5C /* GXAVPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8D772962449611800B76C5C /* GXAVPlayerViewController.xib */; };
@@ -383,6 +386,8 @@
 		C841FFCC2469582400D3F13D /* GXSingletonObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXSingletonObject.m; sourceTree = "<group>"; };
 		C841FFD32469616D00D3F13D /* GXStringFunctionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXStringFunctionController.h; sourceTree = "<group>"; };
 		C841FFD42469616D00D3F13D /* GXStringFunctionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXStringFunctionController.m; sourceTree = "<group>"; };
+		C842DC64249B4E46003DC6E0 /* GXChainProgrammingControlller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXChainProgrammingControlller.h; sourceTree = "<group>"; };
+		C842DC65249B4E46003DC6E0 /* GXChainProgrammingControlller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXChainProgrammingControlller.m; sourceTree = "<group>"; };
 		C8448CC3247CBB74003A6F31 /* GXDateController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXDateController.h; sourceTree = "<group>"; };
 		C8448CC4247CBB74003A6F31 /* GXDateController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXDateController.m; sourceTree = "<group>"; };
 		C84C7B5E247625C100470D46 /* GXExitApplicationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXExitApplicationController.h; sourceTree = "<group>"; };
@@ -424,6 +429,9 @@
 		C8653E5324936F1A003ECD16 /* GXCustomDatePickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GXCustomDatePickerView.xib; sourceTree = "<group>"; };
 		C8653E5424936F1A003ECD16 /* GXCustomDatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXCustomDatePickerView.h; sourceTree = "<group>"; };
 		C868F8392480D6F100CF4C39 /* GXDateControllerList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = GXDateControllerList.plist; sourceTree = "<group>"; };
+		C870BFCF249C69F3001DF147 /* GXMVCDesignPatternControlller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXMVCDesignPatternControlller.h; sourceTree = "<group>"; };
+		C870BFD0249C69F3001DF147 /* GXMVCDesignPatternControlller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXMVCDesignPatternControlller.m; sourceTree = "<group>"; };
+		C870BFD1249C69F3001DF147 /* GXMVCDesignPatternControlller.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GXMVCDesignPatternControlller.xib; sourceTree = "<group>"; };
 		C883CEFC2462834200E56F6A /* GX_WMPageCustomStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GX_WMPageCustomStyle.h; sourceTree = "<group>"; };
 		C883CEFD2462834200E56F6A /* GX_WMPageCustomStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GX_WMPageCustomStyle.m; sourceTree = "<group>"; };
 		C89A6FAE244959C500640BDA /* GXAVPlayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXAVPlayerViewController.h; sourceTree = "<group>"; };
@@ -790,6 +798,8 @@
 		97A06000216F428500F49C01 /* OC-语法 */ = {
 			isa = PBXGroup;
 			children = (
+				C870BFCE249C699E001DF147 /* MCV模式 */,
+				C842DC63249B4DD6003DC6E0 /* 链式编程 */,
 				97A05FFC216F2A9800F49C01 /* OCExampleController.h */,
 				97A05FFD216F2A9800F49C01 /* OCExampleController.m */,
 				C8E4E6C5246CE17900E51CCC /* 富文本方法 */,
@@ -804,9 +814,9 @@
 		97A30BEA242303A8009D7089 /* Function-常用功能 */ = {
 			isa = PBXGroup;
 			children = (
-				C836F155248928F1003C5E7C /* json数据转字符串 */,
 				97A30BEB24230618009D7089 /* GXFunctionExampleController.h */,
 				97A30BEC24230618009D7089 /* GXFunctionExampleController.m */,
+				C836F155248928F1003C5E7C /* json数据转字符串 */,
 				C8448CC2247CBB40003A6F31 /* 获取时间 */,
 				C84C7B5D2476259400470D46 /* 推出app */,
 				C84D3CD02474F9DF00ED70A7 /* iOS 跳转 */,
@@ -1163,6 +1173,15 @@
 			path = "字符串方法";
 			sourceTree = "<group>";
 		};
+		C842DC63249B4DD6003DC6E0 /* 链式编程 */ = {
+			isa = PBXGroup;
+			children = (
+				C842DC64249B4E46003DC6E0 /* GXChainProgrammingControlller.h */,
+				C842DC65249B4E46003DC6E0 /* GXChainProgrammingControlller.m */,
+			);
+			path = "链式编程";
+			sourceTree = "<group>";
+		};
 		C8448CC2247CBB40003A6F31 /* 获取时间 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1324,6 +1343,16 @@
 			path = "iOS获取App ipa包";
 			sourceTree = "<group>";
 		};
+		C870BFCE249C699E001DF147 /* MCV模式 */ = {
+			isa = PBXGroup;
+			children = (
+				C870BFCF249C69F3001DF147 /* GXMVCDesignPatternControlller.h */,
+				C870BFD0249C69F3001DF147 /* GXMVCDesignPatternControlller.m */,
+				C870BFD1249C69F3001DF147 /* GXMVCDesignPatternControlller.xib */,
+			);
+			path = "MCV模式";
+			sourceTree = "<group>";
+		};
 		C89A6FB124495D5000640BDA /* AVPlayer使用 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1428,6 +1457,7 @@
 				C8D7729924498DB000B76C5C /* 12秒nn.mp4 in Resources */,
 				97FEBF2E22D49DFF007BF592 /* download.plist in Resources */,
 				97A05E7E218AFFAB006A2CF8 /* PostImage.bundle in Resources */,
+				C870BFD3249C69F3001DF147 /* GXMVCDesignPatternControlller.xib in Resources */,
 				97A05FE2216F004300F49C01 /* Main.storyboard in Resources */,
 				97E0046F23B30D3C0028A5E5 /* GXScrollADImageCell.xib in Resources */,
 				975BCB6023BB4BDB009E0CED /* CZCollectionTypeOneCell.xib in Resources */,
@@ -1512,6 +1542,7 @@
 				97F1C7DB21930098009F7871 /* GXNavigationController.m in Sources */,
 				975BCB5F23BB4BDB009E0CED /* CZCollectionTypeOneCell.m in Sources */,
 				974E9E9D242AF4900005662C /* GXZoomImageView.m in Sources */,
+				C842DC66249B4E46003DC6E0 /* GXChainProgrammingControlller.m in Sources */,
 				C861D0E424513A4700E3E409 /* UIViewController+LL_Utils.m in Sources */,
 				97A3415021D4DB36006DF0D2 /* GXPhotoCell.m in Sources */,
 				97A6ADBD23BDBB7D008E4596 /* CZCZFreeChargeCell2.m in Sources */,
@@ -1570,6 +1601,7 @@
 				97C20BEB217D93AD00C78AAD /* GXMenuLabel.m in Sources */,
 				9774AD7421CB985600DD0827 /* GXFlowLayoutController.m in Sources */,
 				97A05E77218A9B25006A2CF8 /* GXAddTagToobar.m in Sources */,
+				C870BFD2249C69F3001DF147 /* GXMVCDesignPatternControlller.m in Sources */,
 				97A6ADC623BDC57D008E4596 /* CZMHSDCommodityCell.m in Sources */,
 				97A05FFE216F2A9800F49C01 /* OCExampleController.m in Sources */,
 				97A6AD9D23BD85B1008E4596 /* GXSomeTableCellController.m in Sources */,

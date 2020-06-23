@@ -38,7 +38,15 @@
                 @"title" : @"富文本方法",
                 @"control" : @"GXAttrStringFuncController",
             },
-                     ];
+            @{
+                @"title" : @"链式编程",
+                @"control" : @"GXChainProgrammingControlller",
+            },
+            @{
+                @"title" : @"MVC设计模式",
+                @"control" : @"GXMVCDesignPatternControlller",
+            },
+                ];
     }
     return _dataArr;
 }

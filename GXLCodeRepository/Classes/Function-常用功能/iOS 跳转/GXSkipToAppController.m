@@ -101,11 +101,30 @@
     @"NSString * str = @\"http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?id=1450707933&pageNumber=0&sortOrdering=2&type=Purple+Software&mt=8\";";
     [GXElementView elementViewTitle:subStr2 containView:self.scrollerView];
     
-    
     NSString *subStr3 =
+    @"3. 跳转到应用详情页 \n"
+    @"NSString * str = @\"https://itunes.apple.com/cn/app/id1450707933?mt=8\n"
+    @"NSString * str = @\"itms-apps://itunes.apple.com/cn/app/id1450707933?mt=8\n"
+    @"其中参数mt:8的含义为：mt 代表 meta-type，有效值如下：\n"
+    @"1 Music\n"
+    @"2 Podcasts\n"
+    @"3 Audiobooks\n"
+    @"4 TV Shows\n"
+    @"5 Music Videos\n"
+    @"6 Movies\n"
+    @"7 iPod Games\n"
+    @"8 Mobile Software Applications\n"
+    @"9 Ringtones\n"
+    @"10 iTunes U\n"
+    @"11 E-Books\n"
+    @"12 Desktop Apps\n";
+    [GXElementView elementViewTitle:subStr3 containView:self.scrollerView];
+    
+    
+    NSString *subStr4 =
     @"3. 跳转到设置权限, 通知, 无线网 \n"
     @"NSString * str = UIApplicationOpenSettingsURLString;";
-    [GXElementView elementViewTitle:subStr3 containView:self.scrollerView];
+    [GXElementView elementViewTitle:subStr4 containView:self.scrollerView];
     
     
 

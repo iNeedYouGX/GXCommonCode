@@ -51,10 +51,7 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     
-    
     [self.view addSubview:self.textField];
-    
-    
     
     self.textField.inputView = self.pickerView;
 }
