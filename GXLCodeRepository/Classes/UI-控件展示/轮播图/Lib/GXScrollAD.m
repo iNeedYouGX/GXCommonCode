@@ -58,7 +58,7 @@
             // 外面设置属性
             !configBlock ? : configBlock(self);
             // 注册cell
-            !registerCellBlock ? : registerCellBlock(self. collectionView);
+            !registerCellBlock ? : registerCellBlock(self.collectionView);
             self.scrollADCellBlock = scrollADCellBlock;
             [self createUI];
         } else {

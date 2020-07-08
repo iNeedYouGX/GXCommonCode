@@ -91,7 +91,6 @@
     
     // 监听datePicker的滚动
     [datePicker addTarget:self action:@selector(dateChange:) forControlEvents:UIControlEventValueChanged];
-    
 }
 
 - (void)dateChange:(UIDatePicker *)datePicker

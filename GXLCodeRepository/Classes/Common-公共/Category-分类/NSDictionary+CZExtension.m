@@ -9,6 +9,7 @@
 #import "NSDictionary+CZExtension.h"
 
 @implementation NSDictionary (CZExtension)
+
 - (NSDictionary *)changeAllStringValue
 {
     NSMutableDictionary *mutableDic = [[NSMutableDictionary alloc] initWithDictionary:self];
@@ -24,9 +25,10 @@
 //            [mutableDic setObject:objectStr forKey:keyStr];
             [mutableDic removeObjectForKey:keyStr];
         } else if ([object isKindOfClass:[NSNumber class]]) { // 如果是NSNumber类型
-            NSString *objectStr = [NSString stringWithFormat:@"%@", object];
+            NSString *objectStr = [self changeNSNumber:object];
             [mutableDic setObject:objectStr forKey:keyStr];
         } else if ([object isKindOfClass:[NSString class]]) { // 如果是NSString类型
+            NSLog(@"%@", object);
             [mutableDic setObject:object forKey:keyStr];
         } else if ([object isKindOfClass:[NSArray class]]) { // 如果是NSArray类型
             NSArray *objectArr = [self changeArray:object];
@@ -48,8 +50,7 @@
         } else if ([obj isKindOfClass:[NSString class]]) {  // 如果是NSString类型
             [objectArr addObject:obj];
         } else if ([obj isKindOfClass:[NSNumber class]]) {  // 如果是NSNumber类型
-            NSString *objStr = [NSString stringWithFormat:@"%@", obj];
-            [objectArr addObject:objStr];
+            [objectArr addObject:[self changeNSNumber:obj]];
         } else if ([obj isKindOfClass:[NSArray class]]) {  // 如果是NSArray类型
             NSArray *objArr = [self changeArray:obj];
             [objectArr addObject:objArr];
@@ -62,12 +63,31 @@
 }
 
 
+#pragma mark - 改变字符串
+- (NSString *)changeNSNumber:(NSNumber *)number
+{
+    NSString *objStr = [NSString stringWithFormat:@"%@", number];
+    
+    NSArray *arr = [objStr componentsSeparatedByString:@"."];
+    if (arr.count > 1){ // 是小数
+        NSString *str = arr[1];
+        if (str.length <= 2) { // 小数小于两位
+            return objStr;
+        } else { // 小数大于两位
+            NSString *currentValue = [NSString stringWithFormat:@"%@.%@", arr[0], [str substringToIndex:2]];
+            return currentValue;
+        }
+    } else { // 不是小数
+        return objStr;
+    }
+}
 
-/** 删除为null的数据 */
+
 - (NSDictionary *)deleteAllNullValue
 {
     NSMutableDictionary *mutableDic = [[NSMutableDictionary alloc] initWithDictionary:self];
     for (NSString *keyStr in mutableDic.allKeys) {
+        
         if ([[mutableDic objectForKey:keyStr] isEqual:[NSNull null]]) {
 //            [mutableDic setObject:@"" forKey:keyStr];
             [mutableDic removeObjectForKey:keyStr];
@@ -78,7 +98,6 @@
     return mutableDic;
 }
 
-/** 改变为Number的数据 */
 - (NSDictionary *)changeAllNnmberValue
 {
     NSMutableDictionary *mutableDic = [[NSMutableDictionary alloc] initWithDictionary:[self deleteAllNullValue]];
@@ -100,7 +119,7 @@
     return mutableDic;
 }
 
-/** 将数据为sh */
+
 - (NSDictionary *)changeAllValueWithString
 {
     NSMutableDictionary *mutableDic = [[NSMutableDictionary alloc] initWithDictionary:[self deleteAllNullValue]];

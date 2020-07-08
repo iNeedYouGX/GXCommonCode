@@ -10,6 +10,31 @@
 
 @implementation NSString (CZExtension)
 
+//    参数说明：
+//
+//    NS_FORMAT_FUNCTION(1, 2) 告诉编译器，索引1处的参数是一个格式化字符串，而实际参数从索引2处开始
+//    va_list 定义一个指向个数可变的参数列表的指针，这个参数列表指针就是 arglist
+//    va_start 使参数列表指针指向 format，从 format 的下一个元素开始（必须有）
+//    va_end 结束，清空 va_list 可变参数列表（必须有）
++ (instancetype)jipin_stringWithFormat:(NSString *)format, ... NS_FORMAT_FUNCTION(1,2)
+{
+    va_list ap;
+    va_start(ap, format);
+    
+    // 这里必须使用可变字符串，不然随机崩溃，原因嘛，是因为与系统的一些方法冲突了
+    NSMutableString *result = [[NSMutableString alloc] initWithFormat:format arguments:ap];
+    NSLog(@"myStringWithFormat: %@", result);
+    va_end(ap);
+    
+    if (result.length >= 6) {
+        if ([result containsString:@"(null)"]) {
+            NSString *string = [result stringByReplacingCharactersInRange:[result rangeOfString:@"(null)"] withString:@""];
+            result = (NSMutableString *)string;
+        }
+    }
+    return result;
+}
+
 //返回一个中划线的富文本
 - (NSMutableAttributedString *)addStrikethroughWithRange:(NSRange)range
 {
