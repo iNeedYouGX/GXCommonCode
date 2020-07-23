@@ -33,6 +33,10 @@
                 @"index" : @(1)
             },
             @{
+                @"title" : @"保存视频",
+                @"index" : @(3)
+            },
+            @{
                 @"title" : @"输出图片",
                 @"control" : @"GXOutputImageController",
             },
@@ -91,6 +95,8 @@
     self.view.backgroundColor = [UIColor whiteColor];
     // 创建表
     [self.view addSubview:self.tableView];
+    
+     
 }
 
 #pragma mark - 代理
@@ -150,9 +156,9 @@
                 [self generalPaste];
                 break;
             }
-            case 3: //
+            case 3: // 保存视频
             {
-                
+                [self saveRadio];
                 break;
             }
             default:
@@ -188,6 +194,44 @@
     }
     [GXSaveImageToPhone saveBatchImage:images];
 }
+
+
+/** 保存视频 */
+- (void)saveRadio
+{
+    NSString *url = @"http://2449.vod.myqcloud.com/2449_22ca37a6ea9011e5acaaf51d105342e3.f20.mp4";
+    
+    [GXNetTool downloadTaskWithUrl:url progress:^(CGFloat progress) {
+        NSLog(@"%f", progress);
+        
+       [SVProgressHUD showProgress:progress];
+        
+    } success:^(id result) {
+        NSLog(@"filePath : %@", result);
+        [GXSaveImageToPhone saveRadioWithPath:result];
+//        [self saveRadioWithPath:result];
+    } failure:^(NSError *error) {
+        
+    }];
+}
+
+- (void)saveRadioWithPath:(NSString *)RadioPath
+{
+    // 保存视频到相册
+    UISaveVideoAtPathToSavedPhotosAlbum(RadioPath, self, @selector(video:didFinishSavingWithError:contextInfo:), nil);
+}
+
+- (void)video:(NSString *)videoPath didFinishSavingWithError:(NSError *)error contextInfo: (void *)contextInfo
+{
+    if (!error) {
+        [CZProgressHUD showProgressHUDWithText:@"保存到相册成功!"];
+    
+    } else {
+        [CZProgressHUD showProgressHUDWithText:@"保存到相册失败!"];
+    }
+    [CZProgressHUD hideAfterDelay:1.5];
+}
+
 
 
 

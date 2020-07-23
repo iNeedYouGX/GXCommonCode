@@ -165,6 +165,7 @@
 		C8D7729924498DB000B76C5C /* 12秒nn.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C8D7729824498DB000B76C5C /* 12秒nn.mp4 */; };
 		C8D813AC245538910060DDE8 /* GXCategoryPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D813AB245538910060DDE8 /* GXCategoryPageControl.m */; };
 		C8E4E6C8246CE1E800E51CCC /* GXAttrStringFuncController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E4E6C7246CE1E800E51CCC /* GXAttrStringFuncController.m */; };
+		C8E504F324B83A6B00B5EB5F /* JStoOC.html in Resources */ = {isa = PBXBuildFile; fileRef = C8E504F224B83A6B00B5EB5F /* JStoOC.html */; };
 		C8F10414244ECD9500DA1235 /* CZCategoryLineLayoutView.m in Sources */ = {isa = PBXBuildFile; fileRef = C8F10412244ECD9500DA1235 /* CZCategoryLineLayoutView.m */; };
 		C8F26438244041A8009475F6 /* CZAlertView1Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = C8F26436244041A8009475F6 /* CZAlertView1Controller.m */; };
 /* End PBXBuildFile section */
@@ -372,6 +373,7 @@
 		C8091F1E244D699700CC86B7 /* UIImage+GXImageExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GXImageExtension.m"; sourceTree = "<group>"; };
 		C8091F20244D75F500CC86B7 /* GXAVPlayerTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXAVPlayerTool.m; sourceTree = "<group>"; };
 		C8091F21244D75F500CC86B7 /* GXAVPlayerTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXAVPlayerTool.h; sourceTree = "<group>"; };
+		C81582CD24BBF2B000932CA0 /* GXLCodeRepository.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GXLCodeRepository.entitlements; sourceTree = "<group>"; };
 		C836F15624892950003C5E7C /* GXChangeAllJsonDataController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXChangeAllJsonDataController.h; sourceTree = "<group>"; };
 		C836F15724892950003C5E7C /* GXChangeAllJsonDataController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXChangeAllJsonDataController.m; sourceTree = "<group>"; };
 		C836F159248929BC003C5E7C /* searchGoods.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = searchGoods.json; sourceTree = "<group>"; };
@@ -442,6 +444,7 @@
 		C8D813AB245538910060DDE8 /* GXCategoryPageControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXCategoryPageControl.m; sourceTree = "<group>"; };
 		C8E4E6C6246CE1E800E51CCC /* GXAttrStringFuncController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXAttrStringFuncController.h; sourceTree = "<group>"; };
 		C8E4E6C7246CE1E800E51CCC /* GXAttrStringFuncController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXAttrStringFuncController.m; sourceTree = "<group>"; };
+		C8E504F224B83A6B00B5EB5F /* JStoOC.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = JStoOC.html; sourceTree = "<group>"; };
 		C8F10412244ECD9500DA1235 /* CZCategoryLineLayoutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZCategoryLineLayoutView.m; sourceTree = "<group>"; };
 		C8F10413244ECD9500DA1235 /* CZCategoryLineLayoutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZCategoryLineLayoutView.h; sourceTree = "<group>"; };
 		C8F26436244041A8009475F6 /* CZAlertView1Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZAlertView1Controller.m; sourceTree = "<group>"; };
@@ -729,6 +732,7 @@
 		97A05FD9216F004300F49C01 /* GXLCodeRepository */ = {
 			isa = PBXGroup;
 			children = (
+				C81582CD24BBF2B000932CA0 /* GXLCodeRepository.entitlements */,
 				97A05FFB216F29B600F49C01 /* Classes */,
 				97A05FFA216F29A300F49C01 /* Other */,
 			);
@@ -1130,6 +1134,7 @@
 		C8392E6D246A5343002759F5 /* WKWebView */ = {
 			isa = PBXGroup;
 			children = (
+				C8E504F224B83A6B00B5EB5F /* JStoOC.html */,
 				C8392E6E246A537B002759F5 /* GXWKWebViewController.h */,
 				C8392E6F246A537B002759F5 /* GXWKWebViewController.m */,
 			);
@@ -1435,6 +1440,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8E504F324B83A6B00B5EB5F /* JStoOC.html in Resources */,
 				C84D3CD7247502B700ED70A7 /* 07e63a60eb00dfac.png in Resources */,
 				9766AE6D23B0DB0700789958 /* dataSource1.json in Resources */,
 				C85B4D0F246BB4B40004CE3D /* 20a2fec57f929726.png in Resources */,
@@ -1786,6 +1792,7 @@
 			baseConfigurationReference = 0A071959F44494B971508652 /* Pods-GXLCodeRepository.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = GXLCodeRepository/GXLCodeRepository.entitlements;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = G583M5JELZ;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1808,6 +1815,7 @@
 			baseConfigurationReference = 3F5DD05C2D861CBD99A0182A /* Pods-GXLCodeRepository.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = GXLCodeRepository/GXLCodeRepository.entitlements;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = G583M5JELZ;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;

@@ -17,4 +17,7 @@
 
 - (NSString *)setupTextRowSpace;
 - (CGFloat)getTextHeightWithRectSize:(CGSize)size andFont:(UIFont *)font;
++ (instancetype)gx_stringWithFormat:(NSString *)format, ... NS_FORMAT_FUNCTION(1,2);
++ (instancetype)gx_stringWithMoreString:(NSString *)firstObj, ... NS_REQUIRES_NIL_TERMINATION;
 @end
+

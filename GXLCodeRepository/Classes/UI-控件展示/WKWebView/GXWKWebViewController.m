@@ -9,7 +9,7 @@
 #import "GXWKWebViewController.h"
 #import <WebKit/WebKit.h>
 
-@interface GXWKWebViewController ()<WKNavigationDelegate>
+@interface GXWKWebViewController ()<WKNavigationDelegate, WKUIDelegate>
 @property (nonatomic, strong) UIScrollView *scrollerView;
 /** <#注释#> */
 @property (nonatomic, strong) WKWebView *webView;
@@ -38,6 +38,27 @@
     [self createWebView];
     
     self.scrollerView.contentSize = CGSizeMake(0, CZGetY([self.scrollerView.subviews lastObject]) + 1000);
+    
+    
+    NSString *string = [NSString gx_stringWithFormat:@"%@", @"dddd", 0];
+    NSString *string1 = [NSString gx_stringWithMoreString:@"1", @"2", @"3", @"4", nil];
+}
+
+#pragma mark - webView初始化
+// 配置信息
+- (WKWebViewConfiguration *)wkWebViewConfiguration
+{
+    
+    //应用于 ajax 请求的 cookie 设置, 如果不设置, 下个页面,就找不到cookie了
+    WKUserContentController *userContentController = WKUserContentController.new;
+    
+    NSString *cookieSource = [NSString stringWithFormat:@"document.cookie = '%@';", @"token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vc2hvcC5kYWxpYW5ncWluZy5jb20iLCJhdWQiOiJodHRwOi8vc2hvcC5kYWxpYW5ncWluZy5jb20iLCJpYXQiOjE1ODkyMTY3NTQsImV4cCI6MTk5MDQyNjM1NCwiaWQiOiIxMjUiLCJtb2JpbGUiOiIxNTIwMTAxMDAwMSJ9.cqoRYm11M87AC3JZLw77e_ZMKRc9s4i3Cv18lmoslr0"];
+    WKUserScript *cookieScript = [[WKUserScript alloc] initWithSource:cookieSource injectionTime:WKUserScriptInjectionTimeAtDocumentStart forMainFrameOnly:NO];
+    [userContentController addUserScript:cookieScript];
+    
+    WKWebViewConfiguration *config = [[WKWebViewConfiguration alloc] init];
+    
+    return config;
 }
 
 // 初始化
@@ -46,22 +67,34 @@
     // 初始化
     CGRect rect = CGRectMake(10, 10, SCR_WIDTH - 20, 200);
     _webView = [[WKWebView alloc] initWithFrame:rect configuration:[self wkWebViewConfiguration]];
+    [self.scrollerView addSubview:_webView];
+    
+    // 启动webView
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"JStoOC" ofType:@"html"];
+    NSURL *pathUrl = [[NSBundle mainBundle] URLForResource:@"JStoOC.html" withExtension:nil];
+    
+    NSString *url = @"http://shop-daliangqing.yidaoit.net/app/index.php?i=3&c=entry&m=ewei_shopv2&do=mobile";
+    NSURL *urlPath = [NSURL URLWithString:url];
+    
+    // 这种方式设置cookie只能, 在request请求时, 来一次, 在到下一页就不好使了
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:urlPath];
+    [request addValue:@"token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vc2hvcC5kYWxpYW5ncWluZy5jb20iLCJhdWQiOiJodHRwOi8vc2hvcC5kYWxpYW5ncWluZy5jb20iLCJpYXQiOjE1ODkyMTY3NTQsImV4cCI6MTk5MDQyNjM1NCwiaWQiOiIxMjUiLCJtb2JpbGUiOiIxNTIwMTAxMDAwMSJ9.cqoRYm11M87AC3JZLw77e_ZMKRc9s4i3Cv18lmoslr0" forHTTPHeaderField:@"Cookie"];
+    [_webView loadRequest:request];
+    
+    // 一般设置
     _webView.scrollView.scrollEnabled = NO;
     _webView.backgroundColor = [UIColor grayColor];
+    
+    // webView的代理方法
     _webView.navigationDelegate = self;
-    NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:@"https://www.jianshu.com/p/5cf0d241ae12"]];
-    [_webView loadRequest:request];
+    _webView.UIDelegate = self;
+    
+    // 监听webView的属性
     [self.webView.scrollView addObserver:self forKeyPath:@"contentSize" options:NSKeyValueObservingOptionNew context:nil];
-    [self.scrollerView addSubview:_webView];
+    
 }
 
-// 配置信息
-- (WKWebViewConfiguration *)wkWebViewConfiguration
-{
-    WKWebViewConfiguration *config = [[WKWebViewConfiguration alloc] init];
-    
-    return config;
-}
+
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context
 {

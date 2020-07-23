@@ -17,6 +17,11 @@ NS_ASSUME_NONNULL_BEGIN
  * @param object 必须是图片, 或者图片的数组
  */
 + (void)saveBatchImage:(id)object;
+
+/**
+ * RadioPath: 下载到手机中视频地址
+ */
++ (void)saveRadioWithPath:(NSString *)RadioPath;
 @end
 
 NS_ASSUME_NONNULL_END

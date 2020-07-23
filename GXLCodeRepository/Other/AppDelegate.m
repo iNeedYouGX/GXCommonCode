@@ -23,7 +23,7 @@
     self.window.rootViewController = [[GXTabarController alloc] init];
     [self.window makeKeyAndVisible];
     
-    sleep(0);
+    sleep( 0);
     
     return YES;
 }

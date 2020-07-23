@@ -74,4 +74,22 @@ static NSMutableArray *imagesList_;
         }
     }
 }
+
+#pragma mark - 保存视频
++ (void)saveRadioWithPath:(NSString *)RadioPath
+{
+    // 保存视频到相册
+    UISaveVideoAtPathToSavedPhotosAlbum(RadioPath, self, @selector(video:didFinishSavingWithError:contextInfo:), nil);
+}
+
++ (void)video:(NSString *)videoPath didFinishSavingWithError:(NSError *)error contextInfo: (void *)contextInfo
+{
+    if (!error) {
+        [CZProgressHUD showProgressHUDWithText:@"保存到相册成功!"];
+    
+    } else {
+        [CZProgressHUD showProgressHUDWithText:@"保存到相册失败!"];
+    }
+    [CZProgressHUD hideAfterDelay:1.5];
+}
 @end

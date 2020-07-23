@@ -436,4 +436,42 @@
 
 }
 
+#pragma mark - 下载
++ (void)downloadTaskWithUrl:(NSString *)url progress:(void (^)(CGFloat progress)) progressBlock success:(blockOfSuccess)success failure:(blockOfFailure)failure
+{
+    // 创建管理者
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:url]];
+    
+    // 创建下载
+    NSURLSessionDownloadTask *download = [manager downloadTaskWithRequest:request progress:^(NSProgress * _Nonnull downloadProgress) {
+         //监听下载进度
+        //completedUnitCount 已经下载的数据大小
+         //totalUnitCount    文件数据的中大小
+        CGFloat scale = 1.0 * downloadProgress.completedUnitCount / downloadProgress.totalUnitCount;
+        progressBlock(scale);
+    } destination:^NSURL * _Nonnull(NSURL * _Nonnull targetPath, NSURLResponse * _Nonnull response) {
+        //返回路径
+        NSString *caches = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject];
+        //拼接文件全路径
+        NSString *fullpath = [caches stringByAppendingPathComponent:response.suggestedFilename];
+        NSURL *filePathUrl = [NSURL fileURLWithPath:fullpath];
+
+        return filePathUrl;
+    } completionHandler:^(NSURLResponse * _Nonnull response, NSURL * _Nullable filePath, NSError * _Nullable error) {
+        if (error) {
+            failure(error);
+        } else {
+            
+            NSLog(@"filePath : %@", filePath);
+            NSLog(@"filePath : %@", [filePath path]);
+            success([filePath path]);
+        }
+    }];
+    
+    [download resume];
+}
+
+
+
 @end
