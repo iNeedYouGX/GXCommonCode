@@ -20,10 +20,21 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    
+    /** rootViewController 相当于
+     * 1. [self.window addSubview:[[GXTabarController alloc] init]]
+     * 2. 界面的旋转等等的一些操作
+     */
     self.window.rootViewController = [[GXTabarController alloc] init];
+    
+    /**
+     * makeKeyAndVisible 相当于
+     * 1. self.window.hidden = NO
+     * 2. application.keyWindow = self.window;
+     */
     [self.window makeKeyAndVisible];
     
-    sleep( 0);
+    sleep(0);
     
     return YES;
 }

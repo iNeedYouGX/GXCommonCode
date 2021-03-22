@@ -59,7 +59,6 @@
     [self setupChildVc:[[GXPersonalBlogController alloc] init] title:@"技术博客" image:@"tabBar_friendTrends_icon" selectedImage:@"tabBar_friendTrends_click_icon"];
     
     self.selectedIndex = 0;
-    
 }
 
 - (void)setupChildVc:(UIViewController *)vc title:(NSString *)title image:(NSString *)image selectedImage:(NSString *)selectedImage

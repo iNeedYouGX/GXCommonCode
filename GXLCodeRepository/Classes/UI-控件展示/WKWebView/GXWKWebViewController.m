@@ -40,7 +40,7 @@
     self.scrollerView.contentSize = CGSizeMake(0, CZGetY([self.scrollerView.subviews lastObject]) + 1000);
     
     
-    NSString *string = [NSString gx_stringWithFormat:@"%@", @"dddd", 0];
+    NSString *string = [NSString gx_stringWithFormat:@"%@", @"dddd", nil];
     NSString *string1 = [NSString gx_stringWithMoreString:@"1", @"2", @"3", @"4", nil];
 }
 

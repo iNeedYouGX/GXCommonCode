@@ -762,11 +762,11 @@
 		97A05FFB216F29B600F49C01 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				C85B4D03246B8C400004CE3D /* Common-公共 */,
+				97A05FFF216F427700F49C01 /* UI-控件展示 */,
 				97A30BEA242303A8009D7089 /* Function-常用功能 */,
 				97A06000216F428500F49C01 /* OC-语法 */,
-				97A05FFF216F427700F49C01 /* UI-控件展示 */,
 				C8634DD2246AAEB900A649CA /* BlogTechnology-技术博客 */,
+				C85B4D03246B8C400004CE3D /* Common-公共 */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -1798,7 +1798,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/GXLCodeRepository/Other/PrefixHeader.pch";
 				INFOPLIST_FILE = GXLCodeRepository/Other/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1821,7 +1821,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/GXLCodeRepository/Other/PrefixHeader.pch";
 				INFOPLIST_FILE = GXLCodeRepository/Other/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

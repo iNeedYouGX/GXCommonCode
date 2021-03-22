@@ -26,23 +26,20 @@
             //获取隐私政策版本号
             NSLog(@"%@", result);
             
-            
-            
             NSDictionary *dic = result;
-            dic = [dic changeAllStringValue];
             
+            dic = [dic changeAllStringValue];
             
             NSString *list = dic[@"data"][@"wechat"];
             
             NSString *str = [list stringByAppendingFormat:@"%@", @"dddd"];
             
-            
-            
             [dic writeToFile:@"/Users/gxl/Desktop/getHong.plist" atomically:YES];
-         
-            
+          
         }
-    } failure:^(NSError *error) {}];
+    } failure:^(NSError *error) {
+        
+    }];
 }
 
 /*

@@ -301,13 +301,13 @@
     rect.size.width = width;
     rect.size.height = height;
     
-    if (i % 2 == 0) { // 第一排
-        NSInteger col = i / 2;
+    if ((i & 1) == 0) { // 第一排
+        NSInteger col = i >> 1;
         NSInteger row = i % 2;
         rect.origin.x = leftSpace + col * (width + space);
         rect.origin.y = row * (height + 15);
     } else { // 第二排
-        NSInteger col = (i - 1) / 2;
+        NSInteger col = (i - 1) >> 1;
         NSInteger row = i % 2;
         rect.origin.x = leftSpace + col * (width + space);
         rect.origin.y = row * (height + 15);

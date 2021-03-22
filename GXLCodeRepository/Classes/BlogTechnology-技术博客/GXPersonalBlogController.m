@@ -58,6 +58,7 @@
     
     // 创建表
     [self.view addSubview:self.tableView];
+    
 }
 
 

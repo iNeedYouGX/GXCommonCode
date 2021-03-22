@@ -47,10 +47,6 @@ void foo (NSString *firstObj, ...)
     va_start(ap, format);
     
     id temp;
-    while ((temp = va_arg(ap, NSString *))) {
-        
-            NSLog(@"%@",temp);
-    }
     
     // 这里必须使用可变字符串，不然随机崩溃，原因嘛，是因为与系统的一些方法冲突了
     NSMutableString *result = [[NSMutableString alloc] initWithFormat:format arguments:ap];
