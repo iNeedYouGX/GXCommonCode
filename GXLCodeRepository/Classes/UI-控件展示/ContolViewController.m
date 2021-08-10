@@ -21,6 +21,9 @@
 {
     if (_dataArr == nil) {
         _dataArr = @[
+            @{@"title" : @"全滚动视图",
+              @"control" : @"GXAllScrollController"
+            },
             @{@"title" : @"WKWebView使用",
               @"control" : @"GXWKWebViewController"
             },
