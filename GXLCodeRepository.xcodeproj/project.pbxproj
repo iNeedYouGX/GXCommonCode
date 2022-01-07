@@ -122,7 +122,6 @@
 		C8091F19244D5C5400CC86B7 /* GXImageHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = C8091F18244D5C5400CC86B7 /* GXImageHandler.m */; };
 		C8091F1F244D699700CC86B7 /* UIImage+GXImageExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = C8091F1E244D699700CC86B7 /* UIImage+GXImageExtension.m */; };
 		C8091F22244D75F500CC86B7 /* GXAVPlayerTool.m in Sources */ = {isa = PBXBuildFile; fileRef = C8091F20244D75F500CC86B7 /* GXAVPlayerTool.m */; };
-		C820CD5626099A4500D0AF07 /* GXAllScrollController.m in Sources */ = {isa = PBXBuildFile; fileRef = C820CD5526099A4500D0AF07 /* GXAllScrollController.m */; };
 		C836F15824892950003C5E7C /* GXChangeAllJsonDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = C836F15724892950003C5E7C /* GXChangeAllJsonDataController.m */; };
 		C836F15A248929BC003C5E7C /* searchGoods.json in Resources */ = {isa = PBXBuildFile; fileRef = C836F159248929BC003C5E7C /* searchGoods.json */; };
 		C8392E70246A537B002759F5 /* GXWKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8392E6F246A537B002759F5 /* GXWKWebViewController.m */; };
@@ -375,8 +374,6 @@
 		C8091F20244D75F500CC86B7 /* GXAVPlayerTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXAVPlayerTool.m; sourceTree = "<group>"; };
 		C8091F21244D75F500CC86B7 /* GXAVPlayerTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXAVPlayerTool.h; sourceTree = "<group>"; };
 		C81582CD24BBF2B000932CA0 /* GXLCodeRepository.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GXLCodeRepository.entitlements; sourceTree = "<group>"; };
-		C820CD5426099A4500D0AF07 /* GXAllScrollController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXAllScrollController.h; sourceTree = "<group>"; };
-		C820CD5526099A4500D0AF07 /* GXAllScrollController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXAllScrollController.m; sourceTree = "<group>"; };
 		C836F15624892950003C5E7C /* GXChangeAllJsonDataController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXChangeAllJsonDataController.h; sourceTree = "<group>"; };
 		C836F15724892950003C5E7C /* GXChangeAllJsonDataController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXChangeAllJsonDataController.m; sourceTree = "<group>"; };
 		C836F159248929BC003C5E7C /* searchGoods.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = searchGoods.json; sourceTree = "<group>"; };
@@ -779,7 +776,6 @@
 			children = (
 				97A05FF0216F013E00F49C01 /* ContolViewController.h */,
 				97A05FF1216F013E00F49C01 /* ContolViewController.m */,
-				C820CD5326099A1000D0AF07 /* 全滚动视图 */,
 				C8033B26249222E9004BA3D3 /* 时间选择器 */,
 				C8392E6D246A5343002759F5 /* WKWebView */,
 				974E9E9A242AF4640005662C /* 点击图片放大 */,
@@ -1123,15 +1119,6 @@
 				C8091F18244D5C5400CC86B7 /* GXImageHandler.m */,
 			);
 			path = "图片处理";
-			sourceTree = "<group>";
-		};
-		C820CD5326099A1000D0AF07 /* 全滚动视图 */ = {
-			isa = PBXGroup;
-			children = (
-				C820CD5426099A4500D0AF07 /* GXAllScrollController.h */,
-				C820CD5526099A4500D0AF07 /* GXAllScrollController.m */,
-			);
-			path = "全滚动视图";
 			sourceTree = "<group>";
 		};
 		C836F155248928F1003C5E7C /* json数据转字符串 */ = {
@@ -1644,7 +1631,6 @@
 				97664F0023AE1B7800DB8383 /* GXScrollImageView.m in Sources */,
 				C85B4D12246BB7830004CE3D /* GXWrite.m in Sources */,
 				975AC84C21DC760800316C93 /* GXGridLayout.m in Sources */,
-				C820CD5626099A4500D0AF07 /* GXAllScrollController.m in Sources */,
 				97EA1668218049B300C20CD9 /* GXConst.m in Sources */,
 				97A6DDE723C75C4400C2CFC7 /* UILabel+CZAdapter.m in Sources */,
 				9713D4DF242C6E31004F1697 /* GXSaveImageToPhone.m in Sources */,

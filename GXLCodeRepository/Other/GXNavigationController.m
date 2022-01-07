@@ -16,10 +16,29 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    if (@available(iOS 13.0, *)) {
+        UINavigationBarAppearance *scrollEdge = [[UINavigationBarAppearance alloc] init];
+        scrollEdge.backgroundColor = UIColor.whiteColor;
+        
+        UINavigationBarAppearance *standard = [[UINavigationBarAppearance alloc] init];
+        standard.backgroundColor = UIColor.greenColor;
+        
+        //        UINavigationBar *navigationBar = [UINavigationBar appearance];
+        // 没滚动时候
+        self.navigationBar.scrollEdgeAppearance = scrollEdge;
+        // 滚动时候, 不设置毛玻璃效果
+//        self.navigationBar.standardAppearance = standard;
+    }
+       
    
     [self.navigationBar setTranslucent:NO];
     self.navigationBar.backgroundColor = [UIColor whiteColor];
-//    self.navigationBar.prefersLargeTitles = YES;
+    if (@available(iOS 11.0, *)) {
+//        self.navigationBar.prefersLargeTitles = YES;
+    } else {
+       // Fallback on earlier versions
+    }
 }
 
 

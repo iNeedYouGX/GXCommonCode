@@ -1,0 +1,1 @@
+../../../BCFileLog/Core/BCFileLogger.h

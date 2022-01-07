@@ -14,6 +14,32 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
+  - BCComConfigKit (1.0.0):
+    - BCComConfigKit/Core (= 1.0.0)
+  - BCComConfigKit/Core (1.0.0)
+  - BCEventBus/Core (1.0.0)
+  - BCEventBus/ServiceLoader (1.0.0)
+  - BCFileLog (1.0.0):
+    - BCFileLog/Core (= 1.0.0)
+  - BCFileLog/Core (1.0.0)
+  - BCFoundation (1.0.0):
+    - BCFoundation/Core (= 1.0.0)
+  - BCFoundation/AttributedString (1.0.0):
+    - BCFoundation/Core
+  - BCFoundation/Core (1.0.0)
+  - BCFoundation/Device (1.0.0):
+    - BCFoundation/Core
+  - BCFoundation/Utils (1.0.0)
+  - BCUIKit/Core (1.0.0):
+    - BCComConfigKit
+    - BCFileLog
+    - BCFoundation
+  - BCUIKit/Input (1.0.0):
+    - BCUIKit/Core
+  - BCUIKit/Label (1.0.0):
+    - BCUIKit/Core
+  - BCUIKit/ScrollView (1.0.0):
+    - BCUIKit/Core
   - Masonry (1.1.0)
   - MJExtension (3.2.1)
   - MJRefresh (3.3.1)
@@ -24,6 +50,18 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
+  - "BCComConfigKit/Core (from `git@gitlab.leke.cn:health-huihui/app/ios/ios-component/BCComConfigKit.git`, tag `1.0.1`)"
+  - "BCEventBus/Core (from `git@gitlab.leke.cn:health-huihui/app/ios/ios-component/BCEventBus.git`, tag `1.0.1`)"
+  - "BCEventBus/ServiceLoader (from `git@gitlab.leke.cn:health-huihui/app/ios/ios-component/BCEventBus.git`, tag `1.0.1`)"
+  - "BCFileLog/Core (from `git@gitlab.leke.cn:health-huihui/app/ios/ios-component/BCFileLog.git`, tag `1.0.0`)"
+  - "BCFoundation/AttributedString (from `git@gitlab.leke.cn:health-huihui/app/ios/ios-component/BCFoundation.git`, tag `1.0.2`)"
+  - "BCFoundation/Core (from `git@gitlab.leke.cn:health-huihui/app/ios/ios-component/BCFoundation.git`, tag `1.0.2`)"
+  - "BCFoundation/Device (from `git@gitlab.leke.cn:health-huihui/app/ios/ios-component/BCFoundation.git`, tag `1.0.2`)"
+  - "BCFoundation/Utils (from `git@gitlab.leke.cn:health-huihui/app/ios/ios-component/BCFoundation.git`, tag `1.0.2`)"
+  - "BCUIKit/Core (from `git@gitlab.leke.cn:health-huihui/app/ios/ios-component/BCUIKit.git`, branch `master`, tag `1.0.0`)"
+  - "BCUIKit/Input (from `git@gitlab.leke.cn:health-huihui/app/ios/ios-component/BCUIKit.git`, branch `master`, tag `1.0.0`)"
+  - "BCUIKit/Label (from `git@gitlab.leke.cn:health-huihui/app/ios/ios-component/BCUIKit.git`, branch `master`, tag `1.0.0`)"
+  - "BCUIKit/ScrollView (from `git@gitlab.leke.cn:health-huihui/app/ios/ios-component/BCUIKit.git`, branch `master`, tag `1.0.0`)"
   - Masonry
   - MJExtension
   - MJRefresh
@@ -31,7 +69,7 @@ DEPENDENCIES:
   - SVProgressHUD
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
     - Masonry
     - SDWebImage
     - SVProgressHUD
@@ -40,14 +78,55 @@ SPEC REPOS:
     - MJExtension
     - MJRefresh
 
+EXTERNAL SOURCES:
+  BCComConfigKit:
+    :git: "git@gitlab.leke.cn:health-huihui/app/ios/ios-component/BCComConfigKit.git"
+    :tag: 1.0.1
+  BCEventBus:
+    :git: "git@gitlab.leke.cn:health-huihui/app/ios/ios-component/BCEventBus.git"
+    :tag: 1.0.1
+  BCFileLog:
+    :git: "git@gitlab.leke.cn:health-huihui/app/ios/ios-component/BCFileLog.git"
+    :tag: 1.0.0
+  BCFoundation:
+    :git: "git@gitlab.leke.cn:health-huihui/app/ios/ios-component/BCFoundation.git"
+    :tag: 1.0.2
+  BCUIKit:
+    :branch: master
+    :git: "git@gitlab.leke.cn:health-huihui/app/ios/ios-component/BCUIKit.git"
+    :tag: 1.0.0
+
+CHECKOUT OPTIONS:
+  BCComConfigKit:
+    :commit: 68b570100853a740c0785aae9572c62773b79093
+    :git: "git@gitlab.leke.cn:health-huihui/app/ios/ios-component/BCComConfigKit.git"
+  BCEventBus:
+    :git: "git@gitlab.leke.cn:health-huihui/app/ios/ios-component/BCEventBus.git"
+    :tag: 1.0.1
+  BCFileLog:
+    :commit: a05393f292cbc20b0c8eb8ce02e49a7665d54a89
+    :git: "git@gitlab.leke.cn:health-huihui/app/ios/ios-component/BCFileLog.git"
+  BCFoundation:
+    :commit: 10df509e6cfd2b7c6ba1d1a39f027851d0378773
+    :git: "git@gitlab.leke.cn:health-huihui/app/ios/ios-component/BCFoundation.git"
+  BCUIKit:
+    :commit: a629655c155297244405e2ee1d48a1842df92f99
+    :git: "git@gitlab.leke.cn:health-huihui/app/ios/ios-component/BCUIKit.git"
+    :tag: 1.0.0
+
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  BCComConfigKit: f52389bc710752a4ecf3cc05614cc06976611505
+  BCEventBus: 115cacdf9017174b1ea8c46839d9063a7b99a214
+  BCFileLog: 42b5248879f0d774cb0130ae486d45c3c8030aa0
+  BCFoundation: cf3e4c290a18b475047e3b0386d00f72c3f0d904
+  BCUIKit: bbb36198fb015285d81d38ca06593a3d87fb9944
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJExtension: 635f2c663dcb1bf76fa4b715b2570a5710aec545
   MJRefresh: eeda70fbf0ad277f3178cef1cd0c3532591d6237
   SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: a42680d3d57ec827df8f5b46c9e248b1d1f22ade
+PODFILE CHECKSUM: 86698bb24001026af75ce398247876360278ab46
 
-COCOAPODS: 1.9.0.beta.2
+COCOAPODS: 1.11.2

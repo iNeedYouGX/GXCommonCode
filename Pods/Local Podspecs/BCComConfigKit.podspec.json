@@ -1,0 +1,37 @@
+{
+  "name": "BCComConfigKit",
+  "version": "1.0.0",
+  "summary": "iOS 应用配置组件",
+  "description": "An optional longer description of Huihui Health\n * Markdown format.\n * Don't worry about the indent, we strip it!",
+  "homepage": "https://gitlab.leke.cn/health-huihui/app/ios/ios-component/BCComConfigKit.git",
+  "license": "BSD",
+  "authors": {
+    "chasel": "chenchun1@cnstrong.cn"
+  },
+  "source": {
+    "git": "git@gitlab.leke.cn:health-huihui/app/ios/ios-component/BCComConfigKit.git",
+    "branch": "master"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "requires_arc": true,
+  "default_subspecs": "Core",
+  "subspecs": [
+    {
+      "name": "Core",
+      "public_header_files": "BCComConfigKit/Core/**/*.h",
+      "source_files": "BCComConfigKit/Core/**/*.{h,m}",
+      "resources": "BCComConfigKit/Core/Assets/BCComConfigKit.bundle"
+    },
+    {
+      "name": "Swift",
+      "source_files": "BCComConfigKit/Swift/*.swift",
+      "dependencies": {
+        "BCComConfigKit/Core": [
+
+        ]
+      }
+    }
+  ]
+}

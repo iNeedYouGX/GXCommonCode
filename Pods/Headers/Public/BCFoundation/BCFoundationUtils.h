@@ -1,0 +1,1 @@
+../../../BCFoundation/Foundation/Core/BCFoundationUtils.h

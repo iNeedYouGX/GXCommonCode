@@ -1,0 +1,36 @@
+{
+  "name": "BCFileLog",
+  "version": "1.0.0",
+  "summary": "iOS 日志组件",
+  "description": "An optional longer description of Huihui Health\n * Markdown format.\n * Don't worry about the indent, we strip it!",
+  "homepage": "https://gitlab.leke.cn/health-huihui/app/ios/ios-component/BCFileLog.git",
+  "license": "BSD",
+  "authors": {
+    "chasel": "chenchun1@cnstrong.cn"
+  },
+  "source": {
+    "git": "git@gitlab.leke.cn:health-huihui/app/ios/ios-component/BCFileLog.git",
+    "branch": "master"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "requires_arc": true,
+  "default_subspecs": "Core",
+  "subspecs": [
+    {
+      "name": "Core",
+      "public_header_files": "Core/**/*.h",
+      "source_files": "Core/**/*.{h,m,swift}"
+    },
+    {
+      "name": "CoreSwift",
+      "source_files": "CoreSwift/**/*.{h,m,swift}",
+      "dependencies": {
+        "BCFileLog/Core": [
+
+        ]
+      }
+    }
+  ]
+}

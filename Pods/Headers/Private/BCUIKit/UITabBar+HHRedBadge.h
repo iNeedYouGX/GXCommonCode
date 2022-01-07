@@ -1,0 +1,1 @@
+../../../BCUIKit/Core/UITabBar+HHRedBadge.h

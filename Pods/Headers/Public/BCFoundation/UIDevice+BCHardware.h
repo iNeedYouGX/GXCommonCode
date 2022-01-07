@@ -1,0 +1,1 @@
+../../../BCFoundation/Foundation/Device/UIDevice+BCHardware.h

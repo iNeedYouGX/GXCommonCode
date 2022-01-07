@@ -1,0 +1,77 @@
+{
+  "name": "BCFoundation",
+  "version": "1.0.0",
+  "summary": "Foundation基础模块",
+  "description": "Foundation基础模块，提供NSString、NSArray等等category。\n * Markdown format.\n * Don't worry about the indent, we strip it!",
+  "homepage": "https://gitlab.leke.cn/health-huihui/app/ios/ios-component/BCFoundation.git",
+  "license": "BSD",
+  "authors": {
+    "chasel": "chenchun1@cnstrong.cn"
+  },
+  "source": {
+    "git": "git@gitlab.leke.cn:health-huihui/app/ios/ios-component/BCFoundation.git",
+    "branch": "master"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "requires_arc": true,
+  "default_subspecs": "Core",
+  "subspecs": [
+    {
+      "name": "Core",
+      "public_header_files": "Foundation/Core/**/*.h",
+      "source_files": "Foundation/Core/**/*.{h,m}"
+    },
+    {
+      "name": "CoreSwift",
+      "source_files": "Foundation/CoreSwift/**/*.{h,m,swift}"
+    },
+    {
+      "name": "Timer",
+      "public_header_files": "Foundation/Timer/**/*.h",
+      "source_files": "Foundation/Timer/**/*.{h,m}"
+    },
+    {
+      "name": "Utils",
+      "public_header_files": "Foundation/Utils/**/*.h",
+      "source_files": "Foundation/Utils/**/*.{h,m}"
+    },
+    {
+      "name": "Gif",
+      "public_header_files": "Foundation/Gif/**/*.h",
+      "source_files": "Foundation/Gif/**/*.{h,m}"
+    },
+    {
+      "name": "AttributedString",
+      "public_header_files": "Foundation/AttributedString/**/*.h",
+      "source_files": "Foundation/AttributedString/**/*.{h,m}",
+      "dependencies": {
+        "BCFoundation/Core": [
+
+        ]
+      },
+      "weak_frameworks": "CoreText"
+    },
+    {
+      "name": "Device",
+      "public_header_files": "Foundation/Device/**/*.h",
+      "source_files": "Foundation/Device/**/*.{h,m}",
+      "dependencies": {
+        "BCFoundation/Core": [
+
+        ]
+      }
+    },
+    {
+      "name": "RNEngine",
+      "public_header_files": "Foundation/RNEngine/**/*.h",
+      "source_files": "Foundation/RNEngine/**/*.{h,m}",
+      "dependencies": {
+        "BCFoundation/Core": [
+
+        ]
+      }
+    }
+  ]
+}

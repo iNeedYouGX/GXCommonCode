@@ -26,9 +26,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor redColor];
-    
-
+    self.view.backgroundColor = [UIColor whiteColor];
     // 创建表
     [self.view addSubview:self.tableView];
 

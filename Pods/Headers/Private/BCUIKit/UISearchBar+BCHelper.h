@@ -1,0 +1,1 @@
+../../../BCUIKit/Input/UISearchBar+BCHelper.h

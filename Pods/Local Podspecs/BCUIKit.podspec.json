@@ -1,0 +1,192 @@
+{
+  "name": "BCUIKit",
+  "version": "1.0.0",
+  "summary": "UI 基础库",
+  "description": "基础UI库\n * Markdown format.\n * Don't worry about the indent, we strip it!",
+  "homepage": "https://gitlab.leke.cn/health-huihui/app/ios/ios-component/BCUIKit.git",
+  "license": "BSD",
+  "authors": {
+    "chasel": "chenchun1@cnstrong.cn"
+  },
+  "source": {
+    "git": "git@gitlab.leke.cn:health-huihui/app/ios/ios-component/BCUIKit.git",
+    "branch": "master"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "requires_arc": true,
+  "default_subspecs": "Core",
+  "subspecs": [
+    {
+      "name": "Core",
+      "public_header_files": "Core/**/*.h",
+      "source_files": "Core/**/*.{h,m}",
+      "dependencies": {
+        "BCComConfigKit": [
+
+        ],
+        "BCFileLog": [
+
+        ],
+        "BCFoundation": [
+
+        ]
+      }
+    },
+    {
+      "name": "Controller",
+      "public_header_files": "Controller/**/*.h",
+      "source_files": "Controller/**/*.{h,m}",
+      "dependencies": {
+        "BCUIKit/Core": [
+
+        ]
+      }
+    },
+    {
+      "name": "Alert",
+      "public_header_files": "Alert/**/*.h",
+      "source_files": "Alert/**/*.{h,m}",
+      "dependencies": {
+        "BCUIKit/Core": [
+
+        ],
+        "BCUIKit/Controller": [
+
+        ]
+      }
+    },
+    {
+      "name": "Input",
+      "public_header_files": "Input/**/*.h",
+      "source_files": "Input/**/*.{h,m}",
+      "dependencies": {
+        "BCUIKit/Core": [
+
+        ]
+      }
+    },
+    {
+      "name": "ScrollView",
+      "public_header_files": "ScrollView/**/*.h",
+      "source_files": "ScrollView/**/*.{h,m}",
+      "dependencies": {
+        "BCUIKit/Core": [
+
+        ]
+      }
+    },
+    {
+      "name": "TableView",
+      "public_header_files": "TableView/**/*.h",
+      "source_files": "TableView/**/*.{h,m}",
+      "dependencies": {
+        "BCUIKit/Core": [
+
+        ]
+      }
+    },
+    {
+      "name": "Label",
+      "public_header_files": "Label/**/*.h",
+      "source_files": "Label/**/*.{h,m}",
+      "dependencies": {
+        "BCUIKit/Core": [
+
+        ]
+      }
+    },
+    {
+      "name": "Application",
+      "public_header_files": "Application/**/*.h",
+      "source_files": "Application/**/*.{h,m}",
+      "dependencies": {
+        "BCUIKit/Core": [
+
+        ]
+      }
+    },
+    {
+      "name": "Screenshot",
+      "public_header_files": "Screenshot/*.h",
+      "source_files": "Screenshot/*.{h,m}"
+    },
+    {
+      "name": "AppDelegate",
+      "public_header_files": "AppDelegate/**/BCAppDelegate.h",
+      "source_files": "AppDelegate/**/BCAppDelegate.*",
+      "dependencies": {
+        "BCEventBus/Core": [
+
+        ],
+        "BCFileLog": [
+
+        ]
+      }
+    },
+    {
+      "name": "BaseViewController",
+      "source_files": "BaseViewController/**/*.*"
+    },
+    {
+      "name": "AppDelegate-Swift",
+      "source_files": "AppDelegateSwift/**/BCSAppDelegate.*",
+      "dependencies": {
+        "BCUIKit/Core": [
+
+        ],
+        "BCEventBus/CoreSwift": [
+
+        ],
+        "BCFileLog/CoreSwift": [
+
+        ]
+      }
+    },
+    {
+      "name": "SwiftAppDelegate",
+      "source_files": "AppDelegateSwift/**/BCSAppDelegate.*",
+      "dependencies": {
+        "BCUIKit/Core": [
+
+        ],
+        "BCEventBus/CoreSwift": [
+
+        ],
+        "BCFileLog/CoreSwift": [
+
+        ]
+      }
+    },
+    {
+      "name": "Flutter",
+      "dependencies": {
+        "flutter_engine": [
+
+        ],
+        "BCUIKit/Core": [
+
+        ]
+      },
+      "pod_target_xcconfig": {
+        "GCC_PREPROCESSOR_DEFINITIONS": "$(inherited) ZHFLUTTER",
+        "SWIFT_ACTIVE_COMPILATION_CONDITIONS": "$(inherited) ZHFLUTTER"
+      }
+    },
+    {
+      "name": "ReactCore",
+      "public_header_files": "ReactCore/**/*.h",
+      "source_files": "ReactCore/**/*.{swift,h,m,mm}",
+      "dependencies": {
+        "React": [
+
+        ]
+      }
+    },
+    {
+      "name": "CoreSwift",
+      "source_files": "CoreSwift/**/*.swift"
+    }
+  ]
+}

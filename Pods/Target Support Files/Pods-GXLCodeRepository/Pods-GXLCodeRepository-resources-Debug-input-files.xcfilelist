@@ -1,3 +1,4 @@
 ${PODS_ROOT}/Target Support Files/Pods-GXLCodeRepository/Pods-GXLCodeRepository-resources.sh
+${PODS_ROOT}/BCComConfigKit/BCComConfigKit/Core/Assets/BCComConfigKit.bundle
 ${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle
 ${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle

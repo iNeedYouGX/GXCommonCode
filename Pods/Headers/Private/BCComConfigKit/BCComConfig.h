@@ -1,0 +1,1 @@
+../../../BCComConfigKit/BCComConfigKit/Core/BCComConfig.h

@@ -1,0 +1,51 @@
+{
+  "name": "BCEventBus",
+  "version": "1.0.0",
+  "summary": "iOS 事件总线",
+  "description": "An optional longer description of Huihui Health\n * Markdown format.\n * Don't worry about the indent, we strip it!",
+  "homepage": "https://gitlab.leke.cn/health-huihui/app/ios/ios-component/BCEventBus.git",
+  "license": "BSD",
+  "authors": {
+    "chasel": "chenchun1@cnstrong.cn"
+  },
+  "source": {
+    "git": "git@gitlab.leke.cn:health-huihui/app/ios/ios-component/BCEventBus.git",
+    "branch": "master"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "requires_arc": true,
+  "default_subspecs": "Core",
+  "subspecs": [
+    {
+      "name": "Core",
+      "public_header_files": [
+        "Core/**/BCEventBusKit.h",
+        "Core/**/BCEventBus.h",
+        "Core/**/BCEvent.h",
+        "Core/**/BCEventBusHelper.h"
+      ],
+      "source_files": "Core/**/*.{h,m}"
+    },
+    {
+      "name": "CoreSwift",
+      "source_files": "CoreSwift/**/*.swift",
+      "dependencies": {
+        "BCEventBus/Core": [
+
+        ]
+      }
+    },
+    {
+      "name": "ServiceLoader",
+      "public_header_files": [
+        "ServiceLoader/**/BCServiceKit.h",
+        "ServiceLoader/**/BCServicePublic.h",
+        "ServiceLoader/**/BCServiceProtocol.h",
+        "ServiceLoader/**/BCServiceLoader.h"
+      ],
+      "source_files": "ServiceLoader/**/*.*"
+    }
+  ]
+}
