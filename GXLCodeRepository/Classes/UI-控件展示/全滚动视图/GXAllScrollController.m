@@ -125,6 +125,9 @@
 //            [self.dataSource addObjectsFromArray:arr];
             [self.tableView reloadData];
         }
+        
+        
+        
         // 结束刷新
         [self.tableView.mj_footer endRefreshing];
     } failure:^(NSError *error) {
