@@ -16,7 +16,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
 #pragma mark - 解决视图刚加载完, 导航栏不显示问题
     if (@available(iOS 13.0, *)) {
         UINavigationBarAppearance *scrollEdge = [[UINavigationBarAppearance alloc] init];
