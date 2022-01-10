@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+#pragma mark - 解决视图刚加载完, 导航栏不显示问题
     if (@available(iOS 13.0, *)) {
         UINavigationBarAppearance *scrollEdge = [[UINavigationBarAppearance alloc] init];
         scrollEdge.backgroundColor = UIColor.whiteColor;
@@ -30,7 +31,7 @@
         // 滚动时候, 不设置毛玻璃效果
 //        self.navigationBar.standardAppearance = standard;
     }
-       
+#pragma mark - end
    
     [self.navigationBar setTranslucent:NO];
     self.navigationBar.backgroundColor = [UIColor whiteColor];
