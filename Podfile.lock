@@ -40,6 +40,7 @@ PODS:
     - BCUIKit/Core
   - BCUIKit/ScrollView (1.0.0):
     - BCUIKit/Core
+  - FLEX (4.6.1)
   - Masonry (1.1.0)
   - MJExtension (3.2.1)
   - MJRefresh (3.3.1)
@@ -62,6 +63,7 @@ DEPENDENCIES:
   - "BCUIKit/Input (from `git@gitlab.leke.cn:health-huihui/app/ios/ios-component/BCUIKit.git`, branch `master`, tag `1.0.0`)"
   - "BCUIKit/Label (from `git@gitlab.leke.cn:health-huihui/app/ios/ios-component/BCUIKit.git`, branch `master`, tag `1.0.0`)"
   - "BCUIKit/ScrollView (from `git@gitlab.leke.cn:health-huihui/app/ios/ios-component/BCUIKit.git`, branch `master`, tag `1.0.0`)"
+  - FLEX
   - Masonry
   - MJExtension
   - MJRefresh
@@ -75,6 +77,7 @@ SPEC REPOS:
     - SVProgressHUD
   trunk:
     - AFNetworking
+    - FLEX
     - MJExtension
     - MJRefresh
 
@@ -121,12 +124,13 @@ SPEC CHECKSUMS:
   BCFileLog: 42b5248879f0d774cb0130ae486d45c3c8030aa0
   BCFoundation: cf3e4c290a18b475047e3b0386d00f72c3f0d904
   BCUIKit: bbb36198fb015285d81d38ca06593a3d87fb9944
+  FLEX: bbc55d197f87d7cde2454c3981aa47069b694144
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJExtension: 635f2c663dcb1bf76fa4b715b2570a5710aec545
   MJRefresh: eeda70fbf0ad277f3178cef1cd0c3532591d6237
   SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: ca199749fa80bfc44207dab76bd24c6c159565e3
+PODFILE CHECKSUM: 8b2bf7330a426a56e408a252f8d3e4d450e90a0e
 
 COCOAPODS: 1.11.2

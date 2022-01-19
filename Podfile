@@ -12,7 +12,12 @@ target 'GXLCodeRepository' do
   pod 'AFNetworking'
   pod 'MJExtension'
   pod 'MJRefresh'
+  pod 'FLEX', :configurations => ['Debug']
+  
+  
   pod "BCEventBus",:subspecs => ["Core", "ServiceLoader"], :tag => "1.0.1", :git => "git@gitlab.leke.cn:health-huihui/app/ios/ios-component/BCEventBus.git"
+  
+  
 
   # 基础组件
   pod "BCComConfigKit", :tag => "1.0.1", :subspecs => ["Core"], :git => "git@gitlab.leke.cn:health-huihui/app/ios/ios-component/BCComConfigKit.git"

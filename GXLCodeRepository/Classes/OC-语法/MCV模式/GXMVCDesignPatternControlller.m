@@ -27,45 +27,7 @@
 
 @implementation GXMVCDesignPatternControlller
 
-- (UIButton *)btn
-{
-    if (_btn == nil) {
-        _btn = [UIButton buttonWithType:UIButtonTypeCustom];
-        _btn.y = 200;
-        _btn.x = 100;
-        [_btn setTitle:@"改变文字" forState:UIControlStateNormal];
-        [_btn setTitleColor:RANDOMCOLOR forState:UIControlStateNormal];
-        [_btn setBackgroundColor:RANDOMCOLOR];
-        [_btn sizeToFit];
-        [_btn addTarget:self action:@selector(changeText:) forControlEvents:UIControlEventTouchUpInside];
-    }
-    return _btn;
-}
-
-- (UILabel *)label
-{
-    if (_label == nil) {
-        _label = [[UILabel alloc] init];
-        _label.backgroundColor = RANDOMCOLOR;
-        _label.x = 100;
-        _label.y = 100;
-        [_label sizeToFit];
-    }
-    return _label;
-}
-
-- (UITableView *)tableView
-{
-    if (_tableView == nil) {
-        self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 1, SCR_WIDTH, SCR_HEIGHT - ((IsiPhoneX ? 24 : 0) + 67.7) - 50 - 1) style:UITableViewStylePlain];
-        self.tableView.delegate = self;
-        self.tableView.dataSource = self;
-        self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    }
-    return _tableView;
-}
-
-
+#pragma mark Cycle Lift
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -82,7 +44,7 @@
     
 }
 
-#pragma mark - 获取数据
+#pragma mark - Layout subViews
 - (void)setupRefresh
 {
     self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(reloadNewTrailDataSorce)];
@@ -90,7 +52,7 @@
     self.tableView.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreTrailDataSorce)];
 }
 
-#pragma mark - 获取数据
+#pragma mark - getData
 - (void)reloadNewTrailDataSorce
 {
     // 结束尾部刷新
@@ -136,6 +98,8 @@
     } failure:^(NSError *error) {}];
 }
 
+
+#pragma mark - Delegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return 10;
@@ -165,13 +129,51 @@
     [_label sizeToFit];
 }
 
+#pragma mark - Method
 - (void)changeText:(UIButton *)sender
 {
     NSLog(@"-----------");
     self.model = [NSString stringWithFormat:@"%u", arc4random() % 100];
 }
 
+#pragma mark - getter/setter
+- (UIButton *)btn
+{
+    if (_btn == nil) {
+        _btn = [UIButton buttonWithType:UIButtonTypeCustom];
+        _btn.y = 200;
+        _btn.x = 100;
+        [_btn setTitle:@"改变文字" forState:UIControlStateNormal];
+        [_btn setTitleColor:RANDOMCOLOR forState:UIControlStateNormal];
+        [_btn setBackgroundColor:RANDOMCOLOR];
+        [_btn sizeToFit];
+        [_btn addTarget:self action:@selector(changeText:) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _btn;
+}
 
+- (UILabel *)label
+{
+    if (_label == nil) {
+        _label = [[UILabel alloc] init];
+        _label.backgroundColor = RANDOMCOLOR;
+        _label.x = 100;
+        _label.y = 100;
+        [_label sizeToFit];
+    }
+    return _label;
+}
+
+- (UITableView *)tableView
+{
+    if (_tableView == nil) {
+        self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 1, SCR_WIDTH, SCR_HEIGHT - ((IsiPhoneX ? 24 : 0) + 67.7) - 50 - 1) style:UITableViewStylePlain];
+        self.tableView.delegate = self;
+        self.tableView.dataSource = self;
+        self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    }
+    return _tableView;
+}
 
 
 @end

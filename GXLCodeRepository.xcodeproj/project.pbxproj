@@ -168,6 +168,9 @@
 		C8E504F324B83A6B00B5EB5F /* JStoOC.html in Resources */ = {isa = PBXBuildFile; fileRef = C8E504F224B83A6B00B5EB5F /* JStoOC.html */; };
 		C8F10414244ECD9500DA1235 /* CZCategoryLineLayoutView.m in Sources */ = {isa = PBXBuildFile; fileRef = C8F10412244ECD9500DA1235 /* CZCategoryLineLayoutView.m */; };
 		C8F26438244041A8009475F6 /* CZAlertView1Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = C8F26436244041A8009475F6 /* CZAlertView1Controller.m */; };
+		E46FD9172796AACC0016D818 /* UIWindow+GXFLEXSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = E46FD9162796AACC0016D818 /* UIWindow+GXFLEXSetting.m */; };
+		E46FD91B2796BE510016D818 /* GXMVVMDesignPatternControlller.m in Sources */ = {isa = PBXBuildFile; fileRef = E46FD91A2796BE510016D818 /* GXMVVMDesignPatternControlller.m */; };
+		E46FD9222796BE8E0016D818 /* GXMVVMDesignPatternModelView.m in Sources */ = {isa = PBXBuildFile; fileRef = E46FD9212796BE8E0016D818 /* GXMVVMDesignPatternModelView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -449,6 +452,12 @@
 		C8F10413244ECD9500DA1235 /* CZCategoryLineLayoutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZCategoryLineLayoutView.h; sourceTree = "<group>"; };
 		C8F26436244041A8009475F6 /* CZAlertView1Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZAlertView1Controller.m; sourceTree = "<group>"; };
 		C8F26437244041A8009475F6 /* CZAlertView1Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZAlertView1Controller.h; sourceTree = "<group>"; };
+		E46FD9152796AACC0016D818 /* UIWindow+GXFLEXSetting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIWindow+GXFLEXSetting.h"; sourceTree = "<group>"; };
+		E46FD9162796AACC0016D818 /* UIWindow+GXFLEXSetting.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+GXFLEXSetting.m"; sourceTree = "<group>"; };
+		E46FD9192796BE510016D818 /* GXMVVMDesignPatternControlller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXMVVMDesignPatternControlller.h; sourceTree = "<group>"; };
+		E46FD91A2796BE510016D818 /* GXMVVMDesignPatternControlller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXMVVMDesignPatternControlller.m; sourceTree = "<group>"; };
+		E46FD9202796BE8E0016D818 /* GXMVVMDesignPatternModelView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXMVVMDesignPatternModelView.h; sourceTree = "<group>"; };
+		E46FD9212796BE8E0016D818 /* GXMVVMDesignPatternModelView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXMVVMDesignPatternModelView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -745,6 +754,8 @@
 				97FEBF2D22D49DFF007BF592 /* download.plist */,
 				97A05FDA216F004300F49C01 /* AppDelegate.h */,
 				97A05FDB216F004300F49C01 /* AppDelegate.m */,
+				E46FD9152796AACC0016D818 /* UIWindow+GXFLEXSetting.h */,
+				E46FD9162796AACC0016D818 /* UIWindow+GXFLEXSetting.m */,
 				97A05FF8216F236000F49C01 /* GXTabarController.h */,
 				97A05FF7216F236000F49C01 /* GXTabarController.m */,
 				97F1C7D921930098009F7871 /* GXNavigationController.h */,
@@ -804,6 +815,7 @@
 			children = (
 				97A05FFC216F2A9800F49C01 /* OCExampleController.h */,
 				97A05FFD216F2A9800F49C01 /* OCExampleController.m */,
+				E46FD9182796BE1D0016D818 /* MVVM模式 */,
 				C870BFCE249C699E001DF147 /* MCV模式 */,
 				C842DC63249B4DD6003DC6E0 /* 链式编程 */,
 				C8E4E6C5246CE17900E51CCC /* 富文本方法 */,
@@ -1380,6 +1392,49 @@
 			path = "富文本方法";
 			sourceTree = "<group>";
 		};
+		E46FD9182796BE1D0016D818 /* MVVM模式 */ = {
+			isa = PBXGroup;
+			children = (
+				E46FD91F2796BE730016D818 /* View */,
+				E46FD91E2796BE6D0016D818 /* Model */,
+				E46FD91D2796BE650016D818 /* ViewModel */,
+				E46FD91C2796BE5B0016D818 /* ViewController */,
+				E46FD9192796BE510016D818 /* GXMVVMDesignPatternControlller.h */,
+				E46FD91A2796BE510016D818 /* GXMVVMDesignPatternControlller.m */,
+			);
+			path = "MVVM模式";
+			sourceTree = "<group>";
+		};
+		E46FD91C2796BE5B0016D818 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E46FD91D2796BE650016D818 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E46FD9202796BE8E0016D818 /* GXMVVMDesignPatternModelView.h */,
+				E46FD9212796BE8E0016D818 /* GXMVVMDesignPatternModelView.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E46FD91E2796BE6D0016D818 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E46FD91F2796BE730016D818 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1542,6 +1597,7 @@
 				9746574022BB59A2001AFCF0 /* RACPerson.m in Sources */,
 				C8091F1F244D699700CC86B7 /* UIImage+GXImageExtension.m in Sources */,
 				97A05FEA216F004600F49C01 /* main.m in Sources */,
+				E46FD91B2796BE510016D818 /* GXMVVMDesignPatternControlller.m in Sources */,
 				97A4DC54242451C90085F076 /* GXShareToSocial.m in Sources */,
 				97EA16762181CB5200C20CD9 /* GXSquareCell.m in Sources */,
 				97A4DC4E24238C4A0085F076 /* GXButtonsViewController.m in Sources */,
@@ -1569,6 +1625,7 @@
 				C8F26438244041A8009475F6 /* CZAlertView1Controller.m in Sources */,
 				97664EF023AE1A1700DB8383 /* GXScrollAD.m in Sources */,
 				C89A6FB0244959C500640BDA /* GXAVPlayerViewController.m in Sources */,
+				E46FD9172796AACC0016D818 /* UIWindow+GXFLEXSetting.m in Sources */,
 				97A6ADB123BDB6D4008E4596 /* CZPhoneModelHandle.m in Sources */,
 				C8E4E6C8246CE1E800E51CCC /* GXAttrStringFuncController.m in Sources */,
 				97FC051621884FBC00B526F8 /* GXPlaceholderTextView.m in Sources */,
@@ -1604,6 +1661,7 @@
 				C8634DDF246AC2CF00A649CA /* GXCUTool1Controller.m in Sources */,
 				97FBED4E243475E7002303E6 /* GX_WMPageStyleOneController.m in Sources */,
 				C861D0E924516B3E00E3E409 /* GXCollectionAutoLayoutDemoController.m in Sources */,
+				E46FD9222796BE8E0016D818 /* GXMVVMDesignPatternModelView.m in Sources */,
 				97C20BEB217D93AD00C78AAD /* GXMenuLabel.m in Sources */,
 				9774AD7421CB985600DD0827 /* GXFlowLayoutController.m in Sources */,
 				97A05E77218A9B25006A2CF8 /* GXAddTagToobar.m in Sources */,

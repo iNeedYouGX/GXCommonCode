@@ -12,17 +12,18 @@
 typedef void(^blockOfSuccess)(id result);
 typedef void(^blockOfFailure)(NSError *error);
 
+typedef NS_ENUM(NSUInteger, GXRequsetStyle) {
+    GXRequsetStyleBodyJSON,
+    GXRequsetStyleBodyString,
+    GXRequsetStyleBodyHTTP,
+};
+
 typedef NS_ENUM(NSUInteger, GXResponseStyle) {
     GXResponseStyleJSON,
     GXResponseStyleDATA,
     GXResponseStyleXML,
 };
 
-typedef NS_ENUM(NSUInteger, GXRequsetStyle) {
-    GXRequsetStyleBodyJSON,
-    GXRequsetStyleBodyString,
-    GXRequsetStyleBodyHTTP,
-};
 
 
 @interface GXNetTool : NSObject

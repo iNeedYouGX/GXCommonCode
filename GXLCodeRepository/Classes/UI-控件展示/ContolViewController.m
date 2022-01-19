@@ -19,7 +19,7 @@
 
 @implementation ContolViewController
 
-#pragma mark - Cycle Left
+#pragma mark - Cycle Lift
 - (void)viewDidLoad {
     [super viewDidLoad];
     

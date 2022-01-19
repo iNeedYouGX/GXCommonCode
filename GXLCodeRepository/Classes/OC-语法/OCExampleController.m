@@ -46,7 +46,12 @@
                 @"title" : @"MVC设计模式",
                 @"control" : @"GXMVCDesignPatternControlller",
             },
-                ];
+            @{
+                @"title" : @"MVVM设计模式",
+                @"control" : @"GXMVVMDesignPatternControlller",
+            },
+        
+        ];
     }
     return _dataArr;
 }
