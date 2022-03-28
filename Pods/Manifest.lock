@@ -71,15 +71,14 @@ DEPENDENCIES:
   - SVProgressHUD
 
 SPEC REPOS:
-  https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
-    - Masonry
-    - SDWebImage
-    - SVProgressHUD
   trunk:
     - AFNetworking
     - FLEX
+    - Masonry
     - MJExtension
     - MJRefresh
+    - SDWebImage
+    - SVProgressHUD
 
 EXTERNAL SOURCES:
   BCComConfigKit:
@@ -133,4 +132,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 8b2bf7330a426a56e408a252f8d3e4d450e90a0e
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.11.3
